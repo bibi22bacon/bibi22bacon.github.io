@@ -286,22 +286,24 @@ button, select {
   font-style: normal;
   font-family: var(--font-mono);
   font-size: 0.55rem;
+  font-weight: 600;
   text-align: center;
-  padding: 2px 0;
-  border-radius: 2px;
-  background: rgba(255,255,255,.04);
-  color: var(--muted);
-}
-.matrix i.SO { color: #ffb4a2; }
-.matrix i.FO, .matrix i.GO { color: #c5d0c8; }
-.matrix i.BB { color: #9ec1ff; }
-.matrix i.1B { color: #8dffb0; }
-.matrix i.2B { color: #6bff9a; }
-.matrix i.HR { color: var(--accent); }
-.matrix i.hl {
-  outline: 1px solid var(--accent);
-  background: rgba(232,197,71,.2);
+  padding: 3px 0;
+  border-radius: 3px;
   color: #fff;
+  line-height: 1.2;
+}
+.matrix i.SO { background: #f5f5f5; color: #1a1a1a; }
+.matrix i.FO { background: #6b6b6b; color: #fff; }
+.matrix i.GO { background: #7eb6ff; color: #fff; }
+.matrix i.BB { background: #2f9e44; color: #fff; }
+.matrix i.1B { background: #f0d86a; color: #fff; }
+.matrix i.2B { background: #e8590c; color: #fff; }
+.matrix i.HR { background: #c92a2a; color: #fff; }
+.matrix i.hl {
+  outline: 2px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.45);
+  filter: brightness(1.12);
 }
 
 /* Tactics */

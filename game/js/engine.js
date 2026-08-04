@@ -619,6 +619,9 @@ export class GameEngine {
       }
     }
 
+    // Forfeit during pitcher check already called _endGame — don't reopen tactics
+    if (this.state.phase === 'gameover' || this.state.winner) return;
+
     this.state.phase = 'tactics';
     this.emit('half');
   }

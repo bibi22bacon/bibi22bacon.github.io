@@ -1048,10 +1048,12 @@ export class GameUI {
               <h2>Sample games</h2>
               <div class="sim-table">
                 ${s.results
-                  .map(
-                    (r) =>
-                      `<div class="sim-row"><span>#${r.n}</span><span>${opp} ${r.score.split('-')[0]} – ${r.score.split('-')[1]} ${you}</span><span>${r.winner || '—'}</span></div>`
-                  )
+                  .map((r) => {
+                    let tag = r.winner || '—';
+                    if (!r.winner) tag = r.forfeit ? `FF ${r.forfeit}` : 'inc';
+                    else if (r.forfeit) tag = `${r.winner} (FF)`;
+                    return `<div class="sim-row"><span>#${r.n}</span><span>${opp} ${r.score.split('-')[0]} – ${r.score.split('-')[1]} ${you}</span><span>${tag}</span></div>`;
+                  })
                   .join('')}
               </div>
             </section>`

@@ -8,11 +8,15 @@ export function simulateGame(data, presets, { silent = true } = {}) {
   const eng = new GameEngine(data, presets, { silent });
   let steps = 0;
   const maxSteps = 8000;
-  while (eng.state.phase !== 'gameover' && steps < maxSteps) {
+  while (eng.state.phase !== 'gameover' && !eng.state.winner && steps < maxSteps) {
     steps++;
     eng.setDefTactic(null);
     eng.setOffTactic(null);
     eng.resolvePA();
+  }
+  // If a winner was decided (incl. forfeit) but phase was left open, treat as finished
+  if (eng.state.winner && eng.state.phase !== 'gameover') {
+    eng.state.phase = 'gameover';
   }
   if (eng.state.phase !== 'gameover') {
     return {
@@ -45,7 +49,7 @@ export function simulateMany(data, presets, n, onProgress) {
     games,
     homeWins: 0,
     awayWins: 0,
-    ties: 0, // shouldn't happen under rules, but track incompletes separately
+    ties: 0, // should stay 0 — rules have extras / forfeit, no draws
     incompletes: 0,
     forfeits: 0,
     homeRuns: 0,

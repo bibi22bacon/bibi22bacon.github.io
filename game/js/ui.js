@@ -134,6 +134,40 @@ export class GameUI {
       this.render();
       return;
     }
+    if (action === 'load-top') {
+      const top = this.opponents.find((o) => o.id === value || o.abbr === value);
+      if (!top) return;
+      const ids = [
+        ...top.lineup.map((s) => s.playerId),
+        ...top.pitchingStaff,
+        ...(top.bench || []),
+      ];
+      const salary = ids.reduce((sum, id) => sum + salaryOf(this.byId[id]), 0);
+      const staffIP = top.pitchingStaff.reduce(
+        (sum, id) => sum + (this.byId[id]?.abilities?.IP || 0),
+        0
+      );
+      this.draft = draftFromTeam({
+        id: `top_${top.abbr.toLowerCase()}`,
+        abbr: top.abbr,
+        name: String(top.name || top.abbr).replace(/^AI\s+/, ''),
+        lineup: top.lineup,
+        pitchingStaff: top.pitchingStaff,
+        starterId: top.starterId,
+        bench: top.bench || [],
+        salary,
+        size: ids.length,
+        staffIP,
+        note: top.blurb || 'Top build',
+      });
+      this.userPreset = null;
+      this.opponent = null;
+      this.simSummary = null;
+      this._draftErrors = null;
+      this.screen = 'draft';
+      this.render();
+      return;
+    }
     if (action === 'load-preset-lad') {
       // quick-start with existing LAD@NYY for testing play UI
       this.userPreset = this.data.presets.home;
@@ -456,7 +490,7 @@ export class GameUI {
         <p class="lede">Build a roster under $${CAP} — blank draft or a 30-team default (still editable) — then challenge an AI build.</p>
         <div class="cta-row">
           <button class="btn btn-primary" data-action="new-draft">Blank draft</button>
-          <button class="btn btn-ghost" data-action="goto-teams">30-team defaults</button>
+          <button class="btn btn-ghost" data-action="goto-teams">Defaults & top builds</button>
           <button class="btn btn-ghost" data-action="goto" data-value="matchup" ${this.userPreset ? '' : 'disabled'}>Continue</button>
         </div>
       </section>
@@ -482,6 +516,21 @@ export class GameUI {
   }
 
   _teams() {
+    const topCards = (this.opponents || [])
+      .map((o) => {
+        const n =
+          9 +
+          (o.pitchingStaff?.length || 0) +
+          (o.bench?.length || 0);
+        return `<button class="team-card top-build" data-action="load-top" data-value="${o.id}">
+          <div class="opp-abbr">${o.abbr}</div>
+          <h3>${this._esc(String(o.name || '').replace(/^AI\s+/, ''))}</h3>
+          <p class="team-blurb">${this._esc(o.blurb || '')}</p>
+          <div class="muted">$${o.salary} · ${n} players</div>
+        </button>`;
+      })
+      .join('');
+
     const cards = (this.teamRosters || [])
       .map((t) => {
         const note = t.note && t.note.startsWith('Includes') ? ' · has call-ups' : '';
@@ -494,10 +543,16 @@ export class GameUI {
       .join('');
 
     return this._shell(
-      '30-team defaults',
+      'Roster defaults',
       `
       <section class="panel">
-        <p class="lede-sm">Pick a club to preload a legal $${CAP} roster. You can edit anyone before locking.</p>
+        <h2>Top 5 builds</h2>
+        <p class="lede-sm">Best ability-curve stacks under $${CAP}. Load one, then edit before locking.</p>
+        <div class="team-grid top-grid">${topCards || '<p class="muted">No top builds loaded.</p>'}</div>
+      </section>
+      <section class="panel" style="margin-top:12px">
+        <h2>30-team defaults</h2>
+        <p class="lede-sm">Club rosters under $${CAP}. Still fully editable after load.</p>
         <div class="team-grid">${cards || '<p class="muted">Team rosters not loaded.</p>'}</div>
       </section>
       `,
@@ -536,8 +591,8 @@ export class GameUI {
         ${
           this.draft.sourceTeam
             ? `<p class="draft-source muted">Loaded <strong>${this._esc(this.draft.sourceTeam)}</strong> default — edit freely, then lock.
-               ${this.draft.sourceNote && this.draft.sourceNote.startsWith('Includes') ? `<span>${this._esc(this.draft.sourceNote)}</span>` : ''}
-               <button class="btn btn-ghost btn-sm" data-action="goto-teams">Switch team</button></p>`
+               ${this.draft.sourceNote ? `<span>${this._esc(this.draft.sourceNote)}</span>` : ''}
+               <button class="btn btn-ghost btn-sm" data-action="goto-teams">Switch default</button></p>`
             : ''
         }
       </div>

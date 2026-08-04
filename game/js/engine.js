@@ -99,6 +99,7 @@ export class GameEngine {
       lastResult: null,
       log: [],
       winner: null,
+      winnerSide: null, // 'home' | 'away' — never rely on abbr alone (can collide)
       forfeit: null,
     };
   }
@@ -687,6 +688,7 @@ export class GameEngine {
 
   _endGame(winner, reason) {
     this.state.winner = winner.abbr;
+    this.state.winnerSide = winner.isHome ? 'home' : 'away';
     this.state.phase = 'gameover';
     this.log(`Game over — ${winner.name} wins (${reason}). Final ${this.state.away.score}–${this.state.home.score}`, 'inning');
     this.emit('gameover', { winner, reason });

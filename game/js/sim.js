@@ -2,29 +2,31 @@ import { GameEngine } from './engine.js';
 
 /**
  * Play one full game with no tactics (and auto pitching).
- * @returns {{away:number, home:number, winner:string, innings:number, forfeit:string|null, steps:number}}
+ * Uses real plate-appearance resolution in GameEngine (dice + matrix + IP).
+ * @returns {{away:number, home:number, winner:string|null, winnerSide:'home'|'away'|null, innings:number, forfeit:string|null, steps:number, incomplete:boolean}}
  */
 export function simulateGame(data, presets, { silent = true } = {}) {
   const eng = new GameEngine(data, presets, { silent });
   let steps = 0;
   const maxSteps = 8000;
-  while (eng.state.phase !== 'gameover' && !eng.state.winner && steps < maxSteps) {
+  while (eng.state.phase !== 'gameover' && !eng.state.winnerSide && steps < maxSteps) {
     steps++;
     eng.setDefTactic(null);
     eng.setOffTactic(null);
     eng.resolvePA();
   }
   // If a winner was decided (incl. forfeit) but phase was left open, treat as finished
-  if (eng.state.winner && eng.state.phase !== 'gameover') {
+  if (eng.state.winnerSide && eng.state.phase !== 'gameover') {
     eng.state.phase = 'gameover';
   }
-  if (eng.state.phase !== 'gameover') {
+  if (eng.state.phase !== 'gameover' || !eng.state.winnerSide) {
     return {
       incomplete: true,
       steps,
       away: eng.state.away.score,
       home: eng.state.home.score,
       winner: null,
+      winnerSide: null,
       innings: eng.state.inning,
       forfeit: eng.state.forfeit,
     };
@@ -35,6 +37,7 @@ export function simulateGame(data, presets, { silent = true } = {}) {
     away: eng.state.away.score,
     home: eng.state.home.score,
     winner: eng.state.winner,
+    winnerSide: eng.state.winnerSide,
     innings: eng.state.inning,
     forfeit: eng.state.forfeit,
   };
@@ -42,6 +45,8 @@ export function simulateGame(data, presets, { silent = true } = {}) {
 
 /**
  * Run N games (max 10000). User is always home unless swapped in presets.
+ * Win counts use winnerSide (home/away), not abbr — abbrs can collide when
+ * you load a top build like OFF and face AI OFF.
  */
 export function simulateMany(data, presets, n, onProgress) {
   const games = Math.max(1, Math.min(10000, Math.floor(n) || 1));
@@ -49,7 +54,7 @@ export function simulateMany(data, presets, n, onProgress) {
     games,
     homeWins: 0,
     awayWins: 0,
-    ties: 0, // should stay 0 — rules have extras / forfeit, no draws
+    ties: 0,
     incompletes: 0,
     forfeits: 0,
     homeRuns: 0,
@@ -62,9 +67,9 @@ export function simulateMany(data, presets, n, onProgress) {
     const r = simulateGame(data, presets, { silent: true });
     if (r.incomplete) {
       summary.incompletes += 1;
-    } else if (r.winner === presets.home.abbr) {
+    } else if (r.winnerSide === 'home') {
       summary.homeWins += 1;
-    } else if (r.winner === presets.away.abbr) {
+    } else if (r.winnerSide === 'away') {
       summary.awayWins += 1;
     } else {
       summary.ties += 1;
@@ -78,6 +83,7 @@ export function simulateMany(data, presets, n, onProgress) {
         n: i + 1,
         score: `${r.away}-${r.home}`,
         winner: r.winner,
+        winnerSide: r.winnerSide,
         innings: r.innings,
         forfeit: r.forfeit,
       });

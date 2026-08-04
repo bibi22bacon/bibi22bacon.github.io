@@ -149,7 +149,7 @@ export class GameUI {
       );
       this.draft = draftFromTeam({
         id: `top_${top.abbr.toLowerCase()}`,
-        abbr: top.abbr,
+        abbr: 'YOU',
         name: String(top.name || top.abbr).replace(/^AI\s+/, ''),
         lineup: top.lineup,
         pitchingStaff: top.pitchingStaff,
@@ -158,7 +158,7 @@ export class GameUI {
         salary,
         size: ids.length,
         staffIP,
-        note: top.blurb || 'Top build',
+        note: top.blurb || `Top build ${top.abbr}`,
       });
       this.userPreset = null;
       this.opponent = null;
@@ -267,12 +267,21 @@ export class GameUI {
       this.simSummary = {
         mode: 'one',
         games: 1,
-        homeWins: r.winner === presets.home.abbr ? 1 : 0,
-        awayWins: r.winner === presets.away.abbr ? 1 : 0,
+        homeWins: r.winnerSide === 'home' ? 1 : 0,
+        awayWins: r.winnerSide === 'away' ? 1 : 0,
         last: r,
         avgHome: r.home,
         avgAway: r.away,
-        results: [{ n: 1, score: `${r.away}-${r.home}`, winner: r.winner, innings: r.innings }],
+        results: [
+          {
+            n: 1,
+            score: `${r.away}-${r.home}`,
+            winner: r.winner,
+            winnerSide: r.winnerSide,
+            innings: r.innings,
+            forfeit: r.forfeit,
+          },
+        ],
       };
       this.screen = 'sim';
       this.render();
@@ -1016,9 +1025,9 @@ export class GameUI {
     const opp = this.opponent.abbr;
     const headline =
       s.mode === 'one'
-        ? s.last?.winner === you
+        ? s.last?.winnerSide === 'home'
           ? 'You win'
-          : s.last?.winner === opp
+          : s.last?.winnerSide === 'away'
             ? 'AI wins'
             : 'Incomplete'
         : `${you} ${s.homeWins} – ${s.awayWins} ${opp}`;
@@ -1028,7 +1037,7 @@ export class GameUI {
       `
       <section class="panel sim-hero">
         <h2>${headline}</h2>
-        <p class="muted">${s.games} game${s.games > 1 ? 's' : ''} · no tactics · you bat last (HOME)</p>
+        <p class="muted">${s.games} game${s.games > 1 ? 's' : ''} · play-by-play (no tactics) · you bat last (HOME)</p>
         ${
           s.mode === 'one'
             ? `<p class="sim-score">${opp} ${s.last.away} – ${s.last.home} ${you} · ${s.last.innings} inn</p>`
@@ -1049,9 +1058,12 @@ export class GameUI {
               <div class="sim-table">
                 ${s.results
                   .map((r) => {
-                    let tag = r.winner || '—';
-                    if (!r.winner) tag = r.forfeit ? `FF ${r.forfeit}` : 'inc';
-                    else if (r.forfeit) tag = `${r.winner} (FF)`;
+                    let tag = '—';
+                    if (r.winnerSide === 'home') tag = you;
+                    else if (r.winnerSide === 'away') tag = opp;
+                    else if (r.forfeit) tag = `FF ${r.forfeit}`;
+                    else if (!r.winner) tag = 'inc';
+                    if (r.forfeit && r.winnerSide) tag = `${tag} (FF)`;
                     return `<div class="sim-row"><span>#${r.n}</span><span>${opp} ${r.score.split('-')[0]} – ${r.score.split('-')[1]} ${you}</span><span>${tag}</span></div>`;
                   })
                   .join('')}

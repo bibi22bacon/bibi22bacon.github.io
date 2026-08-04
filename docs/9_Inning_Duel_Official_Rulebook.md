@@ -141,7 +141,7 @@ Each player begins with the same set of **9 tactic cards** (one of each card bel
 
 | Card | Side | Effect |
 |------|------|--------|
-| **Steal** | OFF | Attempt to steal **2nd** or **3rd** before the pitch. Compute **Check = D1 + Catcher DEF − D2 − Runner SPD**. If Check ≤ 0, the runner is safe; if Check > 0, the runner is out. Then **restart the at-bat** (unless the steal made the 3rd out). |
+| **Steal** | OFF | Attempt to steal **2nd** or **3rd** before the pitch. Compute **Check = D1 + Catcher DEF − D2 − Runner SPD**. If **Check ≤ 9**, the runner is safe; if **Check ≥ 10**, the runner is out. Then **restart the at-bat** (unless the steal made the 3rd out). |
 | **Bunt** | OFF | Replace the grind-matrix duel. Compute **B = D1 − D2 − Runner SPD**, then use the bunt table below. |
 | **Hit & Run** | OFF | On a **1B** or **2B**, each runner already on base advances **one extra** base. If the base result is **SO**, resolve a **Steal** attempt instead. |
 | **Sacrifice Fly** | OFF | D2 −1 (then clamp 1–10). If the final outcome is **FO**, each baserunner advances 1 base. |
@@ -152,10 +152,11 @@ Compute **B = D1 − D2 − Runner SPD**. Use the first matching row:
 
 | If… | Result | Notes |
 |-----|--------|-------|
-| B ≤ −12 | **1B** | Bunt single — batter reaches first; runners advance 1 base. |
-| −11 ≤ B ≤ 0 | **GO** | Batter out; runners advance 1 base (as a normal GO). |
-| 1 ≤ B ≤ 5 | **FO** | Batter out; runners hold (as a normal FO). |
-| B ≥ 6 | **FO** | Failed bunt — treat as FO. |
+| B ≤ −5 | **1B** | Bunt single — batter reaches first; runners advance 1 base. |
+| −4 ≤ B ≤ 4 | **GO** | Successful sacrifice — batter out; runners advance 1 base. |
+| B ≥ 5 | **FO** | Failed bunt — batter out; runners hold. |
+
+*Calibration (SPD 6, typical bunter): ~33% 1B / ~45% GO / ~23% FO ≈ 78% productive bunts, near modern MLB rates.*
 
 ---
 
@@ -173,15 +174,36 @@ After 9 innings, the player with more runs wins. If the home team already leads 
 
 ---
 
-## Appendix A — Clarifications from Draft v1.0
+## Appendix A — Clarifications & Probability Calibration
 
-This refined edition preserves the draft’s structure while correcting language and filling gaps that were incomplete in v1.0. The following items were made explicit for playability:
+This refined edition preserves the draft’s structure while correcting language and filling gaps that were incomplete in v1.0.
+
+### Playability clarifications
 
 1. **Matrix row mapping** for D1 = 11–20 → row = D1 − 10.
-2. **Steal check** success when Check ≤ 0 (lower is better for the runner, since SPD subtracts).
-3. **Bunt thresholds** expanded into an explicit table from the draft values (−12 / 0 / 5).
-4. **Transformation order** defined as: defensive tactic effects, then offensive tactic effects.
-5. **Extra innings** and walk-off / bottom-of-9th standard baseball practice stated explicitly.
-6. Eligible positions on cards may include **DH** in addition to C / 1B / 2B / 3B / SS / OF.
+2. **Transformation order**: defensive tactic effects, then offensive tactic effects.
+3. **Extra innings** and walk-off / bottom-of-9th standard baseball practice stated explicitly.
+4. Eligible positions on cards may include **DH** in addition to C / 1B / 2B / 3B / SS / OF.
+
+### Steal & bunt calibration (v1.1)
+
+Dice and card ratings were simulated against 2025 card SPD/DEF distributions and tuned toward modern MLB rates (~78% SB success; bunts ~30% hits / ~75% productive).
+
+**Steal:** `Check = D1 + Catcher DEF − D2 − Runner SPD` — safe if **Check ≤ 9**.
+
+| Matchup | Approx. success |
+|---------|-----------------|
+| SPD 6 vs Catcher DEF 4 (typical) | ~82% |
+| SPD 8 vs Catcher DEF 4 (fast) | ~90% |
+| SPD 2 vs Catcher DEF 6 (slow) | ~52% |
+| League-wide vs typical catchers | ~75–78% |
+
+**Bunt:** `B = D1 − D2 − Runner SPD` — **1B** if B ≤ −5; **GO** if B ≤ 4; else **FO**.
+
+| Runner SPD | 1B | GO | FO | Productive (1B+GO) |
+|------------|----|----|----|--------------------|
+| 4 | 23% | 45% | 33% | 68% |
+| 6 | 33% | 45% | 23% | 78% |
+| 8 | 43% | 44% | 14% | 86% |
 
 If any clarification conflicts with your intended design, adjust that line and treat this document as the living ruleset.

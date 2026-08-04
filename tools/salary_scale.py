@@ -1,22 +1,12 @@
 #!/usr/bin/env python3
 """
-Salary scale for 9-Inning Duel — from CARD abilities (board-game value).
+Salary scale for 9-Inning Duel — DEPRECATED for live pricing.
 
-Design intent
--------------
-Salaries exist to budget the *board game*, not to mirror MLB payrolls.
-Card abilities (including the 2×-from-average stretch) are what drive duel
-results, so they are the correct input for price.
+Canonical pipeline is tools/sim_economy.mjs:
+  2-AI draft market + head-to-head sim win credits → board $ remap →
+  tournament-drafted top AI opponents.
 
-Method
-------
-1. Score each card with the same value formulas the AI/market used
-2. Map absolute score → $ with anchors sized for a $1000 cap
-3. Light positional scarcity for batters
-4. Floor $12, ceil $200
-
-Do NOT use unstretched real-stat rates here — those are only the Excel
-source for building cards; once stretched, the card *is* the player.
+This module remains as a fast ability-anchor fallback only.
 """
 
 from __future__ import annotations

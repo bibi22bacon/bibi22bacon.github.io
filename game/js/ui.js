@@ -768,7 +768,7 @@ export class GameUI {
         </div>
         <div class="score-strip">
           <div class="score-team away">
-            <span class="abbr">${s.away.abbr}</span>
+            <span class="abbr">OPP</span>
             <span class="runs">${s.away.score}</span>
           </div>
           <div class="score-mid">
@@ -984,7 +984,7 @@ export class GameUI {
           </thead>
           <tbody>
             <tr>
-              <td class="team">${s.away.abbr}</td>
+              <td class="team">OPP</td>
               ${row(s.away)}
               <td><strong>${s.away.score}</strong></td>
               <td>${s.away.hits}</td>

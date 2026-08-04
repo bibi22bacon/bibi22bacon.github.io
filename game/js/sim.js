@@ -37,10 +37,10 @@ export function simulateGame(data, presets, { silent = true } = {}) {
 }
 
 /**
- * Run N games (max 1000). User is always home unless swapped in presets.
+ * Run N games (max 10000). User is always home unless swapped in presets.
  */
 export function simulateMany(data, presets, n, onProgress) {
-  const games = Math.max(1, Math.min(1000, Math.floor(n) || 1));
+  const games = Math.max(1, Math.min(10000, Math.floor(n) || 1));
   const summary = {
     games,
     homeWins: 0,

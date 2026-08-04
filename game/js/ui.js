@@ -70,7 +70,7 @@ export class GameUI {
           el.setSelectionRange(el.value.length, el.value.length);
         }
       } else if (t.dataset.filter === 'sim-n') {
-        this.simN = Math.max(1, Math.min(1000, Number(t.value) || 1));
+        this.simN = Math.max(1, Math.min(10000, Number(t.value) || 1));
       } else if (t.dataset.field === 'team-name') {
         this.draft.name = t.value || 'My Team';
       } else if (t.dataset.field === 'team-abbr') {
@@ -227,7 +227,7 @@ export class GameUI {
     }
     if (action === 'sim-many') {
       if (!this._readyMatchup()) return;
-      const n = Math.max(1, Math.min(1000, Number(this.simN) || 100));
+      const n = Math.max(1, Math.min(10000, Number(this.simN) || 100));
       const presets = this._presets();
       this.root.innerHTML = `<div class="panel" style="margin-top:40px;text-align:center">
         <h2>Simulating ${n} games…</h2>
@@ -433,7 +433,7 @@ export class GameUI {
       <section class="hero-home panel">
         <p class="eyebrow">Salary cap $${CAP}</p>
         <h1>Draft. Duel. Simulate.</h1>
-        <p class="lede">Build a roster under $${CAP}, challenge one of five AI builds, then play live (AI tactics on by default) or run up to 1000 no-tactic sims.</p>
+        <p class="lede">Build a roster under $${CAP}, challenge one of five AI builds, then play live (AI tactics on by default) or run up to 10000 no-tactic sims.</p>
         <div class="cta-row">
           <button class="btn btn-primary" data-action="new-draft">Start Draft</button>
           <button class="btn btn-ghost" data-action="goto" data-value="matchup" ${this.userPreset ? '' : 'disabled'}>Continue</button>
@@ -696,7 +696,7 @@ export class GameUI {
           <button class="btn btn-ghost" data-action="sim-one" ${this.opponent ? '' : 'disabled'}>Quick sim (1 game)</button>
         </div>
         <div class="mode-row sim-many-row">
-          <label>Multi-sim <input data-filter="sim-n" type="number" min="1" max="1000" value="${this.simN}" /> games (max 1000)</label>
+          <label>Multi-sim <input data-filter="sim-n" type="number" min="1" max="10000" value="${this.simN}" /> games (max 10000)</label>
           <button class="btn btn-ghost" data-action="sim-many" ${this.opponent ? '' : 'disabled'}>Run sims</button>
         </div>
       </section>

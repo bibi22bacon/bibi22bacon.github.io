@@ -316,11 +316,12 @@ export class GameEngine {
     }
     result.baseResult = baseResult;
 
-    // Hit & Run: SO becomes steal attempt
+    // Hit & Run: SO becomes a steal by the frontmost (lead) runner.
+    // Lead runner on 3B = steal of home → automatic out.
     if (effectiveOff === 'hitrun' && baseResult === 'SO') {
-      result.detail.push('Hit & Run: SO converts to Steal attempt.');
-      const stealRes = this._resolveSteal(d1, d2, batter);
-      result.finalResult = stealRes.safe ? 'SB' : 'CS';
+      result.detail.push('Hit & Run: SO converts to Steal attempt (lead runner).');
+      const stealRes = this._resolveHitRunSteal(d1, d2);
+      result.finalResult = stealRes.safe ? 'SB' : stealRes.homeSteal ? 'CS' : 'CS';
       result.detail.push(...stealRes.detail);
       result.outsRecorded = stealRes.out ? 1 : 0;
       if (!stealRes.endedHalf) {
@@ -330,6 +331,14 @@ export class GameEngine {
         this.state.phase = 'tactics';
       }
       this.state.lastResult = result;
+      this.log(
+        stealRes.homeSteal
+          ? 'Hit & Run SO — steal of home, runner out!'
+          : stealRes.safe
+            ? 'Hit & Run SO — stolen base!'
+            : 'Hit & Run SO — caught stealing.',
+        stealRes.safe ? 'hit' : 'out'
+      );
       this.emit('result', result);
       return result;
     }
@@ -349,6 +358,51 @@ export class GameEngine {
 
     this._afterPA(result, batter);
     return result;
+  }
+
+  /**
+   * Hit & Run SO conversion: the frontmost runner is forced into a steal.
+   * - On 3B → steal of home → automatic out
+   * - On 2B → steal 3B (normal check)
+   * - On 1B → steal 2B (normal check)
+   */
+  _resolveHitRunSteal(d1, d2) {
+    const b = this.state.bases;
+    let fromIdx = -1;
+    if (b[2]) fromIdx = 2;
+    else if (b[1]) fromIdx = 1;
+    else if (b[0]) fromIdx = 0;
+
+    if (fromIdx < 0) {
+      return {
+        safe: false,
+        out: false,
+        endedHalf: false,
+        homeSteal: false,
+        detail: ['No baserunner — Hit & Run steal has no effect.'],
+      };
+    }
+
+    const runner = b[fromIdx];
+
+    // Lead runner on 3B: steal of home — automatic out
+    if (fromIdx === 2) {
+      const detail = [
+        `Lead runner ${runner.name} on 3B → steal of home — automatic OUT.`,
+      ];
+      this.state.bases[2] = null;
+      this.state.outs += 1;
+      if (this.state.outs >= 3) {
+        this._endHalf();
+        return { safe: false, out: true, endedHalf: true, homeSteal: true, detail };
+      }
+      return { safe: false, out: true, endedHalf: false, homeSteal: true, detail };
+    }
+
+    // Lead on 1B or 2B: normal steal into the next empty base
+    this.state.stealTarget = fromIdx === 1 ? 3 : 2;
+    const res = this._resolveSteal(d1, d2, null);
+    return { ...res, homeSteal: false };
   }
 
   _resolveSteal(d1, d2, batter) {

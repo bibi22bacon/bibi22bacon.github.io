@@ -173,7 +173,7 @@ Each player begins with the same set of **9 tactic cards** (one of each card bel
 |------|------|--------|
 | **Steal** | OFF | Attempt to steal **2nd** or **3rd** before the pitch. Compute **Check = D1 + Catcher DEF − D2 − Runner SPD**. **Steal 2B** succeeds if Check ≤ **9**. **Steal 3B** is stricter: succeeds if Check ≤ **6**. On failure the runner is out. Then **restart the at-bat** (unless the steal made the 3rd out). |
 | **Bunt** | OFF | Replace the grind-matrix duel. Compute **B = D1 − D2 − Runner SPD**, then use the bunt table below. |
-| **Hit & Run** | OFF | On a **1B** or **2B**, each runner already on base advances **one extra** base. If the base result is **SO**, resolve a **Steal** attempt instead. |
+| **Hit & Run** | OFF | On a **1B** or **2B**, each runner already on base advances **one extra** base. If the base result is **SO**, resolve a **Steal** by the **frontmost (lead) runner** instead: from **1B→2B** or **2B→3B** use the normal Steal check; if the lead runner is on **3B** (including bases loaded), that is a **steal of home** and the runner is **out automatically**. Then restart the at-bat unless it was the 3rd out. |
 | **Sacrifice Fly** | OFF | D2 −1 (then clamp 1–10). If the final outcome is **FO**, each baserunner advances 1 base. |
 
 ### 10.3 Bunt resolution table

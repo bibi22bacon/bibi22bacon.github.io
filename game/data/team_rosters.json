@@ -1,0 +1,1806 @@
+{
+  "teams": [
+    {
+      "id": "team_ath",
+      "abbr": "ATH",
+      "name": "Athletics",
+      "lineup": [
+        {
+          "playerId": "b_206",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_204",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_420",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_162",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_448",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_340",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_370",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_53",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_454",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_441",
+        "p_292"
+      ],
+      "starterId": "p_441",
+      "bench": [
+        "b_45",
+        "b_422",
+        "b_404",
+        "b_356",
+        "b_76",
+        "b_227",
+        "b_136"
+      ],
+      "salary": 519,
+      "staffIP": 11,
+      "size": 18,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_atl",
+      "abbr": "ATL",
+      "name": "Atlanta Braves",
+      "lineup": [
+        {
+          "playerId": "b_29",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_289",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_7",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_326",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_198",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_2",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_311",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_121",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_293",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_423",
+        "p_435"
+      ],
+      "starterId": "p_423",
+      "bench": [
+        "b_153",
+        "b_445",
+        "b_429",
+        "b_274",
+        "b_9",
+        "b_12"
+      ],
+      "salary": 463,
+      "staffIP": 13,
+      "size": 17,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_az",
+      "abbr": "AZ",
+      "name": "Arizona Diamondbacks",
+      "lineup": [
+        {
+          "playerId": "b_270",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_368",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_235",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_8",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_304",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_68",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_148",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_403",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_424",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_83",
+        "p_349"
+      ],
+      "starterId": "p_83",
+      "bench": [
+        "b_247",
+        "b_248",
+        "b_95",
+        "b_394",
+        "b_167",
+        "b_216"
+      ],
+      "salary": 485,
+      "staffIP": 11,
+      "size": 17,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_bal",
+      "abbr": "BAL",
+      "name": "Baltimore Orioles",
+      "lineup": [
+        {
+          "playerId": "b_345",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_246",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_172",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_444",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_161",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_35",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_182",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_287",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_181",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_410",
+        "p_65"
+      ],
+      "starterId": "p_410",
+      "bench": [
+        "b_347",
+        "b_329",
+        "b_66",
+        "b_271",
+        "b_85",
+        "b_32",
+        "b_202"
+      ],
+      "salary": 586,
+      "staffIP": 13,
+      "size": 18,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_bos",
+      "abbr": "BOS",
+      "name": "Boston Red Sox",
+      "lineup": [
+        {
+          "playerId": "b_276",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_141",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_313",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_48",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_382",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_321",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_18",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_1",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_107",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_114",
+        "p_41"
+      ],
+      "starterId": "p_114",
+      "bench": [
+        "b_457",
+        "b_371",
+        "b_408",
+        "b_223",
+        "b_245",
+        "b_150",
+        "b_60"
+      ],
+      "salary": 487,
+      "staffIP": 13,
+      "size": 18,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_chc",
+      "abbr": "CHC",
+      "name": "Chicago Cubs",
+      "lineup": [
+        {
+          "playerId": "b_16",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_52",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_171",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_361",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_389",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_416",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_388",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_89",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_251",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_236",
+        "p_63"
+      ],
+      "starterId": "p_236",
+      "bench": [
+        "b_151",
+        "b_195",
+        "b_350",
+        "b_72",
+        "b_42",
+        "b_418"
+      ],
+      "salary": 393,
+      "staffIP": 12,
+      "size": 17,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_cin",
+      "abbr": "CIN",
+      "name": "Cincinnati Reds",
+      "lineup": [
+        {
+          "playerId": "b_381",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_380",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_253",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_236",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_93",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_17",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_128",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_156",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_225",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_201",
+        "p_0"
+      ],
+      "starterId": "p_201",
+      "bench": [
+        "b_40",
+        "b_112",
+        "b_413",
+        "b_111",
+        "b_155"
+      ],
+      "salary": 310,
+      "staffIP": 12,
+      "size": 16,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_cle",
+      "abbr": "CLE",
+      "name": "Cleveland Guardians",
+      "lineup": [
+        {
+          "playerId": "b_277",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_231",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_239",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_317",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_332",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_205",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_192",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_354",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_22",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_523",
+        "p_323"
+      ],
+      "starterId": "p_523",
+      "bench": [
+        "b_187",
+        "b_405",
+        "b_157",
+        "b_129",
+        "b_282"
+      ],
+      "salary": 385,
+      "staffIP": 12,
+      "size": 16,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_col",
+      "abbr": "COL",
+      "name": "Colorado Rockies",
+      "lineup": [
+        {
+          "playerId": "b_142",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_41",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_113",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_191",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_411",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_265",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_126",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_36",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_240",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_166",
+        "p_151"
+      ],
+      "starterId": "p_166",
+      "bench": [
+        "b_104",
+        "b_327",
+        "b_114",
+        "b_15",
+        "b_117",
+        "b_130",
+        "b_20"
+      ],
+      "salary": 344,
+      "staffIP": 12,
+      "size": 18,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_cws",
+      "abbr": "CWS",
+      "name": "Chicago White Sox",
+      "lineup": [
+        {
+          "playerId": "b_398",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_375",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_258",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_425",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_266",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_39",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_392",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_28",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_312",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_379",
+        "p_453"
+      ],
+      "starterId": "p_379",
+      "bench": [
+        "b_330",
+        "b_396",
+        "b_256",
+        "b_170",
+        "b_296",
+        "b_338",
+        "b_64"
+      ],
+      "salary": 320,
+      "staffIP": 12,
+      "size": 18,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_det",
+      "abbr": "DET",
+      "name": "Detroit Tigers",
+      "lineup": [
+        {
+          "playerId": "b_101",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_407",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_410",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_252",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_26",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_186",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_67",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_144",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_306",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_449",
+        "p_360"
+      ],
+      "starterId": "p_449",
+      "bench": [
+        "b_194",
+        "b_177",
+        "b_229",
+        "b_257",
+        "b_431",
+        "b_336",
+        "b_390"
+      ],
+      "salary": 619,
+      "staffIP": 13,
+      "size": 18,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_hou",
+      "abbr": "HOU",
+      "name": "Houston Astros",
+      "lineup": [
+        {
+          "playerId": "b_99",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_437",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_421",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_297",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_302",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_11",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_261",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_105",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_14",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_74",
+        "p_494"
+      ],
+      "starterId": "p_74",
+      "bench": [
+        "b_84",
+        "b_348",
+        "b_65",
+        "b_97",
+        "b_365",
+        "b_176",
+        "b_412"
+      ],
+      "salary": 401,
+      "staffIP": 13,
+      "size": 18,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_kc",
+      "abbr": "KC",
+      "name": "Kansas City Royals",
+      "lineup": [
+        {
+          "playerId": "b_305",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_299",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_179",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_133",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_451",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_455",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_180",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_123",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_145",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_394",
+        "p_78"
+      ],
+      "starterId": "p_394",
+      "bench": [
+        "b_241",
+        "b_218",
+        "b_442",
+        "b_319",
+        "b_62",
+        "b_322",
+        "b_57"
+      ],
+      "salary": 389,
+      "staffIP": 11,
+      "size": 18,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_laa",
+      "abbr": "LAA",
+      "name": "Los Angeles Angels",
+      "lineup": [
+        {
+          "playerId": "b_286",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_352",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_323",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_264",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_279",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_441",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_6",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_415",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_373",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_457",
+        "p_262"
+      ],
+      "starterId": "p_457",
+      "bench": [
+        "b_267",
+        "b_298",
+        "b_401",
+        "b_280",
+        "b_433",
+        "b_91",
+        "b_303"
+      ],
+      "salary": 323,
+      "staffIP": 12,
+      "size": 18,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_lad",
+      "abbr": "LAD",
+      "name": "Los Angeles Dodgers",
+      "lineup": [
+        {
+          "playerId": "b_369",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_125",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_339",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_273",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_43",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_294",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_58",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_165",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_288",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_535",
+        "p_189"
+      ],
+      "starterId": "p_535",
+      "bench": [
+        "b_109",
+        "b_199",
+        "b_163",
+        "b_81",
+        "b_344",
+        "b_341"
+      ],
+      "salary": 626,
+      "staffIP": 12,
+      "size": 17,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_mia",
+      "abbr": "MIA",
+      "name": "Miami Marlins",
+      "lineup": [
+        {
+          "playerId": "b_316",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_168",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_110",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_349",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_220",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_384",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_233",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_164",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_185",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_87",
+        "p_378"
+      ],
+      "starterId": "p_87",
+      "bench": [
+        "b_300",
+        "b_435",
+        "b_284",
+        "b_275",
+        "b_260"
+      ],
+      "salary": 330,
+      "staffIP": 11,
+      "size": 16,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_mil",
+      "abbr": "MIL",
+      "name": "Milwaukee Brewers",
+      "lineup": [
+        {
+          "playerId": "b_82",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_34",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_417",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_108",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_263",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_127",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_75",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_80",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_456",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_532",
+        "p_217"
+      ],
+      "starterId": "p_532",
+      "bench": [
+        "b_427",
+        "b_174",
+        "b_183",
+        "b_217",
+        "b_290",
+        "b_307"
+      ],
+      "salary": 398,
+      "staffIP": 12,
+      "size": 17,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_min",
+      "abbr": "MIN",
+      "name": "Minnesota Twins",
+      "lineup": [
+        {
+          "playerId": "b_184",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_78",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_193",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_213",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_210",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_54",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_238",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_439",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_208",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_294",
+        "p_419"
+      ],
+      "starterId": "p_294",
+      "bench": [
+        "b_189",
+        "b_135",
+        "b_428",
+        "b_292",
+        "b_333",
+        "b_49"
+      ],
+      "salary": 332,
+      "staffIP": 12,
+      "size": 17,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_nym",
+      "abbr": "NYM",
+      "name": "New York Mets",
+      "lineup": [
+        {
+          "playerId": "b_13",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_10",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_33",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_430",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_215",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_376",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_255",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_281",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_237",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_317",
+        "p_381"
+      ],
+      "starterId": "p_317",
+      "bench": [
+        "b_272",
+        "b_3",
+        "b_397",
+        "b_244",
+        "b_409"
+      ],
+      "salary": 465,
+      "staffIP": 12,
+      "size": 16,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_nyy",
+      "abbr": "NYY",
+      "name": "New York Yankees",
+      "lineup": [
+        {
+          "playerId": "b_443",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_325",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_212",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_74",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_55",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_188",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_38",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_379",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_146",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_167",
+        "p_404"
+      ],
+      "starterId": "p_167",
+      "bench": [
+        "b_342",
+        "b_139",
+        "b_102",
+        "b_254",
+        "b_56",
+        "b_432",
+        "b_364"
+      ],
+      "salary": 765,
+      "staffIP": 13,
+      "size": 18,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_phi",
+      "abbr": "PHI",
+      "name": "Philadelphia Phillies",
+      "lineup": [
+        {
+          "playerId": "b_320",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_152",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_383",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_374",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_419",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_25",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_234",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_197",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_357",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_519",
+        "p_424"
+      ],
+      "starterId": "p_519",
+      "bench": [
+        "b_47",
+        "b_71",
+        "b_196",
+        "b_449",
+        "b_337",
+        "b_232"
+      ],
+      "salary": 689,
+      "staffIP": 14,
+      "size": 17,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_pit",
+      "abbr": "PIT",
+      "name": "Pittsburgh Pirates",
+      "lineup": [
+        {
+          "playerId": "b_31",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_173",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_140",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_414",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_440",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_324",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_308",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_90",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_250",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_448",
+        "p_102"
+      ],
+      "starterId": "p_448",
+      "bench": [
+        "b_423",
+        "b_61",
+        "b_387",
+        "b_92"
+      ],
+      "salary": 379,
+      "staffIP": 11,
+      "size": 15,
+      "note": "Includes call-up fillers for: SS"
+    },
+    {
+      "id": "team_sd",
+      "abbr": "SD",
+      "name": "San Diego Padres",
+      "lineup": [
+        {
+          "playerId": "b_116",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_24",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_88",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_226",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_46",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_209",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_391",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_285",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_259",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_386",
+        "p_99"
+      ],
+      "starterId": "p_386",
+      "bench": [
+        "b_362",
+        "b_436",
+        "b_178",
+        "b_434",
+        "b_98",
+        "b_228"
+      ],
+      "salary": 420,
+      "staffIP": 12,
+      "size": 17,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_sea",
+      "abbr": "SEA",
+      "name": "Seattle Mariners",
+      "lineup": [
+        {
+          "playerId": "b_314",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_278",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_309",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_386",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_86",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_63",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_335",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_23",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_328",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_530",
+        "p_182"
+      ],
+      "starterId": "p_530",
+      "bench": [
+        "b_242",
+        "b_447",
+        "b_458",
+        "b_331",
+        "b_134",
+        "b_315",
+        "b_393"
+      ],
+      "salary": 569,
+      "staffIP": 13,
+      "size": 18,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_sf",
+      "abbr": "SF",
+      "name": "San Francisco Giants",
+      "lineup": [
+        {
+          "playerId": "b_27",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_96",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_353",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_73",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_4",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_211",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_243",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_318",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_366",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_514",
+        "p_398"
+      ],
+      "starterId": "p_514",
+      "bench": [
+        "b_119",
+        "b_203",
+        "b_137",
+        "b_118"
+      ],
+      "salary": 323,
+      "staffIP": 13,
+      "size": 15,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_stl",
+      "abbr": "STL",
+      "name": "St. Louis Cardinals",
+      "lineup": [
+        {
+          "playerId": "b_310",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_83",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_103",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_21",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_450",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_51",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_283",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_358",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_166",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_199",
+        "p_285"
+      ],
+      "starterId": "p_199",
+      "bench": [
+        "b_346",
+        "b_143",
+        "b_295",
+        "b_438"
+      ],
+      "salary": 282,
+      "staffIP": 12,
+      "size": 15,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_tb",
+      "abbr": "TB",
+      "name": "Tampa Bay Rays",
+      "lineup": [
+        {
+          "playerId": "b_402",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_100",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_221",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_59",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_440",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_363",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_230",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_222",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_19",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_397",
+        "p_238"
+      ],
+      "starterId": "p_397",
+      "bench": [
+        "b_120",
+        "b_269",
+        "b_262",
+        "b_115",
+        "b_446"
+      ],
+      "salary": 323,
+      "staffIP": 11,
+      "size": 16,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_tex",
+      "abbr": "TEX",
+      "name": "Texas Rangers",
+      "lineup": [
+        {
+          "playerId": "b_169",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_50",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_360",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_367",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_359",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_207",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_160",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_69",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_149",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_141",
+        "p_122"
+      ],
+      "starterId": "p_141",
+      "bench": [
+        "b_399",
+        "b_132",
+        "b_291",
+        "b_190",
+        "b_124",
+        "b_268",
+        "b_301"
+      ],
+      "salary": 439,
+      "staffIP": 12,
+      "size": 18,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_tor",
+      "abbr": "TOR",
+      "name": "Toronto Blue Jays",
+      "lineup": [
+        {
+          "playerId": "b_201",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_147",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_355",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_79",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_44",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_377",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_426",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_219",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_159",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_178",
+        "p_49"
+      ],
+      "starterId": "p_178",
+      "bench": [
+        "b_30",
+        "b_224",
+        "b_385",
+        "b_200",
+        "b_122",
+        "b_138",
+        "b_77"
+      ],
+      "salary": 600,
+      "staffIP": 13,
+      "size": 18,
+      "note": "All players from this team"
+    },
+    {
+      "id": "team_wsh",
+      "abbr": "WSH",
+      "name": "Washington Nationals",
+      "lineup": [
+        {
+          "playerId": "b_343",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_37",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_131",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_400",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_0",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_214",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_453",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_87",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_459",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_16",
+        "p_196"
+      ],
+      "starterId": "p_16",
+      "bench": [
+        "b_94",
+        "b_175",
+        "b_154",
+        "b_5"
+      ],
+      "salary": 294,
+      "staffIP": 11,
+      "size": 15,
+      "note": "All players from this team"
+    }
+  ],
+  "cap": 1000,
+  "generatedFrom": "card-ability salaries"
+}

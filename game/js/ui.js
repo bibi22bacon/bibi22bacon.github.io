@@ -11,6 +11,7 @@ import {
   salaryOf,
 } from './roster.js';
 import { simulateGame, simulateMany } from './sim.js';
+import { applyAiTactics } from './ai.js';
 
 const OUTCOME_LABEL = {
   SO: 'STRIKEOUT',
@@ -41,6 +42,8 @@ export class GameUI {
     this.engine = null;
     this.simSummary = null;
     this.simN = 100;
+    this.aiTactics = true; // AI manages away-team tactics (switchable)
+    this.showMatrices = false;
     this.draftFilter = { q: '', kind: 'batter', pos: 'ALL', sort: 'salary' };
     this._bind();
     this.render();
@@ -84,6 +87,12 @@ export class GameUI {
         this.render();
       } else if (t.dataset.filter === 'sort') {
         this.draftFilter.sort = t.value;
+        this.render();
+      } else if (t.dataset.toggle === 'ai-tactics') {
+        this.aiTactics = Boolean(t.checked);
+        this.render();
+      } else if (t.dataset.toggle === 'show-matrices') {
+        this.showMatrices = Boolean(t.checked);
         this.render();
       }
     });
@@ -227,16 +236,45 @@ export class GameUI {
     // live play actions
     if (!this.engine) return;
     if (action === 'def-tactic') {
+      if (this._aiControlsDef()) return;
       this.engine.setDefTactic(this.engine.state.pendingDefTactic === value ? null : value || null);
     } else if (action === 'off-tactic') {
+      if (this._aiControlsOff()) return;
       this.engine.setOffTactic(this.engine.state.pendingOffTactic === value ? null : value || null);
     } else if (action === 'steal-target') {
+      if (this._aiControlsOff()) return;
       this.engine.setStealTarget(Number(value));
     } else if (action === 'resolve') {
+      this._applyAiIfNeeded();
       this.engine.resolvePA();
     } else if (action === 'change-pitcher') {
+      // Only allow manual bullpen for the side the player controls (or both when AI off)
+      if (this.aiTactics && el.dataset.side === 'away') return;
       this.engine.changePitcher(el.dataset.side, value);
+    } else if (action === 'toggle-ai-tactics') {
+      this.aiTactics = !this.aiTactics;
+      this.render();
+    } else if (action === 'toggle-matrices') {
+      this.showMatrices = !this.showMatrices;
+      this.render();
     }
+  }
+
+  /** User is always HOME; AI is AWAY when aiTactics is on. */
+  _aiControlsDef() {
+    return this.aiTactics && !this.engine.defenseSide().isHome;
+  }
+
+  _aiControlsOff() {
+    return this.aiTactics && !this.engine.offenseSide().isHome;
+  }
+
+  _applyAiIfNeeded() {
+    if (!this.aiTactics || !this.engine) return;
+    applyAiTactics(this.engine, {
+      controlDef: this._aiControlsDef(),
+      controlOff: this._aiControlsOff(),
+    });
   }
 
   _readyMatchup() {
@@ -337,7 +375,7 @@ export class GameUI {
       <section class="hero-home panel">
         <p class="eyebrow">Salary cap $${CAP}</p>
         <h1>Draft. Duel. Simulate.</h1>
-        <p class="lede">Build a roster under $${CAP}, challenge one of three AI builds, then play live or run up to 1000 no-tactic sims.</p>
+        <p class="lede">Build a roster under $${CAP}, challenge one of five AI builds, then play live (AI tactics on by default) or run up to 1000 no-tactic sims.</p>
         <div class="cta-row">
           <button class="btn btn-primary" data-action="new-draft">Start Draft</button>
           <button class="btn btn-ghost" data-action="goto" data-value="matchup" ${this.userPreset ? '' : 'disabled'}>Continue</button>
@@ -591,7 +629,7 @@ export class GameUI {
 
       <section class="panel mode-panel">
         <h2>How do you want to play?</h2>
-        <p class="muted">Simulation uses <strong>no tactics</strong> (pure matrix dice). Live play keeps full tactics.</p>
+        <p class="muted">Simulation uses <strong>no tactics</strong>. Live play: AI manages away tactics (toggleable).</p>
         <div class="mode-row">
           <button class="btn btn-primary" data-action="play-live" ${this.opponent ? '' : 'disabled'}>Play live</button>
           <button class="btn btn-ghost" data-action="sim-one" ${this.opponent ? '' : 'disabled'}>Quick sim (1 game)</button>
@@ -688,6 +726,11 @@ export class GameUI {
     const offense = this.engine.offenseSide();
     const defense = this.engine.defenseSide();
     const hl = this._highlightCell(s.lastResult);
+    const aiDef = this._aiControlsDef();
+    const aiOff = this._aiControlsOff();
+    const userIsDef = defense.isHome;
+    const showBullpen = !this.aiTactics || userIsDef;
+    const defenseKey = defense.isHome ? 'home' : 'away';
 
     return `
       <div class="topbar">
@@ -698,32 +741,33 @@ export class GameUI {
         </div>
       </div>
 
-      <div class="score-strip">
-        <div class="score-team away">
-          <span class="abbr">${s.away.abbr}</span>
-          <span class="runs">${s.away.score}</span>
-        </div>
-        <div class="score-mid">
-          <div class="inning-label">${s.half === 'top' ? '▲' : '▼'} ${s.inning}</div>
-          <div class="outs-row">
-            <span class="out-circle ${s.outs >= 1 ? 'on' : ''}">${s.outs >= 1 ? '●' : '○'}</span>
-            <span class="out-circle ${s.outs >= 2 ? 'on' : ''}">${s.outs >= 2 ? '●' : '○'}</span>
-            <span class="out-circle ${s.outs >= 3 ? 'on' : ''}">${s.outs >= 3 ? '●' : '○'}</span>
+      <div class="play-header">
+        <div class="score-strip">
+          <div class="score-team away">
+            <span class="abbr">${s.away.abbr}</span>
+            <span class="runs">${s.away.score}</span>
+          </div>
+          <div class="score-mid">
+            <div class="inning-label">${s.half === 'top' ? '▲' : '▼'} ${s.inning}</div>
+            <div class="outs-row">
+              <span class="out-circle ${s.outs >= 1 ? 'on' : ''}"></span>
+              <span class="out-circle ${s.outs >= 2 ? 'on' : ''}"></span>
+              <span class="out-circle ${s.outs >= 3 ? 'on' : ''}"></span>
+            </div>
+          </div>
+          <div class="score-team home">
+            <span class="runs">${s.home.score}</span>
+            <span class="abbr">${s.home.abbr}</span>
           </div>
         </div>
-        <div class="score-team home">
-          <span class="runs">${s.home.score}</span>
-          <span class="abbr">${s.home.abbr}</span>
-        </div>
-      </div>
-
-      <div class="bases-row">
-        ${this._diamond(s)}
-        <div class="bases-meta">
-          <div><span class="muted">1B</span> ${s.bases[0]?.name || '—'}</div>
-          <div><span class="muted">2B</span> ${s.bases[1]?.name || '—'}</div>
-          <div><span class="muted">3B</span> ${s.bases[2]?.name || '—'}</div>
-          <div class="muted" style="margin-top:6px">At bat · ${offense.abbr}</div>
+        <div class="bases-row compact">
+          ${this._diamond(s)}
+          <div class="bases-meta">
+            <div class="at-bat-chip">${s.half === 'top' ? '▲' : '▼'} ${offense.abbr} batting</div>
+            <div><span class="muted">1B</span> ${this._esc(s.bases[0]?.name?.split(',')[0] || '—')}</div>
+            <div><span class="muted">2B</span> ${this._esc(s.bases[1]?.name?.split(',')[0] || '—')}</div>
+            <div><span class="muted">3B</span> ${this._esc(s.bases[2]?.name?.split(',')[0] || '—')}</div>
+          </div>
         </div>
       </div>
 
@@ -733,97 +777,137 @@ export class GameUI {
             ${this._playerCard('P', pitcher.player, true, pitcher.entry, hl?.source === 'pitcher' ? hl : null)}
             ${this._playerCard('BAT', batter.player, false, null, hl?.source === 'batter' ? hl : null)}
           </div>
+          <label class="toggle-row matrices-toggle">
+            <input type="checkbox" data-toggle="show-matrices" ${this.showMatrices ? 'checked' : ''} />
+            <span>Show matrices</span>
+          </label>
           <div class="result ${s.lastResult ? 'show' : ''}">
-            ${s.lastResult ? this._resultHtml(s.lastResult) : '<span class="muted">Resolve a PA to see the result</span>'}
+            ${s.lastResult ? this._resultHtml(s.lastResult) : '<span class="muted">Pick your tactic, then Resolve</span>'}
           </div>
         </div>
 
         <div class="controls panel">
-          <div class="tactics-grid">
-            <div class="tactic-col">
-              <h3>DEF · ${defense.abbr}</h3>
-              <div class="tactic-list">
-                <button class="tactic-btn ${!s.pendingDefTactic ? 'selected' : ''}" data-action="def-tactic" data-value="" ${s.phase !== 'tactics' ? 'disabled' : ''}>None</button>
-                ${DEF_TACTIC_IDS.map((id) => {
-                  const tac = TACTICS[id];
-                  return `<button class="tactic-btn ${s.pendingDefTactic === id ? 'selected' : ''}" data-action="def-tactic" data-value="${id}" ${s.phase !== 'tactics' ? 'disabled' : ''}>
-                    ${tac.name}${tac.d2Mod ? ` <small>D2 ${tac.d2Mod > 0 ? '+' : ''}${tac.d2Mod}</small>` : ''}
-                  </button>`;
-                }).join('')}
-              </div>
-            </div>
-            <div class="tactic-col">
-              <h3>OFF · ${offense.abbr}</h3>
-              <div class="tactic-list">
-                <button class="tactic-btn ${!s.pendingOffTactic ? 'selected' : ''}" data-action="off-tactic" data-value="" ${s.phase !== 'tactics' ? 'disabled' : ''}>None</button>
-                ${OFF_TACTIC_IDS.map((id) => {
-                  const tac = TACTICS[id];
-                  let disabled = s.phase !== 'tactics';
-                  let note = '';
-                  if (id === 'steal' && !this.engine.canPlaySteal()) {
-                    disabled = true;
-                    note = 'n/a';
-                  }
-                  if (id === 'sacfly' && !this.engine.canPlaySacFly()) {
-                    disabled = true;
-                    note = 'n/a';
-                  }
-                  return `<button class="tactic-btn ${s.pendingOffTactic === id ? 'selected' : ''}" data-action="off-tactic" data-value="${id}" ${disabled ? 'disabled' : ''}>
-                    ${tac.name}${note ? `<small>${note}</small>` : tac.d2Mod ? `<small>D2 ${tac.d2Mod}</small>` : ''}
-                  </button>`;
-                }).join('')}
-              </div>
-              ${
-                s.pendingOffTactic === 'steal'
-                  ? `<div class="steal-target">
-                      <button class="${s.stealTarget === 2 ? 'on' : ''}" data-action="steal-target" data-value="2" ${!s.bases[0] || s.bases[1] ? 'disabled' : ''}>2B</button>
-                      <button class="${s.stealTarget === 3 ? 'on' : ''}" data-action="steal-target" data-value="3" ${!s.bases[1] || s.bases[2] ? 'disabled' : ''}>3B</button>
-                    </div>`
-                  : ''
-              }
-            </div>
+          <div class="controls-head">
+            <label class="toggle-row ai-toggle">
+              <input type="checkbox" data-toggle="ai-tactics" ${this.aiTactics ? 'checked' : ''} />
+              <span>AI tactics <small>${this.aiTactics ? `(${s.away.abbr})` : '(off — both sides)'}</small></span>
+            </label>
+          </div>
+
+          <div class="tactics-grid ${this.aiTactics ? 'single' : ''}">
+            ${this._tacticCol('def', defense.abbr, aiDef, s)}
+            ${this._tacticCol('off', offense.abbr, aiOff, s)}
           </div>
 
           <div class="actions">
-            <button class="btn btn-primary" data-action="resolve" ${s.phase !== 'tactics' ? 'disabled' : ''}>Resolve PA</button>
+            <button class="btn btn-primary btn-resolve" data-action="resolve" ${s.phase !== 'tactics' ? 'disabled' : ''}>
+              Resolve PA
+            </button>
           </div>
 
-          <div class="bullpen-inline">
-            <span class="muted">Bullpen</span>
-            ${this.engine
-              .availablePitchers(defense.isHome ? 'home' : 'away')
-              .map(
-                (p) => `
-              <button class="pill-btn ${p.active ? 'active' : ''}" data-action="change-pitcher" data-side="${defense.isHome ? 'home' : 'away'}" data-value="${p.playerId}" ${p.active ? 'disabled' : ''}>
-                ${p.name.split(',')[0]} ${p.ipUsed}/${p.ipMax}
-              </button>`
-              )
-              .join('')}
-          </div>
+          ${
+            showBullpen
+              ? `<div class="bullpen-inline">
+                  <span class="muted">Bullpen · ${defense.abbr}</span>
+                  ${this.engine
+                    .availablePitchers(defenseKey)
+                    .map(
+                      (p) => `
+                    <button class="pill-btn ${p.active ? 'active' : ''}" data-action="change-pitcher" data-side="${defenseKey}" data-value="${p.playerId}" ${p.active ? 'disabled' : ''}>
+                      ${this._esc(p.name.split(',')[0])} ${p.ipUsed}/${p.ipMax}
+                    </button>`
+                    )
+                    .join('')}
+                </div>`
+              : `<div class="bullpen-inline muted">AI manages ${defense.abbr} pitching</div>`
+          }
         </div>
       </div>
 
       <div class="panel boxscore">
-        <h2>Box Score</h2>
+        <div class="boxscore-head">
+          <h2>Linescore</h2>
+        </div>
         ${this._linescore(s)}
         <div class="log compact">
           ${
-            s.log.slice(0, 8).map((e) => `<div class="entry ${e.kind}">${e.msg}</div>`).join('') ||
-            '<div class="entry">Play tactics, then Resolve PA.</div>'
+            s.log.slice(0, 10).map((e) => `<div class="entry ${e.kind}">${this._esc(e.msg)}</div>`).join('') ||
+            '<div class="entry">Resolve a PA to start the log.</div>'
           }
         </div>
       </div>
 
       <div class="gameover ${s.phase === 'gameover' ? 'show' : ''}">
         <div class="box">
-          <h1>${s.winner || ''} WINS</h1>
+          <h1>${this._esc(s.winner || '')} WINS</h1>
           <p>Final · ${s.away.abbr} ${s.away.score} – ${s.home.score} ${s.home.abbr}</p>
-          ${s.forfeit ? `<p class="hint">Forfeit: ${s.forfeit} out of pitchers</p>` : ''}
+          ${s.forfeit ? `<p class="hint">Forfeit: ${this._esc(s.forfeit)} out of pitchers</p>` : ''}
           <button class="btn btn-primary" data-action="restart-play" style="margin-top:12px">Play Again</button>
           <button class="btn btn-ghost" data-action="goto" data-value="matchup" style="margin-top:8px">Matchup</button>
         </div>
       </div>
     `;
+  }
+
+  _tacticCol(side, abbr, aiLocked, s) {
+    const isDef = side === 'def';
+    const pending = isDef ? s.pendingDefTactic : s.pendingOffTactic;
+    const ids = isDef ? DEF_TACTIC_IDS : OFF_TACTIC_IDS;
+    const action = isDef ? 'def-tactic' : 'off-tactic';
+    const title = isDef ? 'DEF' : 'OFF';
+
+    if (aiLocked) {
+      const last = s.lastResult;
+      const lastId = last ? (isDef ? last.defTactic : last.offTactic) : null;
+      const lastName = lastId ? TACTICS[lastId]?.name || lastId : null;
+      return `
+        <div class="tactic-col ai-locked">
+          <h3>${title} · ${abbr} <span class="ai-badge">AI</span></h3>
+          <div class="ai-tactic-status">
+            <div class="ai-pending">Chooses on Resolve</div>
+            ${lastName ? `<div class="ai-last muted">Last: ${lastName}</div>` : ''}
+          </div>
+        </div>`;
+    }
+
+    return `
+      <div class="tactic-col">
+        <h3>${title} · ${abbr}${!this.aiTactics ? '' : ' <span class="you-badge">YOU</span>'}</h3>
+        <div class="tactic-list">
+          <button class="tactic-btn ${!pending ? 'selected' : ''}" data-action="${action}" data-value="" ${s.phase !== 'tactics' ? 'disabled' : ''}>None</button>
+          ${ids
+            .map((id) => {
+              const tac = TACTICS[id];
+              let disabled = s.phase !== 'tactics';
+              let note = '';
+              if (!isDef && id === 'steal' && !this.engine.canPlaySteal()) {
+                disabled = true;
+                note = 'n/a';
+              }
+              if (!isDef && id === 'sacfly' && !this.engine.canPlaySacFly()) {
+                disabled = true;
+                note = 'n/a';
+              }
+              const mod =
+                tac.d2Mod != null
+                  ? ` <small>D2 ${tac.d2Mod > 0 ? '+' : ''}${tac.d2Mod}</small>`
+                  : '';
+              return `<button class="tactic-btn ${pending === id ? 'selected' : ''}" data-action="${action}" data-value="${id}" ${disabled ? 'disabled' : ''}>
+                ${tac.name}${note ? `<small>${note}</small>` : mod}
+              </button>`;
+            })
+            .join('')}
+        </div>
+        ${
+          !isDef && pending === 'steal'
+            ? `<div class="steal-target">
+                <span>Target</span>
+                <button class="${s.stealTarget === 2 ? 'on' : ''}" data-action="steal-target" data-value="2" ${!s.bases[0] || s.bases[1] ? 'disabled' : ''}>2B</button>
+                <button class="${s.stealTarget === 3 ? 'on' : ''}" data-action="steal-target" data-value="3" ${!s.bases[1] || s.bases[2] ? 'disabled' : ''}>3B</button>
+              </div>`
+            : ''
+        }
+      </div>`;
   }
 
   _esc(s) {
@@ -901,37 +985,65 @@ export class GameUI {
       ? `${player.hand}HP · IP ${entry?.ipUsed ?? 0}/${a.IP}`
       : `${player.positions.join('/')} · ${player.hand} · SPD ${a.SPD}`;
 
-    const matrix = player.matrix
-      .map((row, ri) =>
-        row
-          .map((c, ci) => {
-            const on = hl && hl.row === ri && hl.col === ci ? ' hl' : '';
-            const label = c === '1B' ? '1' : c === '2B' ? '2' : c[0];
-            return `<i class="${c}${on}">${label}</i>`;
-          })
-          .join('')
-      )
-      .join('');
+    const pills = isPitcher
+      ? `<div class="stat-pills">
+          <span class="pill">K ${a.K}</span>
+          <span class="pill">BB ${a.BB}</span>
+          <span class="pill">HR ${a.HR}</span>
+          <span class="pill">IP ${a.IP}</span>
+        </div>`
+      : `<div class="stat-pills">
+          <span class="pill">H ${a.H}</span>
+          <span class="pill">2B ${a['2B']}</span>
+          <span class="pill">HR ${a.HR}</span>
+          <span class="pill">BB ${a.BB}</span>
+          <span class="pill">K ${a.K}</span>
+        </div>`;
+
+    let matrix = '';
+    if (this.showMatrices || hl) {
+      matrix = `<div class="matrix">${player.matrix
+        .map((row, ri) =>
+          row
+            .map((c, ci) => {
+              const on = hl && hl.row === ri && hl.col === ci ? ' hl' : '';
+              const label = c === '1B' ? '1' : c === '2B' ? '2' : c[0];
+              return `<i class="${c}${on}">${label}</i>`;
+            })
+            .join('')
+        )
+        .join('')}</div>`;
+    }
 
     return `
       <div class="card">
         <div class="role">${role}</div>
-        <div class="name">${player.name}</div>
+        <div class="name">${this._esc(player.name)}</div>
         <div class="meta">${meta}</div>
-        <div class="matrix">${matrix}</div>
+        ${pills}
+        ${matrix}
       </div>
     `;
   }
 
   _resultHtml(r) {
     const label = OUTCOME_LABEL[r.finalResult] || r.finalResult;
+    const defName = r.defTactic ? TACTICS[r.defTactic]?.name || r.defTactic : 'None';
+    const offName = r.offTactic ? TACTICS[r.offTactic]?.name || r.offTactic : 'None';
+    const details = (r.detail || []).slice(0, 4);
     return `
-      <div class="code">${label}</div>
+      <div class="code">${this._esc(label)}</div>
       <div class="dice">
         ${r.d1 != null ? `D1 ${r.d1}` : ''}
         ${r.d2Raw != null ? ` · D2 ${r.d2Raw}${r.d2 !== r.d2Raw ? ` → ${r.d2}` : ''}` : ''}
         ${r.matrixSource ? ` · ${r.matrixSource}` : ''}
       </div>
+      <div class="tactic-used muted">DEF ${this._esc(defName)} · OFF ${this._esc(offName)}</div>
+      ${
+        details.length
+          ? `<ul class="result-detail">${details.map((d) => `<li>${this._esc(d)}</li>`).join('')}</ul>`
+          : ''
+      }
       ${r.restartAtBat ? '<p class="hint">At-bat restarts</p>' : ''}
     `;
   }

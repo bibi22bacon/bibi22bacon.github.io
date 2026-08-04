@@ -6,6 +6,8 @@ import { GameEngine } from './engine.js';
 import { simulateGame, simulateMany } from './sim.js';
 import { validateDraft, emptyDraft, toPreset } from './roster.js';
 
+import { applyAiTactics } from './ai.js';
+
 const data = JSON.parse(readFileSync(new URL('../data/players.json', import.meta.url), 'utf8'));
 
 function playGame(presets, tacticFn, label) {
@@ -24,6 +26,17 @@ function playGame(presets, tacticFn, label) {
 const none = (eng) => {
   eng.setDefTactic(null);
   eng.setOffTactic(null);
+};
+
+/** Mimic live UI: AI controls away side only */
+const aiAway = (eng) => {
+  applyAiTactics(eng, {
+    controlDef: !eng.defenseSide().isHome,
+    controlOff: !eng.offenseSide().isHome,
+  });
+  // user (home) leaves none unless we want random — keep none
+  if (eng.defenseSide().isHome) eng.state.pendingDefTactic = null;
+  if (eng.offenseSide().isHome) eng.state.pendingOffTactic = null;
 };
 
 const byId = Object.fromEntries([
@@ -77,6 +90,7 @@ const results = [];
 for (const opp of data.opponents) {
   const presets = { away: opp, home: user };
   results.push(playGame(presets, none, `live-${opp.abbr}`));
+  results.push(playGame(presets, aiAway, `ai-${opp.abbr}`));
   const one = simulateGame(data, presets);
   results.push({ label: `sim-${opp.abbr}`, score: `${one.away}-${one.home}`, winner: one.winner, steps: one.steps });
   const many = simulateMany(data, presets, 25);

@@ -44,6 +44,7 @@ export class GameUI {
     this.simN = 100;
     this.aiTactics = true; // AI manages away-team tactics (switchable)
     this.showMatrices = false;
+    this.subOpen = false;
     this.draftFilter = { q: '', kind: 'batter', pos: 'ALL', sort: 'salary' };
     this._bind();
     this.render();
@@ -235,6 +236,9 @@ export class GameUI {
     }
     // live play actions
     if (!this.engine) return;
+    if (action === 'noop') {
+      return;
+    }
     if (action === 'def-tactic') {
       if (this._aiControlsDef()) return;
       this.engine.setDefTactic(this.engine.state.pendingDefTactic === value ? null : value || null);
@@ -251,8 +255,18 @@ export class GameUI {
       // Only allow manual bullpen for the side the player controls (or both when AI off)
       if (this.aiTactics && el.dataset.side === 'away') return;
       this.engine.changePitcher(el.dataset.side, value);
+      this.subOpen = false;
+      this.render();
+    } else if (action === 'open-pitcher-sub') {
+      if (this.aiTactics && !this.engine.defenseSide().isHome) return;
+      this.subOpen = true;
+      this.render();
+    } else if (action === 'close-pitcher-sub') {
+      this.subOpen = false;
+      this.render();
     } else if (action === 'toggle-ai-tactics') {
       this.aiTactics = !this.aiTactics;
+      this.subOpen = false;
       this.render();
     } else if (action === 'toggle-matrices') {
       this.showMatrices = !this.showMatrices;
@@ -288,6 +302,7 @@ export class GameUI {
 
   _startEngine() {
     this.engine = new GameEngine(this.data, this._presets());
+    this.subOpen = false;
     this.engine.on(() => this.render());
   }
 
@@ -803,24 +818,12 @@ export class GameUI {
             <button class="btn btn-primary btn-resolve" data-action="resolve" ${s.phase !== 'tactics' ? 'disabled' : ''}>
               Resolve PA
             </button>
+            ${
+              showBullpen
+                ? `<button class="btn btn-ghost btn-sub" data-action="open-pitcher-sub" ${s.phase !== 'tactics' ? 'disabled' : ''}>Pitcher Sub</button>`
+                : `<span class="muted sub-note">AI manages ${defense.abbr} pitching</span>`
+            }
           </div>
-
-          ${
-            showBullpen
-              ? `<div class="bullpen-inline">
-                  <span class="muted">Bullpen · ${defense.abbr}</span>
-                  ${this.engine
-                    .availablePitchers(defenseKey)
-                    .map(
-                      (p) => `
-                    <button class="pill-btn ${p.active ? 'active' : ''}" data-action="change-pitcher" data-side="${defenseKey}" data-value="${p.playerId}" ${p.active ? 'disabled' : ''}>
-                      ${this._esc(p.name.split(',')[0])} ${p.ipUsed}/${p.ipMax}
-                    </button>`
-                    )
-                    .join('')}
-                </div>`
-              : `<div class="bullpen-inline muted">AI manages ${defense.abbr} pitching</div>`
-          }
         </div>
       </div>
 
@@ -837,6 +840,8 @@ export class GameUI {
         </div>
       </div>
 
+      ${showBullpen && this.subOpen ? this._pitcherSubModal(defense, defenseKey) : ''}
+
       <div class="gameover ${s.phase === 'gameover' ? 'show' : ''}">
         <div class="box">
           <h1>${this._esc(s.winner || '')} WINS</h1>
@@ -847,6 +852,35 @@ export class GameUI {
         </div>
       </div>
     `;
+  }
+
+  _pitcherSubModal(defense, defenseKey) {
+    const arms = this.engine.availablePitchers(defenseKey);
+    const options = arms
+      .map((p, idx) => {
+        const a = this.engine.getPitcher(p.playerId)?.abilities || {};
+        const label = `${p.hand || '?'}HP · IP ${p.ipUsed}/${p.ipMax}`;
+        const stats = `K ${a.K ?? '—'} · BB ${a.BB ?? '—'} · HR ${a.HR ?? '—'}`;
+        return `
+          <button class="sub-arm ${p.active ? 'active' : ''}" data-action="change-pitcher" data-side="${defenseKey}" data-value="${p.playerId}" ${p.active || !p.available || p.remaining <= 0 ? 'disabled' : ''}>
+            <span class="sub-arm-title">${p.active ? 'Active' : `Arm ${idx + 1}`}</span>
+            <span class="sub-arm-meta">${label}</span>
+            <span class="sub-arm-stats muted">${stats}</span>
+          </button>`;
+      })
+      .join('');
+
+    return `
+      <div class="sub-modal" data-action="close-pitcher-sub">
+        <div class="sub-sheet" data-action="noop">
+          <div class="sub-sheet-head">
+            <h3>Pitcher Sub · ${defense.abbr}</h3>
+            <button class="btn btn-ghost btn-sm" data-action="close-pitcher-sub">Close</button>
+          </div>
+          <p class="muted sub-hint">Names hidden — pick by arm / IP / stuff.</p>
+          <div class="sub-arm-list">${options || '<p class="muted">No arms available</p>'}</div>
+        </div>
+      </div>`;
   }
 
   _tacticCol(side, abbr, aiLocked, s) {
@@ -982,7 +1016,7 @@ export class GameUI {
     if (!player) return `<div class="card"><div class="name">—</div></div>`;
     const a = player.abilities;
     const meta = isPitcher
-      ? `${player.hand}HP · IP ${entry?.ipUsed ?? 0}/${a.IP}`
+      ? `IP ${entry?.ipUsed ?? 0}/${a.IP}`
       : `${player.positions.join('/')} · ${player.hand} · SPD ${a.SPD}`;
 
     const pills = isPitcher
@@ -1018,7 +1052,7 @@ export class GameUI {
     return `
       <div class="card">
         <div class="role">${role}</div>
-        <div class="name">${this._esc(player.name)}</div>
+        <div class="name">${isPitcher ? `${player.hand}HP` : this._esc(player.name)}</div>
         <div class="meta">${meta}</div>
         ${pills}
         ${matrix}

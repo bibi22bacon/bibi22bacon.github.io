@@ -658,7 +658,7 @@ export class GameEngine {
 
     side.activePitcherId = pitcherId;
     this.log(
-      `${auto ? 'Auto: ' : ''}${side.abbr} brings in ${p.name} (IP ${entry.ipUsed}/${p.abilities.IP})`,
+      `${auto ? 'Auto: ' : ''}${side.abbr} brings in ${p.hand}HP (IP ${entry.ipUsed}/${p.abilities.IP})`,
       'sub'
     );
     this.emit('pitching');

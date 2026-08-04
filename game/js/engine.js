@@ -5,7 +5,7 @@
 
 export const TACTICS = {
   fake: { id: 'fake', name: 'Fake Move', side: 'both' },
-  pickoff: { id: 'pickoff', name: 'Pickoff', side: 'def' },
+  pickoff: { id: 'pickoff', name: 'Pickoff', side: 'def', d2Mod: 1 },
   infield: { id: 'infield', name: 'Infield Forward', side: 'def', d2Mod: 2 },
   ibb: { id: 'ibb', name: 'Intentional Walk', side: 'def' },
   dp: { id: 'dp', name: 'Double Play', side: 'def', d2Mod: 1 },

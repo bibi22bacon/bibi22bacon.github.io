@@ -121,7 +121,7 @@ This is why tactic cards modify **D2**:
 - **Higher D2** slides toward the batter-friendly side of the matrix
 - **Lower D2** slides toward the pitcher-friendly side
 
-Defense cards that raise D2 (Infield Forward, Double Play) trade matrix position for their special effects. Offense cards that lower D2 (Sacrifice Fly) push toward outs such as `FO`.
+Defense cards that raise D2 (Pickoff, Infield Forward, Double Play) trade matrix position for their special effects. Offense cards that lower D2 (Sacrifice Fly) push toward outs such as `FO`.
 
 ### 8.2 Matrix color key (reference)
 
@@ -162,7 +162,7 @@ Each player begins with the same set of **9 tactic cards** (one of each card bel
 | Card | Side | Effect |
 |------|------|--------|
 | **Fake Move** | DEF or OFF | No mechanical effect. Useful as a bluff. |
-| **Pickoff** | DEF | If the offense played **Steal**, the runner is out and the at-bat restarts. If Steal was not played, Pickoff does nothing. |
+| **Pickoff** | DEF | D2 +1 (then clamp 1–10). If the offense played **Steal**, the runner is out and the at-bat restarts. If Steal was not played, resolve the duel with Pickoff’s modifier only. |
 | **Infield Forward** | DEF | D2 +2 (then clamp 1–10). If the offense also played **Bunt**, cancel the bunt; resolve the duel with Infield Forward’s modifier instead. |
 | **Intentional Walk** | DEF | Skip the duel. The batter is awarded a **BB** immediately. |
 | **Double Play** | DEF | D2 +1 (then clamp 1–10). If the final outcome is **GO** and a runner is on 1st, both the batter and the runner on 1st are out. |

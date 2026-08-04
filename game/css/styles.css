@@ -608,3 +608,255 @@ button, select {
   color: var(--muted);
   margin-bottom: 10px;
 }
+
+/* —— Draft / matchup / sim screens —— */
+.screen-title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  margin: 4px 0 14px;
+  letter-spacing: 0.02em;
+}
+.top-actions { display: flex; gap: 8px; align-items: center; }
+.hero-home { padding: 28px 22px; margin-top: 12px; }
+.hero-home h1 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin: 6px 0 10px;
+  line-height: 1.05;
+}
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  color: var(--accent);
+  margin: 0;
+}
+.lede { color: var(--muted); max-width: 36rem; margin: 0 0 18px; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+
+.panel h2 {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  margin: 0 0 10px;
+}
+
+.budget-bar, .draft-budget .budget-bar {
+  height: 10px;
+  background: rgba(255,255,255,.06);
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+.budget-bar > i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), #7ec8a3);
+  border-radius: 999px;
+}
+.draft-budget .budget-meta {
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline;
+}
+.draft-budget .budget-meta strong { font-size: 1.4rem; }
+.pill {
+  font-size: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 8px;
+  color: var(--muted);
+}
+.pill.ok { color: var(--hit); border-color: rgba(107,207,122,.35); }
+.pill.bad { color: var(--out); border-color: rgba(224,122,95,.35); }
+.team-name-row {
+  display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px;
+}
+.team-name-row label { font-size: 0.85rem; color: var(--muted); }
+.team-name-row input {
+  margin-left: 6px;
+  background: rgba(0,0,0,.25);
+  border: 1px solid var(--line);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 6px 8px;
+}
+
+.draft-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+@media (max-width: 860px) {
+  .draft-layout { grid-template-columns: 1fr; }
+}
+
+.slot-list { display: flex; flex-direction: column; gap: 4px; margin-bottom: 14px; }
+.slot-row {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr auto auto auto;
+  gap: 8px;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: rgba(255,255,255,.03);
+  border: 1px solid transparent;
+}
+.slot-pos {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+}
+.slot-name { font-size: 0.9rem; }
+.slot-sal { font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); }
+.slot-empty { font-size: 0.85rem; }
+.draft-errors {
+  margin-top: 8px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(224,122,95,.12);
+  color: #ffb4a2;
+  font-size: 0.82rem;
+}
+
+.pool-filters {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(3, 0.7fr);
+  gap: 8px;
+  margin-bottom: 10px;
+}
+@media (max-width: 700px) {
+  .pool-filters { grid-template-columns: 1fr 1fr; }
+}
+.pool-filters input, .pool-filters select {
+  background: rgba(0,0,0,.25);
+  border: 1px solid var(--line);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 0.85rem;
+}
+.pool-list {
+  max-height: 520px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.pool-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 8px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: rgba(0,0,0,.15);
+}
+.pool-name { font-weight: 600; font-size: 0.9rem; }
+.pool-meta { font-size: 0.75rem; }
+.pool-sal {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--accent);
+}
+.pool-actions { display: flex; gap: 4px; }
+
+.opp-preview { margin-top: 12px; }
+.opp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+@media (max-width: 800px) {
+  .opp-grid { grid-template-columns: 1fr; }
+}
+.opp-grid.compact { grid-template-columns: 1fr; }
+.opp-card {
+  text-align: left;
+  background: rgba(0,0,0,.2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  color: inherit;
+  cursor: default;
+}
+button.opp-card.pick { cursor: pointer; width: 100%; }
+button.opp-card.pick.selected {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(232,197,71,.35);
+}
+.opp-card h3 { margin: 4px 0 6px; font-size: 1rem; }
+.opp-card p { margin: 0 0 8px; color: var(--muted); font-size: 0.85rem; }
+.opp-abbr {
+  font-family: var(--font-display);
+  color: var(--accent);
+  letter-spacing: 0.08em;
+}
+
+.match-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 800px) {
+  .match-grid { grid-template-columns: 1fr; }
+}
+.roster-glance {
+  margin: 10px 0;
+  font-size: 0.8rem;
+  max-height: 280px;
+  overflow: auto;
+}
+.glance-row {
+  display: grid;
+  grid-template-columns: 2rem 1fr auto;
+  gap: 6px;
+  padding: 2px 0;
+  border-bottom: 1px solid var(--line);
+}
+.roster-glance hr { border: none; border-top: 1px solid var(--line); margin: 6px 0; }
+
+.mode-panel { margin-top: 12px; }
+.mode-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 10px; }
+.sim-many-row input {
+  width: 5rem;
+  margin: 0 6px;
+  background: rgba(0,0,0,.25);
+  border: 1px solid var(--line);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 6px 8px;
+}
+
+.sim-hero { text-align: center; padding: 22px; }
+.sim-score {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  margin: 12px 0 0;
+}
+.sim-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+}
+.sim-stats div {
+  background: rgba(0,0,0,.2);
+  border-radius: 10px;
+  padding: 12px 8px;
+}
+.sim-stats strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+}
+.sim-stats span { color: var(--muted); font-size: 0.75rem; }
+.sim-table { display: flex; flex-direction: column; gap: 4px; }
+.sim-row {
+  display: grid;
+  grid-template-columns: 3rem 1fr auto;
+  gap: 10px;
+  padding: 6px 4px;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.85rem;
+}

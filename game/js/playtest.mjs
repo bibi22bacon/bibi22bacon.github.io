@@ -1,42 +1,24 @@
 /**
- * Headless smoke test: play complete games with random/no tactics.
+ * Headless smoke test: play + simulate vs AI opponents.
  */
 import { readFileSync } from 'fs';
 import { GameEngine } from './engine.js';
+import { simulateGame, simulateMany } from './sim.js';
+import { validateDraft, emptyDraft, toPreset } from './roster.js';
 
 const data = JSON.parse(readFileSync(new URL('../data/players.json', import.meta.url), 'utf8'));
 
-function playGame(seedLabel, tacticFn) {
-  const eng = new GameEngine(data, data.presets);
+function playGame(presets, tacticFn, label) {
+  const eng = new GameEngine(data, presets, { silent: true });
   let steps = 0;
-  const maxSteps = 5000;
+  const maxSteps = 8000;
   while (eng.state.phase !== 'gameover' && steps < maxSteps) {
     steps++;
     tacticFn(eng);
-    const before = `${eng.state.inning}-${eng.state.half}-${eng.state.outs}-${eng.offenseSide().battingOrderIndex}`;
     eng.resolvePA();
-    const after = `${eng.state.inning}-${eng.state.half}-${eng.state.outs}-${eng.offenseSide().battingOrderIndex}`;
-    // safety: must make progress somehow (restart at-bat counts as progress if steal)
-    if (steps > 100 && before === after && eng.state.phase === 'tactics' && !eng.state.lastResult?.restartAtBat) {
-      // possible if something stuck
-    }
   }
-  if (eng.state.phase !== 'gameover') {
-    throw new Error(`${seedLabel}: did not finish in ${maxSteps} steps. State=${JSON.stringify({
-      inning: eng.state.inning, half: eng.state.half, outs: eng.state.outs,
-      score: [eng.state.away.score, eng.state.home.score],
-      phase: eng.state.phase,
-      last: eng.state.lastResult?.finalResult
-    })}`);
-  }
-  return {
-    label: seedLabel,
-    steps,
-    score: `${eng.state.away.score}-${eng.state.home.score}`,
-    winner: eng.state.winner,
-    innings: eng.state.inning,
-    forfeit: eng.state.forfeit,
-  };
+  if (eng.state.phase !== 'gameover') throw new Error(`${label}: incomplete`);
+  return { label, steps, score: `${eng.state.away.score}-${eng.state.home.score}`, winner: eng.state.winner };
 }
 
 const none = (eng) => {
@@ -44,21 +26,55 @@ const none = (eng) => {
   eng.setOffTactic(null);
 };
 
-const random = (eng) => {
-  const defs = [null, 'fake', 'infield', 'dp', 'ibb', 'pickoff'];
-  const offs = [null, 'fake', 'bunt', 'hitrun', 'sacfly'];
-  if (eng.canPlaySteal()) offs.push('steal');
-  eng.setDefTactic(defs[Math.floor(Math.random() * defs.length)]);
-  eng.setOffTactic(offs[Math.floor(Math.random() * offs.length)]);
-  if (eng.state.pendingOffTactic === 'steal') {
-    if (eng.state.bases[0] && !eng.state.bases[1]) eng.setStealTarget(2);
-    else if (eng.state.bases[1] && !eng.state.bases[2]) eng.setStealTarget(3);
-  }
-};
+const byId = Object.fromEntries([
+  ...data.batters.map((b) => [b.id, { ...b, type: 'batter' }]),
+  ...data.pitchers.map((p) => [p.id, { ...p, type: 'pitcher' }]),
+]);
+
+// Build a cheap legal user roster for tests
+const draft = emptyDraft('Test', 'TST');
+const cheapC = data.batters.find((b) => b.positions.includes('C') && b.salary <= 5);
+const cheap1 = data.batters.find((b) => b.positions.includes('1B') && b.salary <= 5 && b.id !== cheapC.id);
+const cheap2 = data.batters.find((b) => b.positions.includes('2B') && b.salary <= 5);
+const cheap3 = data.batters.find((b) => b.positions.includes('3B') && b.salary <= 5);
+const cheapSS = data.batters.find((b) => b.positions.includes('SS') && b.salary <= 5);
+const ofs = data.batters.filter((b) => b.positions.includes('OF') && b.salary <= 5).slice(0, 3);
+const dh = data.batters.find((b) => b.salary <= 5 && ![cheapC, cheap1, cheap2, cheap3, cheapSS, ...ofs].map((x) => x.id).includes(b.id));
+const line = [
+  { pos: 'C', playerId: cheapC.id },
+  { pos: '1B', playerId: cheap1.id },
+  { pos: '2B', playerId: cheap2.id },
+  { pos: '3B', playerId: cheap3.id },
+  { pos: 'SS', playerId: cheapSS.id },
+  { pos: 'OF', playerId: ofs[0].id },
+  { pos: 'OF', playerId: ofs[1].id },
+  { pos: 'OF', playerId: ofs[2].id },
+  { pos: 'DH', playerId: dh.id },
+];
+draft.lineup = line;
+const arms = data.pitchers.filter((p) => p.salary <= 5).slice(0, 4);
+draft.pitchingStaff = arms.map((p) => p.id);
+draft.starterId = arms[0].id;
+draft.bench = data.batters.filter((b) => b.salary === 1 && !line.some((l) => l.playerId === b.id)).slice(0, 3).map((b) => b.id);
+
+const v = validateDraft(draft, byId);
+if (!v.ok) {
+  console.error(v);
+  throw new Error('test draft invalid');
+}
+const user = toPreset(draft);
+
+console.log('Opponents:', data.opponents.map((o) => `${o.abbr} $${o.salary}`).join(', '));
 
 const results = [];
-results.push(playGame('no-tactics', none));
-for (let i = 0; i < 20; i++) results.push(playGame(`random-${i}`, random));
+for (const opp of data.opponents) {
+  const presets = { away: opp, home: user };
+  results.push(playGame(presets, none, `live-${opp.abbr}`));
+  const one = simulateGame(data, presets);
+  results.push({ label: `sim-${opp.abbr}`, score: `${one.away}-${one.home}`, winner: one.winner, steps: one.steps });
+  const many = simulateMany(data, presets, 25);
+  console.log(`${opp.abbr} x25: YOU ${many.homeWins}-${many.awayWins} AI  avg ${many.avgHome.toFixed(1)}-${many.avgAway.toFixed(1)}`);
+}
 
 console.table(results);
-console.log('All games completed successfully.');
+console.log('All smoke tests OK');

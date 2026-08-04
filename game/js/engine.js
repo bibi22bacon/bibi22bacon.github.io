@@ -38,20 +38,18 @@ export class GameEngine {
   /**
    * @param {object} data players.json
    * @param {{away:object, home:object}} presets
+   * @param {{silent?:boolean}} [options]
    */
-  constructor(data, presets) {
+  constructor(data, presets, options = {}) {
     this.batters = Object.fromEntries(data.batters.map((b) => [b.id, b]));
     this.pitchers = Object.fromEntries(data.pitchers.map((p) => [p.id, p]));
+    this.silent = Boolean(options.silent);
     this.state = this._initState(presets);
     this.listeners = [];
   }
 
   on(fn) {
     this.listeners.push(fn);
-  }
-
-  emit(event, payload) {
-    for (const fn of this.listeners) fn(event, payload, this.state);
   }
 
   getBatter(id) {
@@ -133,8 +131,14 @@ export class GameEngine {
   }
 
   log(msg, kind = 'info') {
+    if (this.silent) return;
     this.state.log.unshift({ t: Date.now(), msg, kind });
     if (this.state.log.length > 80) this.state.log.length = 80;
+  }
+
+  emit(event, payload) {
+    if (this.silent && event !== 'gameover') return;
+    for (const fn of this.listeners) fn(event, payload, this.state);
   }
 
   setDefTactic(id) {

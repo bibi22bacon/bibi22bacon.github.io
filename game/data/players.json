@@ -41995,7 +41995,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 10
+      "salary": 140
     },
     {
       "id": "b_289",
@@ -145015,5 +145015,178 @@
       ],
       "staffIP": 31
     }
-  }
+  },
+  "opponents": [
+    {
+      "id": "ai_offense",
+      "name": "AI Offense First",
+      "abbr": "OFF",
+      "blurb": "Judge + Ohtani, mid-infield splash, Skubal ace.",
+      "lineup": [
+        {
+          "playerId": "b_369",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_125",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_235",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_317",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_304",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_188",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_376",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_38",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_288",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_449",
+        "p_141",
+        "p_317",
+        "p_523"
+      ],
+      "starterId": "p_449",
+      "bench": [
+        "b_133",
+        "b_309",
+        "b_100"
+      ],
+      "salary": 930
+    },
+    {
+      "id": "ai_twoace",
+      "name": "AI Two-Ace",
+      "abbr": "ACE",
+      "blurb": "Wheeler + Skubal, keep Judge, Ram\u00edrez at DH.",
+      "lineup": [
+        {
+          "playerId": "b_369",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_125",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_309",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_133",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_304",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_188",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_376",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_38",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_317",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_519",
+        "p_449",
+        "p_141",
+        "p_523"
+      ],
+      "starterId": "p_519",
+      "bench": [
+        "b_100",
+        "b_302",
+        "b_59"
+      ],
+      "salary": 884
+    },
+    {
+      "id": "ai_dual",
+      "name": "AI Dual Threat",
+      "abbr": "DUAL",
+      "blurb": "Judge + Ohtani and Crochet + Skubal; bargain infield.",
+      "lineup": [
+        {
+          "playerId": "b_369",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_125",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_309",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_133",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_304",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_188",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_376",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_38",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_288",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_114",
+        "p_449",
+        "p_141",
+        "p_523"
+      ],
+      "starterId": "p_114",
+      "bench": [
+        "b_100",
+        "b_302",
+        "b_59"
+      ],
+      "salary": 929
+    }
+  ]
 }

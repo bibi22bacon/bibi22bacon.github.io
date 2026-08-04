@@ -1,4 +1,16 @@
 import { GameEngine, DEF_TACTIC_IDS, OFF_TACTIC_IDS, TACTICS } from './engine.js';
+import {
+  CAP,
+  covers,
+  emptyDraft,
+  draftSpent,
+  staffIp,
+  validateDraft,
+  toPreset,
+  rosterPlayerIds,
+  salaryOf,
+} from './roster.js';
+import { simulateGame, simulateMany } from './sim.js';
 
 const OUTCOME_LABEL = {
   SO: 'STRIKEOUT',
@@ -17,8 +29,19 @@ export class GameUI {
   constructor(root, data) {
     this.root = root;
     this.data = data;
-    this.engine = new GameEngine(data, data.presets);
-    this.engine.on(() => this.render());
+    this.byId = Object.fromEntries([
+      ...data.batters.map((b) => [b.id, { ...b, type: 'batter' }]),
+      ...data.pitchers.map((p) => [p.id, { ...p, type: 'pitcher' }]),
+    ]);
+    this.opponents = data.opponents || [];
+    this.screen = 'home'; // home | draft | matchup | play | sim
+    this.draft = emptyDraft();
+    this.userPreset = null;
+    this.opponent = null;
+    this.engine = null;
+    this.simSummary = null;
+    this.simN = 100;
+    this.draftFilter = { q: '', kind: 'batter', pos: 'ALL', sort: 'salary' };
     this._bind();
     this.render();
   }
@@ -29,26 +52,636 @@ export class GameUI {
       if (!t) return;
       const action = t.dataset.action;
       const value = t.dataset.value;
+      this._onAction(action, value, t);
+    });
 
-      if (action === 'def-tactic') {
-        this.engine.setDefTactic(this.engine.state.pendingDefTactic === value ? null : value);
-      } else if (action === 'off-tactic') {
-        this.engine.setOffTactic(this.engine.state.pendingOffTactic === value ? null : value);
-      } else if (action === 'steal-target') {
-        this.engine.setStealTarget(Number(value));
-      } else if (action === 'resolve') {
-        this.engine.resolvePA();
-      } else if (action === 'change-pitcher') {
-        this.engine.changePitcher(t.dataset.side, value);
-      } else if (action === 'restart') {
-        this.engine = new GameEngine(this.data, this.data.presets);
-        this.engine.on(() => this.render());
+    this.root.addEventListener('input', (e) => {
+      const t = e.target;
+      if (t.dataset.filter === 'q') {
+        this.draftFilter.q = t.value;
+        this.render();
+        const el = this.root.querySelector('[data-filter="q"]');
+        if (el) {
+          el.focus();
+          el.setSelectionRange(el.value.length, el.value.length);
+        }
+      } else if (t.dataset.filter === 'sim-n') {
+        this.simN = Math.max(1, Math.min(1000, Number(t.value) || 1));
+      } else if (t.dataset.field === 'team-name') {
+        this.draft.name = t.value || 'My Team';
+      } else if (t.dataset.field === 'team-abbr') {
+        this.draft.abbr = (t.value || 'YOU').slice(0, 4).toUpperCase();
+      }
+    });
+
+    this.root.addEventListener('change', (e) => {
+      const t = e.target;
+      if (t.dataset.filter === 'kind') {
+        this.draftFilter.kind = t.value;
+        this.render();
+      } else if (t.dataset.filter === 'pos') {
+        this.draftFilter.pos = t.value;
+        this.render();
+      } else if (t.dataset.filter === 'sort') {
+        this.draftFilter.sort = t.value;
         this.render();
       }
     });
   }
 
+  _onAction(action, value, el) {
+    if (action === 'goto') {
+      this.screen = value;
+      if (value === 'draft' && !this.draft) this.draft = emptyDraft();
+      this.render();
+      return;
+    }
+    if (action === 'new-draft') {
+      this.draft = emptyDraft();
+      this.userPreset = null;
+      this.opponent = null;
+      this.simSummary = null;
+      this.screen = 'draft';
+      this.render();
+      return;
+    }
+    if (action === 'load-preset-lad') {
+      // quick-start with existing LAD@NYY for testing play UI
+      this.userPreset = this.data.presets.home;
+      this.opponent = this.data.presets.away;
+      this.screen = 'matchup';
+      this.render();
+      return;
+    }
+    if (action === 'draft-add-lineup') {
+      this._addToLineup(value, el.dataset.slot);
+      return;
+    }
+    if (action === 'draft-add-bench') {
+      this._addBench(value);
+      return;
+    }
+    if (action === 'draft-add-pitcher') {
+      this._addPitcher(value);
+      return;
+    }
+    if (action === 'draft-clear-slot') {
+      const idx = Number(value);
+      if (this.draft.lineup[idx]) this.draft.lineup[idx].playerId = null;
+      this.render();
+      return;
+    }
+    if (action === 'draft-remove-bench') {
+      this.draft.bench = this.draft.bench.filter((id) => id !== value);
+      this.render();
+      return;
+    }
+    if (action === 'draft-remove-pitcher') {
+      this.draft.pitchingStaff = this.draft.pitchingStaff.filter((id) => id !== value);
+      if (this.draft.starterId === value) this.draft.starterId = this.draft.pitchingStaff[0] || null;
+      this.render();
+      return;
+    }
+    if (action === 'draft-set-starter') {
+      this.draft.starterId = value;
+      this.render();
+      return;
+    }
+    if (action === 'draft-fill-slot') {
+      // value = playerId, dataset.slotIndex
+      const idx = Number(el.dataset.slotIndex);
+      this._assignLineup(idx, value);
+      return;
+    }
+    if (action === 'draft-done') {
+      const v = validateDraft(this.draft, this.byId);
+      if (!v.ok) {
+        this._draftErrors = v.errors;
+        this.render();
+        return;
+      }
+      this.userPreset = toPreset(this.draft);
+      this._draftErrors = null;
+      this.screen = 'matchup';
+      this.render();
+      return;
+    }
+    if (action === 'pick-opponent') {
+      this.opponent = this.opponents.find((o) => o.id === value) || null;
+      this.render();
+      return;
+    }
+    if (action === 'play-live') {
+      if (!this._readyMatchup()) return;
+      this._startEngine();
+      this.screen = 'play';
+      this.render();
+      return;
+    }
+    if (action === 'sim-one') {
+      if (!this._readyMatchup()) return;
+      const presets = this._presets();
+      const r = simulateGame(this.data, presets, { silent: true });
+      this.simSummary = {
+        mode: 'one',
+        games: 1,
+        homeWins: r.winner === presets.home.abbr ? 1 : 0,
+        awayWins: r.winner === presets.away.abbr ? 1 : 0,
+        last: r,
+        avgHome: r.home,
+        avgAway: r.away,
+        results: [{ n: 1, score: `${r.away}-${r.home}`, winner: r.winner, innings: r.innings }],
+      };
+      this.screen = 'sim';
+      this.render();
+      return;
+    }
+    if (action === 'sim-many') {
+      if (!this._readyMatchup()) return;
+      const n = Math.max(1, Math.min(1000, Number(this.simN) || 100));
+      const presets = this._presets();
+      this.root.innerHTML = `<div class="panel" style="margin-top:40px;text-align:center">
+        <h2>Simulating ${n} games…</h2>
+        <p class="muted">No tactics · auto pitching</p>
+        <div class="budget-bar"><i style="width:2%"></i></div>
+      </div>`;
+      // yield so UI paints
+      setTimeout(() => {
+        const summary = simulateMany(this.data, presets, n, (done, total) => {
+          const bar = this.root.querySelector('.budget-bar > i');
+          if (bar) bar.style.width = `${(100 * done) / total}%`;
+        });
+        summary.mode = 'many';
+        summary.last = summary.results[summary.results.length - 1];
+        this.simSummary = summary;
+        this.screen = 'sim';
+        this.render();
+      }, 30);
+      return;
+    }
+    if (action === 'restart-play') {
+      this._startEngine();
+      this.render();
+      return;
+    }
+    // live play actions
+    if (!this.engine) return;
+    if (action === 'def-tactic') {
+      this.engine.setDefTactic(this.engine.state.pendingDefTactic === value ? null : value || null);
+    } else if (action === 'off-tactic') {
+      this.engine.setOffTactic(this.engine.state.pendingOffTactic === value ? null : value || null);
+    } else if (action === 'steal-target') {
+      this.engine.setStealTarget(Number(value));
+    } else if (action === 'resolve') {
+      this.engine.resolvePA();
+    } else if (action === 'change-pitcher') {
+      this.engine.changePitcher(el.dataset.side, value);
+    }
+  }
+
+  _readyMatchup() {
+    return Boolean(this.userPreset && this.opponent);
+  }
+
+  _presets() {
+    // User is HOME (bats last)
+    return { away: this.opponent, home: this.userPreset };
+  }
+
+  _startEngine() {
+    this.engine = new GameEngine(this.data, this._presets());
+    this.engine.on(() => this.render());
+  }
+
+  _addToLineup(playerId, preferredPos) {
+    const p = this.byId[playerId];
+    if (!p || p.type !== 'batter') return;
+    if (rosterPlayerIds(this.draft).has(playerId)) return;
+    const spent = draftSpent(this.draft, this.byId);
+    if (spent + salaryOf(p) > CAP) return;
+
+    let idx = -1;
+    if (preferredPos) {
+      idx = this.draft.lineup.findIndex((s) => s.pos === preferredPos && !s.playerId && covers(p, s.pos));
+    }
+    if (idx < 0) {
+      idx = this.draft.lineup.findIndex((s) => !s.playerId && covers(p, s.pos));
+    }
+    if (idx < 0) {
+      // add to bench if lineup full / no fit
+      this._addBench(playerId);
+      return;
+    }
+    this.draft.lineup[idx].playerId = playerId;
+    this.render();
+  }
+
+  _assignLineup(idx, playerId) {
+    const p = this.byId[playerId];
+    const slot = this.draft.lineup[idx];
+    if (!p || !slot || p.type !== 'batter') return;
+    if (!covers(p, slot.pos)) return;
+    const used = rosterPlayerIds(this.draft);
+    if (used.has(playerId) && slot.playerId !== playerId) return;
+    const old = slot.playerId;
+    const spent = draftSpent(this.draft, this.byId) - (old ? salaryOf(this.byId[old]) : 0);
+    if (spent + salaryOf(p) > CAP) return;
+    slot.playerId = playerId;
+    this.render();
+  }
+
+  _addBench(playerId) {
+    const p = this.byId[playerId];
+    if (!p || p.type !== 'batter') return;
+    if (rosterPlayerIds(this.draft).has(playerId)) return;
+    if (draftSpent(this.draft, this.byId) + salaryOf(p) > CAP) return;
+    if (rosterPlayerIds(this.draft).size >= 25) return;
+    this.draft.bench.push(playerId);
+    this.render();
+  }
+
+  _addPitcher(playerId) {
+    const p = this.byId[playerId];
+    if (!p || p.type !== 'pitcher') return;
+    if (rosterPlayerIds(this.draft).has(playerId)) return;
+    if (draftSpent(this.draft, this.byId) + salaryOf(p) > CAP) return;
+    if (rosterPlayerIds(this.draft).size >= 25) return;
+    this.draft.pitchingStaff.push(playerId);
+    if (!this.draft.starterId) this.draft.starterId = playerId;
+    this.render();
+  }
+
   render() {
+    if (this.screen === 'home') this.root.innerHTML = this._home();
+    else if (this.screen === 'draft') this.root.innerHTML = this._draft();
+    else if (this.screen === 'matchup') this.root.innerHTML = this._matchup();
+    else if (this.screen === 'sim') this.root.innerHTML = this._sim();
+    else if (this.screen === 'play') this.root.innerHTML = this._play();
+  }
+
+  _shell(title, body, actions = '') {
+    return `
+      <div class="topbar">
+        <div class="brand">9-INNING DUEL</div>
+        <div class="top-actions">${actions}</div>
+      </div>
+      ${title ? `<h1 class="screen-title">${title}</h1>` : ''}
+      ${body}
+    `;
+  }
+
+  _home() {
+    return this._shell(
+      null,
+      `
+      <section class="hero-home panel">
+        <p class="eyebrow">Salary cap $${CAP}</p>
+        <h1>Draft. Duel. Simulate.</h1>
+        <p class="lede">Build a roster under $${CAP}, challenge one of three AI builds, then play live or run up to 1000 no-tactic sims.</p>
+        <div class="cta-row">
+          <button class="btn btn-primary" data-action="new-draft">Start Draft</button>
+          <button class="btn btn-ghost" data-action="goto" data-value="matchup" ${this.userPreset ? '' : 'disabled'}>Continue</button>
+        </div>
+      </section>
+      <section class="panel opp-preview">
+        <h2>AI opponents waiting</h2>
+        <div class="opp-grid">
+          ${this.opponents
+            .map(
+              (o) => `
+            <article class="opp-card">
+              <div class="opp-abbr">${o.abbr}</div>
+              <h3>${o.name}</h3>
+              <p>${o.blurb}</p>
+              <div class="muted">$${o.salary} · ${o.pitchingStaff.length} arms</div>
+            </article>`
+            )
+            .join('')}
+        </div>
+      </section>
+      `,
+      `<button class="btn btn-ghost btn-sm" data-action="goto" data-value="home">Home</button>`
+    );
+  }
+
+  _draft() {
+    const spent = draftSpent(this.draft, this.byId);
+    const ip = staffIp(this.draft, this.byId);
+    const v = validateDraft(this.draft, this.byId);
+    const pct = Math.min(100, (100 * spent) / CAP);
+    const used = rosterPlayerIds(this.draft);
+    const pool = this._filteredPool(used);
+
+    const emptySlots = this.draft.lineup
+      .map((s, i) => ({ ...s, i }))
+      .filter((s) => !s.playerId);
+
+    return this._shell(
+      'Draft board',
+      `
+      <div class="draft-budget panel">
+        <div class="budget-meta">
+          <strong>$${spent}</strong><span class="muted"> / $${CAP}</span>
+          <span class="pill">${used.size} players</span>
+          <span class="pill">IP ${ip}</span>
+          <span class="pill ${v.ok ? 'ok' : 'bad'}">${v.ok ? 'Legal' : 'Incomplete'}</span>
+        </div>
+        <div class="budget-bar"><i style="width:${pct}%"></i></div>
+        <div class="team-name-row">
+          <label>Team <input data-field="team-name" value="${this._esc(this.draft.name)}" maxlength="24" /></label>
+          <label>Abbr <input data-field="team-abbr" value="${this._esc(this.draft.abbr)}" maxlength="4" style="width:4.5rem" /></label>
+        </div>
+      </div>
+
+      <div class="draft-layout">
+        <section class="panel draft-roster">
+          <h2>Lineup</h2>
+          <div class="slot-list">
+            ${this.draft.lineup
+              .map((s, i) => {
+                const p = s.playerId ? this.byId[s.playerId] : null;
+                return `<div class="slot-row">
+                  <span class="slot-pos">${s.pos}</span>
+                  ${
+                    p
+                      ? `<span class="slot-name">${this._esc(p.name)}</span>
+                         <span class="slot-sal">$${salaryOf(p)}</span>
+                         <button class="btn btn-ghost btn-sm" data-action="draft-clear-slot" data-value="${i}">✕</button>`
+                      : `<span class="slot-empty muted">Empty — pick from pool</span>`
+                  }
+                </div>`;
+              })
+              .join('')}
+          </div>
+
+          <h2>Pitching</h2>
+          <div class="slot-list">
+            ${
+              this.draft.pitchingStaff.length
+                ? this.draft.pitchingStaff
+                    .map((id) => {
+                      const p = this.byId[id];
+                      const starter = this.draft.starterId === id;
+                      return `<div class="slot-row">
+                        <span class="slot-pos">${starter ? 'SP' : 'P'}</span>
+                        <span class="slot-name">${this._esc(p.name)} <small class="muted">${p.abilities.IP} IP</small></span>
+                        <span class="slot-sal">$${salaryOf(p)}</span>
+                        ${starter ? '' : `<button class="btn btn-ghost btn-sm" data-action="draft-set-starter" data-value="${id}">Start</button>`}
+                        <button class="btn btn-ghost btn-sm" data-action="draft-remove-pitcher" data-value="${id}">✕</button>
+                      </div>`;
+                    })
+                    .join('')
+                : `<div class="muted">No pitchers yet</div>`
+            }
+          </div>
+
+          <h2>Bench</h2>
+          <div class="slot-list">
+            ${
+              this.draft.bench.length
+                ? this.draft.bench
+                    .map((id) => {
+                      const p = this.byId[id];
+                      return `<div class="slot-row">
+                        <span class="slot-pos">BN</span>
+                        <span class="slot-name">${this._esc(p.name)}</span>
+                        <span class="slot-sal">$${salaryOf(p)}</span>
+                        <button class="btn btn-ghost btn-sm" data-action="draft-remove-bench" data-value="${id}">✕</button>
+                      </div>`;
+                    })
+                    .join('')
+                : `<div class="muted">No bench bats</div>`
+            }
+          </div>
+
+          ${
+            (this._draftErrors || v.errors).length
+              ? `<div class="draft-errors">${(this._draftErrors || v.errors).map((e) => `<div>• ${this._esc(e)}</div>`).join('')}</div>`
+              : ''
+          }
+
+          <div class="cta-row" style="margin-top:12px">
+            <button class="btn btn-primary" data-action="draft-done" ${v.ok ? '' : 'disabled'}>Lock roster</button>
+            <button class="btn btn-ghost" data-action="goto" data-value="home">Back</button>
+          </div>
+        </section>
+
+        <section class="panel draft-pool">
+          <h2>Player pool</h2>
+          <div class="pool-filters">
+            <input data-filter="q" placeholder="Search name…" value="${this._esc(this.draftFilter.q)}" />
+            <select data-filter="kind">
+              <option value="batter" ${this.draftFilter.kind === 'batter' ? 'selected' : ''}>Batters</option>
+              <option value="pitcher" ${this.draftFilter.kind === 'pitcher' ? 'selected' : ''}>Pitchers</option>
+            </select>
+            <select data-filter="pos" ${this.draftFilter.kind !== 'batter' ? 'disabled' : ''}>
+              <option value="ALL">Any pos</option>
+              ${['C', '1B', '2B', '3B', 'SS', 'OF', 'DH']
+                .map((p) => `<option value="${p}" ${this.draftFilter.pos === p ? 'selected' : ''}>${p}</option>`)
+                .join('')}
+            </select>
+            <select data-filter="sort">
+              <option value="salary" ${this.draftFilter.sort === 'salary' ? 'selected' : ''}>$ high</option>
+              <option value="salary-asc" ${this.draftFilter.sort === 'salary-asc' ? 'selected' : ''}>$ low</option>
+              <option value="name" ${this.draftFilter.sort === 'name' ? 'selected' : ''}>Name</option>
+            </select>
+          </div>
+          <div class="pool-list">
+            ${pool
+              .slice(0, 80)
+              .map((p) => this._poolRow(p, emptySlots))
+              .join('') || `<div class="muted">No matches</div>`}
+          </div>
+          <p class="muted hint">Showing ${Math.min(80, pool.length)} of ${pool.length}. Add fills the first open eligible slot.</p>
+        </section>
+      </div>
+      `,
+      `<button class="btn btn-ghost btn-sm" data-action="goto" data-value="home">Home</button>`
+    );
+  }
+
+  _poolRow(p, emptySlots) {
+    const isP = p.type === 'pitcher';
+    const meta = isP
+      ? `${p.hand}HP · ${p.abilities.IP} IP · ${p.team}`
+      : `${(p.positions || []).join('/')} · ${p.hand} · ${p.team}`;
+    const fit = emptySlots.filter((s) => covers(p, s.pos));
+    const addAction = isP ? 'draft-add-pitcher' : 'draft-add-lineup';
+    return `<div class="pool-row">
+      <div class="pool-main">
+        <div class="pool-name">${this._esc(p.name)}</div>
+        <div class="pool-meta muted">${meta}</div>
+      </div>
+      <div class="pool-sal">$${salaryOf(p)}</div>
+      <div class="pool-actions">
+        <button class="btn btn-primary btn-sm" data-action="${addAction}" data-value="${p.id}" ${!isP && fit[0] ? `data-slot="${fit[0].pos}"` : ''}>
+          ${isP ? 'Staff' : fit.length ? `→ ${fit[0].pos}` : 'Bench'}
+        </button>
+        ${
+          !isP
+            ? `<button class="btn btn-ghost btn-sm" data-action="draft-add-bench" data-value="${p.id}">BN</button>`
+            : ''
+        }
+      </div>
+    </div>`;
+  }
+
+  _filteredPool(used) {
+    const q = this.draftFilter.q.trim().toLowerCase();
+    const kind = this.draftFilter.kind;
+    const pos = this.draftFilter.pos;
+    let list = kind === 'pitcher' ? this.data.pitchers : this.data.batters;
+    list = list
+      .map((p) => this.byId[p.id])
+      .filter((p) => !used.has(p.id))
+      .filter((p) => !q || p.name.toLowerCase().includes(q) || (p.team || '').toLowerCase().includes(q))
+      .filter((p) => {
+        if (kind !== 'batter' || pos === 'ALL') return true;
+        return covers(p, pos);
+      });
+
+    if (this.draftFilter.sort === 'name') list.sort((a, b) => a.name.localeCompare(b.name));
+    else if (this.draftFilter.sort === 'salary-asc') list.sort((a, b) => salaryOf(a) - salaryOf(b) || a.name.localeCompare(b.name));
+    else list.sort((a, b) => salaryOf(b) - salaryOf(a) || a.name.localeCompare(b.name));
+    return list;
+  }
+
+  _matchup() {
+    if (!this.userPreset) {
+      return this._shell(
+        'Matchup',
+        `<div class="panel"><p>Draft a roster first.</p><button class="btn btn-primary" data-action="new-draft">Start Draft</button></div>`
+      );
+    }
+    const youSpent = this.userPreset
+      ? [...this.userPreset.lineup.map((x) => x.playerId), ...this.userPreset.pitchingStaff, ...this.userPreset.bench]
+          .map((id) => salaryOf(this.byId[id]))
+          .reduce((a, b) => a + b, 0)
+      : 0;
+
+    return this._shell(
+      'Choose opponent',
+      `
+      <div class="match-grid">
+        <section class="panel">
+          <h2>You (HOME)</h2>
+          <div class="opp-abbr">${this._esc(this.userPreset.abbr)}</div>
+          <p>${this._esc(this.userPreset.name)} · $${youSpent}</p>
+          ${this._rosterGlance(this.userPreset)}
+          <button class="btn btn-ghost btn-sm" data-action="goto" data-value="draft">Edit roster</button>
+        </section>
+        <section class="panel">
+          <h2>AI (AWAY)</h2>
+          <div class="opp-grid compact">
+            ${this.opponents
+              .map((o) => {
+                const on = this.opponent?.id === o.id;
+                return `<button class="opp-card pick ${on ? 'selected' : ''}" data-action="pick-opponent" data-value="${o.id}">
+                  <div class="opp-abbr">${o.abbr}</div>
+                  <h3>${this._esc(o.name)}</h3>
+                  <p>${this._esc(o.blurb)}</p>
+                  <div class="muted">$${o.salary}</div>
+                </button>`;
+              })
+              .join('')}
+          </div>
+          ${this.opponent ? this._rosterGlance(this.opponent) : '<p class="muted">Pick an AI build</p>'}
+        </section>
+      </div>
+
+      <section class="panel mode-panel">
+        <h2>How do you want to play?</h2>
+        <p class="muted">Simulation uses <strong>no tactics</strong> (pure matrix dice). Live play keeps full tactics.</p>
+        <div class="mode-row">
+          <button class="btn btn-primary" data-action="play-live" ${this.opponent ? '' : 'disabled'}>Play live</button>
+          <button class="btn btn-ghost" data-action="sim-one" ${this.opponent ? '' : 'disabled'}>Quick sim (1 game)</button>
+        </div>
+        <div class="mode-row sim-many-row">
+          <label>Multi-sim <input data-filter="sim-n" type="number" min="1" max="1000" value="${this.simN}" /> games (max 1000)</label>
+          <button class="btn btn-ghost" data-action="sim-many" ${this.opponent ? '' : 'disabled'}>Run sims</button>
+        </div>
+      </section>
+      `,
+      `<button class="btn btn-ghost btn-sm" data-action="goto" data-value="home">Home</button>`
+    );
+  }
+
+  _rosterGlance(preset) {
+    const bats = preset.lineup
+      .map((s) => {
+        const p = this.byId[s.playerId];
+        return `<div class="glance-row"><span>${s.pos}</span><span>${this._esc(p?.name || '?')}</span><span>$${salaryOf(p)}</span></div>`;
+      })
+      .join('');
+    const pits = preset.pitchingStaff
+      .map((id) => {
+        const p = this.byId[id];
+        const star = id === preset.starterId ? '★ ' : '';
+        return `<div class="glance-row"><span>P</span><span>${star}${this._esc(p?.name || '?')}</span><span>$${salaryOf(p)}</span></div>`;
+      })
+      .join('');
+    return `<div class="roster-glance">${bats}<hr/>${pits}</div>`;
+  }
+
+  _sim() {
+    const s = this.simSummary;
+    if (!s) return this._shell('Sim', `<div class="panel">No results.</div>`);
+    const you = this.userPreset.abbr;
+    const opp = this.opponent.abbr;
+    const headline =
+      s.mode === 'one'
+        ? s.last?.winner === you
+          ? 'You win'
+          : s.last?.winner === opp
+            ? 'AI wins'
+            : 'Incomplete'
+        : `${you} ${s.homeWins} – ${s.awayWins} ${opp}`;
+
+    return this._shell(
+      'Simulation',
+      `
+      <section class="panel sim-hero">
+        <h2>${headline}</h2>
+        <p class="muted">${s.games} game${s.games > 1 ? 's' : ''} · no tactics · you bat last (HOME)</p>
+        ${
+          s.mode === 'one'
+            ? `<p class="sim-score">${opp} ${s.last.away} – ${s.last.home} ${you} · ${s.last.innings} inn</p>`
+            : `<div class="sim-stats">
+                <div><strong>${s.homeWins}</strong><span>Your wins</span></div>
+                <div><strong>${s.awayWins}</strong><span>AI wins</span></div>
+                <div><strong>${s.avgHome.toFixed(1)}</strong><span>Your R/G</span></div>
+                <div><strong>${s.avgAway.toFixed(1)}</strong><span>AI R/G</span></div>
+                <div><strong>${(s.avgHome - s.avgAway).toFixed(1)}</strong><span>Run diff</span></div>
+                <div><strong>${s.forfeits || 0}</strong><span>Forfeits</span></div>
+              </div>`
+        }
+      </section>
+      ${
+        s.results?.length
+          ? `<section class="panel">
+              <h2>Sample games</h2>
+              <div class="sim-table">
+                ${s.results
+                  .map(
+                    (r) =>
+                      `<div class="sim-row"><span>#${r.n}</span><span>${opp} ${r.score.split('-')[0]} – ${r.score.split('-')[1]} ${you}</span><span>${r.winner || '—'}</span></div>`
+                  )
+                  .join('')}
+              </div>
+            </section>`
+          : ''
+      }
+      <div class="cta-row">
+        <button class="btn btn-primary" data-action="goto" data-value="matchup">Back to matchup</button>
+        <button class="btn btn-ghost" data-action="sim-many">Run again</button>
+        <button class="btn btn-ghost" data-action="play-live">Play live</button>
+      </div>
+      `,
+      `<button class="btn btn-ghost btn-sm" data-action="goto" data-value="home">Home</button>`
+    );
+  }
+
+  _play() {
     const s = this.engine.state;
     const batter = this.engine.currentBatter();
     const pitcher = this.engine.currentPitcher();
@@ -56,10 +689,13 @@ export class GameUI {
     const defense = this.engine.defenseSide();
     const hl = this._highlightCell(s.lastResult);
 
-    this.root.innerHTML = `
+    return `
       <div class="topbar">
         <div class="brand">9-INNING DUEL</div>
-        <button class="btn btn-ghost btn-sm" data-action="restart">New Game</button>
+        <div class="top-actions">
+          <button class="btn btn-ghost btn-sm" data-action="goto" data-value="matchup">Matchup</button>
+          <button class="btn btn-ghost btn-sm" data-action="restart-play">New Game</button>
+        </div>
       </div>
 
       <div class="score-strip">
@@ -124,8 +760,14 @@ export class GameUI {
                   const tac = TACTICS[id];
                   let disabled = s.phase !== 'tactics';
                   let note = '';
-                  if (id === 'steal' && !this.engine.canPlaySteal()) { disabled = true; note = 'n/a'; }
-                  if (id === 'sacfly' && !this.engine.canPlaySacFly()) { disabled = true; note = 'n/a'; }
+                  if (id === 'steal' && !this.engine.canPlaySteal()) {
+                    disabled = true;
+                    note = 'n/a';
+                  }
+                  if (id === 'sacfly' && !this.engine.canPlaySacFly()) {
+                    disabled = true;
+                    note = 'n/a';
+                  }
                   return `<button class="tactic-btn ${s.pendingOffTactic === id ? 'selected' : ''}" data-action="off-tactic" data-value="${id}" ${disabled ? 'disabled' : ''}>
                     ${tac.name}${note ? `<small>${note}</small>` : tac.d2Mod ? `<small>D2 ${tac.d2Mod}</small>` : ''}
                   </button>`;
@@ -148,11 +790,15 @@ export class GameUI {
 
           <div class="bullpen-inline">
             <span class="muted">Bullpen</span>
-            ${this.engine.availablePitchers(defense.isHome ? 'home' : 'away').map((p) => `
+            ${this.engine
+              .availablePitchers(defense.isHome ? 'home' : 'away')
+              .map(
+                (p) => `
               <button class="pill-btn ${p.active ? 'active' : ''}" data-action="change-pitcher" data-side="${defense.isHome ? 'home' : 'away'}" data-value="${p.playerId}" ${p.active ? 'disabled' : ''}>
                 ${p.name.split(',')[0]} ${p.ipUsed}/${p.ipMax}
-              </button>
-            `).join('')}
+              </button>`
+              )
+              .join('')}
           </div>
         </div>
       </div>
@@ -161,7 +807,10 @@ export class GameUI {
         <h2>Box Score</h2>
         ${this._linescore(s)}
         <div class="log compact">
-          ${s.log.slice(0, 8).map((e) => `<div class="entry ${e.kind}">${e.msg}</div>`).join('') || '<div class="entry">Play tactics, then Resolve PA.</div>'}
+          ${
+            s.log.slice(0, 8).map((e) => `<div class="entry ${e.kind}">${e.msg}</div>`).join('') ||
+            '<div class="entry">Play tactics, then Resolve PA.</div>'
+          }
         </div>
       </div>
 
@@ -170,10 +819,18 @@ export class GameUI {
           <h1>${s.winner || ''} WINS</h1>
           <p>Final · ${s.away.abbr} ${s.away.score} – ${s.home.score} ${s.home.abbr}</p>
           ${s.forfeit ? `<p class="hint">Forfeit: ${s.forfeit} out of pitchers</p>` : ''}
-          <button class="btn btn-primary" data-action="restart" style="margin-top:12px">Play Again</button>
+          <button class="btn btn-primary" data-action="restart-play" style="margin-top:12px">Play Again</button>
+          <button class="btn btn-ghost" data-action="goto" data-value="matchup" style="margin-top:8px">Matchup</button>
         </div>
       </div>
     `;
+  }
+
+  _esc(s) {
+    return String(s ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/"/g, '&quot;');
   }
 
   _highlightCell(result) {
@@ -241,7 +898,7 @@ export class GameUI {
     if (!player) return `<div class="card"><div class="name">—</div></div>`;
     const a = player.abilities;
     const meta = isPitcher
-      ? `${player.hand}HP · IP ${(entry?.ipUsed ?? 0)}/${a.IP}`
+      ? `${player.hand}HP · IP ${entry?.ipUsed ?? 0}/${a.IP}`
       : `${player.positions.join('/')} · ${player.hand} · SPD ${a.SPD}`;
 
     const matrix = player.matrix

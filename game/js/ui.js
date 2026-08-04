@@ -35,7 +35,7 @@ export class GameUI {
       ...data.pitchers.map((p) => [p.id, { ...p, type: 'pitcher' }]),
     ]);
     this.opponents = data.opponents || [];
-    this.screen = 'home'; // home | draft | matchup | play | sim
+    this.screen = 'home'; // home | draft | matchup | order | play | sim
     this.draft = emptyDraft();
     this.userPreset = null;
     this.opponent = null;
@@ -181,6 +181,25 @@ export class GameUI {
       this.render();
       return;
     }
+    if (action === 'goto-order') {
+      if (!this.userPreset) return;
+      this.screen = 'order';
+      this.render();
+      return;
+    }
+    if (action === 'order-up') {
+      this._moveBattingOrder(Number(value), Number(value) - 1);
+      return;
+    }
+    if (action === 'order-down') {
+      this._moveBattingOrder(Number(value), Number(value) + 1);
+      return;
+    }
+    if (action === 'order-done') {
+      this.screen = 'matchup';
+      this.render();
+      return;
+    }
     if (action === 'play-live') {
       if (!this._readyMatchup()) return;
       this._startEngine();
@@ -291,6 +310,29 @@ export class GameUI {
     });
   }
 
+  _moveBattingOrder(fromIdx, toIdx) {
+    if (!this.userPreset?.lineup) return;
+    const lineup = this.userPreset.lineup;
+    if (
+      fromIdx < 0 ||
+      toIdx < 0 ||
+      fromIdx >= lineup.length ||
+      toIdx >= lineup.length ||
+      fromIdx === toIdx
+    ) {
+      return;
+    }
+    const next = lineup.slice();
+    const [item] = next.splice(fromIdx, 1);
+    next.splice(toIdx, 0, item);
+    this.userPreset.lineup = next;
+    // Keep draft in sync so Edit roster / re-lock stays consistent
+    if (this.draft?.lineup?.length === next.length) {
+      this.draft.lineup = next.map((s) => ({ playerId: s.playerId, pos: s.pos }));
+    }
+    this.render();
+  }
+
   _readyMatchup() {
     return Boolean(this.userPreset && this.opponent);
   }
@@ -368,6 +410,7 @@ export class GameUI {
     if (this.screen === 'home') this.root.innerHTML = this._home();
     else if (this.screen === 'draft') this.root.innerHTML = this._draft();
     else if (this.screen === 'matchup') this.root.innerHTML = this._matchup();
+    else if (this.screen === 'order') this.root.innerHTML = this._order();
     else if (this.screen === 'sim') this.root.innerHTML = this._sim();
     else if (this.screen === 'play') this.root.innerHTML = this._play();
   }
@@ -621,7 +664,10 @@ export class GameUI {
           <div class="opp-abbr">${this._esc(this.userPreset.abbr)}</div>
           <p>${this._esc(this.userPreset.name)} · $${youSpent}</p>
           ${this._rosterGlance(this.userPreset)}
-          <button class="btn btn-ghost btn-sm" data-action="goto" data-value="draft">Edit roster</button>
+          <div class="you-actions">
+            <button class="btn btn-ghost btn-sm" data-action="goto-order">Set batting order</button>
+            <button class="btn btn-ghost btn-sm" data-action="goto" data-value="draft">Edit roster</button>
+          </div>
         </section>
         <section class="panel">
           <h2>AI (AWAY)</h2>
@@ -661,19 +707,63 @@ export class GameUI {
 
   _rosterGlance(preset) {
     const bats = preset.lineup
-      .map((s) => {
+      .map((s, i) => {
         const p = this.byId[s.playerId];
-        return `<div class="glance-row"><span>${s.pos}</span><span>${this._esc(p?.name || '?')}</span><span>$${salaryOf(p)}</span></div>`;
+        return `<div class="glance-row"><span class="ord">${i + 1}</span><span>${s.pos}</span><span>${this._esc(p?.name || '?')}</span><span>$${salaryOf(p)}</span></div>`;
       })
       .join('');
     const pits = preset.pitchingStaff
       .map((id) => {
         const p = this.byId[id];
         const star = id === preset.starterId ? '★ ' : '';
-        return `<div class="glance-row"><span>P</span><span>${star}${this._esc(p?.name || '?')}</span><span>$${salaryOf(p)}</span></div>`;
+        return `<div class="glance-row"><span class="ord"></span><span>P</span><span>${star}${this._esc(p?.name || '?')}</span><span>$${salaryOf(p)}</span></div>`;
       })
       .join('');
     return `<div class="roster-glance">${bats}<hr/>${pits}</div>`;
+  }
+
+  _order() {
+    if (!this.userPreset) {
+      return this._shell(
+        'Batting order',
+        `<div class="panel"><p>Draft a roster first.</p><button class="btn btn-primary" data-action="new-draft">Start Draft</button></div>`
+      );
+    }
+
+    const rows = this.userPreset.lineup
+      .map((slot, i) => {
+        const p = this.byId[slot.playerId];
+        const a = p?.abilities || {};
+        return `
+          <div class="order-row">
+            <div class="order-num">${i + 1}</div>
+            <div class="order-pos">${slot.pos}</div>
+            <div class="order-main">
+              <div class="order-name">${this._esc(p?.name || '?')}</div>
+              <div class="order-meta muted">${p?.hand || '?'} · H ${a.H ?? '—'} · HR ${a.HR ?? '—'} · SPD ${a.SPD ?? '—'} · $${salaryOf(p)}</div>
+            </div>
+            <div class="order-moves">
+              <button class="btn btn-ghost btn-sm" data-action="order-up" data-value="${i}" ${i === 0 ? 'disabled' : ''} aria-label="Move up">↑</button>
+              <button class="btn btn-ghost btn-sm" data-action="order-down" data-value="${i}" ${i === this.userPreset.lineup.length - 1 ? 'disabled' : ''} aria-label="Move down">↓</button>
+            </div>
+          </div>`;
+      })
+      .join('');
+
+    return this._shell(
+      'Set batting order',
+      `
+      <section class="panel order-panel">
+        <p class="lede-sm">Arrange hitters 1–9. Each batter keeps their defensive position.</p>
+        <div class="order-list">${rows}</div>
+        <div class="order-actions">
+          <button class="btn btn-primary" data-action="order-done">Done</button>
+          <button class="btn btn-ghost" data-action="goto" data-value="matchup">Back</button>
+        </div>
+      </section>
+      `,
+      `<button class="btn btn-ghost btn-sm" data-action="goto" data-value="matchup">Matchup</button>`
+    );
   }
 
   _sim() {

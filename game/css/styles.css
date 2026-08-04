@@ -1109,12 +1109,84 @@ button.opp-card.pick.selected {
 }
 .glance-row {
   display: grid;
-  grid-template-columns: 2rem 1fr auto;
+  grid-template-columns: 1.2rem 2rem 1fr auto;
   gap: 6px;
   padding: 2px 0;
   border-bottom: 1px solid var(--line);
 }
+.glance-row .ord {
+  font-family: var(--font-mono);
+  color: var(--muted);
+}
 .roster-glance hr { border: none; border-top: 1px solid var(--line); margin: 6px 0; }
+
+.you-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.order-panel .lede-sm {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.order-row {
+  display: grid;
+  grid-template-columns: 2rem 2.4rem 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.18);
+}
+.order-num {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+.order-pos {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.order-name {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+}
+.order-meta {
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.order-moves {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.order-moves .btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.order-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+@media (max-width: 600px) {
+  .order-row {
+    grid-template-columns: 1.6rem 2rem 1fr auto;
+    gap: 6px;
+    padding: 8px;
+  }
+}
 
 .mode-panel { margin-top: 12px; }
 .mode-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 10px; }

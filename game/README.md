@@ -8,7 +8,8 @@ Rules live in [`docs/9_Inning_Duel_Official_Rulebook.md`](../docs/9_Inning_Duel_
 
 1. **Draft** a roster under the **$1000** salary cap (12–25 players, legal lineup, pitching IP > 9)
 2. Pick one of five **AI opponents** (Offense First / Two-Ace / Dual Threat / Mid-Star Stack / Outfield Core)
-3. **Play live** with tactics (AI manages the away side by default — toggleable), or run a **quick sim** / **multi-sim (1–1000 games)** with **no tactics**
+3. Optionally **set batting order** (1–9) before the game
+4. **Play live** with tactics (AI manages the away side by default — toggleable), or run a **quick sim** / **multi-sim (1–1000 games)** with **no tactics**
 
 You always bat last (HOME).
 

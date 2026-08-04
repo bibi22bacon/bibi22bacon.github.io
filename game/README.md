@@ -1,6 +1,8 @@
 # 9-Inning Duel — Web Game
 
-Hotseat browser version of **9-Inning Duel** (Official Rulebook v1.1 gameplay).
+Hotseat browser version of **9-Inning Duel** (Official Rulebook **v1.2** gameplay).
+
+Rules live in [`docs/9_Inning_Duel_Official_Rulebook.md`](../docs/9_Inning_Duel_Official_Rulebook.md) (PDF alongside). When gameplay rules change, update the rulebook in the same change.
 
 Team building is skipped for now — presets load **LAD @ NYY** with legal lineups and pitching staffs.
 

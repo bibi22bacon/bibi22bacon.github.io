@@ -32,18 +32,18 @@ Floor **$12**, ceil **$200**. Light scarcity: C/SS up, DH/OF down a bit.
 | Max | **$179** (Judge, Aaron) |
 | Median | **$16** |
 | Best 9 bats | **$1019** |
-| Best 5 pits | **$444** |
+| Best 5 pits | **$569** |
 
 ### Distribution
 
 | Band | Players |
 |------|--------:|
-| $12–19 | 632 |
-| $20–29 | 180 |
-| $30–49 | 135 |
-| $50–79 | 41 |
-| $80–119 | 12 |
-| $120–200 | 2 |
+| $12–19 | 621 |
+| $20–29 | 169 |
+| $30–49 | 150 |
+| $50–79 | 39 |
+| $80–119 | 19 |
+| $120–200 | 4 |
 
 ### Top 20
 
@@ -51,29 +51,29 @@ Floor **$12**, ceil **$200**. Light scarcity: C/SS up, DH/OF down a bit.
 |---:|---|---|---:|
 | 179 | batter | Judge, Aaron | 26.6 |
 | 162 | batter | Ohtani, Shohei | 25.7 |
+| 129 | pitcher | Skubal, Tarik | 37.9 |
+| 122 | pitcher | Wheeler, Zack | 37.2 |
 | 115 | batter | Witt Jr., Bobby | 23.0 |
+| 110 | pitcher | Rogers, Trevor | 36.0 |
+| 108 | pitcher | Crochet, Garrett | 35.8 |
 | 104 | batter | Raleigh, Cal | 22.5 |
 | 104 | batter | Ramírez, José | 22.8 |
-| 102 | pitcher | Skubal, Tarik | 37.9 |
+| 100 | pitcher | Bradish, Kyle | 35.1 |
+| 98 | pitcher | Woo, Bryan | 35.0 |
 | 97 | batter | Kurtz, Nick | 22.6 |
-| 95 | pitcher | Wheeler, Zack | 37.2 |
+| 96 | pitcher | Sánchez, Cristopher | 34.8 |
 | 89 | batter | Bellinger, Cody | 22.4 |
+| 88 | pitcher | Schwellenbach, Spencer | 34.0 |
+| 88 | pitcher | Woodruff, Brandon | 34.1 |
 | 87 | batter | Carroll, Corbin | 22.3 |
-| 85 | pitcher | Rogers, Trevor | 36.0 |
-| 84 | pitcher | Crochet, Garrett | 35.8 |
+| 83 | pitcher | Henderson, Logan | 33.6 |
+| 82 | pitcher | Skenes, Paul | 33.5 |
 | 82 | batter | Springer, George | 22.2 |
-| 80 | batter | Marte, Ketel | 21.8 |
-| 78 | pitcher | Bradish, Kyle | 35.1 |
-| 78 | batter | Jones, Jahmai | 22.0 |
-| 77 | pitcher | Woo, Bryan | 35.0 |
-| 76 | batter | Buxton, Byron | 21.8 |
-| 76 | pitcher | Sánchez, Cristopher | 34.8 |
-| 71 | pitcher | Woodruff, Brandon | 34.1 |
 
 ### AI opponents
 - **OFF** $1000 — Judge + Ohtani; one ace; value fillers.
-- **ACE** $998 — Two aces + Judge; bargain lineup.
-- **DUAL** $996 — Judge + Ohtani + Crochet; value arms.
+- **ACE** $981 — Two aces + Judge; bargain lineup.
+- **DUAL** $994 — Judge + Ohtani + Crochet; value arms.
 
 ## Files
 - `tools/salary_scale.py`

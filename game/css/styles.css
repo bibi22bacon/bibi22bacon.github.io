@@ -741,6 +741,120 @@ button, select {
   filter: brightness(1.12);
 }
 
+/* Ability outcome strip (abilities = 100 matrix cells) */
+.ability-viz {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 6px;
+  min-width: 0;
+}
+.ability-viz.compact { margin-top: 4px; gap: 3px; }
+.outcome-strip {
+  display: flex;
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.08);
+}
+.ability-viz.compact .outcome-strip { height: 8px; }
+.outcome-strip > i {
+  display: block;
+  min-width: 0;
+  font-style: normal;
+  font-size: 0;
+}
+.outcome-strip > i.SO { background: #f1f3f5; }
+.outcome-strip > i.FO { background: #868e96; }
+.outcome-strip > i.GO { background: #74c0fc; }
+.outcome-strip > i.BB { background: #37b24d; }
+.outcome-strip > i.1B { background: #ffe066; }
+.outcome-strip > i.2B { background: #fd7e14; }
+.outcome-strip > i.HR { background: #e03131; }
+
+.rate-row {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr 1.4rem;
+  gap: 6px;
+  align-items: center;
+}
+.rate-lab {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+.rate-track {
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  overflow: hidden;
+}
+.rate-track > i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgba(232,197,71,.55), var(--accent));
+}
+.rate-val {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text);
+  text-align: right;
+}
+.rate-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--muted);
+}
+
+.ability-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 10px;
+}
+.ability-legend .leg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.6rem;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: #111;
+}
+.ability-legend .leg.SO { background: #f1f3f5; }
+.ability-legend .leg.FO { background: #868e96; color: #fff; }
+.ability-legend .leg.GO { background: #74c0fc; }
+.ability-legend .leg.BB { background: #37b24d; color: #fff; }
+.ability-legend .leg.1B { background: #ffe066; }
+.ability-legend .leg.2B { background: #fd7e14; color: #fff; }
+.ability-legend .leg.HR { background: #e03131; color: #fff; }
+.ability-legend .leg-note {
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-left: 2px;
+}
+
+.order-sal {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 400;
+  margin-left: 6px;
+}
+.card .ability-viz { margin-top: 8px; }
+.card .outcome-strip { height: 12px; }
+.slot-name .ability-viz,
+.pool-main .ability-viz { max-width: 16rem; }
+
 /* Tactics */
 .tactics-grid {
   display: grid;

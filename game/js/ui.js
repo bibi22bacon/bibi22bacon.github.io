@@ -707,7 +707,9 @@ export class GameUI {
                   ${
                     p
                       ? `<span class="slot-name">${this._esc(p.name)}
-                           <small class="muted pos-tags">${(p.positions || []).join('/')}</small></span>
+                           <small class="muted pos-tags">${(p.positions || []).join('/')}</small>
+                           ${this._abilityViz(p, { compact: true })}
+                         </span>
                          <span class="slot-sal">$${salaryOf(p)}</span>
                          <div class="slot-alts">
                            ${altPos
@@ -735,7 +737,9 @@ export class GameUI {
                       const starter = this.draft.starterId === id;
                       return `<div class="slot-row">
                         <span class="slot-pos">${starter ? 'SP' : 'P'}</span>
-                        <span class="slot-name">${this._esc(p.name)} <small class="muted">${p.abilities.IP} IP</small></span>
+                        <span class="slot-name">${this._esc(p.name)}
+                          ${this._abilityViz(p, { compact: true })}
+                        </span>
                         <span class="slot-sal">$${salaryOf(p)}</span>
                         ${starter ? '' : `<button class="btn btn-ghost btn-sm" data-action="draft-set-starter" data-value="${id}">Start</button>`}
                         <button class="btn btn-ghost btn-sm" data-action="draft-remove-pitcher" data-value="${id}">✕</button>
@@ -761,7 +765,9 @@ export class GameUI {
                       return `<div class="slot-row">
                         <span class="slot-pos">BN</span>
                         <span class="slot-name">${this._esc(p.name)}
-                          <small class="muted pos-tags">${(p.positions || []).join('/')}</small></span>
+                          <small class="muted pos-tags">${(p.positions || []).join('/')}</small>
+                          ${this._abilityViz(p, { compact: true })}
+                        </span>
                         <span class="slot-sal">$${salaryOf(p)}</span>
                         <div class="slot-alts">
                           ${fitPos
@@ -811,13 +817,14 @@ export class GameUI {
               <option value="name" ${this.draftFilter.sort === 'name' ? 'selected' : ''}>Name</option>
             </select>
           </div>
+          <p class="muted hint">Showing ${Math.min(80, pool.length)} of ${pool.length}. Bar = plate-appearance outcomes.</p>
+          ${this._abilityLegend()}
           <div class="pool-list">
             ${pool
               .slice(0, 80)
               .map((p) => this._poolRow(p, emptySlots))
               .join('') || `<div class="muted">No matches</div>`}
           </div>
-          <p class="muted hint">Showing ${Math.min(80, pool.length)} of ${pool.length}. Add fills the first open eligible slot.</p>
         </section>
       </div>
       `,
@@ -853,6 +860,7 @@ export class GameUI {
       <div class="pool-main">
         <div class="pool-name">${this._esc(p.name)}</div>
         <div class="pool-meta muted">${meta}</div>
+        ${this._abilityViz(p, { compact: true })}
       </div>
       <div class="pool-sal">$${salaryOf(p)}</div>
       <div class="pool-actions">${actions}</div>
@@ -970,15 +978,15 @@ export class GameUI {
     const rows = this.userPreset.lineup
       .map((slot, i) => {
         const p = this.byId[slot.playerId];
-        const a = p?.abilities || {};
         return `
           <div class="order-row" data-index="${i}" role="listitem" aria-grabbed="false">
             <div class="order-handle" aria-hidden="true"><span></span><span></span><span></span></div>
             <div class="order-num">${i + 1}</div>
             <div class="order-pos">${slot.pos}</div>
             <div class="order-main">
-              <div class="order-name">${this._esc(p?.name || '?')}</div>
-              <div class="order-meta muted">${p?.hand || '?'} · H ${a.H ?? '—'} · HR ${a.HR ?? '—'} · SPD ${a.SPD ?? '—'} · $${salaryOf(p)}</div>
+              <div class="order-name">${this._esc(p?.name || '?')} <span class="muted order-sal">$${salaryOf(p)}</span></div>
+              <div class="order-meta muted">${p?.hand || '?'} · ${(p?.positions || []).join('/') || '—'}</div>
+              ${p ? this._abilityViz(p) : ''}
             </div>
           </div>`;
       })
@@ -988,7 +996,8 @@ export class GameUI {
       'Set batting order',
       `
       <section class="panel order-panel">
-        <p class="lede-sm">Drag hitters to set order 1–9. Each keeps their defensive position.</p>
+        <p class="lede-sm">Drag hitters to set order 1–9. Bars show plate-appearance outcomes.</p>
+        ${this._abilityLegend()}
         <div class="order-list" data-order-list role="list">${rows}</div>
         <div class="order-actions">
           <button class="btn btn-primary" data-action="order-done">Done</button>
@@ -1315,6 +1324,90 @@ export class GameUI {
       .replace(/"/g, '&quot;');
   }
 
+  /** Stacked outcome profile (abilities = 100 matrix cells) + SPD/DEF/IP meters. */
+  _abilityViz(player, { compact = false } = {}) {
+    if (!player?.abilities) return '';
+    const a = player.abilities;
+    const isP = player.type === 'pitcher' || (a.IP != null && a.H == null);
+    const parts = isP
+      ? [
+          ['SO', a.K],
+          ['FO', a.FO],
+          ['GO', a.GO],
+          ['BB', a.BB],
+          ['1B', a['1B']],
+          ['2B', a['2B']],
+          ['HR', a.HR],
+        ]
+      : [
+          ['SO', a.K],
+          ['FO', a.FO],
+          ['GO', a.GO],
+          ['BB', a.BB],
+          ['1B', a.H],
+          ['2B', a['2B']],
+          ['HR', a.HR],
+        ];
+
+    const segs = parts
+      .filter(([, n]) => (n || 0) > 0)
+      .map(
+        ([cls, n]) =>
+          `<i class="${cls}" style="flex:${n}" title="${OUTCOME_LABEL[cls] || cls} ${n}"></i>`
+      )
+      .join('');
+
+    const tip = parts.map(([cls, n]) => `${cls} ${n ?? 0}`).join(' · ');
+
+    let rates = '';
+    if (isP) {
+      const ip = a.IP ?? 0;
+      const pct = Math.max(8, Math.round((ip / 7) * 100));
+      rates = `<div class="rate-row" title="Innings pitched allowance">
+        <span class="rate-lab">IP</span>
+        <span class="rate-track"><i style="width:${pct}%"></i></span>
+        <span class="rate-val">${ip}</span>
+      </div>`;
+    } else if (!compact) {
+      const spdPct = Math.max(4, Math.round((((a.SPD ?? 0) + 5) / 15) * 100));
+      const defPct = Math.max(4, Math.round(((a.DEF ?? 1) / 10) * 100));
+      rates = `
+        <div class="rate-row" title="Speed">
+          <span class="rate-lab">SPD</span>
+          <span class="rate-track"><i style="width:${spdPct}%"></i></span>
+          <span class="rate-val">${a.SPD ?? 0}</span>
+        </div>
+        <div class="rate-row" title="Defense">
+          <span class="rate-lab">DEF</span>
+          <span class="rate-track"><i style="width:${defPct}%"></i></span>
+          <span class="rate-val">${a.DEF ?? 0}</span>
+        </div>`;
+    } else {
+      rates = `<div class="rate-chips">
+        <span title="Speed">SPD ${a.SPD ?? 0}</span>
+        <span title="Defense">DEF ${a.DEF ?? 0}</span>
+      </div>`;
+    }
+
+    return `<div class="ability-viz ${compact ? 'compact' : ''}" title="${this._esc(tip)}">
+      <div class="outcome-strip">${segs}</div>
+      ${rates}
+    </div>`;
+  }
+
+  _abilityLegend() {
+    return `<div class="ability-legend" aria-hidden="true">
+      <span class="leg SO">K</span>
+      <span class="leg FO">FO</span>
+      <span class="leg GO">GO</span>
+      <span class="leg BB">BB</span>
+      <span class="leg 1B">1B</span>
+      <span class="leg 2B">2B</span>
+      <span class="leg HR">HR</span>
+      <span class="leg-note">outcome mix</span>
+    </div>`;
+  }
+
   _highlightCell(result) {
     if (!result || result.d1 == null || result.d2 == null) return null;
     if (result.matrixSource !== 'pitcher' && result.matrixSource !== 'batter') return null;
@@ -1381,22 +1474,7 @@ export class GameUI {
     const a = player.abilities;
     const meta = isPitcher
       ? `IP ${entry?.ipUsed ?? 0}/${a.IP}`
-      : `${player.positions.join('/')} · ${player.hand} · SPD ${a.SPD}`;
-
-    const pills = isPitcher
-      ? `<div class="stat-pills">
-          <span class="pill">K ${a.K}</span>
-          <span class="pill">BB ${a.BB}</span>
-          <span class="pill">HR ${a.HR}</span>
-          <span class="pill">IP ${a.IP}</span>
-        </div>`
-      : `<div class="stat-pills">
-          <span class="pill">H ${a.H}</span>
-          <span class="pill">2B ${a['2B']}</span>
-          <span class="pill">HR ${a.HR}</span>
-          <span class="pill">BB ${a.BB}</span>
-          <span class="pill">K ${a.K}</span>
-        </div>`;
+      : `${player.positions.join('/')} · ${player.hand}`;
 
     let matrix = '';
     if (this.showMatrices || hl) {
@@ -1418,7 +1496,7 @@ export class GameUI {
         <div class="role">${role}</div>
         <div class="name">${isPitcher ? `${player.hand}HP` : this._esc(player.name)}</div>
         <div class="meta">${meta}</div>
-        ${pills}
+        ${this._abilityViz({ ...player, type: isPitcher ? 'pitcher' : 'batter' })}
         ${matrix}
       </div>
     `;

@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import csv
 import json
+import math
 import random
 import statistics
 from collections import defaultdict
@@ -347,8 +348,48 @@ def fit(group, prices, feat_fn, names):
     }
 
 
+def rescale_for_cap(group, demand_prices, max_s, best_n_target, best_n):
+    """Map within-role demand+ability ranks onto a steep $ curve for the $1000 cap.
+
+    Live draft prices plateau with substitutes (~tens of dollars). Absolute $ must
+    be remapped or the cap never bites. Batters and pitchers are scaled separately
+    so pitcher IP-heavy raw values do not crush batter salaries.
+    """
+    g = list(group)
+    nd = max(1, len(g) - 1)
+    by_d = sorted(g, key=lambda p: -demand_prices[p["id"]])
+    by_r = sorted(g, key=lambda p: -raw_value(p))
+    demand_pct = {p["id"]: 1 - i / nd for i, p in enumerate(by_d)}
+    raw_pct = {p["id"]: 1 - i / nd for i, p in enumerate(by_r)}
+    scored = []
+    for p in g:
+        score = 0.5 * demand_pct[p["id"]] + 0.5 * raw_pct[p["id"]]
+        if raw_pct[p["id"]] >= 0.98:
+            score = max(score, 0.96)
+        elif raw_pct[p["id"]] >= 0.95:
+            score = max(score, 0.92)
+        scored.append((score, raw_value(p), p))
+    ordered = [p for _, _, p in sorted(scored, key=lambda t: (-t[0], -t[1], t[2]["name"]))]
+    k = 0.095
+    raw_pay = [1 + (max_s - 1) * math.exp(-k * i) for i in range(len(ordered))]
+    top = sum(raw_pay[:best_n]) or 1
+    scale = best_n_target / top
+    out = {}
+    for i, p in enumerate(ordered):
+        out[p["id"]] = int(round(max(MIN_PRICE, min(max_s + 20, raw_pay[i] * scale))))
+    return out, ordered
+
+
 def write_outputs(batters, pitchers, prices, history, formula):
+    # Remap live draft $ onto cap-meaningful board prices (per role).
+    bat_pay, bat_ord = rescale_for_cap(batters, prices, max_s=280, best_n_target=1300, best_n=9)
+    pit_pay, pit_ord = rescale_for_cap(pitchers, prices, max_s=260, best_n_target=1000, best_n=5)
+    board = {**bat_pay, **pit_pay}
     players = batters + pitchers
+
+    # Sync salary onto player objects for JSON consumers
+    for p in players:
+        p["salary"] = board[p["id"]]
 
     def upd(path, group, idx):
         with open(path, newline="", encoding="utf-8") as f:
@@ -361,7 +402,7 @@ def write_outputs(batters, pitchers, prices, history, formula):
                 continue
             while len(row) <= idx:
                 row.append("")
-            row[idx] = str(prices[by_name[row[0]]["id"]])
+            row[idx] = str(board[by_name[row[0]]["id"]])
         with open(path, "w", newline="", encoding="utf-8") as f:
             csv.writer(f).writerows(rows)
 
@@ -371,36 +412,72 @@ def write_outputs(batters, pitchers, prices, history, formula):
     with open(OUT_DIR / "salaries.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["name", "type", "team", "salary", "raw_value"])
-        for p in sorted(players, key=lambda x: (-prices[x["id"]], x["name"])):
-            w.writerow([p["name"], p["kind"], p["team"], prices[p["id"]], f"{raw_value(p):.3f}"])
+        for p in sorted(players, key=lambda x: (-board[x["id"]], x["name"])):
+            w.writerow([p["name"], p["kind"], p["team"], board[p["id"]], f"{raw_value(p):.3f}"])
+
+    b9 = sum(board[p["id"]] for p in bat_ord[:9])
+    p5 = sum(board[p["id"]] for p in pit_ord[:5])
+    max_s = max(board.values())
 
     (OUT_DIR / "salary_market.json").write_text(
         json.dumps(
             {
-                "meta": {"cap": CAP, "rounds": len(history), "method": "2-AI draft market"},
+                "meta": {
+                    "cap": CAP,
+                    "rounds": len(history),
+                    "method": "2-AI draft demand + per-role ability blend + $1000-cap curve",
+                    "max_salary": max_s,
+                    "best9_batters": b9,
+                    "best5_pitchers": p5,
+                    "note": "Do not change the $1000 rule. Live draft $ plateau; board $ are remapped per role.",
+                },
                 "history": history,
                 "formula": formula,
-                "prices": {p["name"]: prices[p["id"]] for p in players},
+                "prices": {p["name"]: board[p["id"]] for p in players},
             },
             indent=2,
         )
     )
 
-    bf, pf = formula["batter"]["weights"], formula["pitcher"]["weights"]
-    top = sorted(players, key=lambda p: -prices[p["id"]])[:25]
+    # Persist salaries on players.json
+    data = json.loads(PLAYERS_JSON.read_text())
+    pay_by_name = {p["name"]: board[p["id"]] for p in players}
+    for b in data["batters"]:
+        b["salary"] = int(pay_by_name.get(b["name"], MIN_PRICE))
+    for p in data["pitchers"]:
+        p["salary"] = int(pay_by_name.get(p["name"], MIN_PRICE))
+    PLAYERS_JSON.write_text(json.dumps(data, indent=2) + "\n")
+
+    top = sorted(players, key=lambda p: -board[p["id"]])[:25]
     top_md = "\n".join(
-        f"| {prices[p['id']]} | {p['kind']} | {p['name']} | {p['team']} | {raw_value(p):.1f} |"
+        f"| {board[p['id']]} | {p['kind']} | {p['name']} | {p['team']} | {raw_value(p):.1f} |"
         for p in top
     )
     (OUT_DIR / "SALARY_FORMULA.md").write_text(
         f"""# Salary Market Results
+
+## What went wrong (and what not to change)
+
+The **$1000 salary cap is fine — do not change that rule.**
+
+Live 2-AI draft prices plateau in the tens of dollars (deep substitute pool).
+If those raw prices are used on the board, the cap never bites. Board salaries are
+therefore remapped **per role** onto a steep curve sized for ${CAP}.
+
+| Check | Value |
+|-------|------:|
+| Cap (rule) | **${CAP}** |
+| Max salary | **${max_s}** |
+| Best 9 batters | **${b9}** |
+| Best 5 pitchers | **${p5}** |
 
 ## Method
 1. All players start at **$1**
 2. Two AI managers snake-draft with full rules (cap ${CAP}, roster {MIN_ROSTER}–{MAX_ROSTER},
    lineup C/1B/2B/3B/SS/OF×3/DH, pitching IP > 9)
 3. Early/frequent picks get **raised**; ignored players get **cut** (floor $1)
-4. Repeat until the top of the market stabilizes ({len(history)} rounds)
+4. After stabilization: within each role, blend demand + ability, remap to board $
+5. Targets: best-9 batters ≈ $1300, best-5 pitchers ≈ $1000, stars ≈ $200–$280
 
 ## Top salaries
 
@@ -408,31 +485,20 @@ def write_outputs(batters, pitchers, prices, history, formula):
 |---:|---|---|---|---:|
 {top_md}
 
-## Fitted formulas
+## Fitted formulas (on live-draft signal; board $ use the remap above)
 
 Round to int, clamp ≥ 1.
 
 ### Batter — R²={formula['batter']['r2']:.3f}, MAE=${formula['batter']['mae']:.1f}
 
-```
-salary ≈ {bf['intercept']:.2f}
-  + {bf['H']:.4f}*H + {bf['2B']:.4f}*2B + {bf['HR']:.4f}*HR + {bf['BB']:.4f}*BB
-  + {bf['K']:.4f}*K + {bf['SPD']:.4f}*SPD + {bf['DEF']:.4f}*DEF
-  + {bf['raw']:.4f}*raw
-```
-
 `raw = 0.35*BB + 0.45*H + 0.75*2B + 1.40*HR - 0.12*K - 0.02*FO - 0.02*GO + 0.35*max(SPD,0) + 0.25*DEF`
 
 ### Pitcher — R²={formula['pitcher']['r2']:.3f}, MAE=${formula['pitcher']['mae']:.1f}
 
-```
-salary ≈ {pf['intercept']:.2f}
-  + {pf['IP']:.4f}*IP + {pf['K']:.4f}*K + {pf['FO']:.4f}*FO + {pf['GO']:.4f}*GO
-  + {pf['BB']:.4f}*BB + {pf['1B']:.4f}*1B + {pf['2B']:.4f}*2B + {pf['HR']:.4f}*HR
-  + {pf['raw']:.4f}*raw
-```
-
 `raw = 0.55*K + 0.18*FO + 0.22*GO - 0.40*BB - 0.35*1B - 0.55*2B - 1.10*HR + 4.5*IP`
+
+## Should you change rules?
+**No.** Keep the $1000 cap. Adjust the salary curve (this pipeline), not the rule.
 
 ## Outputs
 - `data/salaries.csv`

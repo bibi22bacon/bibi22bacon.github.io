@@ -143,7 +143,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 33,
+      "salary": 25,
       "_v": 59.4
     },
     {
@@ -289,12 +289,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 52,
+      "salary": 26,
       "_v": 70.2
     },
     {
       "id": "b_2",
-      "name": "Acu\u00f1a Jr., Ronald",
+      "name": "Acuña Jr., Ronald",
       "year": "2025",
       "team": "ATL",
       "positions": [
@@ -435,12 +435,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 98,
+      "salary": 79,
       "_v": 86.95
     },
     {
       "id": "b_3",
-      "name": "Acu\u00f1a, Luisangel",
+      "name": "Acuña, Luisangel",
       "year": "2025",
       "team": "NYM",
       "positions": [
@@ -581,7 +581,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 22,
+      "salary": 20,
       "_v": 50.35000000000001
     },
     {
@@ -727,7 +727,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 34,
+      "salary": 26,
       "_v": 58.949999999999996
     },
     {
@@ -873,7 +873,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13,
+      "salary": 17,
       "_v": 19.200000000000003
     },
     {
@@ -1019,7 +1019,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 32,
+      "salary": 26,
       "_v": 62.05
     },
     {
@@ -1165,7 +1165,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29,
+      "salary": 24,
       "_v": 58.2
     },
     {
@@ -1603,7 +1603,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 60,
+      "salary": 26,
       "_v": 74.35000000000001
     },
     {
@@ -1751,7 +1751,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 47,
+      "salary": 26,
       "_v": 68.95
     },
     {
@@ -1897,7 +1897,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16,
+      "salary": 18,
       "_v": 37.7
     },
     {
@@ -2043,7 +2043,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 36,
+      "salary": 23,
       "_v": 60.14999999999999
     },
     {
@@ -2189,7 +2189,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 53,
+      "salary": 26,
       "_v": 72.64999999999999
     },
     {
@@ -2335,7 +2335,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14,
+      "salary": 18,
       "_v": 31.450000000000003
     },
     {
@@ -2481,7 +2481,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 57,
+      "salary": 26,
       "_v": 68.85
     },
     {
@@ -2629,7 +2629,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 58,
+      "salary": 26,
       "_v": 74.8
     },
     {
@@ -2775,7 +2775,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 56,
+      "salary": 26,
       "_v": 71.10000000000001
     },
     {
@@ -2921,7 +2921,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 72,
+      "salary": 26,
       "_v": 77.45
     },
     {
@@ -3069,7 +3069,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13,
+      "salary": 17,
       "_v": 25.75
     },
     {
@@ -3215,7 +3215,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 22,
+      "salary": 20,
       "_v": 49.099999999999994
     },
     {
@@ -3362,7 +3362,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15,
+      "salary": 18,
       "_v": 32.7
     },
     {
@@ -3508,7 +3508,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27,
+      "salary": 21,
       "_v": 56.699999999999996
     },
     {
@@ -3655,7 +3655,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 36,
+      "salary": 24,
       "_v": 64.2
     },
     {
@@ -3801,12 +3801,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 44,
+      "salary": 26,
       "_v": 65.85000000000001
     },
     {
       "id": "b_26",
-      "name": "B\u00e1ez, Javier",
+      "name": "Báez, Javier",
       "year": "2025",
       "team": "DET",
       "positions": [
@@ -3949,7 +3949,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24,
+      "salary": 20,
       "_v": 49.7
     },
     {
@@ -4095,7 +4095,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16,
+      "salary": 18,
       "_v": 32.1
     },
     {
@@ -4387,7 +4387,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 58,
+      "salary": 26,
       "_v": 71.8
     },
     {
@@ -4534,7 +4534,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 38,
+      "salary": 26,
       "_v": 62.1
     },
     {
@@ -4680,7 +4680,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21,
+      "salary": 19,
       "_v": 45.25000000000001
     },
     {
@@ -4826,7 +4826,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14,
+      "salary": 17,
       "_v": 28.45000000000001
     },
     {
@@ -4973,7 +4973,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 30,
+      "salary": 21,
       "_v": 57.900000000000006
     },
     {
@@ -5120,7 +5120,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31,
+      "salary": 21,
       "_v": 58.300000000000004
     },
     {
@@ -5266,7 +5266,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 47,
+      "salary": 26,
       "_v": 67.69999999999999
     },
     {
@@ -5412,7 +5412,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21,
+      "salary": 20,
       "_v": 48.95000000000001
     },
     {
@@ -5559,7 +5559,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29,
+      "salary": 21,
       "_v": 60.05
     },
     {
@@ -5705,7 +5705,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 98,
+      "salary": 86,
       "_v": 85.65
     },
     {
@@ -5852,7 +5852,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 38,
+      "salary": 26,
       "_v": 66.05000000000001
     },
     {
@@ -5998,7 +5998,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26,
+      "salary": 20,
       "_v": 55.1
     },
     {
@@ -6144,7 +6144,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26,
+      "salary": 22,
       "_v": 54.7
     },
     {
@@ -6290,7 +6290,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14,
+      "salary": 18,
       "_v": 36.25000000000001
     },
     {
@@ -6436,7 +6436,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 46,
+      "salary": 26,
       "_v": 66.5
     },
     {
@@ -6582,7 +6582,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 68,
+      "salary": 26,
       "_v": 75.95
     },
     {
@@ -6728,7 +6728,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 22,
+      "salary": 20,
       "_v": 50.5
     },
     {
@@ -6874,7 +6874,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 37,
+      "salary": 26,
       "_v": 60.400000000000006
     },
     {
@@ -7020,7 +7020,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 28,
+      "salary": 20,
       "_v": 56.55
     },
     {
@@ -7166,7 +7166,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 61,
+      "salary": 26,
       "_v": 73.00000000000001
     },
     {
@@ -7312,7 +7312,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12,
+      "salary": 16,
       "_v": 21.849999999999998
     },
     {
@@ -7458,7 +7458,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26,
+      "salary": 22,
       "_v": 54.6
     },
     {
@@ -7606,7 +7606,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 54,
+      "salary": 26,
       "_v": 73.94999999999999
     },
     {
@@ -7752,7 +7752,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 76,
+      "salary": 42,
       "_v": 79.55000000000001
     },
     {
@@ -7898,7 +7898,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27,
+      "salary": 20,
       "_v": 54.800000000000004
     },
     {
@@ -8044,12 +8044,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 85,
+      "salary": 34,
       "_v": 82.15
     },
     {
       "id": "b_55",
-      "name": "Caballero, Jos\u00e9",
+      "name": "Caballero, José",
       "year": "2025",
       "team": "NYY",
       "positions": [
@@ -8192,8 +8192,8 @@
         ]
       ],
       "type": "batter",
-      "salary": 25,
-      "_v": 51.0
+      "salary": 20,
+      "_v": 51
     },
     {
       "id": "b_56",
@@ -8484,7 +8484,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12,
+      "salary": 16,
       "_v": 26.35
     },
     {
@@ -8630,7 +8630,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31,
+      "salary": 23,
       "_v": 59.85000000000001
     },
     {
@@ -8776,7 +8776,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 77,
+      "salary": 30,
       "_v": 79.9
     },
     {
@@ -8922,7 +8922,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 18,
       "_v": 40.85
     },
     {
@@ -9068,7 +9068,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13,
+      "salary": 17,
       "_v": 30.60000000000001
     },
     {
@@ -9214,7 +9214,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13,
+      "salary": 17,
       "_v": 34.65
     },
     {
@@ -9360,7 +9360,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 54,
+      "salary": 26,
       "_v": 74.1
     },
     {
@@ -9506,7 +9506,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12,
+      "salary": 16,
       "_v": 5.4
     },
     {
@@ -9653,7 +9653,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25,
+      "salary": 22,
       "_v": 51.95
     },
     {
@@ -9799,7 +9799,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 18,
       "_v": 41.55000000000001
     },
     {
@@ -9946,7 +9946,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 41,
+      "salary": 26,
       "_v": 66.00000000000001
     },
     {
@@ -10092,7 +10092,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 98,
+      "salary": 53,
       "_v": 83.5
     },
     {
@@ -10238,7 +10238,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 36,
+      "salary": 21,
       "_v": 62.199999999999996
     },
     {
@@ -10384,7 +10384,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13,
+      "salary": 16,
       "_v": 28.299999999999994
     },
     {
@@ -10530,7 +10530,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21,
+      "salary": 20,
       "_v": 50.550000000000004
     },
     {
@@ -10824,7 +10824,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 45,
+      "salary": 21,
       "_v": 64.95
     },
     {
@@ -10971,7 +10971,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 55,
+      "salary": 26,
       "_v": 71.60000000000001
     },
     {
@@ -11117,7 +11117,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 48,
+      "salary": 26,
       "_v": 68.95
     },
     {
@@ -11263,7 +11263,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15,
+      "salary": 17,
       "_v": 34.85
     },
     {
@@ -11409,7 +11409,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14,
+      "salary": 17,
       "_v": 37.900000000000006
     },
     {
@@ -11557,7 +11557,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29,
+      "salary": 25,
       "_v": 57.15
     },
     {
@@ -11705,7 +11705,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 40,
+      "salary": 21,
       "_v": 63.300000000000004
     },
     {
@@ -11851,7 +11851,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 40,
+      "salary": 21,
       "_v": 63.65
     },
     {
@@ -11997,8 +11997,8 @@
         ]
       ],
       "type": "batter",
-      "salary": 15,
-      "_v": 39.0
+      "salary": 18,
+      "_v": 39
     },
     {
       "id": "b_82",
@@ -12144,7 +12144,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 46,
+      "salary": 21,
       "_v": 64.3
     },
     {
@@ -12290,7 +12290,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 32,
+      "salary": 22,
       "_v": 58.4
     },
     {
@@ -12437,7 +12437,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29,
+      "salary": 23,
       "_v": 55.400000000000006
     },
     {
@@ -12583,7 +12583,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 18,
       "_v": 40.5
     },
     {
@@ -12729,7 +12729,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31,
+      "salary": 22,
       "_v": 57.949999999999996
     },
     {
@@ -12875,7 +12875,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18,
+      "salary": 19,
       "_v": 44.95
     },
     {
@@ -13021,7 +13021,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 32,
+      "salary": 20,
       "_v": 58.849999999999994
     },
     {
@@ -13167,7 +13167,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 54,
+      "salary": 26,
       "_v": 70.04999999999998
     },
     {
@@ -13459,7 +13459,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14,
+      "salary": 15,
       "_v": 24.850000000000005
     },
     {
@@ -13605,7 +13605,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13,
+      "salary": 15,
       "_v": 20.6
     },
     {
@@ -13751,7 +13751,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 38,
+      "salary": 21,
       "_v": 61.45000000000001
     },
     {
@@ -13897,7 +13897,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15,
+      "salary": 17,
       "_v": 35.300000000000004
     },
     {
@@ -14043,7 +14043,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16,
+      "salary": 17,
       "_v": 39.15
     },
     {
@@ -14190,7 +14190,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 66,
+      "salary": 26,
       "_v": 75.64999999999999
     },
     {
@@ -14336,12 +14336,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 19,
+      "salary": 18,
       "_v": 44.85000000000001
     },
     {
       "id": "b_98",
-      "name": "D\u00edaz, Elias",
+      "name": "Díaz, Elias",
       "year": "2025",
       "team": "SD",
       "positions": [
@@ -14482,7 +14482,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15,
+      "salary": 16,
       "_v": 31.900000000000002
     },
     {
@@ -14629,12 +14629,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 37,
+      "salary": 26,
       "_v": 62.05
     },
     {
       "id": "b_100",
-      "name": "D\u00edaz, Yandy",
+      "name": "Díaz, Yandy",
       "year": "2025",
       "team": "TB",
       "positions": [
@@ -14776,7 +14776,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 71,
+      "salary": 37,
       "_v": 80.2
     },
     {
@@ -14922,12 +14922,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 38,
+      "salary": 25,
       "_v": 59.75
     },
     {
       "id": "b_102",
-      "name": "Dom\u00ednguez, Jasson",
+      "name": "Domínguez, Jasson",
       "year": "2025",
       "team": "NYY",
       "positions": [
@@ -15068,7 +15068,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26,
+      "salary": 20,
       "_v": 55.7
     },
     {
@@ -15214,7 +15214,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 49,
+      "salary": 26,
       "_v": 68.6
     },
     {
@@ -15360,12 +15360,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 19,
+      "salary": 18,
       "_v": 44.949999999999996
     },
     {
       "id": "b_105",
-      "name": "Dub\u00f3n, Mauricio",
+      "name": "Dubón, Mauricio",
       "year": "2025",
       "team": "HOU",
       "positions": [
@@ -15508,7 +15508,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26,
+      "salary": 20,
       "_v": 52.8
     },
     {
@@ -15655,7 +15655,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18,
+      "salary": 17,
       "_v": 39.150000000000006
     },
     {
@@ -15801,7 +15801,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 40,
+      "salary": 23,
       "_v": 63.25000000000001
     },
     {
@@ -15947,7 +15947,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31,
+      "salary": 24,
       "_v": 58.3
     },
     {
@@ -16094,7 +16094,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27,
+      "salary": 20,
       "_v": 53.65
     },
     {
@@ -16241,7 +16241,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 48,
+      "salary": 25,
       "_v": 68.4
     },
     {
@@ -16387,7 +16387,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 18,
       "_v": 42.95
     },
     {
@@ -16533,7 +16533,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23,
+      "salary": 19,
       "_v": 51.55
     },
     {
@@ -16679,7 +16679,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26,
+      "salary": 20,
       "_v": 53.70000000000001
     },
     {
@@ -16972,7 +16972,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14,
+      "salary": 15,
       "_v": 27.3
     },
     {
@@ -17118,12 +17118,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 19,
+      "salary": 18,
       "_v": 42.9
     },
     {
       "id": "b_117",
-      "name": "Fern\u00e1ndez, Yanquiel",
+      "name": "Fernández, Yanquiel",
       "year": "2025",
       "team": "COL",
       "positions": [
@@ -17265,7 +17265,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13,
+      "salary": 16,
       "_v": 30.700000000000003
     },
     {
@@ -17411,7 +17411,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14,
+      "salary": 16,
       "_v": 32.95
     },
     {
@@ -17558,7 +17558,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20,
+      "salary": 19,
       "_v": 50.300000000000004
     },
     {
@@ -17704,7 +17704,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19,
+      "salary": 17,
       "_v": 41.099999999999994
     },
     {
@@ -17850,7 +17850,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29,
+      "salary": 22,
       "_v": 58.050000000000004
     },
     {
@@ -17996,7 +17996,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19,
+      "salary": 18,
       "_v": 45.25000000000001
     },
     {
@@ -18143,7 +18143,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23,
+      "salary": 19,
       "_v": 50.8
     },
     {
@@ -18289,7 +18289,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 18,
       "_v": 42.95
     },
     {
@@ -18435,7 +18435,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 80,
+      "salary": 29,
       "_v": 79.94999999999999
     },
     {
@@ -18582,7 +18582,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 37,
+      "salary": 26,
       "_v": 65.2
     },
     {
@@ -18728,7 +18728,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 50,
+      "salary": 26,
       "_v": 70.75
     },
     {
@@ -18874,7 +18874,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 34,
+      "salary": 20,
       "_v": 62.1
     },
     {
@@ -19020,7 +19020,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12,
+      "salary": 15,
       "_v": 24.399999999999995
     },
     {
@@ -19171,7 +19171,7 @@
     },
     {
       "id": "b_131",
-      "name": "Garc\u00eda Jr., Luis",
+      "name": "García Jr., Luis",
       "year": "2025",
       "team": "WSH",
       "positions": [
@@ -19312,12 +19312,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 31,
+      "salary": 20,
       "_v": 59.60000000000001
     },
     {
       "id": "b_132",
-      "name": "Garc\u00eda, Adolis",
+      "name": "García, Adolis",
       "year": "2025",
       "team": "TEX",
       "positions": [
@@ -19458,7 +19458,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20,
+      "salary": 18,
       "_v": 46.900000000000006
     },
     {
@@ -19604,7 +19604,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 78,
+      "salary": 26,
       "_v": 76.85
     },
     {
@@ -19897,7 +19897,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14,
+      "salary": 15,
       "_v": 29.05
     },
     {
@@ -20043,7 +20043,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12,
+      "salary": 14,
       "_v": 10.4
     },
     {
@@ -20194,7 +20194,7 @@
     },
     {
       "id": "b_138",
-      "name": "Gim\u00e9nez, Andr\u00e9s",
+      "name": "Giménez, Andrés",
       "year": "2025",
       "team": "TOR",
       "positions": [
@@ -20335,7 +20335,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18,
+      "salary": 17,
       "_v": 41.25
     },
     {
@@ -20481,7 +20481,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29,
+      "salary": 23,
       "_v": 57.150000000000006
     },
     {
@@ -20627,7 +20627,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26,
+      "salary": 19,
       "_v": 52.7
     },
     {
@@ -20774,7 +20774,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 46,
+      "salary": 25,
       "_v": 67.7
     },
     {
@@ -20921,7 +20921,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 67,
+      "salary": 26,
       "_v": 73.5
     },
     {
@@ -21069,7 +21069,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18,
+      "salary": 17,
       "_v": 41.099999999999994
     },
     {
@@ -21216,7 +21216,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 38,
+      "salary": 26,
       "_v": 63.599999999999994
     },
     {
@@ -21363,7 +21363,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19,
+      "salary": 18,
       "_v": 45.7
     },
     {
@@ -21509,7 +21509,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 58,
+      "salary": 26,
       "_v": 74.75
     },
     {
@@ -21656,7 +21656,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 81,
+      "salary": 27,
       "_v": 81.24999999999999
     },
     {
@@ -21802,7 +21802,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29,
+      "salary": 20,
       "_v": 58.699999999999996
     },
     {
@@ -21948,7 +21948,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27,
+      "salary": 20,
       "_v": 55.25000000000001
     },
     {
@@ -22240,7 +22240,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 41,
+      "salary": 24,
       "_v": 64.85
     },
     {
@@ -22386,7 +22386,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 71,
+      "salary": 26,
       "_v": 77.1
     },
     {
@@ -22532,7 +22532,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29,
+      "salary": 20,
       "_v": 57.1
     },
     {
@@ -22678,8 +22678,8 @@
         ]
       ],
       "type": "batter",
-      "salary": 13,
-      "_v": 31.0
+      "salary": 15,
+      "_v": 31
     },
     {
       "id": "b_155",
@@ -22824,7 +22824,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18,
+      "salary": 16,
       "_v": 41.949999999999996
     },
     {
@@ -22971,7 +22971,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 34,
+      "salary": 23,
       "_v": 61.6
     },
     {
@@ -23410,7 +23410,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 51,
+      "salary": 26,
       "_v": 66.10000000000001
     },
     {
@@ -23556,7 +23556,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 40,
+      "salary": 26,
       "_v": 64.35
     },
     {
@@ -23702,7 +23702,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 52,
+      "salary": 26,
       "_v": 68.39999999999999
     },
     {
@@ -23849,12 +23849,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 26,
+      "salary": 19,
       "_v": 53.35
     },
     {
       "id": "b_163",
-      "name": "Hern\u00e1ndez, Enrique",
+      "name": "Hernández, Enrique",
       "year": "2025",
       "team": "LAD",
       "positions": [
@@ -24002,7 +24002,7 @@
     },
     {
       "id": "b_164",
-      "name": "Hern\u00e1ndez, Heriberto",
+      "name": "Hernández, Heriberto",
       "year": "2025",
       "team": "MIA",
       "positions": [
@@ -24144,12 +24144,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 43,
+      "salary": 26,
       "_v": 65.35
     },
     {
       "id": "b_165",
-      "name": "Hern\u00e1ndez, Teoscar",
+      "name": "Hernández, Teoscar",
       "year": "2025",
       "team": "LAD",
       "positions": [
@@ -24290,12 +24290,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 27,
+      "salary": 19,
       "_v": 56.25000000000001
     },
     {
       "id": "b_166",
-      "name": "Herrera, Iv\u00e1n",
+      "name": "Herrera, Iván",
       "year": "2025",
       "team": "STL",
       "positions": [
@@ -24436,7 +24436,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 51,
+      "salary": 26,
       "_v": 72.70000000000002
     },
     {
@@ -24730,7 +24730,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27,
+      "salary": 21,
       "_v": 52.55
     },
     {
@@ -24877,7 +24877,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25,
+      "salary": 18,
       "_v": 50.60000000000001
     },
     {
@@ -25023,7 +25023,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14,
+      "salary": 15,
       "_v": 34.199999999999996
     },
     {
@@ -25169,7 +25169,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 57,
+      "salary": 26,
       "_v": 71.89999999999999
     },
     {
@@ -25315,7 +25315,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26,
+      "salary": 19,
       "_v": 54.05
     },
     {
@@ -25461,7 +25461,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 43,
+      "salary": 26,
       "_v": 64.75
     },
     {
@@ -25607,7 +25607,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25,
+      "salary": 19,
       "_v": 51.949999999999996
     },
     {
@@ -25753,7 +25753,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14,
+      "salary": 15,
       "_v": 34.55
     },
     {
@@ -25899,12 +25899,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 18,
+      "salary": 17,
       "_v": 43.40000000000001
     },
     {
       "id": "b_177",
-      "name": "Ib\u00e1\u00f1ez, Andy",
+      "name": "Ibáñez, Andy",
       "year": "2025",
       "team": "DET",
       "positions": [
@@ -26045,7 +26045,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23,
+      "salary": 18,
       "_v": 50.64999999999999
     },
     {
@@ -26193,7 +26193,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19,
+      "salary": 17,
       "_v": 45.25
     },
     {
@@ -26341,7 +26341,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20,
+      "salary": 18,
       "_v": 47.1
     },
     {
@@ -26487,7 +26487,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26,
+      "salary": 19,
       "_v": 53.150000000000006
     },
     {
@@ -26633,7 +26633,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27,
+      "salary": 18,
       "_v": 48.400000000000006
     },
     {
@@ -26779,7 +26779,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29,
+      "salary": 19,
       "_v": 56.55
     },
     {
@@ -26925,7 +26925,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26,
+      "salary": 19,
       "_v": 51.85
     },
     {
@@ -27072,7 +27072,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 32,
+      "salary": 19,
       "_v": 56.949999999999996
     },
     {
@@ -27218,7 +27218,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31,
+      "salary": 23,
       "_v": 61.25
     },
     {
@@ -27365,7 +27365,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 103,
+      "salary": 94,
       "_v": 87.05000000000001
     },
     {
@@ -27511,7 +27511,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13,
+      "salary": 14,
       "_v": 32.35
     },
     {
@@ -27658,7 +27658,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 185,
+      "salary": 195,
       "_v": 118.85000000000001
     },
     {
@@ -27951,7 +27951,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20,
+      "salary": 17,
       "_v": 45.400000000000006
     },
     {
@@ -28097,7 +28097,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 15,
       "_v": 40.65
     },
     {
@@ -28243,7 +28243,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23,
+      "salary": 18,
       "_v": 49.7
     },
     {
@@ -28389,7 +28389,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 73,
+      "salary": 26,
       "_v": 77.39999999999999
     },
     {
@@ -28537,7 +28537,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29,
+      "salary": 22,
       "_v": 58.95
     },
     {
@@ -28683,7 +28683,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 40,
+      "salary": 25,
       "_v": 61.7
     },
     {
@@ -28829,7 +28829,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19,
+      "salary": 16,
       "_v": 44.64999999999999
     },
     {
@@ -28975,7 +28975,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26,
+      "salary": 19,
       "_v": 55.55000000000001
     },
     {
@@ -29121,7 +29121,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21,
+      "salary": 18,
       "_v": 47.95
     },
     {
@@ -29267,7 +29267,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23,
+      "salary": 18,
       "_v": 49.65
     },
     {
@@ -29414,7 +29414,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 28,
+      "salary": 21,
       "_v": 54.900000000000006
     },
     {
@@ -29560,7 +29560,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 63,
+      "salary": 26,
       "_v": 71.55000000000001
     },
     {
@@ -29706,7 +29706,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12,
+      "salary": 14,
       "_v": 26.55
     },
     {
@@ -29852,7 +29852,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20,
+      "salary": 17,
       "_v": 46.300000000000004
     },
     {
@@ -29998,7 +29998,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 128,
+      "salary": 162,
       "_v": 94.4
     },
     {
@@ -30144,7 +30144,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 40,
+      "salary": 23,
       "_v": 64.1
     },
     {
@@ -30290,7 +30290,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 98,
+      "salary": 57,
       "_v": 83.14999999999999
     },
     {
@@ -30436,7 +30436,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 50,
+      "salary": 24,
       "_v": 67.85
     },
     {
@@ -30583,12 +30583,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 24,
+      "salary": 19,
       "_v": 54.349999999999994
     },
     {
       "id": "b_209",
-      "name": "Laureano, Ram\u00f3n",
+      "name": "Laureano, Ramón",
       "year": "2025",
       "team": "SD",
       "positions": [
@@ -30729,7 +30729,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 63,
+      "salary": 26,
       "_v": 76.05
     },
     {
@@ -30877,7 +30877,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21,
+      "salary": 17,
       "_v": 48.15
     },
     {
@@ -31023,7 +31023,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 41,
+      "salary": 26,
       "_v": 66.15
     },
     {
@@ -31169,7 +31169,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20,
+      "salary": 16,
       "_v": 45.650000000000006
     },
     {
@@ -31315,7 +31315,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23,
+      "salary": 18,
       "_v": 49.75
     },
     {
@@ -31461,7 +31461,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 60,
+      "salary": 26,
       "_v": 75.60000000000001
     },
     {
@@ -31607,8 +31607,8 @@
         ]
       ],
       "type": "batter",
-      "salary": 69,
-      "_v": 75.0
+      "salary": 26,
+      "_v": 75
     },
     {
       "id": "b_216",
@@ -31753,7 +31753,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12,
+      "salary": 13,
       "_v": 23.150000000000002
     },
     {
@@ -31899,7 +31899,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 22,
+      "salary": 17,
       "_v": 49.1
     },
     {
@@ -32045,7 +32045,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18,
+      "salary": 16,
       "_v": 43.25
     },
     {
@@ -32191,7 +32191,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 62,
+      "salary": 26,
       "_v": 76.55
     },
     {
@@ -32338,7 +32338,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 33,
+      "salary": 22,
       "_v": 59.15
     },
     {
@@ -32484,7 +32484,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 39,
+      "salary": 20,
       "_v": 64.80000000000001
     },
     {
@@ -32630,7 +32630,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18,
+      "salary": 16,
       "_v": 44.300000000000004
     },
     {
@@ -32776,7 +32776,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21,
+      "salary": 17,
       "_v": 48.599999999999994
     },
     {
@@ -32922,7 +32922,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 34,
+      "salary": 22,
       "_v": 60.949999999999996
     },
     {
@@ -33069,7 +33069,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31,
+      "salary": 19,
       "_v": 60.45000000000001
     },
     {
@@ -33215,7 +33215,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 46,
+      "salary": 26,
       "_v": 68.1
     },
     {
@@ -33366,7 +33366,7 @@
     },
     {
       "id": "b_228",
-      "name": "Maldonado, Mart\u00edn",
+      "name": "Maldonado, Martín",
       "year": "2025",
       "team": "SD",
       "positions": [
@@ -33654,7 +33654,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 22,
+      "salary": 17,
       "_v": 48.95000000000001
     },
     {
@@ -33800,7 +33800,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 45,
+      "salary": 26,
       "_v": 68.75
     },
     {
@@ -33947,12 +33947,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 27,
+      "salary": 19,
       "_v": 57.25000000000001
     },
     {
       "id": "b_232",
-      "name": "March\u00e1n, Rafael",
+      "name": "Marchán, Rafael",
       "year": "2025",
       "team": "PHI",
       "positions": [
@@ -34093,7 +34093,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 14,
       "_v": 38.15
     },
     {
@@ -34239,7 +34239,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 64,
+      "salary": 26,
       "_v": 73.25000000000001
     },
     {
@@ -34385,7 +34385,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 39,
+      "salary": 20,
       "_v": 63.3
     },
     {
@@ -34532,7 +34532,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 113,
+      "salary": 103,
       "_v": 88.5
     },
     {
@@ -34679,7 +34679,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31,
+      "salary": 22,
       "_v": 60.85000000000001
     },
     {
@@ -34825,7 +34825,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 30,
+      "salary": 22,
       "_v": 60.3
     },
     {
@@ -34971,12 +34971,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 46,
+      "salary": 26,
       "_v": 67.99999999999999
     },
     {
       "id": "b_239",
-      "name": "Mart\u00ednez, Angel",
+      "name": "Martínez, Angel",
       "year": "2025",
       "team": "CLE",
       "positions": [
@@ -35118,7 +35118,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 15,
       "_v": 42.80000000000001
     },
     {
@@ -35264,7 +35264,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18,
+      "salary": 16,
       "_v": 46.50000000000001
     },
     {
@@ -35410,7 +35410,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19,
+      "salary": 16,
       "_v": 44.449999999999996
     },
     {
@@ -35557,7 +35557,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 28,
+      "salary": 19,
       "_v": 56.6
     },
     {
@@ -35703,7 +35703,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 28,
+      "salary": 24,
       "_v": 58.349999999999994
     },
     {
@@ -35849,7 +35849,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 14,
       "_v": 39.5
     },
     {
@@ -35995,7 +35995,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20,
+      "salary": 16,
       "_v": 44.8
     },
     {
@@ -36141,7 +36141,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19,
+      "salary": 16,
       "_v": 45.449999999999996
     },
     {
@@ -36287,7 +36287,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25,
+      "salary": 17,
       "_v": 50.5
     },
     {
@@ -36433,7 +36433,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16,
+      "salary": 15,
       "_v": 40.2
     },
     {
@@ -36725,7 +36725,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25,
+      "salary": 18,
       "_v": 53.65
     },
     {
@@ -36871,7 +36871,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 45,
+      "salary": 24,
       "_v": 65.75
     },
     {
@@ -37019,7 +37019,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 40,
+      "salary": 23,
       "_v": 63.099999999999994
     },
     {
@@ -37165,7 +37165,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20,
+      "salary": 16,
       "_v": 44.8
     },
     {
@@ -37311,7 +37311,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24,
+      "salary": 17,
       "_v": 48.949999999999996
     },
     {
@@ -37458,8 +37458,8 @@
         ]
       ],
       "type": "batter",
-      "salary": 44,
-      "_v": 66.0
+      "salary": 26,
+      "_v": 66
     },
     {
       "id": "b_256",
@@ -37751,7 +37751,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 15,
       "_v": 42.6
     },
     {
@@ -37898,8 +37898,8 @@
         ]
       ],
       "type": "batter",
-      "salary": 28,
-      "_v": 54.0
+      "salary": 18,
+      "_v": 54
     },
     {
       "id": "b_259",
@@ -38044,7 +38044,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 48,
+      "salary": 26,
       "_v": 67.95
     },
     {
@@ -38190,8 +38190,8 @@
         ]
       ],
       "type": "batter",
-      "salary": 15,
-      "_v": 36.0
+      "salary": 14,
+      "_v": 36
     },
     {
       "id": "b_261",
@@ -38336,7 +38336,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 40,
+      "salary": 23,
       "_v": 64.25
     },
     {
@@ -38482,7 +38482,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16,
+      "salary": 14,
       "_v": 38.4
     },
     {
@@ -38628,12 +38628,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 35,
+      "salary": 22,
       "_v": 59.05
     },
     {
       "id": "b_264",
-      "name": "Moncada, Yo\u00e1n",
+      "name": "Moncada, Yoán",
       "year": "2025",
       "team": "LAA",
       "positions": [
@@ -38774,7 +38774,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 30,
+      "salary": 24,
       "_v": 57.45
     },
     {
@@ -38920,7 +38920,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 47,
+      "salary": 24,
       "_v": 69.69999999999999
     },
     {
@@ -39066,7 +39066,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 66,
+      "salary": 26,
       "_v": 73.45
     },
     {
@@ -39212,7 +39212,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 14,
       "_v": 39.4
     },
     {
@@ -39359,8 +39359,8 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
-      "_v": 40.0
+      "salary": 14,
+      "_v": 40
     },
     {
       "id": "b_269",
@@ -39505,7 +39505,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 14,
       "_v": 40.449999999999996
     },
     {
@@ -39651,7 +39651,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 65,
+      "salary": 26,
       "_v": 72.8
     },
     {
@@ -39798,7 +39798,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 14,
       "_v": 40.7
     },
     {
@@ -39944,7 +39944,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25,
+      "salary": 18,
       "_v": 53.25
     },
     {
@@ -40090,7 +40090,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 67,
+      "salary": 26,
       "_v": 76.35000000000001
     },
     {
@@ -40236,7 +40236,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23,
+      "salary": 16,
       "_v": 46.2
     },
     {
@@ -40383,11 +40383,11 @@
       ],
       "type": "batter",
       "salary": 14,
-      "_v": 37.0
+      "_v": 37
     },
     {
       "id": "b_276",
-      "name": "Narv\u00e1ez, Carlos",
+      "name": "Narváez, Carlos",
       "year": "2025",
       "team": "BOS",
       "positions": [
@@ -40528,7 +40528,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 35,
+      "salary": 23,
       "_v": 56.7
     },
     {
@@ -40674,7 +40674,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26,
+      "salary": 21,
       "_v": 50.30000000000001
     },
     {
@@ -40821,7 +40821,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 55,
+      "salary": 26,
       "_v": 73.35
     },
     {
@@ -40967,7 +40967,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 46,
+      "salary": 26,
       "_v": 66.05000000000001
     },
     {
@@ -41259,7 +41259,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 40,
+      "salary": 26,
       "_v": 65.6
     },
     {
@@ -41405,7 +41405,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12,
+      "salary": 13,
       "_v": 21.800000000000004
     },
     {
@@ -41551,7 +41551,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21,
+      "salary": 16,
       "_v": 49.85
     },
     {
@@ -41697,7 +41697,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20,
+      "salary": 15,
       "_v": 45.900000000000006
     },
     {
@@ -41845,8 +41845,8 @@
         ]
       ],
       "type": "batter",
-      "salary": 49,
-      "_v": 69.0
+      "salary": 24,
+      "_v": 69
     },
     {
       "id": "b_286",
@@ -41991,7 +41991,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15,
+      "salary": 14,
       "_v": 35.75
     },
     {
@@ -42137,7 +42137,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21,
+      "salary": 16,
       "_v": 50.2
     },
     {
@@ -42283,7 +42283,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 151,
+      "salary": 178,
       "_v": 103.85000000000001
     },
     {
@@ -42429,7 +42429,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 63,
+      "salary": 25,
       "_v": 72.25000000000001
     },
     {
@@ -42575,7 +42575,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20,
+      "salary": 15,
       "_v": 44.95
     },
     {
@@ -42721,7 +42721,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19,
+      "salary": 15,
       "_v": 46.050000000000004
     },
     {
@@ -43013,7 +43013,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 36,
+      "salary": 19,
       "_v": 60.65
     },
     {
@@ -43159,12 +43159,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 50,
+      "salary": 26,
       "_v": 69.49999999999999
     },
     {
       "id": "b_295",
-      "name": "Pag\u00e9s, Pedro",
+      "name": "Pagés, Pedro",
       "year": "2025",
       "team": "STL",
       "positions": [
@@ -43305,7 +43305,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 13,
       "_v": 35.800000000000004
     },
     {
@@ -43597,7 +43597,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 46,
+      "salary": 26,
       "_v": 67.45
     },
     {
@@ -43743,7 +43743,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14,
+      "salary": 13,
       "_v": 33.300000000000004
     },
     {
@@ -43890,7 +43890,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 42,
+      "salary": 26,
       "_v": 67.14999999999999
     },
     {
@@ -44036,7 +44036,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25,
+      "salary": 16,
       "_v": 49.75
     },
     {
@@ -44182,12 +44182,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 15,
+      "salary": 14,
       "_v": 39.35
     },
     {
       "id": "b_302",
-      "name": "Pe\u00f1a, Jeremy",
+      "name": "Peña, Jeremy",
       "year": "2025",
       "team": "HOU",
       "positions": [
@@ -44328,7 +44328,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 77,
+      "salary": 26,
       "_v": 77.05000000000001
     },
     {
@@ -44474,7 +44474,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12,
+      "salary": 13,
       "_v": 16.45
     },
     {
@@ -44620,7 +44620,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 103,
+      "salary": 73,
       "_v": 84.15000000000002
     },
     {
@@ -44768,12 +44768,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 27,
+      "salary": 22,
       "_v": 53.050000000000004
     },
     {
       "id": "b_306",
-      "name": "P\u00e9rez, Wenceel",
+      "name": "Pérez, Wenceel",
       "year": "2025",
       "team": "DET",
       "positions": [
@@ -44914,7 +44914,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 36,
+      "salary": 22,
       "_v": 61.4
     },
     {
@@ -45060,7 +45060,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18,
+      "salary": 14,
       "_v": 43.15
     },
     {
@@ -45206,7 +45206,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21,
+      "salary": 16,
       "_v": 49.5
     },
     {
@@ -45353,7 +45353,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 67,
+      "salary": 26,
       "_v": 78.55
     },
     {
@@ -45499,7 +45499,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 22,
+      "salary": 15,
       "_v": 47.300000000000004
     },
     {
@@ -45645,7 +45645,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 46,
+      "salary": 24,
       "_v": 69.4
     },
     {
@@ -45792,7 +45792,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24,
+      "salary": 16,
       "_v": 50.65
     },
     {
@@ -45939,7 +45939,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 34,
+      "salary": 22,
       "_v": 59.4
     },
     {
@@ -46086,7 +46086,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 131,
+      "salary": 123,
       "_v": 89.5
     },
     {
@@ -46238,7 +46238,7 @@
     },
     {
       "id": "b_316",
-      "name": "Ram\u00edrez, Agust\u00edn",
+      "name": "Ramírez, Agustín",
       "year": "2025",
       "team": "MIA",
       "positions": [
@@ -46380,12 +46380,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 22,
+      "salary": 15,
       "_v": 48.150000000000006
     },
     {
       "id": "b_317",
-      "name": "Ram\u00edrez, Jos\u00e9",
+      "name": "Ramírez, José",
       "year": "2025",
       "team": "CLE",
       "positions": [
@@ -46527,7 +46527,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 119,
+      "salary": 135,
       "_v": 89.7
     },
     {
@@ -46673,7 +46673,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24,
+      "salary": 17,
       "_v": 54.300000000000004
     },
     {
@@ -46819,7 +46819,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16,
+      "salary": 14,
       "_v": 40.55
     },
     {
@@ -46965,7 +46965,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 22,
+      "salary": 15,
       "_v": 47.64999999999999
     },
     {
@@ -47112,7 +47112,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 63,
+      "salary": 26,
       "_v": 74.3
     },
     {
@@ -47405,7 +47405,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16,
+      "salary": 14,
       "_v": 40.49999999999999
     },
     {
@@ -47552,7 +47552,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24,
+      "salary": 16,
       "_v": 51.64999999999999
     },
     {
@@ -47700,7 +47700,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 66,
+      "salary": 26,
       "_v": 75.5
     },
     {
@@ -47846,7 +47846,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27,
+      "salary": 17,
       "_v": 54.25
     },
     {
@@ -47993,7 +47993,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20,
+      "salary": 14,
       "_v": 43.550000000000004
     },
     {
@@ -48139,7 +48139,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 34,
+      "salary": 26,
       "_v": 60.45
     },
     {
@@ -48285,7 +48285,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19,
+      "salary": 14,
       "_v": 44.75
     },
     {
@@ -48431,7 +48431,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19,
+      "salary": 15,
       "_v": 45.7
     },
     {
@@ -48577,7 +48577,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16,
+      "salary": 14,
       "_v": 41.45
     },
     {
@@ -48724,7 +48724,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 13,
       "_v": 38.35
     },
     {
@@ -48870,7 +48870,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12,
+      "salary": 13,
       "_v": 26.050000000000004
     },
     {
@@ -49021,7 +49021,7 @@
     },
     {
       "id": "b_335",
-      "name": "Rodr\u00edguez, Julio",
+      "name": "Rodríguez, Julio",
       "year": "2025",
       "team": "SEA",
       "positions": [
@@ -49162,7 +49162,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 52,
+      "salary": 25,
       "_v": 70.65
     },
     {
@@ -49308,7 +49308,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15,
+      "salary": 13,
       "_v": 29.1
     },
     {
@@ -49454,7 +49454,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 14,
       "_v": 42.89999999999999
     },
     {
@@ -49601,7 +49601,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14,
+      "salary": 13,
       "_v": 30.55
     },
     {
@@ -49749,7 +49749,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 33,
+      "salary": 23,
       "_v": 58.550000000000004
     },
     {
@@ -49896,7 +49896,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 52,
+      "salary": 26,
       "_v": 71.89999999999999
     },
     {
@@ -50042,7 +50042,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13,
+      "salary": 12,
       "_v": 20.35
     },
     {
@@ -50188,7 +50188,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 37,
+      "salary": 26,
       "_v": 63.7
     },
     {
@@ -50334,7 +50334,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20,
+      "salary": 14,
       "_v": 44.9
     },
     {
@@ -50480,7 +50480,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14,
+      "salary": 13,
       "_v": 26.4
     },
     {
@@ -50626,7 +50626,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31,
+      "salary": 21,
       "_v": 55.25000000000001
     },
     {
@@ -50773,12 +50773,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 21,
+      "salary": 15,
       "_v": 48.000000000000014
     },
     {
       "id": "b_347",
-      "name": "S\u00e1nchez, Gary",
+      "name": "Sánchez, Gary",
       "year": "2025",
       "team": "BAL",
       "positions": [
@@ -50919,12 +50919,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 21,
+      "salary": 15,
       "_v": 47.699999999999996
     },
     {
       "id": "b_348",
-      "name": "S\u00e1nchez, Jes\u00fas",
+      "name": "Sánchez, Jesús",
       "year": "2025",
       "team": "HOU",
       "positions": [
@@ -51065,7 +51065,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24,
+      "salary": 16,
       "_v": 52.699999999999996
     },
     {
@@ -51213,8 +51213,8 @@
         ]
       ],
       "type": "batter",
-      "salary": 26,
-      "_v": 54.0
+      "salary": 16,
+      "_v": 54
     },
     {
       "id": "b_350",
@@ -51359,7 +51359,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20,
+      "salary": 15,
       "_v": 47.7
     },
     {
@@ -51652,7 +51652,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 33,
+      "salary": 24,
       "_v": 61.449999999999996
     },
     {
@@ -51799,7 +51799,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24,
+      "salary": 15,
       "_v": 50.9
     },
     {
@@ -51947,7 +51947,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20,
+      "salary": 14,
       "_v": 44.150000000000006
     },
     {
@@ -52094,7 +52094,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 47,
+      "salary": 26,
       "_v": 69.25000000000001
     },
     {
@@ -52242,7 +52242,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18,
+      "salary": 13,
       "_v": 40.949999999999996
     },
     {
@@ -52388,7 +52388,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 95,
+      "salary": 62,
       "_v": 86.05000000000001
     },
     {
@@ -52534,7 +52534,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19,
+      "salary": 14,
       "_v": 45.800000000000004
     },
     {
@@ -52680,7 +52680,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 73,
+      "salary": 26,
       "_v": 75.45
     },
     {
@@ -52826,7 +52826,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 30,
+      "salary": 17,
       "_v": 56.75
     },
     {
@@ -52972,7 +52972,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27,
+      "salary": 16,
       "_v": 54.25
     },
     {
@@ -53119,7 +53119,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 36,
+      "salary": 26,
       "_v": 62.65
     },
     {
@@ -53265,7 +53265,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 48,
+      "salary": 26,
       "_v": 72.2
     },
     {
@@ -53411,7 +53411,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15,
+      "salary": 13,
       "_v": 37.55
     },
     {
@@ -53557,7 +53557,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18,
+      "salary": 14,
       "_v": 44.800000000000004
     },
     {
@@ -53703,7 +53703,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29,
+      "salary": 23,
       "_v": 58.1
     },
     {
@@ -53851,7 +53851,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25,
+      "salary": 15,
       "_v": 51.400000000000006
     },
     {
@@ -53998,7 +53998,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29,
+      "salary": 22,
       "_v": 56.39999999999999
     },
     {
@@ -54144,7 +54144,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 93,
+      "salary": 49,
       "_v": 82.14999999999999
     },
     {
@@ -54291,7 +54291,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 52,
+      "salary": 25,
       "_v": 71.35000000000001
     },
     {
@@ -54437,7 +54437,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25,
+      "salary": 15,
       "_v": 51.45
     },
     {
@@ -54583,7 +54583,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14,
+      "salary": 13,
       "_v": 34.150000000000006
     },
     {
@@ -54730,7 +54730,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 13,
       "_v": 41.95
     },
     {
@@ -54877,7 +54877,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 54,
+      "salary": 24,
       "_v": 70.60000000000001
     },
     {
@@ -55024,7 +55024,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26,
+      "salary": 16,
       "_v": 53.95
     },
     {
@@ -55170,7 +55170,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 97,
+      "salary": 113,
       "_v": 87.00000000000001
     },
     {
@@ -55317,7 +55317,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 117,
+      "salary": 148,
       "_v": 93.9
     },
     {
@@ -55463,7 +55463,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13,
+      "salary": 12,
       "_v": 0.6500000000000004
     },
     {
@@ -55610,7 +55610,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 78,
+      "salary": 45,
       "_v": 81.20000000000002
     },
     {
@@ -55756,7 +55756,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29,
+      "salary": 16,
       "_v": 57.25
     },
     {
@@ -55902,7 +55902,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26,
+      "salary": 15,
       "_v": 50.300000000000004
     },
     {
@@ -56048,7 +56048,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31,
+      "salary": 21,
       "_v": 58.4
     },
     {
@@ -56194,7 +56194,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 44,
+      "salary": 26,
       "_v": 66.2
     },
     {
@@ -56340,7 +56340,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 82,
+      "salary": 39,
       "_v": 80.85
     },
     {
@@ -56486,12 +56486,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 33,
-      "_v": 60.0
+      "salary": 22,
+      "_v": 60
     },
     {
       "id": "b_386",
-      "name": "Su\u00e1rez, Eugenio",
+      "name": "Suárez, Eugenio",
       "year": "2025",
       "team": "SEA",
       "positions": [
@@ -56632,7 +56632,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 42,
+      "salary": 26,
       "_v": 65.05
     },
     {
@@ -56925,7 +56925,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 51,
+      "salary": 26,
       "_v": 71.10000000000001
     },
     {
@@ -57071,7 +57071,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29,
+      "salary": 21,
       "_v": 54.599999999999994
     },
     {
@@ -57217,7 +57217,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14,
+      "salary": 12,
       "_v": 28.549999999999997
     },
     {
@@ -57363,7 +57363,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 65,
+      "salary": 26,
       "_v": 74.65
     },
     {
@@ -57509,7 +57509,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 32,
+      "salary": 17,
       "_v": 59.45
     },
     {
@@ -57803,7 +57803,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15,
+      "salary": 13,
       "_v": 38.1
     },
     {
@@ -58095,8 +58095,8 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
-      "_v": 39.0
+      "salary": 13,
+      "_v": 39
     },
     {
       "id": "b_397",
@@ -58241,7 +58241,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18,
+      "salary": 13,
       "_v": 41.7
     },
     {
@@ -58387,7 +58387,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 37,
+      "salary": 26,
       "_v": 61.000000000000014
     },
     {
@@ -58533,12 +58533,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 23,
+      "salary": 15,
       "_v": 51.7
     },
     {
       "id": "b_400",
-      "name": "Tena, Jos\u00e9",
+      "name": "Tena, José",
       "year": "2025",
       "team": "WSH",
       "positions": [
@@ -58679,7 +58679,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 33,
+      "salary": 21,
       "_v": 59.199999999999996
     },
     {
@@ -58825,7 +58825,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14,
+      "salary": 12,
       "_v": 33.050000000000004
     },
     {
@@ -58971,7 +58971,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 22,
+      "salary": 14,
       "_v": 46.65
     },
     {
@@ -59117,7 +59117,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18,
+      "salary": 13,
       "_v": 45.45
     },
     {
@@ -59263,7 +59263,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 13,
       "_v": 42.20000000000001
     },
     {
@@ -59409,7 +59409,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13,
+      "salary": 12,
       "_v": 30.150000000000002
     },
     {
@@ -59701,7 +59701,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 39,
+      "salary": 22,
       "_v": 63.550000000000004
     },
     {
@@ -59847,7 +59847,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 22,
+      "salary": 15,
       "_v": 51.400000000000006
     },
     {
@@ -59993,7 +59993,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19,
+      "salary": 13,
       "_v": 39.45
     },
     {
@@ -60139,7 +60139,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 34,
+      "salary": 23,
       "_v": 61.1
     },
     {
@@ -60285,7 +60285,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26,
+      "salary": 14,
       "_v": 50.35000000000001
     },
     {
@@ -60431,7 +60431,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 13,
       "_v": 41.80000000000001
     },
     {
@@ -60577,7 +60577,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21,
+      "salary": 13,
       "_v": 44.400000000000006
     },
     {
@@ -60725,7 +60725,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27,
+      "salary": 14,
       "_v": 51.10000000000001
     },
     {
@@ -60872,7 +60872,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 30,
+      "salary": 23,
       "_v": 58.95
     },
     {
@@ -61018,7 +61018,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 64,
+      "salary": 26,
       "_v": 75.54999999999998
     },
     {
@@ -61164,7 +61164,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 53,
+      "salary": 26,
       "_v": 70.55
     },
     {
@@ -61310,7 +61310,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14,
+      "salary": 12,
       "_v": 35.85000000000001
     },
     {
@@ -61456,12 +61456,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 75,
+      "salary": 26,
       "_v": 76.35000000000001
     },
     {
       "id": "b_420",
-      "name": "Ur\u00edas, Luis",
+      "name": "Urías, Luis",
       "year": "2025",
       "team": "ATH",
       "positions": [
@@ -61602,12 +61602,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 20,
+      "salary": 14,
       "_v": 48.9
     },
     {
       "id": "b_421",
-      "name": "Ur\u00edas, Ram\u00f3n",
+      "name": "Urías, Ramón",
       "year": "2025",
       "team": "HOU",
       "positions": [
@@ -61749,8 +61749,8 @@
         ]
       ],
       "type": "batter",
-      "salary": 23,
-      "_v": 49.0
+      "salary": 14,
+      "_v": 49
     },
     {
       "id": "b_422",
@@ -61895,7 +61895,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21,
+      "salary": 13,
       "_v": 46.45000000000001
     },
     {
@@ -62041,7 +62041,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21,
+      "salary": 14,
       "_v": 47.550000000000004
     },
     {
@@ -62187,7 +62187,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29,
+      "salary": 21,
       "_v": 57.15
     },
     {
@@ -62334,7 +62334,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31,
+      "salary": 16,
       "_v": 58.25000000000001
     },
     {
@@ -62480,7 +62480,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 81,
+      "salary": 32,
       "_v": 79.95
     },
     {
@@ -62626,12 +62626,12 @@
         ]
       ],
       "type": "batter",
-      "salary": 27,
+      "salary": 15,
       "_v": 54.6
     },
     {
       "id": "b_428",
-      "name": "V\u00e1zquez, Christian",
+      "name": "Vázquez, Christian",
       "year": "2025",
       "team": "MIN",
       "positions": [
@@ -62772,7 +62772,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14,
+      "salary": 12,
       "_v": 28.249999999999996
     },
     {
@@ -62918,7 +62918,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21,
+      "salary": 14,
       "_v": 50.849999999999994
     },
     {
@@ -63065,7 +63065,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19,
+      "salary": 13,
       "_v": 44.4
     },
     {
@@ -63211,7 +63211,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15,
+      "salary": 12,
       "_v": 39.1
     },
     {
@@ -63357,7 +63357,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20,
+      "salary": 13,
       "_v": 44.55
     },
     {
@@ -63650,7 +63650,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 13,
       "_v": 44.10000000000001
     },
     {
@@ -63797,7 +63797,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19,
+      "salary": 13,
       "_v": 46.35
     },
     {
@@ -63943,7 +63943,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25,
+      "salary": 14,
       "_v": 51.9
     },
     {
@@ -64089,7 +64089,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19,
+      "salary": 13,
       "_v": 46.7
     },
     {
@@ -64381,7 +64381,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 30,
+      "salary": 21,
       "_v": 57.75
     },
     {
@@ -64527,7 +64527,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18,
+      "salary": 12,
       "_v": 40.45
     },
     {
@@ -64673,7 +64673,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 41,
+      "salary": 25,
       "_v": 65.05
     },
     {
@@ -64819,7 +64819,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16,
+      "salary": 12,
       "_v": 40.85000000000001
     },
     {
@@ -64965,7 +64965,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 34,
+      "salary": 21,
       "_v": 56.4
     },
     {
@@ -65111,7 +65111,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 50,
+      "salary": 26,
       "_v": 70.2
     },
     {
@@ -65257,7 +65257,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23,
+      "salary": 14,
       "_v": 51.199999999999996
     },
     {
@@ -65403,7 +65403,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13,
+      "salary": 12,
       "_v": 22.85
     },
     {
@@ -65549,7 +65549,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20,
+      "salary": 13,
       "_v": 47.25
     },
     {
@@ -65695,7 +65695,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 54,
+      "salary": 26,
       "_v": 71.7
     },
     {
@@ -65841,7 +65841,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 13,
       "_v": 43.55
     },
     {
@@ -65987,7 +65987,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 28,
+      "salary": 14,
       "_v": 51.7
     },
     {
@@ -66133,7 +66133,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 117,
+      "salary": 67,
       "_v": 85.69999999999999
     },
     {
@@ -66279,7 +66279,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15,
+      "salary": 12,
       "_v": 33.150000000000006
     },
     {
@@ -66426,7 +66426,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 47,
+      "salary": 26,
       "_v": 68.5
     },
     {
@@ -66572,7 +66572,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 62,
+      "salary": 26,
       "_v": 71.44999999999999
     },
     {
@@ -66718,7 +66718,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 39,
+      "salary": 26,
       "_v": 63.25
     },
     {
@@ -66864,8 +66864,8 @@
         ]
       ],
       "type": "batter",
-      "salary": 43,
-      "_v": 68.0
+      "salary": 23,
+      "_v": 68
     },
     {
       "id": "b_457",
@@ -67010,7 +67010,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29,
+      "salary": 21,
       "_v": 59.50000000000001
     },
     {
@@ -67156,7 +67156,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 13,
       "_v": 42.05
     },
     {
@@ -67302,7 +67302,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17,
+      "salary": 12,
       "_v": 35.5
     }
   ],
@@ -67449,7 +67449,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 76,
+      "salary": 23,
       "_v": 37.3
     },
     {
@@ -67739,7 +67739,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 61,
+      "salary": 23,
       "_v": 13.950000000000003
     },
     {
@@ -67884,7 +67884,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 39,
+      "salary": 23,
       "_v": 8.549999999999997
     },
     {
@@ -68029,7 +68029,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 21,
       "_v": -46.05
     },
     {
@@ -68174,7 +68174,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 21,
       "_v": -45.45
     },
     {
@@ -68319,7 +68319,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 22,
       "_v": -33.1
     },
     {
@@ -68464,7 +68464,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 20,
       "_v": -62.2
     },
     {
@@ -68609,7 +68609,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 48,
+      "salary": 23,
       "_v": 21.999999999999986
     },
     {
@@ -68754,7 +68754,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28,
+      "salary": 23,
       "_v": -1.9500000000000028
     },
     {
@@ -68899,7 +68899,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17,
+      "salary": 23,
       "_v": -14.55
     },
     {
@@ -69044,7 +69044,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 23,
       "_v": -10.200000000000003
     },
     {
@@ -69189,7 +69189,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 39,
+      "salary": 23,
       "_v": 19.000000000000014
     },
     {
@@ -69334,7 +69334,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 23,
       "_v": -21.599999999999998
     },
     {
@@ -69479,12 +69479,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26,
+      "salary": 23,
       "_v": -11.549999999999992
     },
     {
       "id": "p_15",
-      "name": "Alvarado, Jos\u00e9",
+      "name": "Alvarado, José",
       "year": "2025",
       "team": "PHI",
       "positions": [
@@ -69624,7 +69624,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22,
+      "salary": 23,
       "_v": -19.45
     },
     {
@@ -69769,7 +69769,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 73,
+      "salary": 23,
       "_v": 36.150000000000006
     },
     {
@@ -69914,7 +69914,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 29,
+      "salary": 23,
       "_v": -2.9999999999999964
     },
     {
@@ -70059,7 +70059,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 29,
+      "salary": 23,
       "_v": 2.950000000000003
     },
     {
@@ -70204,7 +70204,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 70,
+      "salary": 23,
       "_v": 23.85
     },
     {
@@ -70349,7 +70349,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 35,
+      "salary": 23,
       "_v": 8.199999999999996
     },
     {
@@ -70494,7 +70494,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 40,
+      "salary": 23,
       "_v": 6.149999999999999
     },
     {
@@ -70639,7 +70639,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 36,
+      "salary": 23,
       "_v": 7.450000000000003
     },
     {
@@ -70784,7 +70784,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 19,
+      "salary": 23,
       "_v": -13.950000000000003
     },
     {
@@ -70929,7 +70929,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 35,
+      "salary": 23,
       "_v": 16.79999999999999
     },
     {
@@ -71074,7 +71074,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 25,
+      "salary": 23,
       "_v": -13.34999999999999
     },
     {
@@ -71219,7 +71219,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14,
+      "salary": 23,
       "_v": -27.1
     },
     {
@@ -71364,7 +71364,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14,
+      "salary": 22,
       "_v": -32.5
     },
     {
@@ -71509,8 +71509,8 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 27,
-      "_v": -19.0
+      "salary": 23,
+      "_v": -19
     },
     {
       "id": "p_29",
@@ -71654,7 +71654,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17,
+      "salary": 23,
       "_v": -25.9
     },
     {
@@ -71799,7 +71799,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26,
+      "salary": 23,
       "_v": -11.199999999999996
     },
     {
@@ -71944,7 +71944,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 23,
       "_v": -22.299999999999994
     },
     {
@@ -72089,7 +72089,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 19,
+      "salary": 23,
       "_v": -6.449999999999999
     },
     {
@@ -72234,12 +72234,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 55,
+      "salary": 23,
       "_v": 23.950000000000003
     },
     {
       "id": "p_34",
-      "name": "Bautista, F\u00e9lix",
+      "name": "Bautista, Félix",
       "year": "2025",
       "team": "BAL",
       "positions": [
@@ -72379,7 +72379,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 43,
+      "salary": 23,
       "_v": -1.5999999999999872
     },
     {
@@ -72524,7 +72524,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 55,
+      "salary": 23,
       "_v": 19.000000000000014
     },
     {
@@ -72669,7 +72669,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 40,
+      "salary": 23,
       "_v": 3.1499999999999986
     },
     {
@@ -72814,7 +72814,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21,
+      "salary": 23,
       "_v": -11.250000000000005
     },
     {
@@ -72959,7 +72959,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 58,
+      "salary": 23,
       "_v": 10.699999999999996
     },
     {
@@ -73104,7 +73104,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22,
+      "salary": 23,
       "_v": -14.049999999999997
     },
     {
@@ -73249,7 +73249,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 24,
+      "salary": 23,
       "_v": -20.499999999999996
     },
     {
@@ -73394,7 +73394,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 53,
+      "salary": 23,
       "_v": 27.999999999999993
     },
     {
@@ -73539,7 +73539,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 22,
       "_v": -24.949999999999996
     },
     {
@@ -73684,7 +73684,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 27,
+      "salary": 23,
       "_v": -2.949999999999995
     },
     {
@@ -73829,7 +73829,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 48,
+      "salary": 23,
       "_v": 20.25
     },
     {
@@ -73974,12 +73974,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17,
+      "salary": 23,
       "_v": -18.25
     },
     {
       "id": "p_46",
-      "name": "Berr\u00edos, Jos\u00e9",
+      "name": "Berríos, José",
       "year": "2025",
       "team": "TOR",
       "positions": [
@@ -74119,7 +74119,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 42,
+      "salary": 23,
       "_v": 16.75
     },
     {
@@ -74264,7 +74264,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 59,
+      "salary": 23,
       "_v": 24.550000000000004
     },
     {
@@ -74409,7 +74409,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14,
+      "salary": 20,
       "_v": -33.7
     },
     {
@@ -74554,7 +74554,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 79,
+      "salary": 23,
       "_v": 26.5
     },
     {
@@ -74699,7 +74699,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 22,
       "_v": -23.09999999999999
     },
     {
@@ -74844,7 +74844,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 24,
+      "salary": 23,
       "_v": -8.79999999999999
     },
     {
@@ -74989,7 +74989,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 23,
       "_v": -11.399999999999999
     },
     {
@@ -75134,7 +75134,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16,
+      "salary": 22,
       "_v": -22.25
     },
     {
@@ -75279,7 +75279,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 19,
       "_v": -44.7
     },
     {
@@ -75424,7 +75424,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 65,
+      "salary": 23,
       "_v": 24.39999999999999
     },
     {
@@ -75569,7 +75569,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14,
+      "salary": 20,
       "_v": -33.9
     },
     {
@@ -75714,7 +75714,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 52,
+      "salary": 23,
       "_v": 3.1000000000000014
     },
     {
@@ -75859,7 +75859,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 18,
       "_v": -51.4
     },
     {
@@ -76004,7 +76004,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 20,
       "_v": -32.65
     },
     {
@@ -76149,7 +76149,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 21,
       "_v": -25.8
     },
     {
@@ -76294,7 +76294,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 24,
+      "salary": 23,
       "_v": -16.349999999999994
     },
     {
@@ -76439,7 +76439,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 19,
       "_v": -35.85
     },
     {
@@ -76584,7 +76584,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 81,
+      "salary": 23,
       "_v": 39.24999999999999
     },
     {
@@ -76729,7 +76729,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 37,
+      "salary": 23,
       "_v": 5.150000000000002
     },
     {
@@ -76874,7 +76874,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 163,
+      "salary": 89,
       "_v": 55.89999999999999
     },
     {
@@ -77019,7 +77019,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 49,
+      "salary": 23,
       "_v": 21.39999999999999
     },
     {
@@ -77164,7 +77164,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28,
+      "salary": 23,
       "_v": -8.8
     },
     {
@@ -77309,12 +77309,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16,
+      "salary": 22,
       "_v": -22.299999999999997
     },
     {
       "id": "p_69",
-      "name": "Brazob\u00e1n, Huascar",
+      "name": "Brazobán, Huascar",
       "year": "2025",
       "team": "NYM",
       "positions": [
@@ -77454,7 +77454,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22,
+      "salary": 23,
       "_v": -11.55
     },
     {
@@ -77599,7 +77599,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13,
+      "salary": 18,
       "_v": -43.64999999999999
     },
     {
@@ -77744,7 +77744,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 18,
       "_v": -58.45
     },
     {
@@ -77889,7 +77889,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16,
+      "salary": 19,
       "_v": -38.25
     },
     {
@@ -78034,7 +78034,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 38,
+      "salary": 23,
       "_v": 5.549999999999997
     },
     {
@@ -78179,7 +78179,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 123,
+      "salary": 55,
       "_v": 47.65
     },
     {
@@ -78324,8 +78324,8 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13,
-      "_v": -37.0
+      "salary": 19,
+      "_v": -37
     },
     {
       "id": "p_76",
@@ -78469,7 +78469,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 23,
       "_v": -11.399999999999991
     },
     {
@@ -78614,7 +78614,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 17,
       "_v": -62.8
     },
     {
@@ -78759,7 +78759,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 86,
+      "salary": 23,
       "_v": 40.749999999999986
     },
     {
@@ -78904,7 +78904,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21,
+      "salary": 23,
       "_v": -7.050000000000008
     },
     {
@@ -79194,7 +79194,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17,
+      "salary": 21,
       "_v": -23.2
     },
     {
@@ -79339,7 +79339,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 29,
+      "salary": 23,
       "_v": -1.6500000000000057
     },
     {
@@ -79484,7 +79484,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 83,
+      "salary": 23,
       "_v": 34.900000000000006
     },
     {
@@ -79629,7 +79629,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 71,
+      "salary": 23,
       "_v": 17.449999999999996
     },
     {
@@ -79774,12 +79774,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 57,
+      "salary": 23,
       "_v": 21.75
     },
     {
       "id": "p_86",
-      "name": "Butt\u00f3, Jos\u00e9",
+      "name": "Buttó, José",
       "year": "2025",
       "team": "SF",
       "positions": [
@@ -79919,7 +79919,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17,
+      "salary": 22,
       "_v": -18.299999999999997
     },
     {
@@ -80064,12 +80064,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 77,
-      "_v": 31.0
+      "salary": 23,
+      "_v": 31
     },
     {
       "id": "p_88",
-      "name": "Cabrera, G\u00e9nesis",
+      "name": "Cabrera, Génesis",
       "year": "2025",
       "team": "MIN",
       "positions": [
@@ -80209,7 +80209,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 17,
       "_v": -55.5
     },
     {
@@ -80354,7 +80354,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 76,
+      "salary": 23,
       "_v": 35.350000000000016
     },
     {
@@ -80499,7 +80499,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 41,
+      "salary": 23,
       "_v": 16.200000000000003
     },
     {
@@ -80644,7 +80644,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 24,
+      "salary": 23,
       "_v": -5.549999999999997
     },
     {
@@ -80789,7 +80789,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13,
+      "salary": 19,
       "_v": -35.349999999999994
     },
     {
@@ -80934,7 +80934,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 39,
+      "salary": 23,
       "_v": 5.350000000000001
     },
     {
@@ -81079,7 +81079,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 19,
       "_v": -24.00000000000001
     },
     {
@@ -81224,12 +81224,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21,
+      "salary": 23,
       "_v": -12.450000000000006
     },
     {
       "id": "p_96",
-      "name": "Castillo, Jos\u00e9",
+      "name": "Castillo, José",
       "year": "2025",
       "team": "BAL",
       "positions": [
@@ -81369,7 +81369,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13,
+      "salary": 19,
       "_v": -29.849999999999994
     },
     {
@@ -81514,7 +81514,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 66,
+      "salary": 23,
       "_v": 29.650000000000006
     },
     {
@@ -81659,7 +81659,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28,
+      "salary": 23,
       "_v": 5.2499999999999964
     },
     {
@@ -81804,7 +81804,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 78,
+      "salary": 23,
       "_v": 28.299999999999997
     },
     {
@@ -81949,8 +81949,8 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 49,
-      "_v": 16.0
+      "salary": 23,
+      "_v": 16
     },
     {
       "id": "p_101",
@@ -82094,7 +82094,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16,
+      "salary": 21,
       "_v": -20.8
     },
     {
@@ -82239,7 +82239,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 104,
+      "salary": 23,
       "_v": 43.95
     },
     {
@@ -82384,7 +82384,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 118,
+      "salary": 23,
       "_v": 32.300000000000004
     },
     {
@@ -82529,7 +82529,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 17,
       "_v": -51.150000000000006
     },
     {
@@ -82674,7 +82674,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 36,
+      "salary": 23,
       "_v": 7.649999999999999
     },
     {
@@ -82819,7 +82819,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 37,
+      "salary": 23,
       "_v": -0.3000000000000007
     },
     {
@@ -82964,7 +82964,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21,
+      "salary": 23,
       "_v": -11.200000000000003
     },
     {
@@ -83109,7 +83109,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 50,
+      "salary": 23,
       "_v": -3.249999999999993
     },
     {
@@ -83254,7 +83254,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 43,
+      "salary": 23,
       "_v": 19.75
     },
     {
@@ -83399,7 +83399,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14,
+      "salary": 17,
       "_v": -44.25
     },
     {
@@ -83544,7 +83544,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 27,
+      "salary": 23,
       "_v": -2.6499999999999986
     },
     {
@@ -83689,7 +83689,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 16,
       "_v": -79.05
     },
     {
@@ -83834,7 +83834,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26,
+      "salary": 23,
       "_v": 1.7999999999999972
     },
     {
@@ -83979,7 +83979,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 154,
+      "salary": 127,
       "_v": 56.3
     },
     {
@@ -84124,7 +84124,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 42,
+      "salary": 23,
       "_v": -3.8499999999999996
     },
     {
@@ -84269,7 +84269,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 21,
       "_v": -18.1
     },
     {
@@ -84559,7 +84559,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22,
+      "salary": 19,
       "_v": -20.700000000000003
     },
     {
@@ -84704,7 +84704,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 41,
+      "salary": 23,
       "_v": 3.450000000000003
     },
     {
@@ -84849,7 +84849,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20,
+      "salary": 21,
       "_v": -14.999999999999998
     },
     {
@@ -84994,7 +84994,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 21,
       "_v": -18.750000000000004
     },
     {
@@ -85139,7 +85139,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 123,
+      "salary": 23,
       "_v": 43.150000000000006
     },
     {
@@ -85429,12 +85429,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 36,
+      "salary": 23,
       "_v": 1.1999999999999993
     },
     {
       "id": "p_125",
-      "name": "D\u00edaz, Edwin",
+      "name": "Díaz, Edwin",
       "year": "2025",
       "team": "NYM",
       "positions": [
@@ -85574,7 +85574,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 126,
+      "salary": 23,
       "_v": 35.25
     },
     {
@@ -85719,7 +85719,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 35,
+      "salary": 23,
       "_v": 13.049999999999997
     },
     {
@@ -85864,7 +85864,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 35,
+      "salary": 23,
       "_v": -2.0999999999999943
     },
     {
@@ -86009,12 +86009,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 23,
+      "salary": 22,
       "_v": -5.550000000000001
     },
     {
       "id": "p_129",
-      "name": "Dom\u00ednguez, Seranthony",
+      "name": "Domínguez, Seranthony",
       "year": "2025",
       "team": "TOR",
       "positions": [
@@ -86154,7 +86154,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 27,
+      "salary": 23,
       "_v": -11.049999999999995
     },
     {
@@ -86444,7 +86444,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 39,
+      "salary": 23,
       "_v": 8.250000000000007
     },
     {
@@ -86589,7 +86589,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 18,
       "_v": -31.199999999999996
     },
     {
@@ -86734,7 +86734,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 17,
       "_v": -34.95
     },
     {
@@ -86879,7 +86879,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 38,
+      "salary": 23,
       "_v": 2.900000000000002
     },
     {
@@ -87024,7 +87024,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22,
+      "salary": 20,
       "_v": -11.000000000000014
     },
     {
@@ -87169,7 +87169,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14,
+      "salary": 17,
       "_v": -41.95
     },
     {
@@ -87314,7 +87314,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 38,
+      "salary": 23,
       "_v": 12.549999999999997
     },
     {
@@ -87459,7 +87459,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 31,
+      "salary": 23,
       "_v": 3.2999999999999865
     },
     {
@@ -87749,7 +87749,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28,
+      "salary": 23,
       "_v": -2.2500000000000036
     },
     {
@@ -87894,7 +87894,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 150,
+      "salary": 116,
       "_v": 58.44999999999999
     },
     {
@@ -88039,12 +88039,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26,
+      "salary": 23,
       "_v": 0.3000000000000007
     },
     {
       "id": "p_143",
-      "name": "Est\u00e9vez, Carlos",
+      "name": "Estévez, Carlos",
       "year": "2025",
       "team": "KC",
       "positions": [
@@ -88184,7 +88184,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22,
+      "salary": 23,
       "_v": -8.200000000000001
     },
     {
@@ -88329,7 +88329,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 36,
+      "salary": 21,
       "_v": -14.200000000000003
     },
     {
@@ -88474,7 +88474,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 34,
+      "salary": 23,
       "_v": 11.799999999999997
     },
     {
@@ -88619,7 +88619,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 27,
+      "salary": 23,
       "_v": -10.599999999999998
     },
     {
@@ -88764,7 +88764,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 27,
+      "salary": 23,
       "_v": 3.1499999999999986
     },
     {
@@ -88909,7 +88909,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26,
+      "salary": 21,
       "_v": -6.300000000000004
     },
     {
@@ -89054,7 +89054,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 19,
       "_v": -22.150000000000002
     },
     {
@@ -89199,7 +89199,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 19,
+      "salary": 22,
       "_v": -4.800000000000004
     },
     {
@@ -89344,7 +89344,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 34,
+      "salary": 23,
       "_v": 11.050000000000004
     },
     {
@@ -89489,7 +89489,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 22,
       "_v": -13.150000000000002
     },
     {
@@ -89634,12 +89634,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21,
+      "salary": 23,
       "_v": -8.250000000000005
     },
     {
       "id": "p_154",
-      "name": "Fermin, Jos\u00e9",
+      "name": "Fermin, José",
       "year": "2025",
       "team": "LAA",
       "positions": [
@@ -89779,7 +89779,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14,
+      "salary": 16,
       "_v": -45.55
     },
     {
@@ -89924,12 +89924,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 16,
       "_v": -48.1
     },
     {
       "id": "p_156",
-      "name": "Ferrer, Jos\u00e9 A.",
+      "name": "Ferrer, José A.",
       "year": "2025",
       "team": "WSH",
       "positions": [
@@ -90069,7 +90069,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 27,
+      "salary": 23,
       "_v": -1.0500000000000007
     },
     {
@@ -90214,7 +90214,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 41,
+      "salary": 23,
       "_v": 7.6499999999999915
     },
     {
@@ -90359,7 +90359,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 31,
+      "salary": 23,
       "_v": -2.5
     },
     {
@@ -90504,7 +90504,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 36,
+      "salary": 23,
       "_v": 5.249999999999998
     },
     {
@@ -90649,7 +90649,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 45,
+      "salary": 23,
       "_v": 5.149999999999995
     },
     {
@@ -90794,7 +90794,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 25,
+      "salary": 19,
       "_v": -10.800000000000004
     },
     {
@@ -90939,7 +90939,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 69,
+      "salary": 23,
       "_v": 24.850000000000023
     },
     {
@@ -91084,7 +91084,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17,
+      "salary": 20,
       "_v": -13.7
     },
     {
@@ -91229,7 +91229,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 24,
+      "salary": 19,
       "_v": -16.3
     },
     {
@@ -91519,7 +91519,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 36,
+      "salary": 23,
       "_v": 15.250000000000014
     },
     {
@@ -91664,7 +91664,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 129,
+      "salary": 152,
       "_v": 58.85000000000001
     },
     {
@@ -91809,7 +91809,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 24,
+      "salary": 20,
       "_v": -11.899999999999999
     },
     {
@@ -91954,8 +91954,8 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17,
-      "_v": -15.0
+      "salary": 19,
+      "_v": -15
     },
     {
       "id": "p_170",
@@ -92099,7 +92099,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 23,
+      "salary": 19,
       "_v": -16.599999999999998
     },
     {
@@ -92244,7 +92244,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13,
+      "salary": 17,
       "_v": -30.400000000000006
     },
     {
@@ -92389,12 +92389,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 48,
+      "salary": 23,
       "_v": 16.15
     },
     {
       "id": "p_173",
-      "name": "Garc\u00eda, Luis",
+      "name": "García, Luis",
       "year": "2025",
       "team": "LAA",
       "positions": [
@@ -92534,7 +92534,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 16,
       "_v": -33.849999999999994
     },
     {
@@ -92679,7 +92679,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 29,
+      "salary": 22,
       "_v": -7.950000000000003
     },
     {
@@ -92824,12 +92824,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22,
+      "salary": 19,
       "_v": -16.75
     },
     {
       "id": "p_176",
-      "name": "Garc\u00eda, Yimi",
+      "name": "García, Yimi",
       "year": "2025",
       "team": "TOR",
       "positions": [
@@ -92969,7 +92969,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28,
+      "salary": 22,
       "_v": -7.899999999999999
     },
     {
@@ -93114,7 +93114,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 23,
+      "salary": 19,
       "_v": -14.349999999999998
     },
     {
@@ -93259,7 +93259,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 121,
+      "salary": 76,
       "_v": 52.25
     },
     {
@@ -93404,7 +93404,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 18,
       "_v": -19.95
     },
     {
@@ -93549,7 +93549,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 25,
+      "salary": 23,
       "_v": -1.8000000000000007
     },
     {
@@ -93694,7 +93694,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 33,
+      "salary": 23,
       "_v": 15.850000000000016
     },
     {
@@ -93839,7 +93839,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 143,
+      "salary": 51,
       "_v": 47.349999999999994
     },
     {
@@ -93984,7 +93984,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22,
+      "salary": 19,
       "_v": -12.599999999999994
     },
     {
@@ -94129,7 +94129,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17,
+      "salary": 16,
       "_v": -24.900000000000006
     },
     {
@@ -94274,7 +94274,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 17,
       "_v": -27.099999999999998
     },
     {
@@ -94419,7 +94419,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28,
+      "salary": 19,
       "_v": -9.849999999999994
     },
     {
@@ -94564,7 +94564,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 52,
+      "salary": 23,
       "_v": 26.94999999999998
     },
     {
@@ -94709,7 +94709,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20,
+      "salary": 17,
       "_v": -22.6
     },
     {
@@ -94854,7 +94854,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 118,
+      "salary": 23,
       "_v": 44.50000000000001
     },
     {
@@ -94999,12 +94999,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 15,
       "_v": -35.550000000000004
     },
     {
       "id": "p_191",
-      "name": "G\u00f3mez, Yoendrys",
+      "name": "Gómez, Yoendrys",
       "year": "2025",
       "team": "CWS",
       "positions": [
@@ -95144,7 +95144,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 17,
       "_v": -21.2
     },
     {
@@ -95289,12 +95289,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 35,
+      "salary": 21,
       "_v": -1.8500000000000085
     },
     {
       "id": "p_193",
-      "name": "Gonz\u00e1lez, Wikelman",
+      "name": "González, Wikelman",
       "year": "2025",
       "team": "CWS",
       "positions": [
@@ -95434,7 +95434,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 35,
+      "salary": 23,
       "_v": 0.8999999999999968
     },
     {
@@ -95579,7 +95579,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22,
+      "salary": 17,
       "_v": -13.800000000000004
     },
     {
@@ -95724,7 +95724,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 27,
+      "salary": 22,
       "_v": 1.1500000000000128
     },
     {
@@ -95869,7 +95869,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 68,
+      "salary": 23,
       "_v": 26.95000000000001
     },
     {
@@ -96014,7 +96014,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16,
+      "salary": 17,
       "_v": -21.300000000000004
     },
     {
@@ -96159,7 +96159,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14,
+      "salary": 16,
       "_v": -30.15
     },
     {
@@ -96304,7 +96304,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 72,
+      "salary": 23,
       "_v": 27.249999999999986
     },
     {
@@ -96449,7 +96449,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 14,
       "_v": -67.75
     },
     {
@@ -96594,7 +96594,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 140,
+      "salary": 23,
       "_v": 45.85000000000001
     },
     {
@@ -96739,7 +96739,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22,
+      "salary": 18,
       "_v": -11.350000000000005
     },
     {
@@ -96884,7 +96884,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 75,
+      "salary": 23,
       "_v": 7.3500000000000085
     },
     {
@@ -97029,7 +97029,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28,
+      "salary": 21,
       "_v": -6.5
     },
     {
@@ -97174,7 +97174,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26,
+      "salary": 23,
       "_v": 1.5000000000000036
     },
     {
@@ -97319,7 +97319,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 15,
       "_v": -50.2
     },
     {
@@ -97464,7 +97464,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 23,
+      "salary": 18,
       "_v": -14.549999999999997
     },
     {
@@ -97609,7 +97609,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 24,
+      "salary": 21,
       "_v": -2.5500000000000007
     },
     {
@@ -97754,7 +97754,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17,
+      "salary": 20,
       "_v": -11.400000000000002
     },
     {
@@ -97899,7 +97899,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21,
+      "salary": 19,
       "_v": -11.849999999999998
     },
     {
@@ -98044,7 +98044,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 36,
+      "salary": 23,
       "_v": 6.499999999999989
     },
     {
@@ -98189,7 +98189,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 23,
+      "salary": 17,
       "_v": -15.349999999999994
     },
     {
@@ -98334,7 +98334,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 15,
       "_v": -43.400000000000006
     },
     {
@@ -98479,7 +98479,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 41,
+      "salary": 19,
       "_v": -7.949999999999989
     },
     {
@@ -98624,7 +98624,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21,
+      "salary": 18,
       "_v": -9.900000000000006
     },
     {
@@ -98770,7 +98770,7 @@
       ],
       "type": "pitcher",
       "salary": 15,
-      "_v": -34.0
+      "_v": -34
     },
     {
       "id": "p_217",
@@ -98914,7 +98914,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 135,
+      "salary": 48,
       "_v": 48.099999999999994
     },
     {
@@ -99059,7 +99059,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 39,
+      "salary": 23,
       "_v": 15.850000000000009
     },
     {
@@ -99204,7 +99204,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 56,
+      "salary": 23,
       "_v": 8.700000000000006
     },
     {
@@ -99349,7 +99349,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 16,
       "_v": -29.65
     },
     {
@@ -99494,12 +99494,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 30,
+      "salary": 23,
       "_v": 2.6999999999999957
     },
     {
       "id": "p_222",
-      "name": "Hern\u00e1ndez, Carlos",
+      "name": "Hernández, Carlos",
       "year": "2025",
       "team": "CLE",
       "positions": [
@@ -99639,12 +99639,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14,
+      "salary": 16,
       "_v": -23.549999999999997
     },
     {
       "id": "p_223",
-      "name": "Hern\u00e1ndez, Daysbel",
+      "name": "Hernández, Daysbel",
       "year": "2025",
       "team": "ATL",
       "positions": [
@@ -99784,7 +99784,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13,
+      "salary": 15,
       "_v": -33.54999999999999
     },
     {
@@ -99929,7 +99929,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13,
+      "salary": 15,
       "_v": -36.099999999999994
     },
     {
@@ -100074,7 +100074,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13,
+      "salary": 15,
       "_v": -29.700000000000003
     },
     {
@@ -100219,7 +100219,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 25,
+      "salary": 20,
       "_v": -6.599999999999994
     },
     {
@@ -100509,7 +100509,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 14,
       "_v": -58.3
     },
     {
@@ -100654,7 +100654,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20,
+      "salary": 15,
       "_v": -34.75
     },
     {
@@ -100799,7 +100799,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 15,
       "_v": -20.450000000000003
     },
     {
@@ -100944,7 +100944,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 14,
       "_v": -57.75
     },
     {
@@ -101089,7 +101089,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14,
+      "salary": 16,
       "_v": -25.95
     },
     {
@@ -101234,7 +101234,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 52,
+      "salary": 23,
       "_v": 28.449999999999996
     },
     {
@@ -101379,7 +101379,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 57,
+      "salary": 23,
       "_v": 20.650000000000006
     },
     {
@@ -101524,7 +101524,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 23,
+      "salary": 16,
       "_v": -18.449999999999996
     },
     {
@@ -101669,7 +101669,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 82,
+      "salary": 24,
       "_v": 41.349999999999994
     },
     {
@@ -101814,7 +101814,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16,
+      "salary": 15,
       "_v": -21.000000000000004
     },
     {
@@ -101959,7 +101959,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 48,
+      "salary": 23,
       "_v": 27.69999999999999
     },
     {
@@ -102104,7 +102104,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 27,
+      "salary": 21,
       "_v": -1.0499999999999972
     },
     {
@@ -102249,7 +102249,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 34,
+      "salary": 20,
       "_v": -5.649999999999999
     },
     {
@@ -102394,7 +102394,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 60,
+      "salary": 23,
       "_v": 19.14999999999999
     },
     {
@@ -102539,7 +102539,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 25,
+      "salary": 19,
       "_v": -2.749999999999986
     },
     {
@@ -102684,7 +102684,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14,
+      "salary": 15,
       "_v": -26.650000000000002
     },
     {
@@ -102829,7 +102829,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 14,
       "_v": -38.85
     },
     {
@@ -102974,7 +102974,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 30,
+      "salary": 19,
       "_v": -8.349999999999998
     },
     {
@@ -103264,7 +103264,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 43,
+      "salary": 23,
       "_v": 19.64999999999999
     },
     {
@@ -103409,7 +103409,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 34,
+      "salary": 18,
       "_v": -9.549999999999997
     },
     {
@@ -103554,7 +103554,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 24,
+      "salary": 19,
       "_v": -0.5999999999999979
     },
     {
@@ -103699,7 +103699,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 15,
       "_v": -24.099999999999998
     },
     {
@@ -103844,7 +103844,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21,
+      "salary": 18,
       "_v": -9.000000000000007
     },
     {
@@ -103989,7 +103989,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 48,
+      "salary": 23,
       "_v": 27.85000000000001
     },
     {
@@ -104279,7 +104279,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 57,
+      "salary": 23,
       "_v": 17.250000000000007
     },
     {
@@ -104424,7 +104424,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 51,
+      "salary": 23,
       "_v": 22.599999999999994
     },
     {
@@ -104569,7 +104569,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 14,
       "_v": -56.05
     },
     {
@@ -104714,7 +104714,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 76,
+      "salary": 23,
       "_v": 32.79999999999999
     },
     {
@@ -104859,7 +104859,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14,
+      "salary": 15,
       "_v": -32.35
     },
     {
@@ -105004,7 +105004,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21,
+      "salary": 17,
       "_v": -13.05
     },
     {
@@ -105149,7 +105149,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20,
+      "salary": 16,
       "_v": -16.899999999999995
     },
     {
@@ -105294,7 +105294,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 44,
+      "salary": 23,
       "_v": 24.000000000000007
     },
     {
@@ -105439,7 +105439,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 43,
+      "salary": 23,
       "_v": 17.65
     },
     {
@@ -105584,7 +105584,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28,
+      "salary": 18,
       "_v": -9.850000000000001
     },
     {
@@ -105729,7 +105729,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 14,
       "_v": -46.45
     },
     {
@@ -105874,7 +105874,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 53,
+      "salary": 23,
       "_v": 14.849999999999987
     },
     {
@@ -106019,7 +106019,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 23,
+      "salary": 18,
       "_v": -10.449999999999998
     },
     {
@@ -106164,7 +106164,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 80,
+      "salary": 23,
       "_v": 32.94999999999999
     },
     {
@@ -106309,7 +106309,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 41,
+      "salary": 19,
       "_v": -4.899999999999999
     },
     {
@@ -106454,7 +106454,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28,
+      "salary": 16,
       "_v": -8.400000000000006
     },
     {
@@ -106744,7 +106744,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 24,
+      "salary": 18,
       "_v": -11.049999999999997
     },
     {
@@ -106889,8 +106889,8 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 66,
-      "_v": 37.0
+      "salary": 23,
+      "_v": 37
     },
     {
       "id": "p_273",
@@ -107034,7 +107034,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 19,
+      "salary": 17,
       "_v": -12.749999999999996
     },
     {
@@ -107179,7 +107179,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 58,
+      "salary": 23,
       "_v": 27.100000000000016
     },
     {
@@ -107324,7 +107324,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28,
+      "salary": 20,
       "_v": 1.149999999999995
     },
     {
@@ -107469,7 +107469,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 42,
+      "salary": 21,
       "_v": 8.599999999999994
     },
     {
@@ -107759,7 +107759,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 25,
+      "salary": 19,
       "_v": -1.8000000000000007
     },
     {
@@ -107904,7 +107904,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20,
+      "salary": 14,
       "_v": -31.599999999999994
     },
     {
@@ -108049,7 +108049,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21,
+      "salary": 14,
       "_v": -25.499999999999996
     },
     {
@@ -108194,7 +108194,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28,
+      "salary": 15,
       "_v": -18.250000000000004
     },
     {
@@ -108339,7 +108339,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 15,
       "_v": -20.399999999999995
     },
     {
@@ -108484,7 +108484,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 14,
       "_v": -29.499999999999996
     },
     {
@@ -108629,7 +108629,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 68,
+      "salary": 23,
       "_v": 31.89999999999999
     },
     {
@@ -108774,7 +108774,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 43,
+      "salary": 23,
       "_v": 20.499999999999986
     },
     {
@@ -108919,7 +108919,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 46,
+      "salary": 22,
       "_v": 15.700000000000003
     },
     {
@@ -109064,7 +109064,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 25,
+      "salary": 16,
       "_v": -13.299999999999997
     },
     {
@@ -109209,12 +109209,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 32,
+      "salary": 21,
       "_v": 9.299999999999997
     },
     {
       "id": "p_289",
-      "name": "Lo\u00e1isiga, Jonathan",
+      "name": "Loáisiga, Jonathan",
       "year": "2025",
       "team": "NYY",
       "positions": [
@@ -109354,7 +109354,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 13,
       "_v": -58.15
     },
     {
@@ -109499,7 +109499,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 91,
+      "salary": 23,
       "_v": 35.94999999999999
     },
     {
@@ -109644,7 +109644,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 14,
       "_v": -40.650000000000006
     },
     {
@@ -109789,12 +109789,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 56,
+      "salary": 22,
       "_v": 14.549999999999997
     },
     {
       "id": "p_293",
-      "name": "L\u00f3pez, Jorge",
+      "name": "López, Jorge",
       "year": "2025",
       "team": "WSH",
       "positions": [
@@ -109939,7 +109939,7 @@
     },
     {
       "id": "p_294",
-      "name": "L\u00f3pez, Pablo",
+      "name": "López, Pablo",
       "year": "2025",
       "team": "MIN",
       "positions": [
@@ -110079,7 +110079,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 88,
+      "salary": 23,
       "_v": 41.349999999999994
     },
     {
@@ -110224,7 +110224,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 23,
+      "salary": 17,
       "_v": -8.600000000000001
     },
     {
@@ -110369,7 +110369,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 42,
+      "salary": 21,
       "_v": 13.600000000000001
     },
     {
@@ -110514,7 +110514,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 25,
+      "salary": 16,
       "_v": -7.199999999999996
     },
     {
@@ -110659,7 +110659,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21,
+      "salary": 16,
       "_v": -12.3
     },
     {
@@ -110804,12 +110804,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 41,
+      "salary": 20,
       "_v": 11.050000000000011
     },
     {
       "id": "p_300",
-      "name": "Luzardo, Jes\u00fas",
+      "name": "Luzardo, Jesús",
       "year": "2025",
       "team": "PHI",
       "positions": [
@@ -110949,7 +110949,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 97,
+      "salary": 27,
       "_v": 41.349999999999994
     },
     {
@@ -111239,7 +111239,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 72,
+      "salary": 32,
       "_v": 40.89999999999999
     },
     {
@@ -111384,12 +111384,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 59,
+      "salary": 20,
       "_v": 10.949999999999989
     },
     {
       "id": "p_304",
-      "name": "M\u00e1rquez, Germ\u00e1n",
+      "name": "Márquez, Germán",
       "year": "2025",
       "team": "COL",
       "positions": [
@@ -111674,7 +111674,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21,
+      "salary": 15,
       "_v": -17.8
     },
     {
@@ -111819,7 +111819,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 38,
+      "salary": 21,
       "_v": 14.049999999999997
     },
     {
@@ -111964,7 +111964,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 33,
+      "salary": 20,
       "_v": 9.600000000000009
     },
     {
@@ -112109,7 +112109,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 43,
+      "salary": 19,
       "_v": 2.150000000000002
     },
     {
@@ -112254,7 +112254,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17,
+      "salary": 14,
       "_v": -23.25
     },
     {
@@ -112399,7 +112399,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 36,
+      "salary": 19,
       "_v": 7.5
     },
     {
@@ -112544,7 +112544,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28,
+      "salary": 18,
       "_v": -0.29999999999999716
     },
     {
@@ -112689,7 +112689,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 23,
+      "salary": 17,
       "_v": -7.199999999999999
     },
     {
@@ -112834,7 +112834,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 41,
+      "salary": 21,
       "_v": 14.04999999999999
     },
     {
@@ -112979,7 +112979,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22,
+      "salary": 18,
       "_v": -0.45000000000000284
     },
     {
@@ -113124,7 +113124,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 14,
       "_v": -18.849999999999998
     },
     {
@@ -113269,7 +113269,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 38,
+      "salary": 22,
       "_v": 19.15
     },
     {
@@ -113414,7 +113414,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 140,
+      "salary": 70,
       "_v": 53.35000000000001
     },
     {
@@ -113559,7 +113559,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 23,
+      "salary": 16,
       "_v": -12.850000000000001
     },
     {
@@ -113704,7 +113704,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 38,
+      "salary": 18,
       "_v": -0.550000000000006
     },
     {
@@ -113849,7 +113849,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 68,
+      "salary": 23,
       "_v": 26.700000000000017
     },
     {
@@ -113994,7 +113994,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26,
+      "salary": 16,
       "_v": -9.450000000000003
     },
     {
@@ -114139,7 +114139,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 35,
+      "salary": 18,
       "_v": 0.9999999999999964
     },
     {
@@ -114284,7 +114284,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 56,
+      "salary": 23,
       "_v": 28.15
     },
     {
@@ -114429,7 +114429,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 13,
       "_v": -40.599999999999994
     },
     {
@@ -114574,7 +114574,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 46,
+      "salary": 20,
       "_v": 14.800000000000011
     },
     {
@@ -114719,7 +114719,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28,
+      "salary": 17,
       "_v": 2.799999999999997
     },
     {
@@ -114864,7 +114864,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 31,
+      "salary": 17,
       "_v": 2.799999999999997
     },
     {
@@ -115009,7 +115009,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 13,
       "_v": -38.49999999999999
     },
     {
@@ -115154,7 +115154,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 134,
+      "salary": 23,
       "_v": 30.300000000000004
     },
     {
@@ -115299,7 +115299,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 39,
+      "salary": 18,
       "_v": -0.40000000000000213
     },
     {
@@ -115444,7 +115444,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 15,
       "_v": -15.099999999999998
     },
     {
@@ -115589,7 +115589,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 76,
+      "salary": 22,
       "_v": 24.299999999999997
     },
     {
@@ -115734,8 +115734,8 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 54,
-      "_v": 22.0
+      "salary": 22,
+      "_v": 22
     },
     {
       "id": "p_334",
@@ -115879,7 +115879,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 27,
+      "salary": 18,
       "_v": 0.25
     },
     {
@@ -116024,7 +116024,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 13,
       "_v": -62.6
     },
     {
@@ -116169,7 +116169,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 14,
       "_v": -15.899999999999999
     },
     {
@@ -116314,7 +116314,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28,
+      "salary": 17,
       "_v": 1.6500000000000057
     },
     {
@@ -116459,7 +116459,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22,
+      "salary": 15,
       "_v": -11.850000000000001
     },
     {
@@ -116604,7 +116604,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 13,
       "_v": -36.849999999999994
     },
     {
@@ -116749,7 +116749,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 45,
+      "salary": 20,
       "_v": 13.949999999999996
     },
     {
@@ -116894,7 +116894,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 41,
+      "salary": 20,
       "_v": 8.149999999999999
     },
     {
@@ -117039,7 +117039,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28,
+      "salary": 17,
       "_v": -3.6000000000000014
     },
     {
@@ -117184,7 +117184,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 13,
       "_v": -36.400000000000006
     },
     {
@@ -117329,12 +117329,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 27,
+      "salary": 16,
       "_v": -1.9499999999999957
     },
     {
       "id": "p_345",
-      "name": "Mu\u00f1oz, Andr\u00e9s",
+      "name": "Muñoz, Andrés",
       "year": "2025",
       "team": "SEA",
       "positions": [
@@ -117474,7 +117474,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 55,
+      "salary": 20,
       "_v": 9.649999999999999
     },
     {
@@ -117619,7 +117619,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 24,
+      "salary": 16,
       "_v": -9.6
     },
     {
@@ -117764,7 +117764,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20,
+      "salary": 16,
       "_v": -4.100000000000001
     },
     {
@@ -117909,7 +117909,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 40,
+      "salary": 20,
       "_v": 10.95
     },
     {
@@ -118054,12 +118054,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 64,
+      "salary": 22,
       "_v": 27.9
     },
     {
       "id": "p_350",
-      "name": "Neris, H\u00e9ctor",
+      "name": "Neris, Héctor",
       "year": "2025",
       "team": "HOU",
       "positions": [
@@ -118199,7 +118199,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 13,
       "_v": -58.3
     },
     {
@@ -118344,7 +118344,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21,
+      "salary": 16,
       "_v": -7.949999999999996
     },
     {
@@ -118489,7 +118489,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20,
+      "salary": 15,
       "_v": -12.149999999999999
     },
     {
@@ -118634,7 +118634,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 48,
+      "salary": 18,
       "_v": 12.999999999999986
     },
     {
@@ -118779,7 +118779,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 29,
+      "salary": 18,
       "_v": 0.15000000000000036
     },
     {
@@ -118924,7 +118924,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 34,
+      "salary": 17,
       "_v": 5.050000000000004
     },
     {
@@ -119069,7 +119069,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 13,
       "_v": -53.85
     },
     {
@@ -119214,7 +119214,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17,
+      "salary": 14,
       "_v": -20.6
     },
     {
@@ -119359,7 +119359,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 117,
+      "salary": 26,
       "_v": 43.25
     },
     {
@@ -119504,7 +119504,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 70,
+      "salary": 22,
       "_v": 21.000000000000007
     },
     {
@@ -119649,7 +119649,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 81,
+      "salary": 29,
       "_v": 40.900000000000006
     },
     {
@@ -119794,7 +119794,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16,
+      "salary": 13,
       "_v": -35.05
     },
     {
@@ -119939,7 +119939,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 62,
+      "salary": 21,
       "_v": 25.30000000000001
     },
     {
@@ -120084,7 +120084,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21,
+      "salary": 15,
       "_v": -10.650000000000002
     },
     {
@@ -120229,7 +120229,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 54,
+      "salary": 20,
       "_v": 17.700000000000003
     },
     {
@@ -120374,12 +120374,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26,
+      "salary": 16,
       "_v": -1.95000000000001
     },
     {
       "id": "p_366",
-      "name": "Pag\u00e1n, Emilio",
+      "name": "Pagán, Emilio",
       "year": "2025",
       "team": "CIN",
       "positions": [
@@ -120519,7 +120519,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 42,
+      "salary": 16,
       "_v": -3.699999999999992
     },
     {
@@ -120664,7 +120664,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 27,
+      "salary": 15,
       "_v": -10.150000000000002
     },
     {
@@ -120809,7 +120809,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 32,
+      "salary": 18,
       "_v": 11.049999999999997
     },
     {
@@ -120954,7 +120954,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 13,
       "_v": -58.3
     },
     {
@@ -121099,7 +121099,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 19,
+      "salary": 15,
       "_v": -6.6000000000000085
     },
     {
@@ -121244,7 +121244,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 53,
+      "salary": 20,
       "_v": 21.15
     },
     {
@@ -121389,7 +121389,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 13,
       "_v": -53.8
     },
     {
@@ -121534,7 +121534,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 29,
+      "salary": 17,
       "_v": -2.100000000000003
     },
     {
@@ -121679,7 +121679,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 65,
+      "salary": 20,
       "_v": 22.449999999999996
     },
     {
@@ -121824,7 +121824,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 110,
+      "salary": 25,
       "_v": 41.650000000000006
     },
     {
@@ -121969,12 +121969,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 23,
+      "salary": 16,
       "_v": -6.899999999999999
     },
     {
       "id": "p_377",
-      "name": "P\u00e9rez, Cionel",
+      "name": "Pérez, Cionel",
       "year": "2025",
       "team": "BAL",
       "positions": [
@@ -122114,12 +122114,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 13,
       "_v": -57.75
     },
     {
       "id": "p_378",
-      "name": "P\u00e9rez, Eury",
+      "name": "Pérez, Eury",
       "year": "2025",
       "team": "MIA",
       "positions": [
@@ -122259,12 +122259,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 85,
+      "salary": 22,
       "_v": 30.599999999999994
     },
     {
       "id": "p_379",
-      "name": "P\u00e9rez, Mart\u00edn",
+      "name": "Pérez, Martín",
       "year": "2025",
       "team": "CWS",
       "positions": [
@@ -122404,7 +122404,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 69,
+      "salary": 22,
       "_v": 33.249999999999986
     },
     {
@@ -122549,7 +122549,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 45,
+      "salary": 19,
       "_v": 14.900000000000006
     },
     {
@@ -122694,7 +122694,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 53,
+      "salary": 21,
       "_v": 28.599999999999994
     },
     {
@@ -122839,7 +122839,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 41,
+      "salary": 18,
       "_v": 14.349999999999994
     },
     {
@@ -122984,7 +122984,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 55,
+      "salary": 17,
       "_v": 5.250000000000007
     },
     {
@@ -123129,7 +123129,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22,
+      "salary": 15,
       "_v": -7.949999999999996
     },
     {
@@ -123274,7 +123274,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14,
+      "salary": 13,
       "_v": -51.4
     },
     {
@@ -123419,7 +123419,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 118,
+      "salary": 82,
       "_v": 47.05
     },
     {
@@ -123564,7 +123564,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 31,
+      "salary": 16,
       "_v": -5.350000000000001
     },
     {
@@ -123709,7 +123709,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17,
+      "salary": 14,
       "_v": -21.699999999999996
     },
     {
@@ -123854,7 +123854,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 41,
+      "salary": 18,
       "_v": 13.299999999999997
     },
     {
@@ -123999,7 +123999,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 13,
       "_v": -47.650000000000006
     },
     {
@@ -124144,7 +124144,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 56,
+      "salary": 20,
       "_v": 25.900000000000006
     },
     {
@@ -124289,7 +124289,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 19,
+      "salary": 14,
       "_v": -12.450000000000003
     },
     {
@@ -124434,7 +124434,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 41,
+      "salary": 19,
       "_v": 21.69999999999999
     },
     {
@@ -124579,7 +124579,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 126,
+      "salary": 21,
       "_v": 38.25000000000001
     },
     {
@@ -124724,12 +124724,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 45,
+      "salary": 18,
       "_v": 9.650000000000006
     },
     {
       "id": "p_396",
-      "name": "Ram\u00edrez, Yohan",
+      "name": "Ramírez, Yohan",
       "year": "2025",
       "team": "PIT",
       "positions": [
@@ -124869,7 +124869,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26,
+      "salary": 14,
       "_v": -11.249999999999993
     },
     {
@@ -125014,7 +125014,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 74,
+      "salary": 21,
       "_v": 31.349999999999994
     },
     {
@@ -125159,7 +125159,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 69,
+      "salary": 20,
       "_v": 28.14999999999999
     },
     {
@@ -125304,7 +125304,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 37,
+      "salary": 18,
       "_v": 12.75
     },
     {
@@ -125449,7 +125449,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17,
+      "salary": 13,
       "_v": -23.85
     },
     {
@@ -125594,7 +125594,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 13,
       "_v": -51.900000000000006
     },
     {
@@ -125739,7 +125739,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14,
+      "salary": 13,
       "_v": -25.349999999999998
     },
     {
@@ -125884,12 +125884,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 25,
+      "salary": 14,
       "_v": -4.049999999999997
     },
     {
       "id": "p_404",
-      "name": "Rod\u00f3n, Carlos",
+      "name": "Rodón, Carlos",
       "year": "2025",
       "team": "NYY",
       "positions": [
@@ -126029,7 +126029,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 104,
+      "salary": 21,
       "_v": 40.599999999999994
     },
     {
@@ -126174,12 +126174,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 31,
+      "salary": 16,
       "_v": 7.150000000000006
     },
     {
       "id": "p_406",
-      "name": "Rodr\u00edguez, Manuel",
+      "name": "Rodríguez, Manuel",
       "year": "2025",
       "team": "TB",
       "positions": [
@@ -126319,12 +126319,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 29,
+      "salary": 17,
       "_v": 0.7999999999999972
     },
     {
       "id": "p_407",
-      "name": "Rodr\u00edguez, Randy",
+      "name": "Rodríguez, Randy",
       "year": "2025",
       "team": "SF",
       "positions": [
@@ -126464,12 +126464,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 91,
+      "salary": 20,
       "_v": 25.349999999999994
     },
     {
       "id": "p_408",
-      "name": "Rodr\u00edguez, Yariel",
+      "name": "Rodríguez, Yariel",
       "year": "2025",
       "team": "TOR",
       "positions": [
@@ -126609,7 +126609,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26,
+      "salary": 15,
       "_v": -5.250000000000002
     },
     {
@@ -126754,7 +126754,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16,
+      "salary": 13,
       "_v": -31.449999999999996
     },
     {
@@ -126899,7 +126899,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 162,
+      "salary": 200,
       "_v": 69.35
     },
     {
@@ -127044,8 +127044,8 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 23,
-      "_v": -4.0
+      "salary": 16,
+      "_v": -4
     },
     {
       "id": "p_412",
@@ -127334,7 +127334,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13,
+      "salary": 12,
       "_v": -49.6
     },
     {
@@ -127479,7 +127479,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 14,
       "_v": -16.9
     },
     {
@@ -127624,7 +127624,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 13,
       "_v": -38.550000000000004
     },
     {
@@ -127769,7 +127769,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 33,
+      "salary": 16,
       "_v": 9.45
     },
     {
@@ -128059,7 +128059,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12,
+      "salary": 13,
       "_v": -43.8
     },
     {
@@ -128204,7 +128204,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 102,
+      "salary": 20,
       "_v": 34.44999999999999
     },
     {
@@ -128349,7 +128349,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 27,
+      "salary": 16,
       "_v": 2.3999999999999986
     },
     {
@@ -128494,7 +128494,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 39,
+      "salary": 15,
       "_v": -3.0999999999999943
     },
     {
@@ -128640,7 +128640,7 @@
       ],
       "type": "pitcher",
       "salary": 12,
-      "_v": -79.0
+      "_v": -79
     },
     {
       "id": "p_423",
@@ -128784,12 +128784,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 145,
+      "salary": 64,
       "_v": 54.400000000000006
     },
     {
       "id": "p_424",
-      "name": "S\u00e1nchez, Cristopher",
+      "name": "Sánchez, Cristopher",
       "year": "2025",
       "team": "PHI",
       "positions": [
@@ -128929,7 +128929,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 148,
+      "salary": 166,
       "_v": 62.900000000000006
     },
     {
@@ -129074,7 +129074,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 24,
+      "salary": 14,
       "_v": -8.399999999999999
     },
     {
@@ -129219,7 +129219,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 44,
+      "salary": 18,
       "_v": 12.449999999999989
     },
     {
@@ -129364,7 +129364,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 25,
+      "salary": 14,
       "_v": -12.099999999999994
     },
     {
@@ -129509,7 +129509,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21,
+      "salary": 14,
       "_v": -8.949999999999996
     },
     {
@@ -129654,7 +129654,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 13,
       "_v": -29.300000000000004
     },
     {
@@ -129799,7 +129799,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 30,
+      "salary": 14,
       "_v": -5.550000000000004
     },
     {
@@ -129944,7 +129944,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 91,
+      "salary": 23,
       "_v": 38.2
     },
     {
@@ -130089,7 +130089,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 74,
+      "salary": 19,
       "_v": 32.20000000000001
     },
     {
@@ -130234,7 +130234,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 19,
+      "salary": 13,
       "_v": -22.299999999999997
     },
     {
@@ -130379,8 +130379,8 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
-      "_v": -27.0
+      "salary": 13,
+      "_v": -27
     },
     {
       "id": "p_435",
@@ -130524,7 +130524,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 131,
+      "salary": 44,
       "_v": 52.400000000000006
     },
     {
@@ -130669,7 +130669,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17,
+      "salary": 13,
       "_v": -30.849999999999994
     },
     {
@@ -130959,7 +130959,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 36,
+      "salary": 15,
       "_v": 5.200000000000003
     },
     {
@@ -131104,7 +131104,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 54,
+      "salary": 18,
       "_v": 22.450000000000003
     },
     {
@@ -131394,7 +131394,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 43,
+      "salary": 18,
       "_v": 22.89999999999999
     },
     {
@@ -131539,7 +131539,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 12,
       "_v": -35.150000000000006
     },
     {
@@ -131684,7 +131684,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 48,
+      "salary": 17,
       "_v": 15.100000000000009
     },
     {
@@ -131829,7 +131829,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 116,
+      "salary": 30,
       "_v": 41.25000000000001
     },
     {
@@ -131974,7 +131974,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 13,
       "_v": -19.199999999999996
     },
     {
@@ -132264,7 +132264,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 65,
+      "salary": 18,
       "_v": 29.20000000000001
     },
     {
@@ -132409,7 +132409,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 151,
+      "salary": 139,
       "_v": 58.749999999999986
     },
     {
@@ -132554,7 +132554,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 189,
+      "salary": 200,
       "_v": 69.65
     },
     {
@@ -132699,7 +132699,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22,
+      "salary": 14,
       "_v": -6.9999999999999964
     },
     {
@@ -132844,7 +132844,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 38,
+      "salary": 17,
       "_v": 15.599999999999987
     },
     {
@@ -132989,7 +132989,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 59,
+      "salary": 16,
       "_v": 8.600000000000001
     },
     {
@@ -133134,7 +133134,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 70,
+      "salary": 18,
       "_v": 29.499999999999993
     },
     {
@@ -133279,7 +133279,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 96,
+      "salary": 34,
       "_v": 42.25000000000001
     },
     {
@@ -133424,7 +133424,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 13,
       "_v": -30.599999999999994
     },
     {
@@ -133574,7 +133574,7 @@
     },
     {
       "id": "p_457",
-      "name": "Soriano, Jos\u00e9",
+      "name": "Soriano, José",
       "year": "2025",
       "team": "LAA",
       "positions": [
@@ -133714,7 +133714,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 60,
+      "salary": 19,
       "_v": 31.599999999999994
     },
     {
@@ -133859,7 +133859,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 74,
+      "salary": 18,
       "_v": 27.299999999999997
     },
     {
@@ -134004,7 +134004,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21,
+      "salary": 14,
       "_v": -12.100000000000001
     },
     {
@@ -134149,7 +134149,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 46,
+      "salary": 16,
       "_v": 7.200000000000006
     },
     {
@@ -134294,7 +134294,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 70,
+      "salary": 17,
       "_v": 13.550000000000004
     },
     {
@@ -134439,7 +134439,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 13,
       "_v": -27.95
     },
     {
@@ -134584,7 +134584,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 43,
+      "salary": 16,
       "_v": 15.850000000000001
     },
     {
@@ -134729,7 +134729,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 49,
+      "salary": 18,
       "_v": 26.050000000000004
     },
     {
@@ -134874,7 +134874,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14,
+      "salary": 12,
       "_v": -31.749999999999996
     },
     {
@@ -135019,7 +135019,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 53,
+      "salary": 15,
       "_v": 12.699999999999989
     },
     {
@@ -135164,7 +135164,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 33,
+      "salary": 14,
       "_v": -6.299999999999994
     },
     {
@@ -135309,7 +135309,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28,
+      "salary": 14,
       "_v": -6.400000000000002
     },
     {
@@ -135454,7 +135454,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 30,
+      "salary": 14,
       "_v": -5.199999999999994
     },
     {
@@ -135744,7 +135744,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16,
+      "salary": 13,
       "_v": -17.4
     },
     {
@@ -135889,7 +135889,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 44,
+      "salary": 15,
       "_v": 13.75
     },
     {
@@ -136034,8 +136034,8 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 19,
-      "_v": -9.0
+      "salary": 13,
+      "_v": -9
     },
     {
       "id": "p_474",
@@ -136179,7 +136179,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28,
+      "salary": 15,
       "_v": -0.3000000000000007
     },
     {
@@ -136324,7 +136324,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 96,
+      "salary": 60,
       "_v": 47.6
     },
     {
@@ -136469,7 +136469,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 49,
+      "salary": 16,
       "_v": 10.400000000000002
     },
     {
@@ -136614,7 +136614,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 30,
+      "salary": 14,
       "_v": 5.050000000000011
     },
     {
@@ -136759,7 +136759,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 29,
+      "salary": 15,
       "_v": 3.599999999999998
     },
     {
@@ -136904,7 +136904,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17,
+      "salary": 13,
       "_v": -23.099999999999998
     },
     {
@@ -137049,7 +137049,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 70,
+      "salary": 17,
       "_v": 21.75
     },
     {
@@ -137194,7 +137194,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 57,
+      "salary": 17,
       "_v": 21.850000000000016
     },
     {
@@ -137339,7 +137339,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 34,
+      "salary": 14,
       "_v": -1.499999999999993
     },
     {
@@ -137484,7 +137484,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 40,
+      "salary": 15,
       "_v": 12.05
     },
     {
@@ -137629,7 +137629,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 41,
+      "salary": 15,
       "_v": 4.550000000000004
     },
     {
@@ -137774,7 +137774,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 13,
       "_v": -17.049999999999997
     },
     {
@@ -137919,7 +137919,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16,
+      "salary": 13,
       "_v": -21.299999999999994
     },
     {
@@ -138064,7 +138064,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 19,
+      "salary": 13,
       "_v": -14.7
     },
     {
@@ -138209,7 +138209,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17,
+      "salary": 13,
       "_v": -15.150000000000002
     },
     {
@@ -138354,7 +138354,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13,
+      "salary": 12,
       "_v": -42.099999999999994
     },
     {
@@ -138499,7 +138499,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16,
+      "salary": 13,
       "_v": -19.65
     },
     {
@@ -138644,12 +138644,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 40,
+      "salary": 14,
       "_v": -4.5
     },
     {
       "id": "p_492",
-      "name": "Ure\u00f1a, Jos\u00e9",
+      "name": "Ureña, José",
       "year": "2025",
       "team": "LAA",
       "positions": [
@@ -138789,7 +138789,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13,
+      "salary": 12,
       "_v": -28.700000000000006
     },
     {
@@ -138934,7 +138934,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 54,
+      "salary": 16,
       "_v": 14.550000000000004
     },
     {
@@ -139079,7 +139079,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 91,
+      "salary": 23,
       "_v": 42.949999999999996
     },
     {
@@ -139224,7 +139224,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16,
+      "salary": 13,
       "_v": -22.05
     },
     {
@@ -139369,7 +139369,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22,
+      "salary": 13,
       "_v": -16.149999999999995
     },
     {
@@ -139514,12 +139514,12 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26,
+      "salary": 14,
       "_v": -0.3500000000000014
     },
     {
       "id": "p_498",
-      "name": "V\u00e1squez, Randy",
+      "name": "Vásquez, Randy",
       "year": "2025",
       "team": "SD",
       "positions": [
@@ -139659,7 +139659,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26,
+      "salary": 15,
       "_v": 7.350000000000001
     },
     {
@@ -139805,7 +139805,7 @@
       ],
       "type": "pitcher",
       "salary": 12,
-      "_v": -43.0
+      "_v": -43
     },
     {
       "id": "p_500",
@@ -139949,7 +139949,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 49,
+      "salary": 16,
       "_v": 23.500000000000014
     },
     {
@@ -140094,7 +140094,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 41,
+      "salary": 13,
       "_v": -9.399999999999991
     },
     {
@@ -140239,7 +140239,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 38,
+      "salary": 15,
       "_v": 6.449999999999992
     },
     {
@@ -140384,7 +140384,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 12,
       "_v": -29.05
     },
     {
@@ -140529,7 +140529,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 56,
+      "salary": 17,
       "_v": 32.65000000000002
     },
     {
@@ -140674,7 +140674,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 13,
       "_v": -15.950000000000003
     },
     {
@@ -140819,7 +140819,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 85,
+      "salary": 36,
       "_v": 41.8
     },
     {
@@ -140964,7 +140964,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20,
+      "salary": 13,
       "_v": -14.05
     },
     {
@@ -141109,7 +141109,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20,
+      "salary": 13,
       "_v": -10.599999999999998
     },
     {
@@ -141254,7 +141254,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 87,
+      "salary": 17,
       "_v": 29.94999999999999
     },
     {
@@ -141399,7 +141399,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 42,
+      "salary": 15,
       "_v": 11.999999999999986
     },
     {
@@ -141544,7 +141544,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 43,
+      "salary": 15,
       "_v": 10.650000000000006
     },
     {
@@ -141689,7 +141689,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 37,
+      "salary": 14,
       "_v": -4.199999999999996
     },
     {
@@ -141834,7 +141834,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 31,
+      "salary": 14,
       "_v": -2.3999999999999986
     },
     {
@@ -141979,7 +141979,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 110,
+      "salary": 39,
       "_v": 50.14999999999999
     },
     {
@@ -142124,7 +142124,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 19,
+      "salary": 13,
       "_v": -15.249999999999996
     },
     {
@@ -142269,7 +142269,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 67,
+      "salary": 16,
       "_v": 20.950000000000003
     },
     {
@@ -142414,7 +142414,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 13,
       "_v": -12.949999999999996
     },
     {
@@ -142559,7 +142559,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 56,
+      "salary": 14,
       "_v": 12.849999999999994
     },
     {
@@ -142704,7 +142704,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 185,
+      "salary": 182,
       "_v": 64.55
     },
     {
@@ -142849,7 +142849,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17,
+      "salary": 12,
       "_v": -23.25
     },
     {
@@ -142994,7 +142994,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 56,
+      "salary": 15,
       "_v": 15.149999999999999
     },
     {
@@ -143139,7 +143139,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 44,
+      "salary": 14,
       "_v": -0.09999999999999076
     },
     {
@@ -143284,7 +143284,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 71,
+      "salary": 17,
       "_v": 29.349999999999987
     },
     {
@@ -143429,7 +143429,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 23,
+      "salary": 14,
       "_v": 0.14999999999999858
     },
     {
@@ -143719,7 +143719,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20,
+      "salary": 13,
       "_v": -16.15
     },
     {
@@ -143864,7 +143864,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16,
+      "salary": 12,
       "_v": -23.35
     },
     {
@@ -144009,7 +144009,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 34,
+      "salary": 14,
       "_v": 1.5000000000000036
     },
     {
@@ -144154,7 +144154,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14,
+      "salary": 12,
       "_v": -25.35
     },
     {
@@ -144299,7 +144299,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 149,
+      "salary": 97,
       "_v": 55.39999999999998
     },
     {
@@ -144589,7 +144589,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 162,
+      "salary": 41,
       "_v": 54.250000000000014
     },
     {
@@ -144734,7 +144734,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 42,
+      "salary": 14,
       "_v": 12.750000000000007
     },
     {
@@ -144879,7 +144879,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 41,
+      "salary": 14,
       "_v": 8.349999999999998
     },
     {
@@ -145024,7 +145024,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 145,
+      "salary": 106,
       "_v": 55.15
     },
     {
@@ -145169,7 +145169,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28,
+      "salary": 13,
       "_v": -5.049999999999994
     },
     {
@@ -145314,8 +145314,8 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
-      "_v": -49.0
+      "salary": 12,
+      "_v": -49
     },
     {
       "id": "p_538",
@@ -145459,7 +145459,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 19,
+      "salary": 12,
       "_v": -15.450000000000003
     },
     {
@@ -145604,7 +145604,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18,
+      "salary": 12,
       "_v": -23.499999999999996
     },
     {
@@ -145749,7 +145749,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16,
+      "salary": 12,
       "_v": -37.9
     },
     {
@@ -145894,7 +145894,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15,
+      "salary": 12,
       "_v": -30.400000000000002
     }
   ],
@@ -146020,17 +146020,17 @@
   },
   "opponents": [
     {
-      "id": "ai_offense",
+      "id": "ai_off",
       "name": "AI Offense First",
       "abbr": "OFF",
-      "blurb": "Judge + Ohtani + Raleigh + Witt; Suarez saves budget for bats.",
+      "blurb": "Sim-drafted offense stack. (stars, 59% tourney).",
       "lineup": [
         {
           "playerId": "b_314",
           "pos": "C"
         },
         {
-          "playerId": "b_100",
+          "playerId": "b_125",
           "pos": "1B"
         },
         {
@@ -146038,23 +146038,23 @@
           "pos": "2B"
         },
         {
-          "playerId": "b_17",
+          "playerId": "b_59",
           "pos": "3B"
         },
         {
-          "playerId": "b_451",
+          "playerId": "b_302",
           "pos": "SS"
         },
         {
+          "playerId": "b_54",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_426",
+          "pos": "OF"
+        },
+        {
           "playerId": "b_188",
-          "pos": "OF"
-        },
-        {
-          "playerId": "b_363",
-          "pos": "OF"
-        },
-        {
-          "playerId": "b_39",
           "pos": "OF"
         },
         {
@@ -146063,27 +146063,33 @@
         }
       ],
       "pitchingStaff": [
-        "p_475",
-        "p_498"
+        "p_435",
+        "p_358"
       ],
-      "starterId": "p_475",
+      "starterId": "p_435",
       "bench": [
-        "b_202"
+        "b_186",
+        "b_147",
+        "b_152",
+        "b_133",
+        "b_273",
+        "b_419",
+        "b_19"
       ],
-      "salary": 1000
+      "salary": 994
     },
     {
-      "id": "ai_twoace",
+      "id": "ai_ace",
       "name": "AI Two-Ace",
       "abbr": "ACE",
-      "blurb": "Skubal + Wheeler + Judge; deep supporting lineup.",
+      "blurb": "Sim-drafted two-ace staff. (pitching, 59% tourney).",
       "lineup": [
         {
-          "playerId": "b_325",
+          "playerId": "b_402",
           "pos": "C"
         },
         {
-          "playerId": "b_51",
+          "playerId": "b_204",
           "pos": "1B"
         },
         {
@@ -146091,76 +146097,23 @@
           "pos": "2B"
         },
         {
-          "playerId": "b_17",
+          "playerId": "b_436",
           "pos": "3B"
         },
         {
-          "playerId": "b_448",
+          "playerId": "b_450",
           "pos": "SS"
         },
         {
-          "playerId": "b_188",
+          "playerId": "b_68",
           "pos": "OF"
         },
         {
-          "playerId": "b_363",
+          "playerId": "b_392",
           "pos": "OF"
         },
         {
-          "playerId": "b_63",
-          "pos": "OF"
-        },
-        {
-          "playerId": "b_100",
-          "pos": "DH"
-        }
-      ],
-      "pitchingStaff": [
-        "p_449",
-        "p_519"
-      ],
-      "starterId": "p_449",
-      "bench": [
-        "b_331"
-      ],
-      "salary": 1000
-    },
-    {
-      "id": "ai_dual",
-      "name": "AI Dual Threat",
-      "abbr": "DUAL",
-      "blurb": "Judge + Ohtani + Marte + Crochet; balanced depth.",
-      "lineup": [
-        {
-          "playerId": "b_325",
-          "pos": "C"
-        },
-        {
-          "playerId": "b_100",
-          "pos": "1B"
-        },
-        {
-          "playerId": "b_235",
-          "pos": "2B"
-        },
-        {
-          "playerId": "b_17",
-          "pos": "3B"
-        },
-        {
-          "playerId": "b_44",
-          "pos": "SS"
-        },
-        {
-          "playerId": "b_188",
-          "pos": "OF"
-        },
-        {
-          "playerId": "b_39",
-          "pos": "OF"
-        },
-        {
-          "playerId": "b_63",
+          "playerId": "b_445",
           "pos": "OF"
         },
         {
@@ -146169,27 +146122,151 @@
         }
       ],
       "pitchingStaff": [
-        "p_114",
-        "p_498"
+        "p_410",
+        "p_449"
       ],
-      "starterId": "p_114",
+      "starterId": "p_410",
       "bench": [
-        "b_331"
+        "b_411",
+        "b_414",
+        "b_96",
+        "b_429",
+        "b_425",
+        "b_399",
+        "b_421"
       ],
-      "salary": 1000
+      "salary": 993
     },
     {
-      "id": "ai_midstack",
-      "name": "AI Mid-Star Stack",
-      "abbr": "MID",
-      "blurb": "No Judge/Ohtani \u2014 Raleigh/Witt/Ram\u00edrez/Marte + Skubal.",
+      "id": "ai_dual",
+      "name": "AI Dual Threat",
+      "abbr": "DUAL",
+      "blurb": "Sim-drafted star bat + quality arm. (power, 66% tourney).",
       "lineup": [
         {
           "playerId": "b_314",
           "pos": "C"
         },
         {
-          "playerId": "b_100",
+          "playerId": "b_204",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_420",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_436",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_359",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_376",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_445",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_377",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_357",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_410",
+        "p_523"
+      ],
+      "starterId": "p_410",
+      "bench": [
+        "b_316",
+        "b_421",
+        "b_380",
+        "b_399",
+        "b_425",
+        "b_414",
+        "b_427"
+      ],
+      "salary": 998
+    },
+    {
+      "id": "ai_mid",
+      "name": "AI Mid-Star Stack",
+      "abbr": "MID",
+      "blurb": "Sim-drafted mid-tier stack (no Judge/Ohtani). (contact, 58% tourney).",
+      "lineup": [
+        {
+          "playerId": "b_314",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_204",
+          "pos": "1B"
+        },
+        {
+          "playerId": "b_420",
+          "pos": "2B"
+        },
+        {
+          "playerId": "b_436",
+          "pos": "3B"
+        },
+        {
+          "playerId": "b_450",
+          "pos": "SS"
+        },
+        {
+          "playerId": "b_54",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_429",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_377",
+          "pos": "OF"
+        },
+        {
+          "playerId": "b_19",
+          "pos": "DH"
+        }
+      ],
+      "pitchingStaff": [
+        "p_410",
+        "p_457"
+      ],
+      "starterId": "p_410",
+      "bench": [
+        "b_447",
+        "b_317",
+        "b_411",
+        "b_421",
+        "b_309",
+        "b_414",
+        "b_380"
+      ],
+      "salary": 1000
+    },
+    {
+      "id": "ai_ofc",
+      "name": "AI Outfield Core",
+      "abbr": "OFC",
+      "blurb": "Sim-drafted outfield-heavy club. (speed, 53% tourney).",
+      "lineup": [
+        {
+          "playerId": "b_402",
+          "pos": "C"
+        },
+        {
+          "playerId": "b_204",
           "pos": "1B"
         },
         {
@@ -146197,92 +146274,45 @@
           "pos": "2B"
         },
         {
-          "playerId": "b_317",
+          "playerId": "b_361",
           "pos": "3B"
         },
         {
-          "playerId": "b_451",
+          "playerId": "b_411",
           "pos": "SS"
         },
         {
-          "playerId": "b_63",
+          "playerId": "b_445",
           "pos": "OF"
         },
         {
-          "playerId": "b_379",
+          "playerId": "b_429",
           "pos": "OF"
-        },
-        {
-          "playerId": "b_51",
-          "pos": "OF"
-        },
-        {
-          "playerId": "b_37",
-          "pos": "DH"
-        }
-      ],
-      "pitchingStaff": [
-        "p_449",
-        "p_498"
-      ],
-      "starterId": "p_449",
-      "bench": [
-        "b_72"
-      ],
-      "salary": 1000
-    },
-    {
-      "id": "ai_ofcore",
-      "name": "AI Outfield Core",
-      "abbr": "OFC",
-      "blurb": "Judge + Soto + Bellinger + Acu\u00f1a + Witt + Fried.",
-      "lineup": [
-        {
-          "playerId": "b_325",
-          "pos": "C"
-        },
-        {
-          "playerId": "b_100",
-          "pos": "1B"
-        },
-        {
-          "playerId": "b_309",
-          "pos": "2B"
-        },
-        {
-          "playerId": "b_236",
-          "pos": "3B"
-        },
-        {
-          "playerId": "b_451",
-          "pos": "SS"
         },
         {
           "playerId": "b_188",
           "pos": "OF"
         },
         {
-          "playerId": "b_376",
-          "pos": "OF"
-        },
-        {
-          "playerId": "b_38",
-          "pos": "OF"
-        },
-        {
-          "playerId": "b_2",
+          "playerId": "b_288",
           "pos": "DH"
         }
       ],
       "pitchingStaff": [
-        "p_167",
-        "p_498"
+        "p_102",
+        "p_504"
       ],
-      "starterId": "p_167",
+      "starterId": "p_102",
       "bench": [
-        "b_301"
+        "b_377",
+        "b_447",
+        "b_414",
+        "b_380",
+        "b_425",
+        "b_436",
+        "b_147"
       ],
-      "salary": 1000
+      "salary": 998
     }
   ]
 }

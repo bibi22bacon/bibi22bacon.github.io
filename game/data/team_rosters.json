@@ -56,7 +56,7 @@
         "b_227",
         "b_136"
       ],
-      "salary": 737,
+      "salary": 519,
       "staffIP": 11,
       "size": 18,
       "note": "All players from this team"
@@ -116,7 +116,7 @@
         "b_9",
         "b_12"
       ],
-      "salary": 814,
+      "salary": 463,
       "staffIP": 13,
       "size": 17,
       "note": "All players from this team"
@@ -176,7 +176,7 @@
         "b_167",
         "b_216"
       ],
-      "salary": 749,
+      "salary": 485,
       "staffIP": 11,
       "size": 17,
       "note": "All players from this team"
@@ -237,7 +237,7 @@
         "b_32",
         "b_202"
       ],
-      "salary": 744,
+      "salary": 586,
       "staffIP": 13,
       "size": 18,
       "note": "All players from this team"
@@ -298,7 +298,7 @@
         "b_150",
         "b_60"
       ],
-      "salary": 776,
+      "salary": 487,
       "staffIP": 13,
       "size": 18,
       "note": "All players from this team"
@@ -358,7 +358,7 @@
         "b_42",
         "b_418"
       ],
-      "salary": 771,
+      "salary": 393,
       "staffIP": 12,
       "size": 17,
       "note": "All players from this team"
@@ -417,7 +417,7 @@
         "b_111",
         "b_155"
       ],
-      "salary": 622,
+      "salary": 310,
       "staffIP": 12,
       "size": 16,
       "note": "All players from this team"
@@ -476,7 +476,7 @@
         "b_129",
         "b_282"
       ],
-      "salary": 496,
+      "salary": 385,
       "staffIP": 12,
       "size": 16,
       "note": "All players from this team"
@@ -537,7 +537,7 @@
         "b_130",
         "b_20"
       ],
-      "salary": 466,
+      "salary": 344,
       "staffIP": 12,
       "size": 18,
       "note": "All players from this team"
@@ -598,7 +598,7 @@
         "b_338",
         "b_64"
       ],
-      "salary": 544,
+      "salary": 320,
       "staffIP": 12,
       "size": 18,
       "note": "All players from this team"
@@ -659,7 +659,7 @@
         "b_336",
         "b_390"
       ],
-      "salary": 798,
+      "salary": 619,
       "staffIP": 13,
       "size": 18,
       "note": "All players from this team"
@@ -720,7 +720,7 @@
         "b_176",
         "b_412"
       ],
-      "salary": 732,
+      "salary": 401,
       "staffIP": 13,
       "size": 18,
       "note": "All players from this team"
@@ -781,7 +781,7 @@
         "b_322",
         "b_57"
       ],
-      "salary": 710,
+      "salary": 389,
       "staffIP": 11,
       "size": 18,
       "note": "All players from this team"
@@ -842,7 +842,7 @@
         "b_91",
         "b_303"
       ],
-      "salary": 459,
+      "salary": 323,
       "staffIP": 12,
       "size": 18,
       "note": "All players from this team"
@@ -902,7 +902,7 @@
         "b_344",
         "b_341"
       ],
-      "salary": 950,
+      "salary": 626,
       "staffIP": 12,
       "size": 17,
       "note": "All players from this team"
@@ -961,7 +961,7 @@
         "b_275",
         "b_260"
       ],
-      "salary": 631,
+      "salary": 330,
       "staffIP": 11,
       "size": 16,
       "note": "All players from this team"
@@ -1021,7 +1021,7 @@
         "b_290",
         "b_307"
       ],
-      "salary": 812,
+      "salary": 398,
       "staffIP": 12,
       "size": 17,
       "note": "All players from this team"
@@ -1081,7 +1081,7 @@
         "b_333",
         "b_49"
       ],
-      "salary": 633,
+      "salary": 332,
       "staffIP": 12,
       "size": 17,
       "note": "All players from this team"
@@ -1140,7 +1140,7 @@
         "b_244",
         "b_409"
       ],
-      "salary": 719,
+      "salary": 465,
       "staffIP": 12,
       "size": 16,
       "note": "All players from this team"
@@ -1197,11 +1197,13 @@
         "b_139",
         "b_102",
         "b_254",
-        "b_56"
+        "b_56",
+        "b_432",
+        "b_364"
       ],
-      "salary": 987,
+      "salary": 765,
       "staffIP": 13,
-      "size": 16,
+      "size": 18,
       "note": "All players from this team"
     },
     {
@@ -1259,7 +1261,7 @@
         "b_337",
         "b_232"
       ],
-      "salary": 922,
+      "salary": 689,
       "staffIP": 14,
       "size": 17,
       "note": "All players from this team"
@@ -1286,7 +1288,7 @@
           "pos": "3B"
         },
         {
-          "playerId": "b_20",
+          "playerId": "b_440",
           "pos": "SS"
         },
         {
@@ -1317,7 +1319,7 @@
         "b_387",
         "b_92"
       ],
-      "salary": 533,
+      "salary": 379,
       "staffIP": 11,
       "size": 15,
       "note": "Includes call-up fillers for: SS"
@@ -1377,7 +1379,7 @@
         "b_98",
         "b_228"
       ],
-      "salary": 716,
+      "salary": 420,
       "staffIP": 12,
       "size": 17,
       "note": "All players from this team"
@@ -1438,7 +1440,7 @@
         "b_315",
         "b_393"
       ],
-      "salary": 907,
+      "salary": 569,
       "staffIP": 13,
       "size": 18,
       "note": "All players from this team"
@@ -1496,7 +1498,7 @@
         "b_137",
         "b_118"
       ],
-      "salary": 556,
+      "salary": 323,
       "staffIP": 13,
       "size": 15,
       "note": "All players from this team"
@@ -1554,7 +1556,7 @@
         "b_295",
         "b_438"
       ],
-      "salary": 481,
+      "salary": 282,
       "staffIP": 12,
       "size": 15,
       "note": "All players from this team"
@@ -1613,7 +1615,7 @@
         "b_115",
         "b_446"
       ],
-      "salary": 611,
+      "salary": 323,
       "staffIP": 11,
       "size": 16,
       "note": "All players from this team"
@@ -1674,7 +1676,7 @@
         "b_268",
         "b_301"
       ],
-      "salary": 736,
+      "salary": 439,
       "staffIP": 12,
       "size": 18,
       "note": "All players from this team"
@@ -1735,7 +1737,7 @@
         "b_138",
         "b_77"
       ],
-      "salary": 994,
+      "salary": 600,
       "staffIP": 13,
       "size": 18,
       "note": "All players from this team"
@@ -1793,7 +1795,7 @@
         "b_154",
         "b_5"
       ],
-      "salary": 484,
+      "salary": 294,
       "staffIP": 11,
       "size": 15,
       "note": "All players from this team"

@@ -1,65 +1,60 @@
-# Salary Scale — card ability → dollars
+# Salary Market — sim draft + head-to-head
 
 ## Principle
-
-This is a **board game**. Salary should reflect how strong a card is in the duel,
-not real-world MLB rates.
-
-You already turn counting stats → abilities (with 2× stretch for the 50% matrix
-select). Those printed abilities are what produce results — so they are the
-salary input.
+Salaries come from a **2-AI draft market** whose prices are heated by **simulated game results**, then remapped so a **$1000** cap bites.
 
 ## Method
-
-1. Score the **card** (same value weights as before)
-2. Map score → $ with anchors for a **$1000** cap
-3. Light positional scarcity (C/SS up a bit)
-4. Floor **$12**, ceil **$200**
+1. Start everyone near the floor
+2. Two AI managers snake-draft under live prices (full roster rules)
+3. Those clubs play a short series; winners’ cards get market heat
+4. Early/hot picks rise, ignored cards fall — repeat until stable
+5. Remap demand → board $ (floor $12, ceil $200)
+6. Draft many candidates under board $; tournament sims pick top AI builds
 
 ### Distribution
-
 | Band | Players |
 |------|--------:|
-| $12–19 | 325 |
-| $20–29 | 255 |
-| $30–49 | 218 |
-| $50–79 | 131 |
-| $80–119 | 45 |
-| $120–200 | 28 |
+| $12–19 | 534 |
+| $20–29 | 418 |
+| $30–49 | 16 |
+| $50–79 | 12 |
+| $80–119 | 9 |
+| $120–200 | 13 |
 
-Max **$189** · median **$26** · best-9 bats **$1164** · best-5 pits **$861**
+Max **$200** · median **$19** · best-9 bats **$1251** · best-5 pits **$900**
 
 ### Top 20
-
-| $ | Type | Name | Card value |
+| $ | Type | Name | Prior |
 |---:|---|---|---:|
-| 189 | pitcher | Skubal, Tarik | 46.3 |
-| 185 | batter | Judge, Aaron | 37.6 |
-| 185 | pitcher | Wheeler, Zack | 45.5 |
-| 163 | pitcher | Bradish, Kyle | 42.4 |
-| 162 | pitcher | Rogers, Trevor | 42.2 |
-| 162 | pitcher | Woodruff, Brandon | 42.2 |
-| 154 | pitcher | Crochet, Garrett | 41.3 |
-| 151 | batter | Ohtani, Shohei | 32.7 |
-| 151 | pitcher | Skenes, Paul | 40.8 |
-| 150 | pitcher | Eovaldi, Nathan | 40.6 |
-| 149 | pitcher | Woo, Bryan | 40.5 |
-| 148 | pitcher | Sánchez, Cristopher | 40.4 |
-| 145 | pitcher | Sale, Chris | 40.0 |
-| 145 | pitcher | Yamamoto, Yoshinobu | 40.0 |
-| 143 | pitcher | Gilbert, Logan | 39.7 |
-| 140 | pitcher | Greene, Hunter | 39.3 |
-| 140 | pitcher | McLean, Nolan | 39.3 |
-| 135 | pitcher | Henderson, Logan | 38.6 |
-| 134 | pitcher | Miller, Mason | 38.5 |
-| 131 | batter | Raleigh, Cal | 27.9 |
+| 200 | pitcher | Rogers, Trevor | 62.6 |
+| 200 | pitcher | Skubal, Tarik | 61.2 |
+| 195 | batter | Judge, Aaron | 130.1 |
+| 182 | pitcher | Wheeler, Zack | 55.5 |
+| 178 | batter | Ohtani, Shohei | 114.4 |
+| 166 | pitcher | Sánchez, Cristopher | 55.4 |
+| 162 | batter | Kurtz, Nick | 103.5 |
+| 152 | pitcher | Fried, Max | 51.2 |
+| 148 | batter | Springer, George | 102.7 |
+| 139 | pitcher | Skenes, Paul | 51.9 |
+| 135 | batter | Ramírez, José | 98.6 |
+| 127 | pitcher | Crochet, Garrett | 46.9 |
+| 123 | batter | Raleigh, Cal | 98.6 |
+| 116 | pitcher | Eovaldi, Nathan | 52.3 |
+| 113 | batter | Soto, Juan | 95.4 |
+| 106 | pitcher | Yamamoto, Yoshinobu | 48.3 |
+| 103 | batter | Marte, Ketel | 97.0 |
+| 97 | pitcher | Woo, Bryan | 46.5 |
+| 94 | batter | Jones, Jahmai | 95.3 |
+| 89 | pitcher | Bradish, Kyle | 47.3 |
 
-### AI opponents
-- **OFF** $996 — Judge + Ohtani; one ace; value fillers.
-- **ACE** $1000 — Two aces + Judge; bargain lineup.
-- **DUAL** $996 — Judge + Ohtani + Crochet; value arms.
+### AI opponents (sim tournament)
+- **OFF** $994 — Sim-drafted offense stack. (stars, 59% tourney).
+- **ACE** $993 — Sim-drafted two-ace staff. (pitching, 59% tourney).
+- **DUAL** $998 — Sim-drafted star bat + quality arm. (power, 66% tourney).
+- **MID** $1000 — Sim-drafted mid-tier stack (no Judge/Ohtani). (contact, 58% tourney).
+- **OFC** $998 — Sim-drafted outfield-heavy club. (speed, 53% tourney).
 
 ## Files
-- `tools/salary_scale.py`
-- `data/salaries.csv`
+- `tools/sim_economy.mjs` (market + top builds)
+- `data/salary_market.json`
 - `game/data/players.json`

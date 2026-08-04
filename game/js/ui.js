@@ -742,6 +742,15 @@ export class GameUI {
       </div>
 
       <div class="play-header">
+        <div class="bases-row compact">
+          ${this._diamond(s)}
+          <div class="bases-meta">
+            <div class="at-bat-chip">${s.half === 'top' ? '▲' : '▼'} ${offense.abbr} batting</div>
+            <div><span class="muted">1B</span> ${this._esc(s.bases[0]?.name?.split(',')[0] || '—')}</div>
+            <div><span class="muted">2B</span> ${this._esc(s.bases[1]?.name?.split(',')[0] || '—')}</div>
+            <div><span class="muted">3B</span> ${this._esc(s.bases[2]?.name?.split(',')[0] || '—')}</div>
+          </div>
+        </div>
         <div class="score-strip">
           <div class="score-team away">
             <span class="abbr">${s.away.abbr}</span>
@@ -758,15 +767,6 @@ export class GameUI {
           <div class="score-team home">
             <span class="runs">${s.home.score}</span>
             <span class="abbr">${s.home.abbr}</span>
-          </div>
-        </div>
-        <div class="bases-row compact">
-          ${this._diamond(s)}
-          <div class="bases-meta">
-            <div class="at-bat-chip">${s.half === 'top' ? '▲' : '▼'} ${offense.abbr} batting</div>
-            <div><span class="muted">1B</span> ${this._esc(s.bases[0]?.name?.split(',')[0] || '—')}</div>
-            <div><span class="muted">2B</span> ${this._esc(s.bases[1]?.name?.split(',')[0] || '—')}</div>
-            <div><span class="muted">3B</span> ${this._esc(s.bases[2]?.name?.split(',')[0] || '—')}</div>
           </div>
         </div>
       </div>

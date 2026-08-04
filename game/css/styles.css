@@ -95,7 +95,7 @@ button, select {
 /* Bases up top */
 .play-header {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   gap: 12px;
   margin-bottom: 12px;
   align-items: stretch;
@@ -106,27 +106,31 @@ button, select {
 .bases-row {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 18px;
+  justify-content: flex-start;
+  gap: 14px;
   margin: 12px 0;
   background: linear-gradient(180deg, #1a261e, #121a15);
   border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 10px 14px;
+  padding: 10px 12px;
 }
 .bases-row.compact { margin: 0; }
 .bases-row .diamond {
-  width: 120px;
-  max-width: 120px;
+  width: 108px;
+  max-width: 108px;
   aspect-ratio: 1;
   flex-shrink: 0;
 }
-.bases-row .base { width: 18px; height: 18px; }
-.bases-row .base.hp { width: 20px; height: 16px; margin-left: -10px; }
+.bases-row .base { width: 16px; height: 16px; }
+.bases-row .base.hp { width: 18px; height: 14px; margin-left: -9px; }
 .bases-meta {
-  font-size: 0.82rem;
-  line-height: 1.55;
-  min-width: 140px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  min-width: 0;
+}
+.play-header .score-strip {
+  margin: 0;
+  min-width: 0;
 }
 .at-bat-chip {
   font-family: var(--font-display);

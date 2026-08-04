@@ -39,8 +39,7 @@ export class GameUI {
       } else if (action === 'resolve') {
         this.engine.resolvePA();
       } else if (action === 'change-pitcher') {
-        const side = t.dataset.side;
-        this.engine.changePitcher(side, value);
+        this.engine.changePitcher(t.dataset.side, value);
       } else if (action === 'restart') {
         this.engine = new GameEngine(this.data, this.data.presets);
         this.engine.on(() => this.render());
@@ -55,119 +54,114 @@ export class GameUI {
     const pitcher = this.engine.currentPitcher();
     const offense = this.engine.offenseSide();
     const defense = this.engine.defenseSide();
+    const hl = this._highlightCell(s.lastResult);
 
     this.root.innerHTML = `
-      <div class="brand">9-Inning Duel · Hotseat</div>
-      ${this._scoreboard(s)}
-      <div class="linescore panel" style="margin-top:12px">${this._linescore(s)}</div>
+      <div class="topbar">
+        <div class="brand">9-INNING DUEL</div>
+        <button class="btn btn-ghost btn-sm" data-action="restart">New Game</button>
+      </div>
 
-      <div class="main">
-        <div class="left">
-          <div class="panel">
-            <h2>Field</h2>
-            <div class="diamond-wrap">
-              ${this._diamond(s)}
-              <div>
-                <div class="runner-chip"><strong>1B:</strong> ${s.bases[0]?.name || '—'}</div>
-                <div class="runner-chip"><strong>2B:</strong> ${s.bases[1]?.name || '—'}</div>
-                <div class="runner-chip"><strong>3B:</strong> ${s.bases[2]?.name || '—'}</div>
-                <div class="runner-chip" style="margin-top:14px"><strong>Outs:</strong> ${s.outs}</div>
-                <div class="runner-chip"><strong>At bat:</strong> ${offense.abbr}</div>
-              </div>
-            </div>
-
-            <div class="matchup">
-              ${this._playerCard('Pitcher (DEF)', pitcher.player, true, pitcher.entry)}
-              <div class="vs">VS</div>
-              ${this._playerCard(`Batter #${batter.orderIndex + 1}`, batter.player, false)}
-            </div>
-
-            <div class="result ${s.lastResult ? 'show' : ''}" id="result">
-              ${s.lastResult ? this._resultHtml(s.lastResult) : ''}
-            </div>
+      <div class="score-strip">
+        <div class="score-team away">
+          <span class="abbr">${s.away.abbr}</span>
+          <span class="runs">${s.away.score}</span>
+        </div>
+        <div class="score-mid">
+          <div class="inning-label">${s.half === 'top' ? '▲' : '▼'} ${s.inning}</div>
+          <div class="outs-row">
+            <span class="out-circle ${s.outs >= 1 ? 'on' : ''}">${s.outs >= 1 ? '●' : '○'}</span>
+            <span class="out-circle ${s.outs >= 2 ? 'on' : ''}">${s.outs >= 2 ? '●' : '○'}</span>
+            <span class="out-circle ${s.outs >= 3 ? 'on' : ''}">${s.outs >= 3 ? '●' : '○'}</span>
           </div>
+        </div>
+        <div class="score-team home">
+          <span class="runs">${s.home.score}</span>
+          <span class="abbr">${s.home.abbr}</span>
+        </div>
+      </div>
 
-          <div class="panel" style="margin-top:12px">
-            <h2>Play Log</h2>
-            <div class="log">
-              ${s.log.map((e) => `<div class="entry ${e.kind}">${e.msg}</div>`).join('') || '<div class="entry">Game start — LAD @ NYY. Play tactics, then Resolve PA.</div>'}
-            </div>
+      <div class="bases-row">
+        ${this._diamond(s)}
+        <div class="bases-meta">
+          <div><span class="muted">1B</span> ${s.bases[0]?.name || '—'}</div>
+          <div><span class="muted">2B</span> ${s.bases[1]?.name || '—'}</div>
+          <div><span class="muted">3B</span> ${s.bases[2]?.name || '—'}</div>
+          <div class="muted" style="margin-top:6px">At bat · ${offense.abbr}</div>
+        </div>
+      </div>
+
+      <div class="main-simple">
+        <div class="matrices panel">
+          <div class="matchup-simple">
+            ${this._playerCard('P', pitcher.player, true, pitcher.entry, hl?.source === 'pitcher' ? hl : null)}
+            ${this._playerCard('BAT', batter.player, false, null, hl?.source === 'batter' ? hl : null)}
+          </div>
+          <div class="result ${s.lastResult ? 'show' : ''}">
+            ${s.lastResult ? this._resultHtml(s.lastResult) : '<span class="muted">Resolve a PA to see the result</span>'}
           </div>
         </div>
 
-        <div class="right">
-          <div class="panel">
-            <h2>Tactic Cards ${s.phase === 'gameover' ? '(Game Over)' : ''}</h2>
-            <p class="hint" style="margin-top:0">Hotseat: defense picks first, then offense. Select at most one each (or none), then Resolve.</p>
-            <div class="tactics-grid">
-              <div class="tactic-col">
-                <h3>Defense · ${defense.abbr}</h3>
-                <div class="tactic-list">
-                  <button class="tactic-btn ${!s.pendingDefTactic ? 'selected' : ''}" data-action="def-tactic" data-value="" ${s.phase !== 'tactics' ? 'disabled' : ''}>
-                    No tactic
-                  </button>
-                  ${DEF_TACTIC_IDS.map((id) => {
-                    const tac = TACTICS[id];
-                    const disabled = s.phase !== 'tactics';
-                    return `<button class="tactic-btn ${s.pendingDefTactic === id ? 'selected' : ''}" data-action="def-tactic" data-value="${id}" ${disabled ? 'disabled' : ''}>
-                      ${tac.name}${tac.d2Mod ? ` <small>D2 ${tac.d2Mod > 0 ? '+' : ''}${tac.d2Mod}</small>` : '<small>DEF</small>'}
-                    </button>`;
-                  }).join('')}
-                </div>
-              </div>
-              <div class="tactic-col">
-                <h3>Offense · ${offense.abbr}</h3>
-                <div class="tactic-list">
-                  <button class="tactic-btn ${!s.pendingOffTactic ? 'selected' : ''}" data-action="off-tactic" data-value="" ${s.phase !== 'tactics' ? 'disabled' : ''}>
-                    No tactic
-                  </button>
-                  ${OFF_TACTIC_IDS.map((id) => {
-                    const tac = TACTICS[id];
-                    let disabled = s.phase !== 'tactics';
-                    let note = 'OFF';
-                    if (id === 'steal' && !this.engine.canPlaySteal()) {
-                      disabled = true;
-                      note = 'Need open 2B/3B';
-                    }
-                    if (id === 'sacfly' && !this.engine.canPlaySacFly()) {
-                      disabled = true;
-                      note = 'Need a runner';
-                    }
-                    return `<button class="tactic-btn ${s.pendingOffTactic === id ? 'selected' : ''}" data-action="off-tactic" data-value="${id}" ${disabled ? 'disabled' : ''}>
-                      ${tac.name}<small>${note}${tac.d2Mod ? ` · D2 ${tac.d2Mod}` : ''}</small>
-                    </button>`;
-                  }).join('')}
-                </div>
-                ${
-                  s.pendingOffTactic === 'steal'
-                    ? `<div class="steal-target">Steal
-                        <button class="${s.stealTarget === 2 ? 'on' : ''}" data-action="steal-target" data-value="2" ${!s.bases[0] || s.bases[1] ? 'disabled' : ''}>2B</button>
-                        <button class="${s.stealTarget === 3 ? 'on' : ''}" data-action="steal-target" data-value="3" ${!s.bases[1] || s.bases[2] ? 'disabled' : ''}>3B</button>
-                      </div>`
-                    : ''
-                }
+        <div class="controls panel">
+          <div class="tactics-grid">
+            <div class="tactic-col">
+              <h3>DEF · ${defense.abbr}</h3>
+              <div class="tactic-list">
+                <button class="tactic-btn ${!s.pendingDefTactic ? 'selected' : ''}" data-action="def-tactic" data-value="" ${s.phase !== 'tactics' ? 'disabled' : ''}>None</button>
+                ${DEF_TACTIC_IDS.map((id) => {
+                  const tac = TACTICS[id];
+                  return `<button class="tactic-btn ${s.pendingDefTactic === id ? 'selected' : ''}" data-action="def-tactic" data-value="${id}" ${s.phase !== 'tactics' ? 'disabled' : ''}>
+                    ${tac.name}${tac.d2Mod ? ` <small>D2 ${tac.d2Mod > 0 ? '+' : ''}${tac.d2Mod}</small>` : ''}
+                  </button>`;
+                }).join('')}
               </div>
             </div>
+            <div class="tactic-col">
+              <h3>OFF · ${offense.abbr}</h3>
+              <div class="tactic-list">
+                <button class="tactic-btn ${!s.pendingOffTactic ? 'selected' : ''}" data-action="off-tactic" data-value="" ${s.phase !== 'tactics' ? 'disabled' : ''}>None</button>
+                ${OFF_TACTIC_IDS.map((id) => {
+                  const tac = TACTICS[id];
+                  let disabled = s.phase !== 'tactics';
+                  let note = '';
+                  if (id === 'steal' && !this.engine.canPlaySteal()) { disabled = true; note = 'n/a'; }
+                  if (id === 'sacfly' && !this.engine.canPlaySacFly()) { disabled = true; note = 'n/a'; }
+                  return `<button class="tactic-btn ${s.pendingOffTactic === id ? 'selected' : ''}" data-action="off-tactic" data-value="${id}" ${disabled ? 'disabled' : ''}>
+                    ${tac.name}${note ? `<small>${note}</small>` : tac.d2Mod ? `<small>D2 ${tac.d2Mod}</small>` : ''}
+                  </button>`;
+                }).join('')}
+              </div>
+              ${
+                s.pendingOffTactic === 'steal'
+                  ? `<div class="steal-target">
+                      <button class="${s.stealTarget === 2 ? 'on' : ''}" data-action="steal-target" data-value="2" ${!s.bases[0] || s.bases[1] ? 'disabled' : ''}>2B</button>
+                      <button class="${s.stealTarget === 3 ? 'on' : ''}" data-action="steal-target" data-value="3" ${!s.bases[1] || s.bases[2] ? 'disabled' : ''}>3B</button>
+                    </div>`
+                  : ''
+              }
+            </div>
+          </div>
 
-            <div class="actions">
-              <button class="btn btn-primary" data-action="resolve" ${s.phase !== 'tactics' ? 'disabled' : ''}>
-                Resolve Plate Appearance
+          <div class="actions">
+            <button class="btn btn-primary" data-action="resolve" ${s.phase !== 'tactics' ? 'disabled' : ''}>Resolve PA</button>
+          </div>
+
+          <div class="bullpen-inline">
+            <span class="muted">Bullpen</span>
+            ${this.engine.availablePitchers(defense.isHome ? 'home' : 'away').map((p) => `
+              <button class="pill-btn ${p.active ? 'active' : ''}" data-action="change-pitcher" data-side="${defense.isHome ? 'home' : 'away'}" data-value="${p.playerId}" ${p.active ? 'disabled' : ''}>
+                ${p.name.split(',')[0]} ${p.ipUsed}/${p.ipMax}
               </button>
-              <button class="btn btn-ghost" data-action="restart">New Game</button>
-            </div>
+            `).join('')}
           </div>
+        </div>
+      </div>
 
-          <div class="panel" style="margin-top:12px">
-            <h2>Bullpen · ${defense.abbr}</h2>
-            <div class="bullpen">
-              ${this.engine.availablePitchers(defense.isHome ? 'home' : 'away').map((p) => `
-                <button class="${p.active ? 'active' : ''}" data-action="change-pitcher" data-side="${defense.isHome ? 'home' : 'away'}" data-value="${p.playerId}" ${p.active ? 'disabled' : ''}>
-                  <span>${p.name} (${p.hand})</span>
-                  <span>IP ${p.ipUsed}/${p.ipMax}</span>
-                </button>
-              `).join('') || '<div class="hint">No pitchers remaining</div>'}
-            </div>
-          </div>
+      <div class="panel boxscore">
+        <h2>Box Score</h2>
+        ${this._linescore(s)}
+        <div class="log compact">
+          ${s.log.slice(0, 8).map((e) => `<div class="entry ${e.kind}">${e.msg}</div>`).join('') || '<div class="entry">Play tactics, then Resolve PA.</div>'}
         </div>
       </div>
 
@@ -182,32 +176,11 @@ export class GameUI {
     `;
   }
 
-  _scoreboard(s) {
-    const halfLabel = s.half === 'top' ? 'TOP' : 'BOT';
-    return `
-      <div class="scoreboard">
-        <div class="team-block away">
-          <div class="team-abbr away">${s.away.abbr}</div>
-          <div class="team-name">${s.away.name}</div>
-          <div class="team-score">${s.away.score}</div>
-        </div>
-        <div class="center-board">
-          <div class="inning-label">${halfLabel} ${s.inning}</div>
-          <div class="outs-row">
-            <span>OUTS</span>
-            <span class="out-circle ${s.outs >= 1 ? 'on' : ''}" aria-label="out 1">${s.outs >= 1 ? '●' : '○'}</span>
-            <span class="out-circle ${s.outs >= 2 ? 'on' : ''}" aria-label="out 2">${s.outs >= 2 ? '●' : '○'}</span>
-            <span class="out-circle ${s.outs >= 3 ? 'on' : ''}" aria-label="out 3">${s.outs >= 3 ? '●' : '○'}</span>
-          </div>
-          <div class="count-meta">H ${s.away.hits}–${s.home.hits}</div>
-        </div>
-        <div class="team-block home">
-          <div class="team-abbr home">${s.home.abbr}</div>
-          <div class="team-name">${s.home.name}</div>
-          <div class="team-score">${s.home.score}</div>
-        </div>
-      </div>
-    `;
+  _highlightCell(result) {
+    if (!result || result.d1 == null || result.d2 == null) return null;
+    if (result.matrixSource !== 'pitcher' && result.matrixSource !== 'batter') return null;
+    const row = result.d1 <= 10 ? result.d1 - 1 : result.d1 - 11;
+    return { source: result.matrixSource, row, col: result.d2 - 1 };
   }
 
   _linescore(s) {
@@ -216,12 +189,7 @@ export class GameUI {
     const row = (side) =>
       inns
         .map((i) => {
-          const played =
-            i + 1 < s.inning ||
-            (i + 1 === s.inning && (s.half === 'bottom' || side.isHome === false)) ||
-            s.phase === 'gameover';
-          // simplify: show number if inning started for that half
-          let show = side.inningRuns[i];
+          let show = '';
           if (i + 1 > s.inning) show = '';
           else if (i + 1 === s.inning && s.half === 'top' && side.isHome) show = '';
           else show = side.inningRuns[i] || 0;
@@ -230,29 +198,31 @@ export class GameUI {
         .join('');
 
     return `
-      <table>
-        <thead>
-          <tr>
-            <th></th>
-            ${inns.map((i) => `<th>${i + 1}</th>`).join('')}
-            <th>R</th><th>H</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="team">${s.away.abbr}</td>
-            ${row(s.away)}
-            <td><strong>${s.away.score}</strong></td>
-            <td>${s.away.hits}</td>
-          </tr>
-          <tr>
-            <td class="team">${s.home.abbr}</td>
-            ${row(s.home)}
-            <td><strong>${s.home.score}</strong></td>
-            <td>${s.home.hits}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="linescore">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              ${inns.map((i) => `<th>${i + 1}</th>`).join('')}
+              <th>R</th><th>H</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="team">${s.away.abbr}</td>
+              ${row(s.away)}
+              <td><strong>${s.away.score}</strong></td>
+              <td>${s.away.hits}</td>
+            </tr>
+            <tr>
+              <td class="team">${s.home.abbr}</td>
+              ${row(s.home)}
+              <td><strong>${s.home.score}</strong></td>
+              <td>${s.home.hits}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     `;
   }
 
@@ -267,34 +237,30 @@ export class GameUI {
     `;
   }
 
-  _playerCard(role, player, isPitcher, entry) {
+  _playerCard(role, player, isPitcher, entry, hl) {
     if (!player) return `<div class="card"><div class="name">—</div></div>`;
     const a = player.abilities;
-    const pills = isPitcher
-      ? `
-        <span class="pill">IP ${(entry?.ipUsed ?? 0)}/${a.IP}</span>
-        <span class="pill">${player.hand}HP</span>
-        <span class="pill">K ${a.K}</span>
-        <span class="pill">BB ${a.BB}</span>
-      `
-      : `
-        <span class="pill">${player.positions.join('/')}</span>
-        <span class="pill">${player.hand}</span>
-        <span class="pill">SPD ${a.SPD}</span>
-        <span class="pill">DEF ${a.DEF}</span>
-      `;
+    const meta = isPitcher
+      ? `${player.hand}HP · IP ${(entry?.ipUsed ?? 0)}/${a.IP}`
+      : `${player.positions.join('/')} · ${player.hand} · SPD ${a.SPD}`;
 
-    const flat = player.matrix.flat();
-    const matrix = flat
-      .map((c) => `<i class="${c}">${c === '1B' ? '1' : c === '2B' ? '2' : c[0]}</i>`)
+    const matrix = player.matrix
+      .map((row, ri) =>
+        row
+          .map((c, ci) => {
+            const on = hl && hl.row === ri && hl.col === ci ? ' hl' : '';
+            const label = c === '1B' ? '1' : c === '2B' ? '2' : c[0];
+            return `<i class="${c}${on}">${label}</i>`;
+          })
+          .join('')
+      )
       .join('');
 
     return `
       <div class="card">
         <div class="role">${role}</div>
         <div class="name">${player.name}</div>
-        <div class="meta">${player.team} · 2025</div>
-        <div class="stat-pills">${pills}</div>
+        <div class="meta">${meta}</div>
         <div class="matrix">${matrix}</div>
       </div>
     `;
@@ -307,11 +273,9 @@ export class GameUI {
       <div class="dice">
         ${r.d1 != null ? `D1 ${r.d1}` : ''}
         ${r.d2Raw != null ? ` · D2 ${r.d2Raw}${r.d2 !== r.d2Raw ? ` → ${r.d2}` : ''}` : ''}
-        ${r.baseResult && r.baseResult !== r.finalResult ? ` · base ${r.baseResult}` : ''}
-        ${r.matrixSource ? ` · via ${r.matrixSource}` : ''}
+        ${r.matrixSource ? ` · ${r.matrixSource}` : ''}
       </div>
-      <ul>${(r.detail || []).map((d) => `<li>${d}</li>`).join('')}</ul>
-      ${r.restartAtBat ? '<p class="hint">At-bat restarts — same batter.</p>' : ''}
+      ${r.restartAtBat ? '<p class="hint">At-bat restarts</p>' : ''}
     `;
   }
 }

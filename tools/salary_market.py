@@ -348,12 +348,14 @@ def fit(group, prices, feat_fn, names):
     }
 
 
-def rescale_for_cap(group, demand_prices, max_s, best_n_target, best_n):
+def rescale_for_cap(group, demand_prices, max_s, best_n_target, best_n, floor=10):
     """Map within-role demand+ability ranks onto a steep $ curve for the $1000 cap.
 
     Live draft prices plateau with substitutes (~tens of dollars). Absolute $ must
     be remapped or the cap never bites. Batters and pitchers are scaled separately
     so pitcher IP-heavy raw values do not crush batter salaries.
+
+    Uses a **$10 floor** and a depth band so the board is not a sea of $1 cards.
     """
     g = list(group)
     nd = max(1, len(g) - 1)
@@ -370,13 +372,31 @@ def rescale_for_cap(group, demand_prices, max_s, best_n_target, best_n):
             score = max(score, 0.92)
         scored.append((score, raw_value(p), p))
     ordered = [p for _, _, p in sorted(scored, key=lambda t: (-t[0], -t[1], t[2]["name"]))]
+    n = len(ordered)
+    head = max(10, int(n * 0.06))
+    solid = max(head + 1, int(n * 0.22))
     k = 0.095
-    raw_pay = [1 + (max_s - 1) * math.exp(-k * i) for i in range(len(ordered))]
+    raw_pay = []
+    for i in range(n):
+        if i < head:
+            raw_pay.append(floor + (max_s - floor) * math.exp(-k * i))
+        elif i < solid:
+            t = (i - head) / max(1, solid - head - 1)
+            raw_pay.append(48 - 20 * t)
+        else:
+            t = (i - solid) / max(1, n - solid - 1)
+            raw_pay.append(28 - 18 * (t ** 0.55))
     top = sum(raw_pay[:best_n]) or 1
     scale = best_n_target / top
     out = {}
+    prev = None
     for i, p in enumerate(ordered):
-        out[p["id"]] = int(round(max(MIN_PRICE, min(max_s + 20, raw_pay[i] * scale))))
+        val = raw_pay[i] * scale if i < head else raw_pay[i]
+        pay = int(round(max(floor, min(max_s + 15, val))))
+        if prev is not None and pay > prev:
+            pay = prev
+        prev = pay
+        out[p["id"]] = pay
     return out, ordered
 
 

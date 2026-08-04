@@ -756,88 +756,94 @@ export class GameUI {
         </div>
       </div>
 
-      <div class="play-header">
-        <div class="bases-row compact">
-          ${this._diamond(s)}
-          <div class="bases-meta">
-            <div class="at-bat-chip">${s.half === 'top' ? '▲' : '▼'} ${offense.abbr} batting</div>
-            <div><span class="muted">1B</span> ${this._esc(s.bases[0]?.name?.split(',')[0] || '—')}</div>
-            <div><span class="muted">2B</span> ${this._esc(s.bases[1]?.name?.split(',')[0] || '—')}</div>
-            <div><span class="muted">3B</span> ${this._esc(s.bases[2]?.name?.split(',')[0] || '—')}</div>
-          </div>
-        </div>
-        <div class="score-strip">
-          <div class="score-team away">
-            <span class="abbr">OPP</span>
-            <span class="runs">${s.away.score}</span>
-          </div>
-          <div class="score-mid">
-            <div class="inning-label">${s.half === 'top' ? '▲' : '▼'} ${s.inning}</div>
-            <div class="outs-row">
-              <span class="out-circle ${s.outs >= 1 ? 'on' : ''}" aria-hidden="true"></span>
-              <span class="out-circle ${s.outs >= 2 ? 'on' : ''}" aria-hidden="true"></span>
-              <span class="out-circle ${s.outs >= 3 ? 'on' : ''}" aria-hidden="true"></span>
+      <div class="play-stage">
+        ${this._rosterRail(s.away, 'OPP', 'away', s)}
+        <div class="play-center">
+          <div class="play-header">
+            <div class="bases-row compact">
+              ${this._diamond(s)}
+              <div class="bases-meta">
+                <div class="at-bat-chip">${s.half === 'top' ? '▲' : '▼'} ${offense.isHome ? s.home.abbr : 'OPP'} batting</div>
+                <div><span class="muted">1B</span> ${this._esc(s.bases[0]?.name?.split(',')[0] || '—')}</div>
+                <div><span class="muted">2B</span> ${this._esc(s.bases[1]?.name?.split(',')[0] || '—')}</div>
+                <div><span class="muted">3B</span> ${this._esc(s.bases[2]?.name?.split(',')[0] || '—')}</div>
+              </div>
+            </div>
+            <div class="score-strip">
+              <div class="score-team away">
+                <span class="abbr">OPP</span>
+                <span class="runs">${s.away.score}</span>
+              </div>
+              <div class="score-mid">
+                <div class="inning-label">${s.half === 'top' ? '▲' : '▼'} ${s.inning}</div>
+                <div class="outs-row">
+                  <span class="out-circle ${s.outs >= 1 ? 'on' : ''}" aria-hidden="true"></span>
+                  <span class="out-circle ${s.outs >= 2 ? 'on' : ''}" aria-hidden="true"></span>
+                  <span class="out-circle ${s.outs >= 3 ? 'on' : ''}" aria-hidden="true"></span>
+                </div>
+              </div>
+              <div class="score-team home">
+                <span class="runs">${s.home.score}</span>
+                <span class="abbr">${s.home.abbr}</span>
+              </div>
             </div>
           </div>
-          <div class="score-team home">
-            <span class="runs">${s.home.score}</span>
-            <span class="abbr">${s.home.abbr}</span>
+
+          <div class="main-simple">
+            <div class="matrices panel">
+              <div class="matchup-simple">
+                ${this._playerCard('P', pitcher.player, true, pitcher.entry, hl?.source === 'pitcher' ? hl : null)}
+                ${this._playerCard('BAT', batter.player, false, null, hl?.source === 'batter' ? hl : null)}
+              </div>
+              <label class="toggle-row matrices-toggle">
+                <input type="checkbox" data-toggle="show-matrices" ${this.showMatrices ? 'checked' : ''} />
+                <span>Show matrices</span>
+              </label>
+              <div class="result ${s.lastResult ? 'show' : ''}">
+                ${s.lastResult ? this._resultHtml(s.lastResult) : '<span class="muted">Pick your tactic, then Resolve</span>'}
+              </div>
+            </div>
+
+            <div class="controls panel">
+              <div class="controls-head">
+                <label class="toggle-row ai-toggle">
+                  <input type="checkbox" data-toggle="ai-tactics" ${this.aiTactics ? 'checked' : ''} />
+                  <span>AI tactics <small>${this.aiTactics ? '(OPP)' : '(off — both sides)'}</small></span>
+                </label>
+              </div>
+
+              <div class="tactics-grid ${this.aiTactics ? 'single' : ''}">
+                ${this._tacticCol('def', defense.isHome ? defense.abbr : 'OPP', aiDef, s)}
+                ${this._tacticCol('off', offense.isHome ? offense.abbr : 'OPP', aiOff, s)}
+              </div>
+
+              <div class="actions">
+                <button class="btn btn-primary btn-resolve" data-action="resolve" ${s.phase !== 'tactics' ? 'disabled' : ''}>
+                  Resolve PA
+                </button>
+                ${
+                  showBullpen
+                    ? `<button class="btn btn-ghost btn-sub" data-action="open-pitcher-sub" ${s.phase !== 'tactics' ? 'disabled' : ''}>Pitcher Sub</button>`
+                    : `<span class="muted sub-note">AI manages OPP pitching</span>`
+                }
+              </div>
+            </div>
+          </div>
+
+          <div class="panel boxscore">
+            <div class="boxscore-head">
+              <h2>Linescore</h2>
+            </div>
+            ${this._linescore(s)}
+            <div class="log compact">
+              ${
+                s.log.slice(0, 10).map((e) => `<div class="entry ${e.kind}">${this._esc(e.msg)}</div>`).join('') ||
+                '<div class="entry">Resolve a PA to start the log.</div>'
+              }
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="main-simple">
-        <div class="matrices panel">
-          <div class="matchup-simple">
-            ${this._playerCard('P', pitcher.player, true, pitcher.entry, hl?.source === 'pitcher' ? hl : null)}
-            ${this._playerCard('BAT', batter.player, false, null, hl?.source === 'batter' ? hl : null)}
-          </div>
-          <label class="toggle-row matrices-toggle">
-            <input type="checkbox" data-toggle="show-matrices" ${this.showMatrices ? 'checked' : ''} />
-            <span>Show matrices</span>
-          </label>
-          <div class="result ${s.lastResult ? 'show' : ''}">
-            ${s.lastResult ? this._resultHtml(s.lastResult) : '<span class="muted">Pick your tactic, then Resolve</span>'}
-          </div>
-        </div>
-
-        <div class="controls panel">
-          <div class="controls-head">
-            <label class="toggle-row ai-toggle">
-              <input type="checkbox" data-toggle="ai-tactics" ${this.aiTactics ? 'checked' : ''} />
-              <span>AI tactics <small>${this.aiTactics ? `(${s.away.abbr})` : '(off — both sides)'}</small></span>
-            </label>
-          </div>
-
-          <div class="tactics-grid ${this.aiTactics ? 'single' : ''}">
-            ${this._tacticCol('def', defense.abbr, aiDef, s)}
-            ${this._tacticCol('off', offense.abbr, aiOff, s)}
-          </div>
-
-          <div class="actions">
-            <button class="btn btn-primary btn-resolve" data-action="resolve" ${s.phase !== 'tactics' ? 'disabled' : ''}>
-              Resolve PA
-            </button>
-            ${
-              showBullpen
-                ? `<button class="btn btn-ghost btn-sub" data-action="open-pitcher-sub" ${s.phase !== 'tactics' ? 'disabled' : ''}>Pitcher Sub</button>`
-                : `<span class="muted sub-note">AI manages ${defense.abbr} pitching</span>`
-            }
-          </div>
-        </div>
-      </div>
-
-      <div class="panel boxscore">
-        <div class="boxscore-head">
-          <h2>Linescore</h2>
-        </div>
-        ${this._linescore(s)}
-        <div class="log compact">
-          ${
-            s.log.slice(0, 10).map((e) => `<div class="entry ${e.kind}">${this._esc(e.msg)}</div>`).join('') ||
-            '<div class="entry">Resolve a PA to start the log.</div>'
-          }
-        </div>
+        ${this._rosterRail(s.home, s.home.abbr, 'home', s)}
       </div>
 
       ${showBullpen && this.subOpen ? this._pitcherSubModal(defense, defenseKey) : ''}
@@ -845,13 +851,47 @@ export class GameUI {
       <div class="gameover ${s.phase === 'gameover' ? 'show' : ''}">
         <div class="box">
           <h1>${this._esc(s.winner || '')} WINS</h1>
-          <p>Final · ${s.away.abbr} ${s.away.score} – ${s.home.score} ${s.home.abbr}</p>
+          <p>Final · OPP ${s.away.score} – ${s.home.score} ${s.home.abbr}</p>
           ${s.forfeit ? `<p class="hint">Forfeit: ${this._esc(s.forfeit)} out of pitchers</p>` : ''}
           <button class="btn btn-primary" data-action="restart-play" style="margin-top:12px">Play Again</button>
           <button class="btn btn-ghost" data-action="goto" data-value="matchup" style="margin-top:8px">Matchup</button>
         </div>
       </div>
     `;
+  }
+
+  _rosterRail(side, label, sideKey, s) {
+    const isBatting = (s.half === 'top' && !side.isHome) || (s.half === 'bottom' && side.isHome);
+    const due = side.battingOrderIndex % side.lineup.length;
+    const pit = this.engine.pitchers[side.activePitcherId];
+    const entry = side.staff.find((x) => x.playerId === side.activePitcherId);
+    const pitMeta = pit
+      ? `${pit.hand}HP · IP ${entry?.ipUsed ?? 0}/${pit.abilities.IP}`
+      : '—';
+
+    const rows = side.lineup
+      .map((slot, i) => {
+        const p = this.engine.batters[slot.playerId];
+        const short = p?.name?.split(',')[0] || '?';
+        const on = isBatting && i === due;
+        return `
+          <div class="rail-bat ${on ? 'due' : ''}">
+            <span class="rail-ord">${i + 1}</span>
+            <span class="rail-pos">${slot.pos}</span>
+            <span class="rail-name">${this._esc(short)}</span>
+          </div>`;
+      })
+      .join('');
+
+    return `
+      <aside class="roster-rail ${sideKey}">
+        <div class="rail-head">${label}</div>
+        <div class="rail-pitcher">
+          <span class="muted">P</span>
+          <span class="rail-pit-meta">${pitMeta}</span>
+        </div>
+        <div class="rail-lineup">${rows}</div>
+      </aside>`;
   }
 
   _pitcherSubModal(defense, defenseKey) {

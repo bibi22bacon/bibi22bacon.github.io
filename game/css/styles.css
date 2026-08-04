@@ -708,12 +708,6 @@ button, select {
 }
 .steal-target button.on { border-color: var(--accent); color: var(--accent); }
 
-.actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 12px;
-}
 .btn {
   border: none;
   border-radius: 10px;

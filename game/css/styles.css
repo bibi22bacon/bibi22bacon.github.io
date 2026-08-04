@@ -1082,7 +1082,6 @@ button, select {
   font-weight: 600;
   color: var(--accent);
 }
-.pool-actions { display: flex; gap: 4px; }
 
 .opp-preview { margin-top: 12px; }
 .opp-grid {

@@ -400,8 +400,13 @@ export class GameUI {
   }
 
   _presets() {
-    // User is HOME (bats last)
-    return { away: this.opponent, home: this.userPreset };
+    // User is HOME (bats last). Guarantee distinct abbrs so UI/sim never collide.
+    const home = { ...this.userPreset };
+    const away = { ...this.opponent };
+    if (home.abbr === away.abbr) {
+      home.abbr = home.abbr === 'YOU' ? 'HM' : 'YOU';
+    }
+    return { away, home };
   }
 
   _startEngine() {

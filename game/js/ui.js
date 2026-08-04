@@ -248,14 +248,6 @@ export class GameUI {
       this.render();
       return;
     }
-    if (action === 'order-up') {
-      this._moveBattingOrder(Number(value), Number(value) - 1);
-      return;
-    }
-    if (action === 'order-down') {
-      this._moveBattingOrder(Number(value), Number(value) + 1);
-      return;
-    }
     if (action === 'order-done') {
       this.screen = 'matchup';
       this.render();
@@ -508,6 +500,62 @@ export class GameUI {
     else if (this.screen === 'order') this.root.innerHTML = this._order();
     else if (this.screen === 'sim') this.root.innerHTML = this._sim();
     else if (this.screen === 'play') this.root.innerHTML = this._play();
+    if (this.screen === 'order') this._bindOrderDrag();
+  }
+
+  _bindOrderDrag() {
+    const list = this.root.querySelector('[data-order-list]');
+    if (!list) return;
+
+    let fromIdx = null;
+    let active = null;
+
+    const clearMarks = () => {
+      list.querySelectorAll('.order-row').forEach((r) => {
+        r.classList.remove('dragging', 'drag-over');
+      });
+    };
+
+    const rowAt = (x, y) => {
+      const el = document.elementFromPoint(x, y);
+      return el?.closest?.('.order-row') || null;
+    };
+
+    list.addEventListener('pointerdown', (e) => {
+      if (e.button != null && e.button !== 0) return;
+      const row = e.target.closest('.order-row');
+      if (!row) return;
+      fromIdx = Number(row.dataset.index);
+      active = row;
+      row.classList.add('dragging');
+      row.setPointerCapture?.(e.pointerId);
+      e.preventDefault();
+    });
+
+    list.addEventListener('pointermove', (e) => {
+      if (fromIdx == null || !active) return;
+      list.querySelectorAll('.order-row').forEach((r) => r.classList.remove('drag-over'));
+      const over = rowAt(e.clientX, e.clientY);
+      if (over && over !== active) over.classList.add('drag-over');
+    });
+
+    const finish = (e) => {
+      if (fromIdx == null) return;
+      const over = rowAt(e.clientX, e.clientY);
+      const toIdx = over != null ? Number(over.dataset.index) : fromIdx;
+      const from = fromIdx;
+      fromIdx = null;
+      active = null;
+      clearMarks();
+      if (from !== toIdx) this._moveBattingOrder(from, toIdx);
+    };
+
+    list.addEventListener('pointerup', finish);
+    list.addEventListener('pointercancel', () => {
+      fromIdx = null;
+      active = null;
+      clearMarks();
+    });
   }
 
   _shell(title, body, actions = '') {
@@ -924,16 +972,13 @@ export class GameUI {
         const p = this.byId[slot.playerId];
         const a = p?.abilities || {};
         return `
-          <div class="order-row">
+          <div class="order-row" data-index="${i}" role="listitem" aria-grabbed="false">
+            <div class="order-handle" aria-hidden="true"><span></span><span></span><span></span></div>
             <div class="order-num">${i + 1}</div>
             <div class="order-pos">${slot.pos}</div>
             <div class="order-main">
               <div class="order-name">${this._esc(p?.name || '?')}</div>
               <div class="order-meta muted">${p?.hand || '?'} · H ${a.H ?? '—'} · HR ${a.HR ?? '—'} · SPD ${a.SPD ?? '—'} · $${salaryOf(p)}</div>
-            </div>
-            <div class="order-moves">
-              <button class="btn btn-ghost btn-sm" data-action="order-up" data-value="${i}" ${i === 0 ? 'disabled' : ''} aria-label="Move up">↑</button>
-              <button class="btn btn-ghost btn-sm" data-action="order-down" data-value="${i}" ${i === this.userPreset.lineup.length - 1 ? 'disabled' : ''} aria-label="Move down">↓</button>
             </div>
           </div>`;
       })
@@ -943,8 +988,8 @@ export class GameUI {
       'Set batting order',
       `
       <section class="panel order-panel">
-        <p class="lede-sm">Arrange hitters 1–9. Each batter keeps their defensive position.</p>
-        <div class="order-list">${rows}</div>
+        <p class="lede-sm">Drag hitters to set order 1–9. Each keeps their defensive position.</p>
+        <div class="order-list" data-order-list role="list">${rows}</div>
         <div class="order-actions">
           <button class="btn btn-primary" data-action="order-done">Done</button>
           <button class="btn btn-ghost" data-action="goto" data-value="matchup">Back</button>

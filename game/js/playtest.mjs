@@ -33,13 +33,14 @@ const byId = Object.fromEntries([
 
 // Build a cheap legal user roster for tests
 const draft = emptyDraft('Test', 'TST');
-const cheapC = data.batters.find((b) => b.positions.includes('C') && b.salary <= 5);
-const cheap1 = data.batters.find((b) => b.positions.includes('1B') && b.salary <= 5 && b.id !== cheapC.id);
-const cheap2 = data.batters.find((b) => b.positions.includes('2B') && b.salary <= 5);
-const cheap3 = data.batters.find((b) => b.positions.includes('3B') && b.salary <= 5);
-const cheapSS = data.batters.find((b) => b.positions.includes('SS') && b.salary <= 5);
-const ofs = data.batters.filter((b) => b.positions.includes('OF') && b.salary <= 5).slice(0, 3);
-const dh = data.batters.find((b) => b.salary <= 5 && ![cheapC, cheap1, cheap2, cheap3, cheapSS, ...ofs].map((x) => x.id).includes(b.id));
+const cheapC = data.batters.find((b) => b.positions.includes('C') && b.salary <= 15);
+const cheap1 = data.batters.find((b) => b.positions.includes('1B') && b.salary <= 15 && b.id !== cheapC.id);
+const cheap2 = data.batters.find((b) => b.positions.includes('2B') && b.salary <= 15);
+const cheap3 = data.batters.find((b) => b.positions.includes('3B') && b.salary <= 15);
+const cheapSS = data.batters.find((b) => b.positions.includes('SS') && b.salary <= 15);
+const ofs = data.batters.filter((b) => b.positions.includes('OF') && b.salary <= 15).slice(0, 3);
+const usedIds = new Set([cheapC.id, cheap1.id, cheap2.id, cheap3.id, cheapSS.id, ...ofs.map((x) => x.id)]);
+const dh = data.batters.find((b) => b.salary <= 15 && !usedIds.has(b.id));
 const line = [
   { pos: 'C', playerId: cheapC.id },
   { pos: '1B', playerId: cheap1.id },
@@ -52,10 +53,10 @@ const line = [
   { pos: 'DH', playerId: dh.id },
 ];
 draft.lineup = line;
-const arms = data.pitchers.filter((p) => p.salary <= 5).slice(0, 4);
+const arms = data.pitchers.filter((p) => p.salary <= 20).slice(0, 4);
 draft.pitchingStaff = arms.map((p) => p.id);
 draft.starterId = arms[0].id;
-draft.bench = data.batters.filter((b) => b.salary === 1 && !line.some((l) => l.playerId === b.id)).slice(0, 3).map((b) => b.id);
+draft.bench = data.batters.filter((b) => b.salary <= 12 && !line.some((l) => l.playerId === b.id)).slice(0, 3).map((b) => b.id);
 
 const v = validateDraft(draft, byId);
 if (!v.ok) {

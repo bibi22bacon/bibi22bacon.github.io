@@ -180,6 +180,14 @@ export class GameUI {
       this._addToLineup(value, el.dataset.slot);
       return;
     }
+    if (action === 'draft-move-slot') {
+      this._moveLineupPos(Number(el.dataset.from), el.dataset.slot);
+      return;
+    }
+    if (action === 'draft-bench-to-lineup') {
+      this._benchToLineup(value, el.dataset.slot);
+      return;
+    }
     if (action === 'draft-add-bench') {
       this._addBench(value);
       return;
@@ -424,6 +432,39 @@ export class GameUI {
     this.render();
   }
 
+  _moveLineupPos(fromIdx, toPos) {
+    const from = this.draft.lineup[fromIdx];
+    if (!from?.playerId) return;
+    const p = this.byId[from.playerId];
+    if (!p) return;
+    const toIdx = this.draft.lineup.findIndex(
+      (s) => s.pos === toPos && !s.playerId && covers(p, s.pos)
+    );
+    if (toIdx < 0) return;
+    this.draft.lineup[toIdx].playerId = from.playerId;
+    from.playerId = null;
+    this.render();
+  }
+
+  _benchToLineup(playerId, preferredPos) {
+    const p = this.byId[playerId];
+    if (!p || p.type !== 'batter') return;
+    if (!this.draft.bench.includes(playerId)) return;
+    let idx = -1;
+    if (preferredPos) {
+      idx = this.draft.lineup.findIndex(
+        (s) => s.pos === preferredPos && !s.playerId && covers(p, s.pos)
+      );
+    }
+    if (idx < 0) {
+      idx = this.draft.lineup.findIndex((s) => !s.playerId && covers(p, s.pos));
+    }
+    if (idx < 0) return;
+    this.draft.bench = this.draft.bench.filter((id) => id !== playerId);
+    this.draft.lineup[idx].playerId = playerId;
+    this.render();
+  }
+
   _assignLineup(idx, playerId) {
     const p = this.byId[playerId];
     const slot = this.draft.lineup[idx];
@@ -604,13 +645,31 @@ export class GameUI {
             ${this.draft.lineup
               .map((s, i) => {
                 const p = s.playerId ? this.byId[s.playerId] : null;
+                const altPos = p
+                  ? [
+                      ...new Set(
+                        emptySlots
+                          .filter((e) => covers(p, e.pos))
+                          .map((e) => e.pos)
+                      ),
+                    ]
+                  : [];
                 return `<div class="slot-row">
                   <span class="slot-pos">${s.pos}</span>
                   ${
                     p
-                      ? `<span class="slot-name">${this._esc(p.name)}</span>
+                      ? `<span class="slot-name">${this._esc(p.name)}
+                           <small class="muted pos-tags">${(p.positions || []).join('/')}</small></span>
                          <span class="slot-sal">$${salaryOf(p)}</span>
-                         <button class="btn btn-ghost btn-sm" data-action="draft-clear-slot" data-value="${i}">✕</button>`
+                         <div class="slot-alts">
+                           ${altPos
+                             .map(
+                               (pos) =>
+                                 `<button class="btn btn-ghost btn-sm pos-btn" data-action="draft-move-slot" data-from="${i}" data-slot="${pos}">→ ${pos}</button>`
+                             )
+                             .join('')}
+                           <button class="btn btn-ghost btn-sm" data-action="draft-clear-slot" data-value="${i}">✕</button>
+                         </div>`
                       : `<span class="slot-empty muted">Empty — pick from pool</span>`
                   }
                 </div>`;
@@ -646,11 +705,25 @@ export class GameUI {
                 ? this.draft.bench
                     .map((id) => {
                       const p = this.byId[id];
+                      const fitPos = [
+                        ...new Set(
+                          emptySlots.filter((e) => covers(p, e.pos)).map((e) => e.pos)
+                        ),
+                      ];
                       return `<div class="slot-row">
                         <span class="slot-pos">BN</span>
-                        <span class="slot-name">${this._esc(p.name)}</span>
+                        <span class="slot-name">${this._esc(p.name)}
+                          <small class="muted pos-tags">${(p.positions || []).join('/')}</small></span>
                         <span class="slot-sal">$${salaryOf(p)}</span>
-                        <button class="btn btn-ghost btn-sm" data-action="draft-remove-bench" data-value="${id}">✕</button>
+                        <div class="slot-alts">
+                          ${fitPos
+                            .map(
+                              (pos) =>
+                                `<button class="btn btn-ghost btn-sm pos-btn" data-action="draft-bench-to-lineup" data-value="${id}" data-slot="${pos}">→ ${pos}</button>`
+                            )
+                            .join('')}
+                          <button class="btn btn-ghost btn-sm" data-action="draft-remove-bench" data-value="${id}">✕</button>
+                        </div>
                       </div>`;
                     })
                     .join('')
@@ -709,24 +782,32 @@ export class GameUI {
     const meta = isP
       ? `${p.hand}HP · ${p.abilities.IP} IP · ${p.team}`
       : `${(p.positions || []).join('/')} · ${p.hand} · ${p.team}`;
-    const fit = emptySlots.filter((s) => covers(p, s.pos));
-    const addAction = isP ? 'draft-add-pitcher' : 'draft-add-lineup';
+    const fitPos = isP
+      ? []
+      : [...new Set(emptySlots.filter((s) => covers(p, s.pos)).map((s) => s.pos))];
+
+    let actions = '';
+    if (isP) {
+      actions = `<button class="btn btn-primary btn-sm" data-action="draft-add-pitcher" data-value="${p.id}">Staff</button>`;
+    } else if (fitPos.length) {
+      actions = fitPos
+        .map(
+          (pos) =>
+            `<button class="btn btn-primary btn-sm pos-btn" data-action="draft-add-lineup" data-value="${p.id}" data-slot="${pos}">→ ${pos}</button>`
+        )
+        .join('');
+      actions += `<button class="btn btn-ghost btn-sm" data-action="draft-add-bench" data-value="${p.id}">BN</button>`;
+    } else {
+      actions = `<button class="btn btn-ghost btn-sm" data-action="draft-add-bench" data-value="${p.id}">BN</button>`;
+    }
+
     return `<div class="pool-row">
       <div class="pool-main">
         <div class="pool-name">${this._esc(p.name)}</div>
         <div class="pool-meta muted">${meta}</div>
       </div>
       <div class="pool-sal">$${salaryOf(p)}</div>
-      <div class="pool-actions">
-        <button class="btn btn-primary btn-sm" data-action="${addAction}" data-value="${p.id}" ${!isP && fit[0] ? `data-slot="${fit[0].pos}"` : ''}>
-          ${isP ? 'Staff' : fit.length ? `→ ${fit[0].pos}` : 'Bench'}
-        </button>
-        ${
-          !isP
-            ? `<button class="btn btn-ghost btn-sm" data-action="draft-add-bench" data-value="${p.id}">BN</button>`
-            : ''
-        }
-      </div>
+      <div class="pool-actions">${actions}</div>
     </div>`;
   }
 

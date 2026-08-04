@@ -363,9 +363,13 @@ export class GameEngine {
     }
     const cdef = this.catcherDef();
     const check = d1 + cdef - d2 - runner.spd;
-    const safe = check <= 9;
+    // 2B uses ≤9 (~MLB average). 3B is stricter (≤6).
+    const cutoff = target === 3 ? 6 : 9;
+    const safe = check <= cutoff;
     detail.push(
-      `Steal ${target}B: Check=${d1}+${cdef}−${d2}−${runner.spd}=${check} → ${safe ? 'SAFE (≤9)' : 'OUT (≥10)'}`
+      `Steal ${target}B: Check=${d1}+${cdef}−${d2}−${runner.spd}=${check} → ${
+        safe ? `SAFE (≤${cutoff})` : `OUT (≥${cutoff + 1})`
+      }`
     );
     if (safe) {
       this.state.bases[toIdx] = runner;

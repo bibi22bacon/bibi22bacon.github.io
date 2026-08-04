@@ -195,9 +195,9 @@ export class GameUI {
           <div class="inning-label">${halfLabel} ${s.inning}</div>
           <div class="outs-row">
             <span>OUTS</span>
-            <span class="out-dot ${s.outs >= 1 ? 'on' : ''}"></span>
-            <span class="out-dot ${s.outs >= 2 ? 'on' : ''}"></span>
-            <span class="out-dot ${s.outs >= 3 ? 'on' : ''}"></span>
+            <span class="out-circle ${s.outs >= 1 ? 'on' : ''}" aria-label="out 1">${s.outs >= 1 ? '●' : '○'}</span>
+            <span class="out-circle ${s.outs >= 2 ? 'on' : ''}" aria-label="out 2">${s.outs >= 2 ? '●' : '○'}</span>
+            <span class="out-circle ${s.outs >= 3 ? 'on' : ''}" aria-label="out 3">${s.outs >= 3 ? '●' : '○'}</span>
           </div>
           <div class="count-meta">H ${s.away.hits}–${s.home.hits}</div>
         </div>

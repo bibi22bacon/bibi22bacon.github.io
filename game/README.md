@@ -23,3 +23,19 @@ Or on GitHub Pages: `/game/` once deployed.
 4. Change pitchers from the bullpen panel anytime
 
 Full 9 innings, extras, walk-offs, IP exhaustion / forfeit are supported.
+
+## Matrix layout
+
+Each 10×10 grind matrix is filled from the player's outcome rates with a
+**upper-left → lower-right** gradient:
+
+- **Upper-left** skews toward pitcher results (`SO` / `FO` / `GO`)
+- **Lower-right** skews toward batter results (`BB` / `1B` / `2B` / `HR`)
+
+That’s why tactic **D2 modifiers** matter: higher D2 slides toward batter
+advantage; lower D2 slides toward pitcher advantage.
+
+## Steal cutoffs
+
+- Steal **2B**: Check ≤ **9**
+- Steal **3B**: Check ≤ **6** (stricter)

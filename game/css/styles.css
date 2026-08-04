@@ -95,6 +95,20 @@ button, select {
   color: var(--muted);
   font-size: 0.85rem;
 }
+.out-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.1rem;
+  font-size: 1.15rem;
+  line-height: 1;
+  color: rgba(243, 239, 230, 0.35);
+  transition: color .15s, transform .15s;
+}
+.out-circle.on {
+  color: var(--accent);
+  transform: scale(1.08);
+}
 .out-dot {
   width: 10px; height: 10px; border-radius: 50%;
   border: 2px solid var(--chalk);

@@ -750,9 +750,9 @@ export class GameUI {
           <div class="score-mid">
             <div class="inning-label">${s.half === 'top' ? '▲' : '▼'} ${s.inning}</div>
             <div class="outs-row">
-              <span class="out-circle ${s.outs >= 1 ? 'on' : ''}"></span>
-              <span class="out-circle ${s.outs >= 2 ? 'on' : ''}"></span>
-              <span class="out-circle ${s.outs >= 3 ? 'on' : ''}"></span>
+              <span class="out-circle ${s.outs >= 1 ? 'on' : ''}" aria-hidden="true"></span>
+              <span class="out-circle ${s.outs >= 2 ? 'on' : ''}" aria-hidden="true"></span>
+              <span class="out-circle ${s.outs >= 3 ? 'on' : ''}" aria-hidden="true"></span>
             </div>
           </div>
           <div class="score-team home">

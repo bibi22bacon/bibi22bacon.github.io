@@ -7,6 +7,7 @@ import {
   staffIp,
   validateDraft,
   toPreset,
+  draftFromTeam,
   rosterPlayerIds,
   salaryOf,
 } from './roster.js';
@@ -35,7 +36,8 @@ export class GameUI {
       ...data.pitchers.map((p) => [p.id, { ...p, type: 'pitcher' }]),
     ]);
     this.opponents = data.opponents || [];
-    this.screen = 'home'; // home | draft | matchup | order | play | sim
+    this.teamRosters = data.teamRosters || [];
+    this.screen = 'home'; // home | teams | draft | matchup | order | play | sim
     this.draft = emptyDraft();
     this.userPreset = null;
     this.opponent = null;
@@ -111,6 +113,23 @@ export class GameUI {
       this.userPreset = null;
       this.opponent = null;
       this.simSummary = null;
+      this.screen = 'draft';
+      this.render();
+      return;
+    }
+    if (action === 'goto-teams') {
+      this.screen = 'teams';
+      this.render();
+      return;
+    }
+    if (action === 'load-team') {
+      const team = this.teamRosters.find((t) => t.abbr === value || t.id === value);
+      if (!team) return;
+      this.draft = draftFromTeam(team);
+      this.userPreset = null;
+      this.opponent = null;
+      this.simSummary = null;
+      this._draftErrors = null;
       this.screen = 'draft';
       this.render();
       return;
@@ -408,6 +427,7 @@ export class GameUI {
 
   render() {
     if (this.screen === 'home') this.root.innerHTML = this._home();
+    else if (this.screen === 'teams') this.root.innerHTML = this._teams();
     else if (this.screen === 'draft') this.root.innerHTML = this._draft();
     else if (this.screen === 'matchup') this.root.innerHTML = this._matchup();
     else if (this.screen === 'order') this.root.innerHTML = this._order();
@@ -433,9 +453,10 @@ export class GameUI {
       <section class="hero-home panel">
         <p class="eyebrow">Salary cap $${CAP}</p>
         <h1>Draft. Duel. Simulate.</h1>
-        <p class="lede">Build a roster under $${CAP}, challenge one of five AI builds, then play live (AI tactics on by default) or run up to 10000 no-tactic sims.</p>
+        <p class="lede">Build a roster under $${CAP} — blank draft or a 30-team default (still editable) — then challenge an AI build.</p>
         <div class="cta-row">
-          <button class="btn btn-primary" data-action="new-draft">Start Draft</button>
+          <button class="btn btn-primary" data-action="new-draft">Blank draft</button>
+          <button class="btn btn-ghost" data-action="goto-teams">30-team defaults</button>
           <button class="btn btn-ghost" data-action="goto" data-value="matchup" ${this.userPreset ? '' : 'disabled'}>Continue</button>
         </div>
       </section>
@@ -457,6 +478,31 @@ export class GameUI {
       </section>
       `,
       `<button class="btn btn-ghost btn-sm" data-action="goto" data-value="home">Home</button>`
+    );
+  }
+
+  _teams() {
+    const cards = (this.teamRosters || [])
+      .map((t) => {
+        const note = t.note && t.note.startsWith('Includes') ? ' · has call-ups' : '';
+        return `<button class="team-card" data-action="load-team" data-value="${t.abbr}">
+          <div class="opp-abbr">${t.abbr}</div>
+          <h3>${this._esc(t.name)}</h3>
+          <div class="muted">$${t.salary} · ${t.size} players · IP ${t.staffIP}${note}</div>
+        </button>`;
+      })
+      .join('');
+
+    return this._shell(
+      '30-team defaults',
+      `
+      <section class="panel">
+        <p class="lede-sm">Pick a club to preload a legal $${CAP} roster. You can edit anyone before locking.</p>
+        <div class="team-grid">${cards || '<p class="muted">Team rosters not loaded.</p>'}</div>
+      </section>
+      `,
+      `<button class="btn btn-ghost btn-sm" data-action="goto" data-value="home">Home</button>
+       <button class="btn btn-ghost btn-sm" data-action="new-draft">Blank draft</button>`
     );
   }
 
@@ -487,6 +533,13 @@ export class GameUI {
           <label>Team <input data-field="team-name" value="${this._esc(this.draft.name)}" maxlength="24" /></label>
           <label>Abbr <input data-field="team-abbr" value="${this._esc(this.draft.abbr)}" maxlength="4" style="width:4.5rem" /></label>
         </div>
+        ${
+          this.draft.sourceTeam
+            ? `<p class="draft-source muted">Loaded <strong>${this._esc(this.draft.sourceTeam)}</strong> default — edit freely, then lock.
+               ${this.draft.sourceNote && this.draft.sourceNote.startsWith('Includes') ? `<span>${this._esc(this.draft.sourceNote)}</span>` : ''}
+               <button class="btn btn-ghost btn-sm" data-action="goto-teams">Switch team</button></p>`
+            : ''
+        }
       </div>
 
       <div class="draft-layout">

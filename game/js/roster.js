@@ -102,3 +102,18 @@ export function toPreset(draft) {
     bench: [...draft.bench],
   };
 }
+
+/** Load a team default into an editable draft. */
+export function draftFromTeam(team) {
+  return {
+    id: team.id || `team_${String(team.abbr || 'tm').toLowerCase()}`,
+    name: team.name || team.abbr,
+    abbr: team.abbr,
+    lineup: (team.lineup || []).map((s) => ({ playerId: s.playerId, pos: s.pos })),
+    pitchingStaff: [...(team.pitchingStaff || [])],
+    starterId: team.starterId || team.pitchingStaff?.[0] || null,
+    bench: [...(team.bench || [])],
+    sourceTeam: team.abbr,
+    sourceNote: team.note || null,
+  };
+}

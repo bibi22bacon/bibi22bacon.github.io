@@ -143,7 +143,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25
+      "salary": 33
     },
     {
       "id": "b_1",
@@ -288,7 +288,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 45
+      "salary": 52
     },
     {
       "id": "b_2",
@@ -433,7 +433,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 59
+      "salary": 98
     },
     {
       "id": "b_3",
@@ -578,7 +578,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 22
     },
     {
       "id": "b_4",
@@ -723,7 +723,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 28
+      "salary": 34
     },
     {
       "id": "b_5",
@@ -1013,7 +1013,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 22
+      "salary": 32
     },
     {
       "id": "b_7",
@@ -1158,7 +1158,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23
+      "salary": 29
     },
     {
       "id": "b_8",
@@ -1303,7 +1303,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 19
     },
     {
       "id": "b_9",
@@ -1448,7 +1448,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 19
     },
     {
       "id": "b_10",
@@ -1593,7 +1593,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 30
+      "salary": 60
     },
     {
       "id": "b_11",
@@ -1740,7 +1740,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 30
+      "salary": 47
     },
     {
       "id": "b_12",
@@ -1885,7 +1885,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 16
     },
     {
       "id": "b_13",
@@ -2030,7 +2030,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23
+      "salary": 36
     },
     {
       "id": "b_14",
@@ -2175,7 +2175,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 33
+      "salary": 53
     },
     {
       "id": "b_15",
@@ -2320,7 +2320,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "b_16",
@@ -2465,7 +2465,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 38
+      "salary": 57
     },
     {
       "id": "b_17",
@@ -2612,7 +2612,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 36
+      "salary": 58
     },
     {
       "id": "b_18",
@@ -2757,7 +2757,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 47
+      "salary": 56
     },
     {
       "id": "b_19",
@@ -2902,7 +2902,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 45
+      "salary": 72
     },
     {
       "id": "b_20",
@@ -3194,7 +3194,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 22
     },
     {
       "id": "b_22",
@@ -3485,7 +3485,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 27
     },
     {
       "id": "b_24",
@@ -3631,7 +3631,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25
+      "salary": 36
     },
     {
       "id": "b_25",
@@ -3776,7 +3776,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 34
+      "salary": 44
     },
     {
       "id": "b_26",
@@ -3923,7 +3923,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 24
     },
     {
       "id": "b_27",
@@ -4068,7 +4068,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 16
     },
     {
       "id": "b_28",
@@ -4213,7 +4213,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 20
     },
     {
       "id": "b_29",
@@ -4358,7 +4358,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 42
+      "salary": 58
     },
     {
       "id": "b_30",
@@ -4504,7 +4504,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 28
+      "salary": 38
     },
     {
       "id": "b_31",
@@ -4649,7 +4649,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 21
     },
     {
       "id": "b_32",
@@ -4794,7 +4794,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 14
     },
     {
       "id": "b_33",
@@ -4940,7 +4940,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24
+      "salary": 30
     },
     {
       "id": "b_34",
@@ -5086,7 +5086,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24
+      "salary": 31
     },
     {
       "id": "b_35",
@@ -5231,7 +5231,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 38
+      "salary": 47
     },
     {
       "id": "b_36",
@@ -5376,7 +5376,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 21
     },
     {
       "id": "b_37",
@@ -5522,7 +5522,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 29
     },
     {
       "id": "b_38",
@@ -5667,7 +5667,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 89
+      "salary": 98
     },
     {
       "id": "b_39",
@@ -5813,7 +5813,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24
+      "salary": 38
     },
     {
       "id": "b_40",
@@ -5958,7 +5958,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20
+      "salary": 26
     },
     {
       "id": "b_41",
@@ -6103,7 +6103,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 26
     },
     {
       "id": "b_42",
@@ -6248,7 +6248,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "b_43",
@@ -6393,7 +6393,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 36
+      "salary": 46
     },
     {
       "id": "b_44",
@@ -6538,7 +6538,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 37
+      "salary": 68
     },
     {
       "id": "b_45",
@@ -6683,7 +6683,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 22
     },
     {
       "id": "b_46",
@@ -6828,7 +6828,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 32
+      "salary": 37
     },
     {
       "id": "b_47",
@@ -6973,7 +6973,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20
+      "salary": 28
     },
     {
       "id": "b_48",
@@ -7118,7 +7118,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 44
+      "salary": 61
     },
     {
       "id": "b_49",
@@ -7408,7 +7408,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 26
     },
     {
       "id": "b_51",
@@ -7555,7 +7555,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31
+      "salary": 54
     },
     {
       "id": "b_52",
@@ -7700,7 +7700,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 40
+      "salary": 76
     },
     {
       "id": "b_53",
@@ -7845,7 +7845,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 27
     },
     {
       "id": "b_54",
@@ -7990,7 +7990,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 76
+      "salary": 85
     },
     {
       "id": "b_55",
@@ -8137,7 +8137,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20
+      "salary": 25
     },
     {
       "id": "b_56",
@@ -8282,7 +8282,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 19
     },
     {
       "id": "b_57",
@@ -8572,7 +8572,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25
+      "salary": 31
     },
     {
       "id": "b_59",
@@ -8717,7 +8717,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 45
+      "salary": 77
     },
     {
       "id": "b_60",
@@ -8862,7 +8862,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 17
     },
     {
       "id": "b_61",
@@ -9007,7 +9007,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "b_62",
@@ -9152,7 +9152,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "b_63",
@@ -9297,7 +9297,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 36
+      "salary": 54
     },
     {
       "id": "b_64",
@@ -9588,7 +9588,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 25
     },
     {
       "id": "b_66",
@@ -9733,7 +9733,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 17
     },
     {
       "id": "b_67",
@@ -9879,7 +9879,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27
+      "salary": 41
     },
     {
       "id": "b_68",
@@ -10024,7 +10024,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 87
+      "salary": 98
     },
     {
       "id": "b_69",
@@ -10169,7 +10169,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 30
+      "salary": 36
     },
     {
       "id": "b_70",
@@ -10314,7 +10314,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "b_71",
@@ -10459,7 +10459,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 21
     },
     {
       "id": "b_72",
@@ -10606,7 +10606,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 19
     },
     {
       "id": "b_73",
@@ -10751,7 +10751,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 32
+      "salary": 45
     },
     {
       "id": "b_74",
@@ -10897,7 +10897,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 44
+      "salary": 55
     },
     {
       "id": "b_75",
@@ -11042,7 +11042,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 38
+      "salary": 48
     },
     {
       "id": "b_76",
@@ -11187,7 +11187,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 15
     },
     {
       "id": "b_77",
@@ -11332,7 +11332,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 14
     },
     {
       "id": "b_78",
@@ -11479,7 +11479,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24
+      "salary": 29
     },
     {
       "id": "b_79",
@@ -11626,7 +11626,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 36
+      "salary": 40
     },
     {
       "id": "b_80",
@@ -11771,7 +11771,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 30
+      "salary": 40
     },
     {
       "id": "b_81",
@@ -11916,7 +11916,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 15
     },
     {
       "id": "b_82",
@@ -12062,7 +12062,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 33
+      "salary": 46
     },
     {
       "id": "b_83",
@@ -12207,7 +12207,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26
+      "salary": 32
     },
     {
       "id": "b_84",
@@ -12353,7 +12353,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21
+      "salary": 29
     },
     {
       "id": "b_85",
@@ -12498,7 +12498,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 17
     },
     {
       "id": "b_86",
@@ -12643,7 +12643,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 31
     },
     {
       "id": "b_87",
@@ -12788,7 +12788,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 18
     },
     {
       "id": "b_88",
@@ -12933,7 +12933,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25
+      "salary": 32
     },
     {
       "id": "b_89",
@@ -13078,7 +13078,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 50
+      "salary": 54
     },
     {
       "id": "b_90",
@@ -13223,7 +13223,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 19
     },
     {
       "id": "b_91",
@@ -13368,7 +13368,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 14
     },
     {
       "id": "b_92",
@@ -13658,7 +13658,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29
+      "salary": 38
     },
     {
       "id": "b_94",
@@ -13803,7 +13803,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 15
     },
     {
       "id": "b_95",
@@ -13948,7 +13948,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 16
     },
     {
       "id": "b_96",
@@ -14094,7 +14094,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 35
+      "salary": 66
     },
     {
       "id": "b_97",
@@ -14239,7 +14239,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 19
     },
     {
       "id": "b_98",
@@ -14384,7 +14384,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 15
     },
     {
       "id": "b_99",
@@ -14530,7 +14530,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25
+      "salary": 37
     },
     {
       "id": "b_100",
@@ -14676,7 +14676,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 37
+      "salary": 71
     },
     {
       "id": "b_101",
@@ -14821,7 +14821,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29
+      "salary": 38
     },
     {
       "id": "b_102",
@@ -14966,7 +14966,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20
+      "salary": 26
     },
     {
       "id": "b_103",
@@ -15111,7 +15111,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 34
+      "salary": 49
     },
     {
       "id": "b_104",
@@ -15549,7 +15549,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 18
     },
     {
       "id": "b_107",
@@ -15694,7 +15694,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31
+      "salary": 40
     },
     {
       "id": "b_108",
@@ -15839,7 +15839,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27
+      "salary": 31
     },
     {
       "id": "b_109",
@@ -15985,7 +15985,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24
+      "salary": 27
     },
     {
       "id": "b_110",
@@ -16131,7 +16131,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 28
+      "salary": 48
     },
     {
       "id": "b_111",
@@ -16276,7 +16276,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 17
     },
     {
       "id": "b_112",
@@ -16421,7 +16421,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 23
     },
     {
       "id": "b_113",
@@ -16566,7 +16566,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 26
     },
     {
       "id": "b_114",
@@ -16712,7 +16712,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 17
     },
     {
       "id": "b_115",
@@ -16857,7 +16857,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 14
     },
     {
       "id": "b_116",
@@ -17002,7 +17002,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 19
     },
     {
       "id": "b_117",
@@ -17148,7 +17148,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "b_118",
@@ -17439,7 +17439,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 20
     },
     {
       "id": "b_120",
@@ -17584,7 +17584,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 19
     },
     {
       "id": "b_121",
@@ -17729,7 +17729,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25
+      "salary": 29
     },
     {
       "id": "b_122",
@@ -17874,7 +17874,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 19
     },
     {
       "id": "b_123",
@@ -18020,7 +18020,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 23
     },
     {
       "id": "b_124",
@@ -18165,7 +18165,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 17
     },
     {
       "id": "b_125",
@@ -18310,7 +18310,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 43
+      "salary": 80
     },
     {
       "id": "b_126",
@@ -18456,7 +18456,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 37
     },
     {
       "id": "b_127",
@@ -18601,7 +18601,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 47
+      "salary": 50
     },
     {
       "id": "b_128",
@@ -18746,7 +18746,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24
+      "salary": 34
     },
     {
       "id": "b_129",
@@ -19036,7 +19036,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 15
     },
     {
       "id": "b_131",
@@ -19181,7 +19181,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23
+      "salary": 31
     },
     {
       "id": "b_132",
@@ -19326,7 +19326,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 20
     },
     {
       "id": "b_133",
@@ -19471,7 +19471,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 57
+      "salary": 78
     },
     {
       "id": "b_134",
@@ -19617,7 +19617,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 16
     },
     {
       "id": "b_135",
@@ -19762,7 +19762,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 14
     },
     {
       "id": "b_136",
@@ -20197,7 +20197,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 18
     },
     {
       "id": "b_139",
@@ -20342,7 +20342,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 29
     },
     {
       "id": "b_140",
@@ -20487,7 +20487,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 26
     },
     {
       "id": "b_141",
@@ -20633,7 +20633,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 34
+      "salary": 46
     },
     {
       "id": "b_142",
@@ -20779,7 +20779,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 42
+      "salary": 67
     },
     {
       "id": "b_143",
@@ -20926,7 +20926,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 18
     },
     {
       "id": "b_144",
@@ -21072,7 +21072,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26
+      "salary": 38
     },
     {
       "id": "b_145",
@@ -21218,7 +21218,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 19
     },
     {
       "id": "b_146",
@@ -21363,7 +21363,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 32
+      "salary": 58
     },
     {
       "id": "b_147",
@@ -21509,7 +21509,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 50
+      "salary": 81
     },
     {
       "id": "b_148",
@@ -21654,7 +21654,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21
+      "salary": 29
     },
     {
       "id": "b_149",
@@ -21799,7 +21799,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 27
     },
     {
       "id": "b_150",
@@ -22089,7 +22089,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27
+      "salary": 41
     },
     {
       "id": "b_152",
@@ -22234,7 +22234,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 47
+      "salary": 71
     },
     {
       "id": "b_153",
@@ -22379,7 +22379,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23
+      "salary": 29
     },
     {
       "id": "b_154",
@@ -22669,7 +22669,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 18
     },
     {
       "id": "b_156",
@@ -22815,7 +22815,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26
+      "salary": 34
     },
     {
       "id": "b_157",
@@ -22960,7 +22960,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 15
     },
     {
       "id": "b_158",
@@ -23106,7 +23106,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 15
     },
     {
       "id": "b_159",
@@ -23251,7 +23251,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 36
+      "salary": 51
     },
     {
       "id": "b_160",
@@ -23396,7 +23396,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31
+      "salary": 40
     },
     {
       "id": "b_161",
@@ -23541,7 +23541,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 40
+      "salary": 52
     },
     {
       "id": "b_162",
@@ -23687,7 +23687,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 26
     },
     {
       "id": "b_163",
@@ -23834,7 +23834,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 17
     },
     {
       "id": "b_164",
@@ -23980,7 +23980,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 33
+      "salary": 43
     },
     {
       "id": "b_165",
@@ -24125,7 +24125,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20
+      "salary": 27
     },
     {
       "id": "b_166",
@@ -24270,7 +24270,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 30
+      "salary": 51
     },
     {
       "id": "b_167",
@@ -24415,7 +24415,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 15
     },
     {
       "id": "b_168",
@@ -24562,7 +24562,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 27
     },
     {
       "id": "b_169",
@@ -24708,7 +24708,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 25
     },
     {
       "id": "b_170",
@@ -24853,7 +24853,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 14
     },
     {
       "id": "b_171",
@@ -24998,7 +24998,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 42
+      "salary": 57
     },
     {
       "id": "b_172",
@@ -25143,7 +25143,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20
+      "salary": 26
     },
     {
       "id": "b_173",
@@ -25288,7 +25288,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 28
+      "salary": 43
     },
     {
       "id": "b_174",
@@ -25433,7 +25433,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 25
     },
     {
       "id": "b_175",
@@ -25578,7 +25578,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 14
     },
     {
       "id": "b_176",
@@ -25723,7 +25723,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 18
     },
     {
       "id": "b_177",
@@ -25868,7 +25868,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 23
     },
     {
       "id": "b_178",
@@ -26015,7 +26015,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 19
     },
     {
       "id": "b_179",
@@ -26162,7 +26162,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 20
     },
     {
       "id": "b_180",
@@ -26307,7 +26307,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 26
     },
     {
       "id": "b_181",
@@ -26452,7 +26452,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21
+      "salary": 27
     },
     {
       "id": "b_182",
@@ -26597,7 +26597,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21
+      "salary": 29
     },
     {
       "id": "b_183",
@@ -26742,7 +26742,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 26
     },
     {
       "id": "b_184",
@@ -26888,7 +26888,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20
+      "salary": 32
     },
     {
       "id": "b_185",
@@ -27033,7 +27033,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23
+      "salary": 31
     },
     {
       "id": "b_186",
@@ -27179,7 +27179,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 78
+      "salary": 103
     },
     {
       "id": "b_187",
@@ -27324,7 +27324,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "b_188",
@@ -27470,7 +27470,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 179
+      "salary": 185
     },
     {
       "id": "b_189",
@@ -27616,7 +27616,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 15
     },
     {
       "id": "b_190",
@@ -27761,7 +27761,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 20
     },
     {
       "id": "b_191",
@@ -27906,7 +27906,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 17
     },
     {
       "id": "b_192",
@@ -28051,7 +28051,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 23
     },
     {
       "id": "b_193",
@@ -28196,7 +28196,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 58
+      "salary": 73
     },
     {
       "id": "b_194",
@@ -28343,7 +28343,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24
+      "salary": 29
     },
     {
       "id": "b_195",
@@ -28488,7 +28488,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27
+      "salary": 40
     },
     {
       "id": "b_196",
@@ -28633,7 +28633,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 19
     },
     {
       "id": "b_197",
@@ -28778,7 +28778,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 26
     },
     {
       "id": "b_198",
@@ -28923,7 +28923,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 21
     },
     {
       "id": "b_199",
@@ -29068,7 +29068,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 22
+      "salary": 23
     },
     {
       "id": "b_200",
@@ -29214,7 +29214,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 28
     },
     {
       "id": "b_201",
@@ -29359,7 +29359,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 41
+      "salary": 63
     },
     {
       "id": "b_202",
@@ -29649,7 +29649,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 20
     },
     {
       "id": "b_204",
@@ -29794,7 +29794,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 97
+      "salary": 128
     },
     {
       "id": "b_205",
@@ -29939,7 +29939,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 38
+      "salary": 40
     },
     {
       "id": "b_206",
@@ -30084,7 +30084,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 58
+      "salary": 98
     },
     {
       "id": "b_207",
@@ -30229,7 +30229,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 37
+      "salary": 50
     },
     {
       "id": "b_208",
@@ -30375,7 +30375,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 24
     },
     {
       "id": "b_209",
@@ -30520,7 +30520,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 40
+      "salary": 63
     },
     {
       "id": "b_210",
@@ -30667,7 +30667,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 21
     },
     {
       "id": "b_211",
@@ -30812,7 +30812,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31
+      "salary": 41
     },
     {
       "id": "b_212",
@@ -30957,7 +30957,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 20
     },
     {
       "id": "b_213",
@@ -31102,7 +31102,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 23
     },
     {
       "id": "b_214",
@@ -31247,7 +31247,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 41
+      "salary": 60
     },
     {
       "id": "b_215",
@@ -31392,7 +31392,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 48
+      "salary": 69
     },
     {
       "id": "b_216",
@@ -31682,7 +31682,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 22
     },
     {
       "id": "b_218",
@@ -31827,7 +31827,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 18
     },
     {
       "id": "b_219",
@@ -31972,7 +31972,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 44
+      "salary": 62
     },
     {
       "id": "b_220",
@@ -32118,7 +32118,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31
+      "salary": 33
     },
     {
       "id": "b_221",
@@ -32263,7 +32263,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 28
+      "salary": 39
     },
     {
       "id": "b_222",
@@ -32408,7 +32408,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 18
     },
     {
       "id": "b_223",
@@ -32553,7 +32553,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 21
     },
     {
       "id": "b_224",
@@ -32698,7 +32698,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31
+      "salary": 34
     },
     {
       "id": "b_225",
@@ -32844,7 +32844,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21
+      "salary": 31
     },
     {
       "id": "b_226",
@@ -32989,7 +32989,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 28
+      "salary": 46
     },
     {
       "id": "b_227",
@@ -33425,7 +33425,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 22
     },
     {
       "id": "b_230",
@@ -33570,7 +33570,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31
+      "salary": 45
     },
     {
       "id": "b_231",
@@ -33716,7 +33716,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21
+      "salary": 27
     },
     {
       "id": "b_232",
@@ -34006,7 +34006,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 48
+      "salary": 64
     },
     {
       "id": "b_234",
@@ -34151,7 +34151,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31
+      "salary": 39
     },
     {
       "id": "b_235",
@@ -34297,7 +34297,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 80
+      "salary": 113
     },
     {
       "id": "b_236",
@@ -34443,7 +34443,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24
+      "salary": 31
     },
     {
       "id": "b_237",
@@ -34588,7 +34588,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23
+      "salary": 30
     },
     {
       "id": "b_238",
@@ -34733,7 +34733,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24
+      "salary": 46
     },
     {
       "id": "b_239",
@@ -34879,7 +34879,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 17
     },
     {
       "id": "b_240",
@@ -35024,7 +35024,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 18
     },
     {
       "id": "b_241",
@@ -35169,7 +35169,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 19
     },
     {
       "id": "b_242",
@@ -35315,7 +35315,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 28
     },
     {
       "id": "b_243",
@@ -35460,7 +35460,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 20
+      "salary": 28
     },
     {
       "id": "b_244",
@@ -35605,7 +35605,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 17
     },
     {
       "id": "b_245",
@@ -35750,7 +35750,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 20
     },
     {
       "id": "b_246",
@@ -35895,7 +35895,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 19
     },
     {
       "id": "b_247",
@@ -36040,7 +36040,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 25
     },
     {
       "id": "b_248",
@@ -36330,7 +36330,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "b_250",
@@ -36475,7 +36475,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 25
     },
     {
       "id": "b_251",
@@ -36620,7 +36620,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25
+      "salary": 45
     },
     {
       "id": "b_252",
@@ -36767,7 +36767,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29
+      "salary": 40
     },
     {
       "id": "b_253",
@@ -36912,7 +36912,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 20
     },
     {
       "id": "b_254",
@@ -37057,7 +37057,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 24
     },
     {
       "id": "b_255",
@@ -37203,7 +37203,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 35
+      "salary": 44
     },
     {
       "id": "b_256",
@@ -37349,7 +37349,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "b_257",
@@ -37494,7 +37494,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 17
     },
     {
       "id": "b_258",
@@ -37640,7 +37640,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 28
     },
     {
       "id": "b_259",
@@ -37785,7 +37785,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 40
+      "salary": 48
     },
     {
       "id": "b_260",
@@ -37930,7 +37930,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 15
     },
     {
       "id": "b_261",
@@ -38075,7 +38075,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26
+      "salary": 40
     },
     {
       "id": "b_262",
@@ -38220,7 +38220,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 16
     },
     {
       "id": "b_263",
@@ -38365,7 +38365,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25
+      "salary": 35
     },
     {
       "id": "b_264",
@@ -38510,7 +38510,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21
+      "salary": 30
     },
     {
       "id": "b_265",
@@ -38655,7 +38655,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 32
+      "salary": 47
     },
     {
       "id": "b_266",
@@ -38800,7 +38800,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 49
+      "salary": 66
     },
     {
       "id": "b_267",
@@ -38945,7 +38945,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 17
     },
     {
       "id": "b_268",
@@ -39091,7 +39091,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 17
     },
     {
       "id": "b_269",
@@ -39236,7 +39236,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 17
     },
     {
       "id": "b_270",
@@ -39381,7 +39381,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 47
+      "salary": 65
     },
     {
       "id": "b_271",
@@ -39527,7 +39527,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 17
     },
     {
       "id": "b_272",
@@ -39672,7 +39672,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21
+      "salary": 25
     },
     {
       "id": "b_273",
@@ -39817,7 +39817,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 67
     },
     {
       "id": "b_274",
@@ -39962,7 +39962,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 23
     },
     {
       "id": "b_275",
@@ -40107,7 +40107,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 14
     },
     {
       "id": "b_276",
@@ -40252,7 +40252,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25
+      "salary": 35
     },
     {
       "id": "b_277",
@@ -40397,7 +40397,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 26
     },
     {
       "id": "b_278",
@@ -40543,7 +40543,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 31
+      "salary": 55
     },
     {
       "id": "b_279",
@@ -40688,7 +40688,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27
+      "salary": 46
     },
     {
       "id": "b_280",
@@ -40833,7 +40833,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "b_281",
@@ -40978,7 +40978,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 28
+      "salary": 40
     },
     {
       "id": "b_282",
@@ -41268,7 +41268,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 21
     },
     {
       "id": "b_284",
@@ -41413,7 +41413,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 20
     },
     {
       "id": "b_285",
@@ -41560,7 +41560,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 35
+      "salary": 49
     },
     {
       "id": "b_286",
@@ -41705,7 +41705,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 15
     },
     {
       "id": "b_287",
@@ -41850,7 +41850,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 21
     },
     {
       "id": "b_288",
@@ -41995,7 +41995,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 162
+      "salary": 151
     },
     {
       "id": "b_289",
@@ -42140,7 +42140,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 43
+      "salary": 63
     },
     {
       "id": "b_290",
@@ -42285,7 +42285,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 20
     },
     {
       "id": "b_291",
@@ -42430,7 +42430,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 19
     },
     {
       "id": "b_292",
@@ -42575,7 +42575,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "b_293",
@@ -42720,7 +42720,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25
+      "salary": 36
     },
     {
       "id": "b_294",
@@ -42865,7 +42865,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 37
+      "salary": 50
     },
     {
       "id": "b_295",
@@ -43010,7 +43010,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 17
     },
     {
       "id": "b_296",
@@ -43155,7 +43155,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "b_297",
@@ -43300,7 +43300,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27
+      "salary": 46
     },
     {
       "id": "b_298",
@@ -43445,7 +43445,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 14
     },
     {
       "id": "b_299",
@@ -43591,7 +43591,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27
+      "salary": 42
     },
     {
       "id": "b_300",
@@ -43736,7 +43736,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21
+      "salary": 25
     },
     {
       "id": "b_301",
@@ -43881,7 +43881,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 15
     },
     {
       "id": "b_302",
@@ -44026,7 +44026,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 67
+      "salary": 77
     },
     {
       "id": "b_303",
@@ -44316,7 +44316,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 70
+      "salary": 103
     },
     {
       "id": "b_305",
@@ -44463,7 +44463,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 27
     },
     {
       "id": "b_306",
@@ -44608,7 +44608,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26
+      "salary": 36
     },
     {
       "id": "b_307",
@@ -44753,7 +44753,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 18
     },
     {
       "id": "b_308",
@@ -44898,7 +44898,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 21
     },
     {
       "id": "b_309",
@@ -45044,7 +45044,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 45
+      "salary": 67
     },
     {
       "id": "b_310",
@@ -45189,7 +45189,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 22
     },
     {
       "id": "b_311",
@@ -45334,7 +45334,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 32
+      "salary": 46
     },
     {
       "id": "b_312",
@@ -45480,7 +45480,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 24
     },
     {
       "id": "b_313",
@@ -45626,7 +45626,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 36
+      "salary": 34
     },
     {
       "id": "b_314",
@@ -45772,7 +45772,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 104
+      "salary": 131
     },
     {
       "id": "b_315",
@@ -46064,7 +46064,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 22
     },
     {
       "id": "b_317",
@@ -46210,7 +46210,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 104
+      "salary": 119
     },
     {
       "id": "b_318",
@@ -46355,7 +46355,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 24
     },
     {
       "id": "b_319",
@@ -46645,7 +46645,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 22
     },
     {
       "id": "b_321",
@@ -46791,7 +46791,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 36
+      "salary": 63
     },
     {
       "id": "b_322",
@@ -46936,7 +46936,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "b_323",
@@ -47228,7 +47228,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 24
     },
     {
       "id": "b_325",
@@ -47375,7 +47375,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 39
+      "salary": 66
     },
     {
       "id": "b_326",
@@ -47520,7 +47520,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21
+      "salary": 27
     },
     {
       "id": "b_327",
@@ -47666,7 +47666,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 20
     },
     {
       "id": "b_328",
@@ -47811,7 +47811,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27
+      "salary": 34
     },
     {
       "id": "b_329",
@@ -47956,7 +47956,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12
+      "salary": 19
     },
     {
       "id": "b_330",
@@ -48101,7 +48101,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 19
     },
     {
       "id": "b_331",
@@ -48246,7 +48246,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 16
     },
     {
       "id": "b_332",
@@ -48392,7 +48392,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 17
     },
     {
       "id": "b_333",
@@ -48827,7 +48827,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 48
+      "salary": 52
     },
     {
       "id": "b_336",
@@ -48972,7 +48972,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 15
     },
     {
       "id": "b_337",
@@ -49117,7 +49117,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 17
     },
     {
       "id": "b_338",
@@ -49263,7 +49263,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "b_339",
@@ -49410,7 +49410,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26
+      "salary": 33
     },
     {
       "id": "b_340",
@@ -49556,7 +49556,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 30
+      "salary": 52
     },
     {
       "id": "b_341",
@@ -49846,7 +49846,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25
+      "salary": 37
     },
     {
       "id": "b_343",
@@ -49991,7 +49991,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 20
     },
     {
       "id": "b_344",
@@ -50136,7 +50136,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 14
     },
     {
       "id": "b_345",
@@ -50281,7 +50281,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23
+      "salary": 31
     },
     {
       "id": "b_346",
@@ -50427,7 +50427,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 21
     },
     {
       "id": "b_347",
@@ -50572,7 +50572,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 21
     },
     {
       "id": "b_348",
@@ -50717,7 +50717,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 24
     },
     {
       "id": "b_349",
@@ -50864,7 +50864,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23
+      "salary": 26
     },
     {
       "id": "b_350",
@@ -51009,7 +51009,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 20
     },
     {
       "id": "b_351",
@@ -51300,7 +51300,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25
+      "salary": 33
     },
     {
       "id": "b_353",
@@ -51446,7 +51446,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 24
     },
     {
       "id": "b_354",
@@ -51593,7 +51593,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 20
     },
     {
       "id": "b_355",
@@ -51739,7 +51739,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 30
+      "salary": 47
     },
     {
       "id": "b_356",
@@ -51886,7 +51886,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 18
     },
     {
       "id": "b_357",
@@ -52031,7 +52031,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 58
+      "salary": 95
     },
     {
       "id": "b_358",
@@ -52176,7 +52176,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 19
     },
     {
       "id": "b_359",
@@ -52321,7 +52321,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 50
+      "salary": 73
     },
     {
       "id": "b_360",
@@ -52466,7 +52466,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 22
+      "salary": 30
     },
     {
       "id": "b_361",
@@ -52611,7 +52611,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 22
+      "salary": 27
     },
     {
       "id": "b_362",
@@ -52757,7 +52757,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25
+      "salary": 36
     },
     {
       "id": "b_363",
@@ -52902,7 +52902,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23
+      "salary": 48
     },
     {
       "id": "b_364",
@@ -53047,7 +53047,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 15
     },
     {
       "id": "b_365",
@@ -53192,7 +53192,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 18
     },
     {
       "id": "b_366",
@@ -53337,7 +53337,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23
+      "salary": 29
     },
     {
       "id": "b_367",
@@ -53484,7 +53484,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 22
+      "salary": 25
     },
     {
       "id": "b_368",
@@ -53630,7 +53630,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23
+      "salary": 29
     },
     {
       "id": "b_369",
@@ -53775,7 +53775,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 54
+      "salary": 93
     },
     {
       "id": "b_370",
@@ -53921,7 +53921,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 36
+      "salary": 52
     },
     {
       "id": "b_371",
@@ -54066,7 +54066,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 25
     },
     {
       "id": "b_372",
@@ -54211,7 +54211,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 14
     },
     {
       "id": "b_373",
@@ -54357,7 +54357,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 17
     },
     {
       "id": "b_374",
@@ -54503,7 +54503,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 37
+      "salary": 54
     },
     {
       "id": "b_375",
@@ -54649,7 +54649,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 26
     },
     {
       "id": "b_376",
@@ -54794,7 +54794,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 63
+      "salary": 97
     },
     {
       "id": "b_377",
@@ -54940,7 +54940,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 82
+      "salary": 117
     },
     {
       "id": "b_378",
@@ -55231,7 +55231,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 45
+      "salary": 78
     },
     {
       "id": "b_380",
@@ -55376,7 +55376,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23
+      "salary": 29
     },
     {
       "id": "b_381",
@@ -55521,7 +55521,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 26
     },
     {
       "id": "b_382",
@@ -55666,7 +55666,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21
+      "salary": 31
     },
     {
       "id": "b_383",
@@ -55811,7 +55811,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 36
+      "salary": 44
     },
     {
       "id": "b_384",
@@ -55956,7 +55956,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 53
+      "salary": 82
     },
     {
       "id": "b_385",
@@ -56101,7 +56101,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29
+      "salary": 33
     },
     {
       "id": "b_386",
@@ -56246,7 +56246,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29
+      "salary": 42
     },
     {
       "id": "b_387",
@@ -56537,7 +56537,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 35
+      "salary": 51
     },
     {
       "id": "b_389",
@@ -56682,7 +56682,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24
+      "salary": 29
     },
     {
       "id": "b_390",
@@ -56827,7 +56827,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 14
     },
     {
       "id": "b_391",
@@ -56972,7 +56972,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 55
+      "salary": 65
     },
     {
       "id": "b_392",
@@ -57117,7 +57117,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 32
     },
     {
       "id": "b_393",
@@ -57409,7 +57409,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 15
     },
     {
       "id": "b_395",
@@ -57699,7 +57699,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 17
     },
     {
       "id": "b_397",
@@ -57844,7 +57844,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 18
     },
     {
       "id": "b_398",
@@ -57989,7 +57989,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 28
+      "salary": 37
     },
     {
       "id": "b_399",
@@ -58134,7 +58134,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 23
     },
     {
       "id": "b_400",
@@ -58279,7 +58279,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 33
     },
     {
       "id": "b_401",
@@ -58424,7 +58424,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 14
     },
     {
       "id": "b_402",
@@ -58569,7 +58569,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 22
     },
     {
       "id": "b_403",
@@ -58714,7 +58714,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 18
     },
     {
       "id": "b_404",
@@ -58859,7 +58859,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 17
     },
     {
       "id": "b_405",
@@ -59004,7 +59004,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "b_406",
@@ -59294,7 +59294,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 25
+      "salary": 39
     },
     {
       "id": "b_408",
@@ -59439,7 +59439,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 22
     },
     {
       "id": "b_409",
@@ -59584,7 +59584,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 19
     },
     {
       "id": "b_410",
@@ -59729,7 +59729,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24
+      "salary": 34
     },
     {
       "id": "b_411",
@@ -59874,7 +59874,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 26
     },
     {
       "id": "b_412",
@@ -60019,7 +60019,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 17
     },
     {
       "id": "b_413",
@@ -60164,7 +60164,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 21
     },
     {
       "id": "b_414",
@@ -60311,7 +60311,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23
+      "salary": 27
     },
     {
       "id": "b_415",
@@ -60457,7 +60457,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23
+      "salary": 30
     },
     {
       "id": "b_416",
@@ -60602,7 +60602,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 46
+      "salary": 64
     },
     {
       "id": "b_417",
@@ -60747,7 +60747,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 45
+      "salary": 53
     },
     {
       "id": "b_418",
@@ -60892,7 +60892,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 14
     },
     {
       "id": "b_419",
@@ -61037,7 +61037,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 64
+      "salary": 75
     },
     {
       "id": "b_420",
@@ -61182,7 +61182,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 20
     },
     {
       "id": "b_421",
@@ -61328,7 +61328,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 23
     },
     {
       "id": "b_422",
@@ -61473,7 +61473,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 21
     },
     {
       "id": "b_423",
@@ -61618,7 +61618,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 21
     },
     {
       "id": "b_424",
@@ -61763,7 +61763,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 29
     },
     {
       "id": "b_425",
@@ -61909,7 +61909,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21
+      "salary": 31
     },
     {
       "id": "b_426",
@@ -62054,7 +62054,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 66
+      "salary": 81
     },
     {
       "id": "b_427",
@@ -62199,7 +62199,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 19
+      "salary": 27
     },
     {
       "id": "b_428",
@@ -62344,7 +62344,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 14
     },
     {
       "id": "b_429",
@@ -62489,7 +62489,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 21
     },
     {
       "id": "b_430",
@@ -62635,7 +62635,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 19
     },
     {
       "id": "b_431",
@@ -62780,7 +62780,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 15
     },
     {
       "id": "b_432",
@@ -62925,7 +62925,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 18
+      "salary": 20
     },
     {
       "id": "b_433",
@@ -63216,7 +63216,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 17
     },
     {
       "id": "b_435",
@@ -63362,7 +63362,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 19
     },
     {
       "id": "b_436",
@@ -63507,7 +63507,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 25
     },
     {
       "id": "b_437",
@@ -63652,7 +63652,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 19
     },
     {
       "id": "b_438",
@@ -63942,7 +63942,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 24
+      "salary": 30
     },
     {
       "id": "b_440",
@@ -64087,7 +64087,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 17
+      "salary": 18
     },
     {
       "id": "b_441",
@@ -64232,7 +64232,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27
+      "salary": 41
     },
     {
       "id": "b_442",
@@ -64377,7 +64377,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12
+      "salary": 16
     },
     {
       "id": "b_443",
@@ -64522,7 +64522,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 27
+      "salary": 34
     },
     {
       "id": "b_444",
@@ -64667,7 +64667,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 37
+      "salary": 50
     },
     {
       "id": "b_445",
@@ -64812,7 +64812,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 21
+      "salary": 23
     },
     {
       "id": "b_446",
@@ -65102,7 +65102,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 14
+      "salary": 20
     },
     {
       "id": "b_448",
@@ -65247,7 +65247,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 39
+      "salary": 54
     },
     {
       "id": "b_449",
@@ -65392,7 +65392,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 15
+      "salary": 17
     },
     {
       "id": "b_450",
@@ -65537,7 +65537,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 26
+      "salary": 28
     },
     {
       "id": "b_451",
@@ -65682,7 +65682,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 115
+      "salary": 117
     },
     {
       "id": "b_452",
@@ -65827,7 +65827,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 13
+      "salary": 15
     },
     {
       "id": "b_453",
@@ -65973,7 +65973,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 36
+      "salary": 47
     },
     {
       "id": "b_454",
@@ -66118,7 +66118,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 37
+      "salary": 62
     },
     {
       "id": "b_455",
@@ -66263,7 +66263,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29
+      "salary": 39
     },
     {
       "id": "b_456",
@@ -66408,7 +66408,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 29
+      "salary": 43
     },
     {
       "id": "b_457",
@@ -66553,7 +66553,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 23
+      "salary": 29
     },
     {
       "id": "b_458",
@@ -66698,7 +66698,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 16
+      "salary": 17
     },
     {
       "id": "b_459",
@@ -66843,7 +66843,7 @@
         ]
       ],
       "type": "batter",
-      "salary": 12
+      "salary": 17
     }
   ],
   "pitchers": [
@@ -66989,7 +66989,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 39
+      "salary": 76
     },
     {
       "id": "p_1",
@@ -67133,7 +67133,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 23
     },
     {
       "id": "p_2",
@@ -67277,7 +67277,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18
+      "salary": 61
     },
     {
       "id": "p_3",
@@ -67421,7 +67421,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 39
     },
     {
       "id": "p_4",
@@ -67853,7 +67853,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_7",
@@ -68141,7 +68141,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 30
+      "salary": 48
     },
     {
       "id": "p_9",
@@ -68285,7 +68285,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17
+      "salary": 28
     },
     {
       "id": "p_10",
@@ -68429,7 +68429,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_11",
@@ -68573,7 +68573,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_12",
@@ -68717,7 +68717,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 24
+      "salary": 39
     },
     {
       "id": "p_13",
@@ -68861,7 +68861,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_14",
@@ -69005,7 +69005,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 26
     },
     {
       "id": "p_15",
@@ -69149,7 +69149,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 22
     },
     {
       "id": "p_16",
@@ -69293,7 +69293,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 36
+      "salary": 73
     },
     {
       "id": "p_17",
@@ -69437,7 +69437,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 29
     },
     {
       "id": "p_18",
@@ -69581,7 +69581,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20
+      "salary": 29
     },
     {
       "id": "p_19",
@@ -69725,7 +69725,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18
+      "salary": 70
     },
     {
       "id": "p_20",
@@ -69869,7 +69869,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 23
+      "salary": 35
     },
     {
       "id": "p_21",
@@ -70013,7 +70013,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13
+      "salary": 40
     },
     {
       "id": "p_22",
@@ -70157,7 +70157,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14
+      "salary": 36
     },
     {
       "id": "p_23",
@@ -70301,7 +70301,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 19
     },
     {
       "id": "p_24",
@@ -70445,7 +70445,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20
+      "salary": 35
     },
     {
       "id": "p_25",
@@ -70589,7 +70589,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 25
     },
     {
       "id": "p_26",
@@ -70733,7 +70733,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_27",
@@ -70877,7 +70877,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_28",
@@ -71021,7 +71021,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 27
     },
     {
       "id": "p_29",
@@ -71165,7 +71165,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_30",
@@ -71309,7 +71309,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 26
     },
     {
       "id": "p_31",
@@ -71453,7 +71453,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_32",
@@ -71597,7 +71597,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 19
     },
     {
       "id": "p_33",
@@ -71741,7 +71741,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 33
+      "salary": 55
     },
     {
       "id": "p_34",
@@ -71885,7 +71885,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 43
     },
     {
       "id": "p_35",
@@ -72029,7 +72029,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 33
+      "salary": 55
     },
     {
       "id": "p_36",
@@ -72173,7 +72173,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 40
     },
     {
       "id": "p_37",
@@ -72317,7 +72317,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 21
     },
     {
       "id": "p_38",
@@ -72461,7 +72461,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13
+      "salary": 58
     },
     {
       "id": "p_39",
@@ -72605,7 +72605,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 22
     },
     {
       "id": "p_40",
@@ -72749,7 +72749,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 24
     },
     {
       "id": "p_41",
@@ -72893,7 +72893,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 32
+      "salary": 53
     },
     {
       "id": "p_42",
@@ -73037,7 +73037,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_43",
@@ -73181,7 +73181,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 27
     },
     {
       "id": "p_44",
@@ -73325,7 +73325,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 24
+      "salary": 48
     },
     {
       "id": "p_45",
@@ -73469,7 +73469,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_46",
@@ -73613,7 +73613,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 27
+      "salary": 42
     },
     {
       "id": "p_47",
@@ -73757,7 +73757,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 33
+      "salary": 59
     },
     {
       "id": "p_48",
@@ -73901,7 +73901,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_49",
@@ -74045,7 +74045,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 43
+      "salary": 79
     },
     {
       "id": "p_50",
@@ -74189,7 +74189,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_51",
@@ -74333,7 +74333,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 24
     },
     {
       "id": "p_52",
@@ -74477,7 +74477,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_53",
@@ -74621,7 +74621,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 16
     },
     {
       "id": "p_54",
@@ -74909,7 +74909,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 38
+      "salary": 65
     },
     {
       "id": "p_56",
@@ -75053,7 +75053,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_57",
@@ -75197,7 +75197,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 19
+      "salary": 52
     },
     {
       "id": "p_58",
@@ -75485,7 +75485,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_60",
@@ -75629,7 +75629,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_61",
@@ -75773,7 +75773,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 24
     },
     {
       "id": "p_62",
@@ -76061,7 +76061,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 41
+      "salary": 81
     },
     {
       "id": "p_64",
@@ -76205,7 +76205,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17
+      "salary": 37
     },
     {
       "id": "p_65",
@@ -76349,7 +76349,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 100
+      "salary": 163
     },
     {
       "id": "p_66",
@@ -76493,7 +76493,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 30
+      "salary": 49
     },
     {
       "id": "p_67",
@@ -76637,7 +76637,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 28
     },
     {
       "id": "p_68",
@@ -76781,7 +76781,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 16
     },
     {
       "id": "p_69",
@@ -76925,7 +76925,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 22
     },
     {
       "id": "p_70",
@@ -77069,7 +77069,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "p_71",
@@ -77357,7 +77357,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 16
     },
     {
       "id": "p_73",
@@ -77501,7 +77501,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21
+      "salary": 38
     },
     {
       "id": "p_74",
@@ -77645,7 +77645,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 64
+      "salary": 123
     },
     {
       "id": "p_75",
@@ -77789,7 +77789,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "p_76",
@@ -77933,7 +77933,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_77",
@@ -78221,7 +78221,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 48
+      "salary": 86
     },
     {
       "id": "p_79",
@@ -78365,7 +78365,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13
+      "salary": 21
     },
     {
       "id": "p_80",
@@ -78509,7 +78509,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 23
     },
     {
       "id": "p_81",
@@ -78653,7 +78653,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_82",
@@ -78797,7 +78797,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18
+      "salary": 29
     },
     {
       "id": "p_83",
@@ -78941,7 +78941,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 42
+      "salary": 83
     },
     {
       "id": "p_84",
@@ -79085,7 +79085,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26
+      "salary": 71
     },
     {
       "id": "p_85",
@@ -79229,7 +79229,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 25
+      "salary": 57
     },
     {
       "id": "p_86",
@@ -79373,7 +79373,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_87",
@@ -79517,7 +79517,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 43
+      "salary": 77
     },
     {
       "id": "p_88",
@@ -79805,7 +79805,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 38
+      "salary": 76
     },
     {
       "id": "p_90",
@@ -79949,7 +79949,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22
+      "salary": 41
     },
     {
       "id": "p_91",
@@ -80093,7 +80093,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14
+      "salary": 24
     },
     {
       "id": "p_92",
@@ -80237,7 +80237,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "p_93",
@@ -80381,7 +80381,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14
+      "salary": 39
     },
     {
       "id": "p_94",
@@ -80525,7 +80525,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_95",
@@ -80669,7 +80669,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 21
     },
     {
       "id": "p_96",
@@ -80813,7 +80813,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "p_97",
@@ -80957,7 +80957,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 36
+      "salary": 66
     },
     {
       "id": "p_98",
@@ -81101,7 +81101,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17
+      "salary": 28
     },
     {
       "id": "p_99",
@@ -81245,7 +81245,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 43
+      "salary": 78
     },
     {
       "id": "p_100",
@@ -81389,7 +81389,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 29
+      "salary": 49
     },
     {
       "id": "p_101",
@@ -81533,7 +81533,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 16
     },
     {
       "id": "p_102",
@@ -81677,7 +81677,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 47
+      "salary": 104
     },
     {
       "id": "p_103",
@@ -81821,7 +81821,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 24
+      "salary": 118
     },
     {
       "id": "p_104",
@@ -82109,7 +82109,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20
+      "salary": 36
     },
     {
       "id": "p_106",
@@ -82253,7 +82253,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 37
     },
     {
       "id": "p_107",
@@ -82397,7 +82397,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 21
     },
     {
       "id": "p_108",
@@ -82541,7 +82541,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 50
     },
     {
       "id": "p_109",
@@ -82685,7 +82685,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26
+      "salary": 43
     },
     {
       "id": "p_110",
@@ -82829,7 +82829,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_111",
@@ -82973,7 +82973,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 27
     },
     {
       "id": "p_112",
@@ -83261,7 +83261,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16
+      "salary": 26
     },
     {
       "id": "p_114",
@@ -83405,7 +83405,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 108
+      "salary": 154
     },
     {
       "id": "p_115",
@@ -83549,7 +83549,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 42
     },
     {
       "id": "p_116",
@@ -83693,7 +83693,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_117",
@@ -83837,7 +83837,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 23
     },
     {
       "id": "p_118",
@@ -83981,7 +83981,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14
+      "salary": 22
     },
     {
       "id": "p_119",
@@ -84125,7 +84125,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22
+      "salary": 41
     },
     {
       "id": "p_120",
@@ -84269,7 +84269,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 20
     },
     {
       "id": "p_121",
@@ -84413,7 +84413,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_122",
@@ -84557,7 +84557,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 63
+      "salary": 123
     },
     {
       "id": "p_123",
@@ -84701,7 +84701,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_124",
@@ -84845,7 +84845,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 36
     },
     {
       "id": "p_125",
@@ -84989,7 +84989,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 29
+      "salary": 126
     },
     {
       "id": "p_126",
@@ -85133,7 +85133,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20
+      "salary": 35
     },
     {
       "id": "p_127",
@@ -85277,7 +85277,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 35
     },
     {
       "id": "p_128",
@@ -85421,7 +85421,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13
+      "salary": 23
     },
     {
       "id": "p_129",
@@ -85565,7 +85565,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 27
     },
     {
       "id": "p_130",
@@ -85709,7 +85709,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 23
     },
     {
       "id": "p_131",
@@ -85853,7 +85853,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 39
     },
     {
       "id": "p_132",
@@ -85997,7 +85997,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_133",
@@ -86141,7 +86141,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_134",
@@ -86285,7 +86285,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 38
     },
     {
       "id": "p_135",
@@ -86429,7 +86429,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17
+      "salary": 22
     },
     {
       "id": "p_136",
@@ -86573,7 +86573,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_137",
@@ -86717,7 +86717,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 24
+      "salary": 38
     },
     {
       "id": "p_138",
@@ -86861,7 +86861,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 31
     },
     {
       "id": "p_139",
@@ -87005,7 +87005,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 20
     },
     {
       "id": "p_140",
@@ -87149,7 +87149,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 28
     },
     {
       "id": "p_141",
@@ -87293,7 +87293,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 80
+      "salary": 150
     },
     {
       "id": "p_142",
@@ -87437,7 +87437,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 26
     },
     {
       "id": "p_143",
@@ -87581,7 +87581,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 22
     },
     {
       "id": "p_144",
@@ -87725,7 +87725,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 36
     },
     {
       "id": "p_145",
@@ -87869,7 +87869,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21
+      "salary": 34
     },
     {
       "id": "p_146",
@@ -88013,7 +88013,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 27
     },
     {
       "id": "p_147",
@@ -88157,7 +88157,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15
+      "salary": 27
     },
     {
       "id": "p_148",
@@ -88301,7 +88301,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16
+      "salary": 26
     },
     {
       "id": "p_149",
@@ -88445,7 +88445,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_150",
@@ -88589,7 +88589,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 19
     },
     {
       "id": "p_151",
@@ -88733,7 +88733,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22
+      "salary": 34
     },
     {
       "id": "p_152",
@@ -88877,7 +88877,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_153",
@@ -89021,7 +89021,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 21
     },
     {
       "id": "p_154",
@@ -89165,7 +89165,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_155",
@@ -89453,7 +89453,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 27
     },
     {
       "id": "p_157",
@@ -89597,7 +89597,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22
+      "salary": 41
     },
     {
       "id": "p_158",
@@ -89741,7 +89741,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 31
     },
     {
       "id": "p_159",
@@ -89885,7 +89885,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 36
     },
     {
       "id": "p_160",
@@ -90029,7 +90029,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 45
     },
     {
       "id": "p_161",
@@ -90173,7 +90173,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18
+      "salary": 25
     },
     {
       "id": "p_162",
@@ -90317,7 +90317,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 40
+      "salary": 69
     },
     {
       "id": "p_163",
@@ -90461,7 +90461,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_164",
@@ -90605,7 +90605,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 24
     },
     {
       "id": "p_165",
@@ -90749,7 +90749,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 16
     },
     {
       "id": "p_166",
@@ -90893,7 +90893,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22
+      "salary": 36
     },
     {
       "id": "p_167",
@@ -91037,7 +91037,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 80
+      "salary": 129
     },
     {
       "id": "p_168",
@@ -91181,7 +91181,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 24
     },
     {
       "id": "p_169",
@@ -91325,7 +91325,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_170",
@@ -91469,7 +91469,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 23
     },
     {
       "id": "p_171",
@@ -91613,7 +91613,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "p_172",
@@ -91757,7 +91757,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 31
+      "salary": 48
     },
     {
       "id": "p_173",
@@ -92045,7 +92045,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 29
     },
     {
       "id": "p_175",
@@ -92189,7 +92189,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 22
     },
     {
       "id": "p_176",
@@ -92333,7 +92333,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 28
     },
     {
       "id": "p_177",
@@ -92477,7 +92477,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 23
     },
     {
       "id": "p_178",
@@ -92621,7 +92621,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 73
+      "salary": 121
     },
     {
       "id": "p_179",
@@ -92765,7 +92765,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_180",
@@ -92909,7 +92909,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 25
     },
     {
       "id": "p_181",
@@ -93053,7 +93053,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22
+      "salary": 33
     },
     {
       "id": "p_182",
@@ -93197,7 +93197,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 70
+      "salary": 143
     },
     {
       "id": "p_183",
@@ -93341,7 +93341,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 22
     },
     {
       "id": "p_184",
@@ -93485,7 +93485,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_185",
@@ -93629,7 +93629,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_186",
@@ -93773,7 +93773,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15
+      "salary": 28
     },
     {
       "id": "p_187",
@@ -93917,7 +93917,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 30
+      "salary": 52
     },
     {
       "id": "p_188",
@@ -94061,7 +94061,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 20
     },
     {
       "id": "p_189",
@@ -94205,7 +94205,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 58
+      "salary": 118
     },
     {
       "id": "p_190",
@@ -94493,7 +94493,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_192",
@@ -94637,7 +94637,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 24
+      "salary": 35
     },
     {
       "id": "p_193",
@@ -94781,7 +94781,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 35
     },
     {
       "id": "p_194",
@@ -94925,7 +94925,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13
+      "salary": 22
     },
     {
       "id": "p_195",
@@ -95069,7 +95069,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 19
+      "salary": 27
     },
     {
       "id": "p_196",
@@ -95213,7 +95213,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 37
+      "salary": 68
     },
     {
       "id": "p_197",
@@ -95357,7 +95357,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 16
     },
     {
       "id": "p_198",
@@ -95501,7 +95501,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_199",
@@ -95645,7 +95645,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 42
+      "salary": 72
     },
     {
       "id": "p_200",
@@ -95933,7 +95933,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 71
+      "salary": 140
     },
     {
       "id": "p_202",
@@ -96077,7 +96077,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 22
     },
     {
       "id": "p_203",
@@ -96221,7 +96221,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21
+      "salary": 75
     },
     {
       "id": "p_204",
@@ -96365,7 +96365,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14
+      "salary": 28
     },
     {
       "id": "p_205",
@@ -96509,7 +96509,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 26
     },
     {
       "id": "p_206",
@@ -96797,7 +96797,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 23
     },
     {
       "id": "p_208",
@@ -96941,7 +96941,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15
+      "salary": 24
     },
     {
       "id": "p_209",
@@ -97085,7 +97085,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_210",
@@ -97229,7 +97229,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 21
     },
     {
       "id": "p_211",
@@ -97373,7 +97373,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17
+      "salary": 36
     },
     {
       "id": "p_212",
@@ -97517,7 +97517,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 23
     },
     {
       "id": "p_213",
@@ -97805,7 +97805,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13
+      "salary": 41
     },
     {
       "id": "p_215",
@@ -97949,7 +97949,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13
+      "salary": 21
     },
     {
       "id": "p_216",
@@ -98093,7 +98093,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_217",
@@ -98237,7 +98237,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 83
+      "salary": 135
     },
     {
       "id": "p_218",
@@ -98381,7 +98381,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 23
+      "salary": 39
     },
     {
       "id": "p_219",
@@ -98525,7 +98525,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15
+      "salary": 56
     },
     {
       "id": "p_220",
@@ -98669,7 +98669,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_221",
@@ -98813,7 +98813,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 30
     },
     {
       "id": "p_222",
@@ -98957,7 +98957,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_223",
@@ -99101,7 +99101,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "p_224",
@@ -99245,7 +99245,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "p_225",
@@ -99389,7 +99389,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "p_226",
@@ -99533,7 +99533,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 25
     },
     {
       "id": "p_227",
@@ -99677,7 +99677,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_228",
@@ -99965,7 +99965,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 20
     },
     {
       "id": "p_230",
@@ -100109,7 +100109,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13
+      "salary": 18
     },
     {
       "id": "p_231",
@@ -100397,7 +100397,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_233",
@@ -100541,7 +100541,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 31
+      "salary": 52
     },
     {
       "id": "p_234",
@@ -100685,7 +100685,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 35
+      "salary": 57
     },
     {
       "id": "p_235",
@@ -100829,7 +100829,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 23
     },
     {
       "id": "p_236",
@@ -100973,7 +100973,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 43
+      "salary": 82
     },
     {
       "id": "p_237",
@@ -101117,7 +101117,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 16
     },
     {
       "id": "p_238",
@@ -101261,7 +101261,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 29
+      "salary": 48
     },
     {
       "id": "p_239",
@@ -101405,7 +101405,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 27
     },
     {
       "id": "p_240",
@@ -101549,7 +101549,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 34
     },
     {
       "id": "p_241",
@@ -101693,7 +101693,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 36
+      "salary": 60
     },
     {
       "id": "p_242",
@@ -101837,7 +101837,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 19
+      "salary": 25
     },
     {
       "id": "p_243",
@@ -101981,7 +101981,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_244",
@@ -102269,7 +102269,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 30
     },
     {
       "id": "p_246",
@@ -102413,7 +102413,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_247",
@@ -102557,7 +102557,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 23
+      "salary": 43
     },
     {
       "id": "p_248",
@@ -102701,7 +102701,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 34
     },
     {
       "id": "p_249",
@@ -102845,7 +102845,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15
+      "salary": 24
     },
     {
       "id": "p_250",
@@ -102989,7 +102989,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_251",
@@ -103133,7 +103133,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 21
     },
     {
       "id": "p_252",
@@ -103277,7 +103277,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 34
+      "salary": 48
     },
     {
       "id": "p_253",
@@ -103421,7 +103421,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_254",
@@ -103565,7 +103565,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18
+      "salary": 57
     },
     {
       "id": "p_255",
@@ -103709,7 +103709,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 32
+      "salary": 51
     },
     {
       "id": "p_256",
@@ -103997,7 +103997,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 41
+      "salary": 76
     },
     {
       "id": "p_258",
@@ -104141,7 +104141,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_259",
@@ -104285,7 +104285,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 21
     },
     {
       "id": "p_260",
@@ -104429,7 +104429,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 20
     },
     {
       "id": "p_261",
@@ -104573,7 +104573,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22
+      "salary": 44
     },
     {
       "id": "p_262",
@@ -104717,7 +104717,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28
+      "salary": 43
     },
     {
       "id": "p_263",
@@ -104861,7 +104861,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 28
     },
     {
       "id": "p_264",
@@ -105149,7 +105149,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26
+      "salary": 53
     },
     {
       "id": "p_266",
@@ -105293,7 +105293,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 23
     },
     {
       "id": "p_267",
@@ -105437,7 +105437,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 46
+      "salary": 80
     },
     {
       "id": "p_268",
@@ -105581,7 +105581,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 41
     },
     {
       "id": "p_269",
@@ -105725,7 +105725,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17
+      "salary": 28
     },
     {
       "id": "p_270",
@@ -105869,7 +105869,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_271",
@@ -106013,7 +106013,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 24
     },
     {
       "id": "p_272",
@@ -106157,7 +106157,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 36
+      "salary": 66
     },
     {
       "id": "p_273",
@@ -106301,7 +106301,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 19
     },
     {
       "id": "p_274",
@@ -106445,7 +106445,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 32
+      "salary": 58
     },
     {
       "id": "p_275",
@@ -106589,7 +106589,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 28
     },
     {
       "id": "p_276",
@@ -106733,7 +106733,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 19
+      "salary": 42
     },
     {
       "id": "p_277",
@@ -106877,7 +106877,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_278",
@@ -107021,7 +107021,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 25
     },
     {
       "id": "p_279",
@@ -107165,7 +107165,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 20
     },
     {
       "id": "p_280",
@@ -107309,7 +107309,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 21
     },
     {
       "id": "p_281",
@@ -107453,7 +107453,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 28
     },
     {
       "id": "p_282",
@@ -107597,7 +107597,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_283",
@@ -107741,7 +107741,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_284",
@@ -107885,7 +107885,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 36
+      "salary": 68
     },
     {
       "id": "p_285",
@@ -108029,7 +108029,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28
+      "salary": 43
     },
     {
       "id": "p_286",
@@ -108173,7 +108173,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 29
+      "salary": 46
     },
     {
       "id": "p_287",
@@ -108317,7 +108317,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 25
     },
     {
       "id": "p_288",
@@ -108461,7 +108461,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18
+      "salary": 32
     },
     {
       "id": "p_289",
@@ -108749,7 +108749,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 48
+      "salary": 91
     },
     {
       "id": "p_291",
@@ -109037,7 +109037,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28
+      "salary": 56
     },
     {
       "id": "p_293",
@@ -109181,7 +109181,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 16
     },
     {
       "id": "p_294",
@@ -109325,7 +109325,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 49
+      "salary": 88
     },
     {
       "id": "p_295",
@@ -109469,7 +109469,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 23
     },
     {
       "id": "p_296",
@@ -109613,7 +109613,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26
+      "salary": 42
     },
     {
       "id": "p_297",
@@ -109757,7 +109757,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14
+      "salary": 25
     },
     {
       "id": "p_298",
@@ -109901,7 +109901,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 21
     },
     {
       "id": "p_299",
@@ -110045,7 +110045,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26
+      "salary": 41
     },
     {
       "id": "p_300",
@@ -110189,7 +110189,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 52
+      "salary": 97
     },
     {
       "id": "p_301",
@@ -110333,7 +110333,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_302",
@@ -110477,7 +110477,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 39
+      "salary": 72
     },
     {
       "id": "p_303",
@@ -110621,7 +110621,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28
+      "salary": 59
     },
     {
       "id": "p_304",
@@ -110765,7 +110765,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_305",
@@ -110909,7 +110909,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 21
     },
     {
       "id": "p_306",
@@ -111053,7 +111053,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 24
+      "salary": 38
     },
     {
       "id": "p_307",
@@ -111197,7 +111197,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18
+      "salary": 33
     },
     {
       "id": "p_308",
@@ -111341,7 +111341,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 43
     },
     {
       "id": "p_309",
@@ -111485,7 +111485,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_310",
@@ -111629,7 +111629,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20
+      "salary": 36
     },
     {
       "id": "p_311",
@@ -111773,7 +111773,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 28
     },
     {
       "id": "p_312",
@@ -111917,7 +111917,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 23
     },
     {
       "id": "p_313",
@@ -112061,7 +112061,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 25
+      "salary": 41
     },
     {
       "id": "p_314",
@@ -112205,7 +112205,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14
+      "salary": 22
     },
     {
       "id": "p_315",
@@ -112349,7 +112349,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_316",
@@ -112493,7 +112493,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 24
+      "salary": 38
     },
     {
       "id": "p_317",
@@ -112637,7 +112637,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 74
+      "salary": 140
     },
     {
       "id": "p_318",
@@ -112781,7 +112781,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 23
     },
     {
       "id": "p_319",
@@ -112925,7 +112925,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 38
     },
     {
       "id": "p_320",
@@ -113069,7 +113069,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 33
+      "salary": 68
     },
     {
       "id": "p_321",
@@ -113213,7 +113213,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 26
     },
     {
       "id": "p_322",
@@ -113357,7 +113357,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13
+      "salary": 35
     },
     {
       "id": "p_323",
@@ -113501,7 +113501,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 36
+      "salary": 56
     },
     {
       "id": "p_324",
@@ -113789,7 +113789,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 29
+      "salary": 46
     },
     {
       "id": "p_326",
@@ -113933,7 +113933,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20
+      "salary": 28
     },
     {
       "id": "p_327",
@@ -114077,7 +114077,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21
+      "salary": 31
     },
     {
       "id": "p_328",
@@ -114365,7 +114365,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 32
+      "salary": 134
     },
     {
       "id": "p_330",
@@ -114509,7 +114509,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 39
     },
     {
       "id": "p_331",
@@ -114653,7 +114653,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_332",
@@ -114797,7 +114797,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 36
+      "salary": 76
     },
     {
       "id": "p_333",
@@ -114941,7 +114941,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 32
+      "salary": 54
     },
     {
       "id": "p_334",
@@ -115085,7 +115085,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 27
     },
     {
       "id": "p_335",
@@ -115373,7 +115373,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_337",
@@ -115517,7 +115517,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16
+      "salary": 28
     },
     {
       "id": "p_338",
@@ -115661,7 +115661,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 22
     },
     {
       "id": "p_339",
@@ -115805,7 +115805,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_340",
@@ -115949,7 +115949,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 23
+      "salary": 45
     },
     {
       "id": "p_341",
@@ -116093,7 +116093,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 41
     },
     {
       "id": "p_342",
@@ -116237,7 +116237,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 28
     },
     {
       "id": "p_343",
@@ -116525,7 +116525,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16
+      "salary": 27
     },
     {
       "id": "p_345",
@@ -116669,7 +116669,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14
+      "salary": 55
     },
     {
       "id": "p_346",
@@ -116813,7 +116813,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 24
     },
     {
       "id": "p_347",
@@ -116957,7 +116957,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 20
     },
     {
       "id": "p_348",
@@ -117101,7 +117101,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17
+      "salary": 40
     },
     {
       "id": "p_349",
@@ -117245,7 +117245,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28
+      "salary": 64
     },
     {
       "id": "p_350",
@@ -117533,7 +117533,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 21
     },
     {
       "id": "p_352",
@@ -117677,7 +117677,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 20
     },
     {
       "id": "p_353",
@@ -117821,7 +117821,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 29
+      "salary": 48
     },
     {
       "id": "p_354",
@@ -117965,7 +117965,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 29
     },
     {
       "id": "p_355",
@@ -118109,7 +118109,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 23
+      "salary": 34
     },
     {
       "id": "p_356",
@@ -118397,7 +118397,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_358",
@@ -118541,7 +118541,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 40
+      "salary": 117
     },
     {
       "id": "p_359",
@@ -118685,7 +118685,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18
+      "salary": 70
     },
     {
       "id": "p_360",
@@ -118829,7 +118829,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 41
+      "salary": 81
     },
     {
       "id": "p_361",
@@ -118973,7 +118973,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 16
     },
     {
       "id": "p_362",
@@ -119117,7 +119117,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 35
+      "salary": 62
     },
     {
       "id": "p_363",
@@ -119261,7 +119261,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 21
     },
     {
       "id": "p_364",
@@ -119405,7 +119405,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26
+      "salary": 54
     },
     {
       "id": "p_365",
@@ -119549,7 +119549,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16
+      "salary": 26
     },
     {
       "id": "p_366",
@@ -119693,7 +119693,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 42
     },
     {
       "id": "p_367",
@@ -119837,7 +119837,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 27
     },
     {
       "id": "p_368",
@@ -119981,7 +119981,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22
+      "salary": 32
     },
     {
       "id": "p_369",
@@ -120269,7 +120269,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 19
     },
     {
       "id": "p_371",
@@ -120413,7 +120413,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 25
+      "salary": 53
     },
     {
       "id": "p_372",
@@ -120701,7 +120701,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 29
     },
     {
       "id": "p_374",
@@ -120845,7 +120845,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 38
+      "salary": 65
     },
     {
       "id": "p_375",
@@ -120989,7 +120989,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 59
+      "salary": 110
     },
     {
       "id": "p_376",
@@ -121133,7 +121133,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 23
     },
     {
       "id": "p_377",
@@ -121421,7 +121421,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 36
+      "salary": 85
     },
     {
       "id": "p_379",
@@ -121565,7 +121565,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 37
+      "salary": 69
     },
     {
       "id": "p_380",
@@ -121709,7 +121709,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20
+      "salary": 45
     },
     {
       "id": "p_381",
@@ -121853,7 +121853,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 32
+      "salary": 53
     },
     {
       "id": "p_382",
@@ -121997,7 +121997,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 25
+      "salary": 41
     },
     {
       "id": "p_383",
@@ -122141,7 +122141,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18
+      "salary": 55
     },
     {
       "id": "p_384",
@@ -122285,7 +122285,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 22
     },
     {
       "id": "p_385",
@@ -122429,7 +122429,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_386",
@@ -122573,7 +122573,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 60
+      "salary": 118
     },
     {
       "id": "p_387",
@@ -122717,7 +122717,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 31
     },
     {
       "id": "p_388",
@@ -122861,7 +122861,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_389",
@@ -123005,7 +123005,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 26
+      "salary": 41
     },
     {
       "id": "p_390",
@@ -123293,7 +123293,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 33
+      "salary": 56
     },
     {
       "id": "p_392",
@@ -123437,7 +123437,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 19
     },
     {
       "id": "p_393",
@@ -123581,7 +123581,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 25
+      "salary": 41
     },
     {
       "id": "p_394",
@@ -123725,7 +123725,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 52
+      "salary": 126
     },
     {
       "id": "p_395",
@@ -123869,7 +123869,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14
+      "salary": 45
     },
     {
       "id": "p_396",
@@ -124013,7 +124013,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 26
     },
     {
       "id": "p_397",
@@ -124157,7 +124157,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 32
+      "salary": 74
     },
     {
       "id": "p_398",
@@ -124301,7 +124301,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 38
+      "salary": 69
     },
     {
       "id": "p_399",
@@ -124445,7 +124445,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20
+      "salary": 37
     },
     {
       "id": "p_400",
@@ -124589,7 +124589,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_401",
@@ -124877,7 +124877,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_403",
@@ -125021,7 +125021,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16
+      "salary": 25
     },
     {
       "id": "p_404",
@@ -125165,7 +125165,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 55
+      "salary": 104
     },
     {
       "id": "p_405",
@@ -125309,7 +125309,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22
+      "salary": 31
     },
     {
       "id": "p_406",
@@ -125453,7 +125453,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 29
     },
     {
       "id": "p_407",
@@ -125597,7 +125597,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22
+      "salary": 91
     },
     {
       "id": "p_408",
@@ -125741,7 +125741,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 26
     },
     {
       "id": "p_409",
@@ -125885,7 +125885,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 16
     },
     {
       "id": "p_410",
@@ -126029,7 +126029,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 110
+      "salary": 162
     },
     {
       "id": "p_411",
@@ -126173,7 +126173,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 23
     },
     {
       "id": "p_412",
@@ -126461,7 +126461,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "p_414",
@@ -126605,7 +126605,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_415",
@@ -126893,7 +126893,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 19
+      "salary": 33
     },
     {
       "id": "p_417",
@@ -127325,7 +127325,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 55
+      "salary": 102
     },
     {
       "id": "p_420",
@@ -127469,7 +127469,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 27
     },
     {
       "id": "p_421",
@@ -127613,7 +127613,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 39
     },
     {
       "id": "p_422",
@@ -127901,7 +127901,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 77
+      "salary": 145
     },
     {
       "id": "p_424",
@@ -128045,7 +128045,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 96
+      "salary": 148
     },
     {
       "id": "p_425",
@@ -128189,7 +128189,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 24
     },
     {
       "id": "p_426",
@@ -128333,7 +128333,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14
+      "salary": 44
     },
     {
       "id": "p_427",
@@ -128477,7 +128477,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 25
     },
     {
       "id": "p_428",
@@ -128621,7 +128621,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 21
     },
     {
       "id": "p_429",
@@ -128765,7 +128765,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_430",
@@ -128909,7 +128909,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18
+      "salary": 30
     },
     {
       "id": "p_431",
@@ -129053,7 +129053,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 48
+      "salary": 91
     },
     {
       "id": "p_432",
@@ -129197,7 +129197,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 42
+      "salary": 74
     },
     {
       "id": "p_433",
@@ -129341,7 +129341,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 19
     },
     {
       "id": "p_434",
@@ -129485,7 +129485,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_435",
@@ -129629,7 +129629,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 88
+      "salary": 131
     },
     {
       "id": "p_436",
@@ -129773,7 +129773,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_437",
@@ -130061,7 +130061,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22
+      "salary": 36
     },
     {
       "id": "p_439",
@@ -130205,7 +130205,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 33
+      "salary": 54
     },
     {
       "id": "p_440",
@@ -130349,7 +130349,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "p_441",
@@ -130493,7 +130493,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28
+      "salary": 43
     },
     {
       "id": "p_442",
@@ -130637,7 +130637,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_443",
@@ -130781,7 +130781,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 17
+      "salary": 48
     },
     {
       "id": "p_444",
@@ -130925,7 +130925,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 52
+      "salary": 116
     },
     {
       "id": "p_445",
@@ -131069,7 +131069,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_446",
@@ -131357,7 +131357,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 35
+      "salary": 65
     },
     {
       "id": "p_448",
@@ -131501,7 +131501,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 82
+      "salary": 151
     },
     {
       "id": "p_449",
@@ -131645,7 +131645,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 129
+      "salary": 189
     },
     {
       "id": "p_450",
@@ -131789,7 +131789,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 22
     },
     {
       "id": "p_451",
@@ -131933,7 +131933,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21
+      "salary": 38
     },
     {
       "id": "p_452",
@@ -132077,7 +132077,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 13
+      "salary": 59
     },
     {
       "id": "p_453",
@@ -132221,7 +132221,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 40
+      "salary": 70
     },
     {
       "id": "p_454",
@@ -132365,7 +132365,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 53
+      "salary": 96
     },
     {
       "id": "p_455",
@@ -132509,7 +132509,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_456",
@@ -132797,7 +132797,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 32
+      "salary": 60
     },
     {
       "id": "p_458",
@@ -132941,7 +132941,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 32
+      "salary": 74
     },
     {
       "id": "p_459",
@@ -133085,7 +133085,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 21
     },
     {
       "id": "p_460",
@@ -133229,7 +133229,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14
+      "salary": 46
     },
     {
       "id": "p_461",
@@ -133373,7 +133373,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 15
+      "salary": 70
     },
     {
       "id": "p_462",
@@ -133517,7 +133517,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_463",
@@ -133661,7 +133661,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28
+      "salary": 43
     },
     {
       "id": "p_464",
@@ -133805,7 +133805,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 39
+      "salary": 49
     },
     {
       "id": "p_465",
@@ -133949,7 +133949,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_466",
@@ -134093,7 +134093,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 32
+      "salary": 53
     },
     {
       "id": "p_467",
@@ -134237,7 +134237,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 33
     },
     {
       "id": "p_468",
@@ -134381,7 +134381,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 28
     },
     {
       "id": "p_469",
@@ -134525,7 +134525,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 30
     },
     {
       "id": "p_470",
@@ -134813,7 +134813,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 16
     },
     {
       "id": "p_472",
@@ -134957,7 +134957,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 28
+      "salary": 44
     },
     {
       "id": "p_473",
@@ -135101,7 +135101,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 19
     },
     {
       "id": "p_474",
@@ -135245,7 +135245,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 28
     },
     {
       "id": "p_475",
@@ -135389,7 +135389,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 61
+      "salary": 96
     },
     {
       "id": "p_476",
@@ -135533,7 +135533,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 49
     },
     {
       "id": "p_477",
@@ -135677,7 +135677,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 21
+      "salary": 30
     },
     {
       "id": "p_478",
@@ -135821,7 +135821,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 29
     },
     {
       "id": "p_479",
@@ -135965,7 +135965,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_480",
@@ -136109,7 +136109,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 20
+      "salary": 70
     },
     {
       "id": "p_481",
@@ -136253,7 +136253,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 33
+      "salary": 57
     },
     {
       "id": "p_482",
@@ -136397,7 +136397,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14
+      "salary": 34
     },
     {
       "id": "p_483",
@@ -136541,7 +136541,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18
+      "salary": 40
     },
     {
       "id": "p_484",
@@ -136685,7 +136685,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 41
     },
     {
       "id": "p_485",
@@ -136829,7 +136829,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_486",
@@ -136973,7 +136973,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 16
     },
     {
       "id": "p_487",
@@ -137117,7 +137117,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 19
     },
     {
       "id": "p_488",
@@ -137261,7 +137261,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_489",
@@ -137405,7 +137405,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "p_490",
@@ -137549,7 +137549,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 16
     },
     {
       "id": "p_491",
@@ -137693,7 +137693,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 40
     },
     {
       "id": "p_492",
@@ -137837,7 +137837,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 13
     },
     {
       "id": "p_493",
@@ -137981,7 +137981,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18
+      "salary": 54
     },
     {
       "id": "p_494",
@@ -138125,7 +138125,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 61
+      "salary": 91
     },
     {
       "id": "p_495",
@@ -138269,7 +138269,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 16
     },
     {
       "id": "p_496",
@@ -138413,7 +138413,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 22
     },
     {
       "id": "p_497",
@@ -138557,7 +138557,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 26
     },
     {
       "id": "p_498",
@@ -138701,7 +138701,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16
+      "salary": 26
     },
     {
       "id": "p_499",
@@ -138989,7 +138989,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 29
+      "salary": 49
     },
     {
       "id": "p_501",
@@ -139133,7 +139133,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 41
     },
     {
       "id": "p_502",
@@ -139277,7 +139277,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 38
     },
     {
       "id": "p_503",
@@ -139421,7 +139421,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_504",
@@ -139565,7 +139565,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 31
+      "salary": 56
     },
     {
       "id": "p_505",
@@ -139709,7 +139709,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_506",
@@ -139853,7 +139853,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 47
+      "salary": 85
     },
     {
       "id": "p_507",
@@ -139997,7 +139997,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 20
     },
     {
       "id": "p_508",
@@ -140141,7 +140141,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 20
     },
     {
       "id": "p_509",
@@ -140285,7 +140285,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 53
+      "salary": 87
     },
     {
       "id": "p_510",
@@ -140429,7 +140429,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22
+      "salary": 42
     },
     {
       "id": "p_511",
@@ -140573,7 +140573,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22
+      "salary": 43
     },
     {
       "id": "p_512",
@@ -140717,7 +140717,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 37
     },
     {
       "id": "p_513",
@@ -140861,7 +140861,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 31
     },
     {
       "id": "p_514",
@@ -141005,7 +141005,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 68
+      "salary": 110
     },
     {
       "id": "p_515",
@@ -141149,7 +141149,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 19
     },
     {
       "id": "p_516",
@@ -141293,7 +141293,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 45
+      "salary": 67
     },
     {
       "id": "p_517",
@@ -141437,7 +141437,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_518",
@@ -141581,7 +141581,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 33
+      "salary": 56
     },
     {
       "id": "p_519",
@@ -141725,7 +141725,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 122
+      "salary": 185
     },
     {
       "id": "p_520",
@@ -141869,7 +141869,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 17
     },
     {
       "id": "p_521",
@@ -142013,7 +142013,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 18
+      "salary": 56
     },
     {
       "id": "p_522",
@@ -142157,7 +142157,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 44
     },
     {
       "id": "p_523",
@@ -142301,7 +142301,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 37
+      "salary": 71
     },
     {
       "id": "p_524",
@@ -142445,7 +142445,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14
+      "salary": 23
     },
     {
       "id": "p_525",
@@ -142733,7 +142733,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 20
     },
     {
       "id": "p_527",
@@ -142877,7 +142877,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 16
     },
     {
       "id": "p_528",
@@ -143021,7 +143021,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 34
     },
     {
       "id": "p_529",
@@ -143165,7 +143165,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 14
     },
     {
       "id": "p_530",
@@ -143309,7 +143309,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 98
+      "salary": 149
     },
     {
       "id": "p_531",
@@ -143597,7 +143597,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 88
+      "salary": 162
     },
     {
       "id": "p_533",
@@ -143741,7 +143741,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 22
+      "salary": 42
     },
     {
       "id": "p_534",
@@ -143885,7 +143885,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 16
+      "salary": 41
     },
     {
       "id": "p_535",
@@ -144029,7 +144029,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 78
+      "salary": 145
     },
     {
       "id": "p_536",
@@ -144173,7 +144173,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 14
+      "salary": 28
     },
     {
       "id": "p_537",
@@ -144317,7 +144317,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     },
     {
       "id": "p_538",
@@ -144461,7 +144461,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 19
     },
     {
       "id": "p_539",
@@ -144605,7 +144605,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 18
     },
     {
       "id": "p_540",
@@ -144749,7 +144749,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 16
     },
     {
       "id": "p_541",
@@ -144893,7 +144893,7 @@
         ]
       ],
       "type": "pitcher",
-      "salary": 12
+      "salary": 15
     }
   ],
   "presets": {
@@ -145024,7 +145024,7 @@
       "blurb": "Judge + Ohtani; one ace; value fillers.",
       "lineup": [
         {
-          "playerId": "b_206",
+          "playerId": "b_314",
           "pos": "C"
         },
         {
@@ -145032,15 +145032,15 @@
           "pos": "1B"
         },
         {
-          "playerId": "b_235",
+          "playerId": "b_339",
           "pos": "2B"
         },
         {
-          "playerId": "b_317",
+          "playerId": "b_49",
           "pos": "3B"
         },
         {
-          "playerId": "b_110",
+          "playerId": "b_43",
           "pos": "SS"
         },
         {
@@ -145048,11 +145048,11 @@
           "pos": "OF"
         },
         {
-          "playerId": "b_429",
+          "playerId": "b_333",
           "pos": "OF"
         },
         {
-          "playerId": "b_217",
+          "playerId": "b_433",
           "pos": "OF"
         },
         {
@@ -145062,12 +145062,11 @@
       ],
       "pitchingStaff": [
         "p_449",
-        "p_519",
-        "p_452"
+        "p_300"
       ],
       "starterId": "p_449",
       "bench": [],
-      "salary": 1000
+      "salary": 996
     },
     {
       "id": "ai_twoace",
@@ -145076,7 +145075,7 @@
       "blurb": "Two aces + Judge; bargain lineup.",
       "lineup": [
         {
-          "playerId": "b_206",
+          "playerId": "b_314",
           "pos": "C"
         },
         {
@@ -145084,15 +145083,15 @@
           "pos": "1B"
         },
         {
-          "playerId": "b_235",
+          "playerId": "b_79",
           "pos": "2B"
         },
         {
-          "playerId": "b_317",
+          "playerId": "b_256",
           "pos": "3B"
         },
         {
-          "playerId": "b_304",
+          "playerId": "b_43",
           "pos": "SS"
         },
         {
@@ -145100,27 +145099,26 @@
           "pos": "OF"
         },
         {
-          "playerId": "b_379",
+          "playerId": "b_333",
           "pos": "OF"
         },
         {
-          "playerId": "b_363",
+          "playerId": "b_433",
           "pos": "OF"
         },
         {
-          "playerId": "b_429",
+          "playerId": "b_202",
           "pos": "DH"
         }
       ],
       "pitchingStaff": [
         "p_519",
         "p_449",
-        "p_329",
-        "p_125"
+        "p_460"
       ],
       "starterId": "p_519",
       "bench": [],
-      "salary": 981
+      "salary": 1000
     },
     {
       "id": "ai_dual",
@@ -145129,7 +145127,7 @@
       "blurb": "Judge + Ohtani + Crochet; value arms.",
       "lineup": [
         {
-          "playerId": "b_206",
+          "playerId": "b_314",
           "pos": "C"
         },
         {
@@ -145137,15 +145135,15 @@
           "pos": "1B"
         },
         {
-          "playerId": "b_235",
+          "playerId": "b_309",
           "pos": "2B"
         },
         {
-          "playerId": "b_317",
+          "playerId": "b_280",
           "pos": "3B"
         },
         {
-          "playerId": "b_44",
+          "playerId": "b_43",
           "pos": "SS"
         },
         {
@@ -145153,11 +145151,11 @@
           "pos": "OF"
         },
         {
-          "playerId": "b_363",
+          "playerId": "b_333",
           "pos": "OF"
         },
         {
-          "playerId": "b_208",
+          "playerId": "b_433",
           "pos": "OF"
         },
         {
@@ -145167,11 +145165,11 @@
       ],
       "pitchingStaff": [
         "p_114",
-        "p_449"
+        "p_300"
       ],
       "starterId": "p_114",
       "bench": [],
-      "salary": 994
+      "salary": 996
     }
   ]
 }

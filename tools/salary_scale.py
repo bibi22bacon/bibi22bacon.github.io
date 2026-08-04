@@ -1,24 +1,22 @@
 #!/usr/bin/env python3
 """
-Salary scale for 9-Inning Duel — absolute ability anchors.
+Salary scale for 9-Inning Duel — from CARD abilities (board-game value).
 
-Why this replaces AI-market $ and pure percentiles
---------------------------------------------------
-1) Live AI-draft dollars plateau → fake $1 cliffs.
-2) Percentiles over the *whole* pool make every everyday MLB regular look
-   like a star (because the long tail of scrub cards fills the bottom).
+Design intent
+-------------
+Salaries exist to budget the *board game*, not to mirror MLB payrolls.
+Card abilities (including the 2×-from-average stretch) are what drive duel
+results, so they are the correct input for price.
 
-New method
-----------
-• Rebuild outcome rates from counting stats (AB/BB/SO/…), *before* the
-  card's 2×-from-average stretch.
-• Score batters / pitchers with the game's value formulas.
-• Map **absolute score → dollars** with anchors sized for a $1000 cap.
-• Light positional scarcity for batters.
-• Floor $12, ceil $200.
+Method
+------
+1. Score each card with the same value formulas the AI/market used
+2. Map absolute score → $ with anchors sized for a $1000 cap
+3. Light positional scarcity for batters
+4. Floor $12, ceil $200
 
-Result: Judge/Ohtani cost star money; Soto/Freeman cost mid-star money;
-bench pieces stay in the teens/20s — and a normal roster fits under $1000.
+Do NOT use unstretched real-stat rates here — those are only the Excel
+source for building cards; once stretched, the card *is* the player.
 """
 
 from __future__ import annotations
@@ -37,29 +35,30 @@ CAP = 1000
 FLOOR = 12
 CEIL = 200
 
-# Absolute value → salary (piecewise linear). Tuned on real-rate scores.
+# Card-value → salary. Tuned so stars tax the cap; mid cards aren't free;
+# depth lives in the teens/20s.
 BAT_ANCHORS = [
-    (12.0, 12),
-    (16.0, 18),
-    (18.0, 28),
-    (19.5, 40),
-    (21.0, 60),
-    (22.5, 95),
-    (24.0, 135),
-    (25.5, 170),
-    (27.0, 190),
-    (29.0, 200),
+    (6.0, 12),
+    (10.0, 14),
+    (14.0, 20),
+    (18.0, 32),
+    (22.0, 55),
+    (25.0, 85),
+    (28.0, 120),
+    (32.0, 155),
+    (36.0, 185),
+    (40.0, 200),
 ]
 PIT_ANCHORS = [
-    (18.0, 12),
-    (24.0, 24),
-    (28.0, 40),
-    (32.0, 65),
-    (36.0, 110),
-    (40.0, 150),
+    (4.0, 12),
+    (12.0, 18),
+    (18.0, 28),
+    (24.0, 45),
+    (30.0, 75),
+    (36.0, 115),
+    (40.0, 145),
     (44.0, 175),
-    (48.0, 190),
-    (52.0, 200),
+    (48.0, 200),
 ]
 
 POS_SCARCITY = {
@@ -71,13 +70,6 @@ POS_SCARCITY = {
     "OF": 0.97,
     "DH": 0.94,
 }
-
-
-def fnum(x, default=0.0):
-    try:
-        return float(str(x).replace(",", ""))
-    except Exception:
-        return default
 
 
 def batter_value(a: dict) -> float:
@@ -95,7 +87,7 @@ def batter_value(a: dict) -> float:
 
 
 def pitcher_value(a: dict) -> float:
-    quality = (
+    return (
         0.55 * a["K"]
         + 0.18 * a["FO"]
         + 0.22 * a["GO"]
@@ -103,8 +95,8 @@ def pitcher_value(a: dict) -> float:
         - 0.35 * a["1B"]
         - 0.55 * a["2B"]
         - 1.10 * a["HR"]
+        + 3.2 * a["IP"]
     )
-    return quality + 3.2 * a["IP"]
 
 
 def lerp(anchors, x: float) -> float:
@@ -119,87 +111,17 @@ def lerp(anchors, x: float) -> float:
     return float(anchors[-1][1])
 
 
-def load_batter_real_rates() -> dict[str, dict]:
-    rows = list(csv.reader(BATTERS_CSV.open(encoding="utf-8")))
-    out = {}
-    for row in rows[3:]:
-        if not row or not row[0]:
-            continue
-        pa = fnum(row[13]) or 1.0
-        ab = fnum(row[5])
-        s1, s2, s3, hr = fnum(row[6]), fnum(row[7]), fnum(row[8]), fnum(row[9])
-        so, bb, gb = fnum(row[10]), fnum(row[11]), fnum(row[12])
-        bip = max(0.0, ab - so - s1 - s2 - s3 - hr)
-        bip_pct = bip / pa * 100
-        go = bip_pct * gb / 100
-        fo = bip_pct - go
-        # SPD/DEF still from card (not outcome rates)
-        out[row[0]] = {
-            "K": so / pa * 100,
-            "BB": bb / pa * 100,
-            "H": s1 / pa * 100,
-            "2B": (s2 + s3) / pa * 100,
-            "HR": hr / pa * 100,
-            "FO": fo,
-            "GO": go,
-            "PA": pa,
-        }
-    return out
-
-
-def load_pitcher_real_rates() -> dict[str, dict]:
-    rows = list(csv.reader(PITCHERS_CSV.open(encoding="utf-8")))
-    out = {}
-    for row in rows[3:]:
-        if not row or not row[0]:
-            continue
-        pa = fnum(row[13]) or 1.0
-        ab = fnum(row[5])
-        s1, s2, s3, hr = fnum(row[6]), fnum(row[7]), fnum(row[8]), fnum(row[9])
-        so, bb, gb = fnum(row[10]), fnum(row[11]), fnum(row[12])
-        ip = fnum(row[15])
-        bip = max(0.0, ab - so - s1 - s2 - s3 - hr)
-        bip_pct = bip / pa * 100
-        go = bip_pct * gb / 100
-        fo = bip_pct - go
-        out[row[0]] = {
-            "K": so / pa * 100,
-            "BB": bb / pa * 100,
-            "1B": s1 / pa * 100,
-            "2B": (s2 + s3) / pa * 100,
-            "HR": hr / pa * 100,
-            "FO": fo,
-            "GO": go,
-            "IP": max(1.0, round(ip / 30) if ip else 1.0),  # card-like IP buckets
-            "IP_raw": ip,
-        }
-    return out
-
-
-def price_players(data: dict) -> tuple[list[dict], list[dict]]:
-    bat_rates = load_batter_real_rates()
-    pit_rates = load_pitcher_real_rates()
+def price_players(data: dict):
     batters, pitchers = [], []
-
     for b in data["batters"]:
-        rates = dict(bat_rates.get(b["name"], {}))
-        rates["SPD"] = b["abilities"].get("SPD", 0)
-        rates["DEF"] = b["abilities"].get("DEF", 5)
-        val = batter_value(rates)
+        val = batter_value(b["abilities"])
         mult = POS_SCARCITY.get((b.get("positions") or ["DH"])[0], 1.0)
         sal = int(round(max(FLOOR, min(CEIL, lerp(BAT_ANCHORS, val) * mult))))
-        rec = {**b, "kind": "batter", "value": round(val, 3), "salary": sal}
-        batters.append(rec)
-
+        batters.append({**b, "kind": "batter", "value": round(val, 3), "salary": sal})
     for p in data["pitchers"]:
-        rates = dict(pit_rates.get(p["name"], {}))
-        # Prefer printed card IP (game rule resource)
-        rates["IP"] = p["abilities"].get("IP", rates.get("IP", 1))
-        val = pitcher_value(rates)
+        val = pitcher_value(p["abilities"])
         sal = int(round(max(FLOOR, min(CEIL, lerp(PIT_ANCHORS, val)))))
-        rec = {**p, "kind": "pitcher", "value": round(val, 3), "salary": sal}
-        pitchers.append(rec)
-
+        pitchers.append({**p, "kind": "pitcher", "value": round(val, 3), "salary": sal})
     return batters, pitchers
 
 
@@ -235,16 +157,7 @@ def rebuild_opponents(data: dict) -> list[dict]:
         return slot in b["positions"]
 
     def raw_b(n: str) -> float:
-        a = bm[n]["abilities"]
-        return (
-            0.35 * a["BB"]
-            + 0.45 * a["H"]
-            + 0.75 * a["2B"]
-            + 1.40 * a["HR"]
-            - 0.12 * a["K"]
-            + 0.35 * max(a["SPD"], 0)
-            + 0.25 * a["DEF"]
-        )
+        return batter_value(bm[n]["abilities"])
 
     def build(cores_b, cores_p, meta, forbid_b=()):
         slots = ["C", "1B", "2B", "3B", "SS", "OF", "OF", "OF", "DH"]
@@ -327,7 +240,7 @@ def rebuild_opponents(data: dict) -> list[dict]:
         for n, p in sorted(pm.items(), key=lambda kv: -pitcher_value(kv[1]["abilities"])):
             if ip > 9 and len(staff) >= 4:
                 break
-            if ip <= 9 or (len(staff) < 4 and p["salary"] <= 60):
+            if ip <= 9 or (len(staff) < 4 and p["salary"] <= 70):
                 add_arm(n)
 
         while ip <= 9:
@@ -401,12 +314,6 @@ def main() -> None:
     data = json.loads(PLAYERS_JSON.read_text())
     batters, pitchers = price_players(data)
 
-    for b, priced in zip(data["batters"], batters):
-        b["salary"] = priced["salary"]
-    for p, priced in zip(data["pitchers"], pitchers):
-        p["salary"] = priced["salary"]
-
-    # Re-sync by name (zip order matches)
     bmap = {p["name"]: p["salary"] for p in batters}
     pmap = {p["name"]: p["salary"] for p in pitchers}
     for b in data["batters"]:
@@ -420,7 +327,7 @@ def main() -> None:
     all_p = sorted(batters + pitchers, key=lambda p: (-p["salary"], p["name"]))
     with (OUT_DIR / "salaries.csv").open("w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["name", "type", "team", "salary", "value"])
+        w.writerow(["name", "type", "team", "salary", "card_value"])
         for p in all_p:
             w.writerow([p["name"], p["kind"], p["team"], p["salary"], f"{p['value']:.3f}"])
 
@@ -432,13 +339,15 @@ def main() -> None:
     p5 = sum(p["salary"] for p in sorted(pitchers, key=lambda p: -p["salary"])[:5])
     bands = [(12, 19), (20, 29), (30, 49), (50, 79), (80, 119), (120, 200)]
     band_md = "\n".join(f"| ${lo}–{hi} | {sum(1 for s in sals if lo <= s <= hi)} |" for lo, hi in bands)
-    top_md = "\n".join(f"| {p['salary']} | {p['kind']} | {p['name']} | {p['value']:.1f} |" for p in all_p[:20])
+    top_md = "\n".join(
+        f"| {p['salary']} | {p['kind']} | {p['name']} | {p['value']:.1f} |" for p in all_p[:20]
+    )
 
     (OUT_DIR / "salary_market.json").write_text(
         json.dumps(
             {
                 "meta": {
-                    "method": "absolute real-rate value → dollar anchors",
+                    "method": "card ability value → dollar anchors (board-game pricing)",
                     "cap": CAP,
                     "floor": FLOOR,
                     "ceil": CEIL,
@@ -457,41 +366,23 @@ def main() -> None:
     )
 
     (OUT_DIR / "SALARY_FORMULA.md").write_text(
-        f"""# Salary Scale — absolute ability anchors
+        f"""# Salary Scale — card ability → dollars
 
-## Better way (this version)
+## Principle
 
-| Old approach | Problem |
-|--------------|---------|
-| AI-draft live $ | Plateaus; dumps most cards to $1 |
-| Percentile of full pool | Everyday MLB regulars look like stars (scrubs fill the bottom) |
-| Card abilities (2× stretch) | Compresses gaps; contact guys inflate |
+This is a **board game**. Salary should reflect how strong a card is in the duel,
+not real-world MLB rates.
 
-**New approach:** score from **real counting-stat rates** (pre-stretch), map **absolute value → $** with anchors sized for a **$1000** cap.
+You already turn counting stats → abilities (with 2× stretch for the 50% matrix
+select). Those printed abilities are what produce results — so they are the
+salary input.
 
-### Batter anchors (value → $)
+## Method
 
-| Value | ≈ $ |
-|------:|---:|
-| 16 | 18 |
-| 18 | 28 |
-| 21 | 60 |
-| 24 | 135 |
-| 27 | 190 |
-| 29 | 200 |
-
-Pitchers use a parallel curve (quality + IP).
-
-Floor **${FLOOR}**, ceil **${CEIL}**. Light scarcity: C/SS up, DH/OF down a bit.
-
-## Board check
-
-| Check | Value |
-|-------|------:|
-| Max | **${max(sals)}** ({all_p[0]['name']}) |
-| Median | **${sorted(sals)[len(sals)//2]}** |
-| Best 9 bats | **${b9}** |
-| Best 5 pits | **${p5}** |
+1. Score the **card** (same value weights as before)
+2. Map score → $ with anchors for a **$1000** cap
+3. Light positional scarcity (C/SS up a bit)
+4. Floor **${FLOOR}**, ceil **${CEIL}**
 
 ### Distribution
 
@@ -499,9 +390,11 @@ Floor **${FLOOR}**, ceil **${CEIL}**. Light scarcity: C/SS up, DH/OF down a bit.
 |------|--------:|
 {band_md}
 
+Max **${max(sals)}** · median **${sorted(sals)[len(sals)//2]}** · best-9 bats **${b9}** · best-5 pits **${p5}**
+
 ### Top 20
 
-| $ | Type | Name | Value |
+| $ | Type | Name | Card value |
 |---:|---|---|---:|
 {top_md}
 
@@ -519,9 +412,10 @@ Floor **${FLOOR}**, ceil **${CEIL}**. Light scarcity: C/SS up, DH/OF down a bit.
     print("Top 12:")
     for p in all_p[:12]:
         print(f"  ${p['salary']:3d}  {p['kind'][:3]}  v={p['value']:5.1f}  {p['name']}")
-    for name in ["Soto, Juan", "Freeman, Freddie", "Garcia, Maikel", "Judge, Aaron", "Ohtani, Shohei"]:
-        p = next(x for x in batters if x["name"] == name)
-        print(f"  check {name}: ${p['salary']} (v={p['value']:.1f})")
+    for name in ["Soto, Juan", "Freeman, Freddie", "Garcia, Maikel", "Judge, Aaron", "Ohtani, Shohei", "Skubal, Tarik"]:
+        pool = batters if name != "Skubal, Tarik" else pitchers
+        p = next(x for x in pool if x["name"] == name)
+        print(f"  check {name}: ${p['salary']} (card v={p['value']:.1f})")
     print("Opponents:", ", ".join(f"{o['abbr']}=${o['salary']}" for o in data["opponents"]))
 
 

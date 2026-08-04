@@ -1,79 +1,63 @@
-# Salary Scale — absolute ability anchors
+# Salary Scale — card ability → dollars
 
-## Better way (this version)
+## Principle
 
-| Old approach | Problem |
-|--------------|---------|
-| AI-draft live $ | Plateaus; dumps most cards to $1 |
-| Percentile of full pool | Everyday MLB regulars look like stars (scrubs fill the bottom) |
-| Card abilities (2× stretch) | Compresses gaps; contact guys inflate |
+This is a **board game**. Salary should reflect how strong a card is in the duel,
+not real-world MLB rates.
 
-**New approach:** score from **real counting-stat rates** (pre-stretch), map **absolute value → $** with anchors sized for a **$1000** cap.
+You already turn counting stats → abilities (with 2× stretch for the 50% matrix
+select). Those printed abilities are what produce results — so they are the
+salary input.
 
-### Batter anchors (value → $)
+## Method
 
-| Value | ≈ $ |
-|------:|---:|
-| 16 | 18 |
-| 18 | 28 |
-| 21 | 60 |
-| 24 | 135 |
-| 27 | 190 |
-| 29 | 200 |
-
-Pitchers use a parallel curve (quality + IP).
-
-Floor **$12**, ceil **$200**. Light scarcity: C/SS up, DH/OF down a bit.
-
-## Board check
-
-| Check | Value |
-|-------|------:|
-| Max | **$179** (Judge, Aaron) |
-| Median | **$16** |
-| Best 9 bats | **$1019** |
-| Best 5 pits | **$569** |
+1. Score the **card** (same value weights as before)
+2. Map score → $ with anchors for a **$1000** cap
+3. Light positional scarcity (C/SS up a bit)
+4. Floor **$12**, ceil **$200**
 
 ### Distribution
 
 | Band | Players |
 |------|--------:|
-| $12–19 | 621 |
-| $20–29 | 169 |
-| $30–49 | 150 |
-| $50–79 | 39 |
-| $80–119 | 19 |
-| $120–200 | 4 |
+| $12–19 | 325 |
+| $20–29 | 255 |
+| $30–49 | 218 |
+| $50–79 | 131 |
+| $80–119 | 45 |
+| $120–200 | 28 |
+
+Max **$189** · median **$26** · best-9 bats **$1164** · best-5 pits **$861**
 
 ### Top 20
 
-| $ | Type | Name | Value |
+| $ | Type | Name | Card value |
 |---:|---|---|---:|
-| 179 | batter | Judge, Aaron | 26.6 |
-| 162 | batter | Ohtani, Shohei | 25.7 |
-| 129 | pitcher | Skubal, Tarik | 37.9 |
-| 122 | pitcher | Wheeler, Zack | 37.2 |
-| 115 | batter | Witt Jr., Bobby | 23.0 |
-| 110 | pitcher | Rogers, Trevor | 36.0 |
-| 108 | pitcher | Crochet, Garrett | 35.8 |
-| 104 | batter | Raleigh, Cal | 22.5 |
-| 104 | batter | Ramírez, José | 22.8 |
-| 100 | pitcher | Bradish, Kyle | 35.1 |
-| 98 | pitcher | Woo, Bryan | 35.0 |
-| 97 | batter | Kurtz, Nick | 22.6 |
-| 96 | pitcher | Sánchez, Cristopher | 34.8 |
-| 89 | batter | Bellinger, Cody | 22.4 |
-| 88 | pitcher | Schwellenbach, Spencer | 34.0 |
-| 88 | pitcher | Woodruff, Brandon | 34.1 |
-| 87 | batter | Carroll, Corbin | 22.3 |
-| 83 | pitcher | Henderson, Logan | 33.6 |
-| 82 | pitcher | Skenes, Paul | 33.5 |
-| 82 | batter | Springer, George | 22.2 |
+| 189 | pitcher | Skubal, Tarik | 46.3 |
+| 185 | batter | Judge, Aaron | 37.6 |
+| 185 | pitcher | Wheeler, Zack | 45.5 |
+| 163 | pitcher | Bradish, Kyle | 42.4 |
+| 162 | pitcher | Rogers, Trevor | 42.2 |
+| 162 | pitcher | Woodruff, Brandon | 42.2 |
+| 154 | pitcher | Crochet, Garrett | 41.3 |
+| 151 | batter | Ohtani, Shohei | 32.7 |
+| 151 | pitcher | Skenes, Paul | 40.8 |
+| 150 | pitcher | Eovaldi, Nathan | 40.6 |
+| 149 | pitcher | Woo, Bryan | 40.5 |
+| 148 | pitcher | Sánchez, Cristopher | 40.4 |
+| 145 | pitcher | Sale, Chris | 40.0 |
+| 145 | pitcher | Yamamoto, Yoshinobu | 40.0 |
+| 143 | pitcher | Gilbert, Logan | 39.7 |
+| 140 | pitcher | Greene, Hunter | 39.3 |
+| 140 | pitcher | McLean, Nolan | 39.3 |
+| 135 | pitcher | Henderson, Logan | 38.6 |
+| 134 | pitcher | Miller, Mason | 38.5 |
+| 131 | batter | Raleigh, Cal | 27.9 |
 
 ### AI opponents
-- **OFF** $1000 — Judge + Ohtani; one ace; value fillers.
-- **ACE** $981 — Two aces + Judge; bargain lineup.
-- **DUAL** $994 — Judge + Ohtani + Crochet; value arms.
+- **OFF** $996 — Judge + Ohtani; one ace; value fillers.
+- **ACE** $1000 — Two aces + Judge; bargain lineup.
+- **DUAL** $996 — Judge + Ohtani + Crochet; value arms.
 
 ## Files
 - `tools/salary_scale.py`
